@@ -1,0 +1,19 @@
+
+header{
+  margin: 20px 20px ;
+}
+.logo{
+  display: inline-block;
+  font-size: 30px;
+}
+ul{
+  list-style: none;
+  display: inline-block;
+}
+li{
+  display: inline-block;
+  margin: 0 15px;
+}
+.LoginRegister{
+  float: right;
+}
