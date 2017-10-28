@@ -7,13 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpravniodborComponent implements OnInit {
   sefica: string;
-  ostalimanjevazniclan1:string;
-  ostalimanjevazniclan2:string;
+  clan1:string;
+  clan2:string;
+  clan3:string;
+  clan4:string;
+  clan5:string;
+  clan6:string;
 
   constructor() {
     this.sefica ='assets/images/sefica.jpg';
-    this.ostalimanjevazniclan1='assets/images/fuad_hajdarevic.jpg';
-    this.ostalimanjevazniclan2='assets/images/mehmed_kadric.jpg';
+    this.clan1='assets/images/fuad_hajdarevic.jpg';
+    this.clan2='assets/images/mehmed_kadric.jpg';
+    this.clan3='assets/images/nur_osmanbegovic.jpg'
+    this.clan4='assets/images/adis_dedic.jpg';
+    this.clan5='assets/images/erol_terovic.jpg';
+    this.clan6='assets/images/miran_hadziomerovic.jpg';
    }
 
   ngOnInit() {
