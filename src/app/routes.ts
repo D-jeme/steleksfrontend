@@ -9,6 +9,7 @@ import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { NewspageComponent } from './components/newspage/newspage.component';
 import { SIFIpageComponent } from './components/sifipage/sifipage.component';
 import { PrijavaComponent } from './components/prijava/prijava.component';
+import { FooterComponent } from './components/footer/footer.component';
 //import { RegistracijaComponent } from './components/registracija/registracija.component';
 
 

@@ -19,6 +19,7 @@ import { SIFIpageComponent } from './components/sifipage/sifipage.component';
 import { ElektrijadapageComponent } from './components/elektrijadapage/elektrijadapage.component';
 import { LearningpageComponent } from './components/learningpage/learningpage.component';
 import { PrijavaComponent } from './components/prijava/prijava.component';
+import { FooterComponent } from './components/footer/footer.component';
 //import {RegistracijaComponent} from './components/registracija/registracija.component';
 
 @NgModule({
@@ -38,6 +39,7 @@ import { PrijavaComponent } from './components/prijava/prijava.component';
     ElektrijadapageComponent,
     LearningpageComponent,
     PrijavaComponent,
+    FooterComponent,
     //RegistracijaComponent
   ],
   imports: [
