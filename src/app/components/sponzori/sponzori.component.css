@@ -3,14 +3,19 @@
   padding-bottom: 0px;
   padding-left: 2px;
   padding-right: 2px;
-  float: left;
+
   filter: gray;
   -webkit-filter: grayscale(1);
   -webkit-transition: all .8s ease-in-out;
 	transition: .3s ease-in-out;
+  float: left;
 }
 .image:hover {
   filter: none;
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.01);
+}
+.images{
+  width: 100%;
+    display: table;
 }

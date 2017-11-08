@@ -14,12 +14,15 @@ import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { AboutpageComponent } from './components/aboutpage/aboutpage.component';
 import { NewspageComponent } from './components/newspage/newspage.component';
 import { EventpageComponent } from './components/eventpage/eventpage.component';
-import { GallerypageComponent } from './components/gallerypage/gallerypage.component';
+//import { GallerypageComponent } from './components/gallerypage/gallerypage.component';
 import { SIFIpageComponent } from './components/sifipage/sifipage.component';
 import { ElektrijadapageComponent } from './components/elektrijadapage/elektrijadapage.component';
 import { LearningpageComponent } from './components/learningpage/learningpage.component';
 import { PrijavaComponent } from './components/prijava/prijava.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { EventpreviewComponent } from './components/eventpreview/eventpreview.component';
+import { EventmainpictureComponent } from './components/eventmainpicture/eventmainpicture.component';
+import { AbouteventComponent } from './components/aboutevent/aboutevent.component';
 //import {RegistracijaComponent} from './components/registracija/registracija.component';
 
 @NgModule({
@@ -34,12 +37,15 @@ import { FooterComponent } from './components/footer/footer.component';
     AboutpageComponent,
     NewspageComponent,
     EventpageComponent,
-    GallerypageComponent,
+  //  GallerypageComponent,
     SIFIpageComponent,
     ElektrijadapageComponent,
     LearningpageComponent,
     PrijavaComponent,
     FooterComponent,
+    EventpreviewComponent,
+    EventmainpictureComponent,
+    AbouteventComponent
     //RegistracijaComponent
   ],
   imports: [
