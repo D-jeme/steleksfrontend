@@ -1,6 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
 .uo{
   display: table;
   
+}
+.titula{
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 380px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
 }
 
 .wrapper{
@@ -27,10 +45,7 @@
   padding-right: 10px;
 }
 
-.images{
-  width: 100%;
-    display: table;
-}
+
 .text {
   background-color: #4CAF50;
   color: white;
@@ -62,3 +77,4 @@
   transition: .5s ease;
   backface-visibility: hidden;
 }
+
