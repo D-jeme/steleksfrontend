@@ -1,0 +1,42 @@
+/* tab */
+ul.tab {
+    list-style-type: none;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #add8e6;
+    font-family: "Lato", sans-serif;
+}
+/* poravnanje u listi */
+ul.tab li {
+  float: left;
+}
+
+/* stil za elemente liste */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+/* hover */
+ul.tab li a:hover {
+    background-color: #e6e6fa;
+}
+
+/* hover za trenutni na koji kliknemo */
+ul.tab li a:focus, .active {
+    background-color: #80bfff;
+}
+
+/* sadrzaj izabrane godine */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    font-family: "Lato", sans-serif;
+}

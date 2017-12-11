@@ -1,3 +1,33 @@
-<p>
-  sifipage works!
+<p>Ovdje mozete popuniti prijavu za SIFI:
+<button onclick="document.getElementById('1').style.display='block'" style="width:auto;">Prijava</button>
 </p>
+
+<div id="1" class="modal">
+
+  <form class="modal-content animate">
+    <span onclick="document.getElementById('1').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    <div class="container">
+      <label><b>Ime</b></label>
+      <input type="text" placeholder="Ime" name="uname" required>
+
+      <label><b>Prezime</b></label>
+      <input type="text" placeholder="Prezime" name="uname" required>
+
+      <label><b>Fakultet</b></label>
+      <input type="text" placeholder="Fakultet" name="uname" required>
+
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Email" name="uname" required>
+
+      <label><b>Rad</b></label>
+      <input type="file" name="file" required accept="file/*">
+
+      <button type="submit" onclick="document.getElementById('1').style.display='none'">Prijavi se!</button>
+    </div>
+
+       <!--<div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('1').style.display='none'" class="cancelbtn">Cancel</button>
+    </div> -->
+  </form>
+</div>
