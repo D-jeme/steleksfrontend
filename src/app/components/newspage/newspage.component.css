@@ -6,6 +6,12 @@ div.vijesti-screen {
   min-width: 1480px;
 
 }
+@media only screen and (max-width: 1367px){
+  div.vijesti-screen{
+    min-width: 0;
+  }
+}
+
 figure.vijest {
   font-family: 'Raleway', Arial, sans-serif;
   color: #fff;
