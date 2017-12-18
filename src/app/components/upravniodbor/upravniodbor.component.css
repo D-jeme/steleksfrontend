@@ -3,7 +3,7 @@
 
 .uo{
   display: table;
-  
+
 }
 .titula{
   font-family: 'Raleway', Arial, sans-serif;
@@ -77,4 +77,3 @@
   transition: .5s ease;
   backface-visibility: hidden;
 }
-

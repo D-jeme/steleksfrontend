@@ -4,7 +4,7 @@ import { AboutpageComponent } from './components/aboutpage/aboutpage.component';
 import { ElektrijadapageComponent } from './components/elektrijadapage/elektrijadapage.component';
 //import { GallerypageComponent } from './components/gallerypage/gallerypage.component';
 import { LearningpageComponent } from './components/learningpage/learningpage.component';
-import { EventpageComponent } from './components/eventpage/eventpage.component';
+import { UpravniodborComponent } from './components/upravniodbor/upravniodbor.component';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { NewspageComponent } from './components/newspage/newspage.component';
 import { SIFIpageComponent } from './components/sifipage/sifipage.component';
@@ -21,7 +21,7 @@ const app_routes:Routes = [
   { path:'about', component: AboutpageComponent },
   { path:'news', component: NewspageComponent },
   { path:'sifi', component: SIFIpageComponent },
-  { path:'events', component: EventpageComponent },
+  { path:'upravniodbor', component: UpravniodborComponent },
   //{ path:'gallery', component: GallerypageComponent },
   { path:'elektrijada', component: ElektrijadapageComponent },
   { path:'materijali', component: LearningpageComponent },

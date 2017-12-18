@@ -13,7 +13,6 @@ import { SponzoriComponent } from './components/sponzori/sponzori.component';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { AboutpageComponent } from './components/aboutpage/aboutpage.component';
 import { NewspageComponent } from './components/newspage/newspage.component';
-import { EventpageComponent } from './components/eventpage/eventpage.component';
 //import { GallerypageComponent } from './components/gallerypage/gallerypage.component';
 import { SIFIpageComponent } from './components/sifipage/sifipage.component';
 import { ElektrijadapageComponent } from './components/elektrijadapage/elektrijadapage.component';
@@ -36,8 +35,7 @@ import { AbouteventComponent } from './components/aboutevent/aboutevent.componen
     MainpageComponent,
     AboutpageComponent,
     NewspageComponent,
-    EventpageComponent,
-  //  GallerypageComponent,
+      //  GallerypageComponent,
     SIFIpageComponent,
     ElektrijadapageComponent,
     LearningpageComponent,
