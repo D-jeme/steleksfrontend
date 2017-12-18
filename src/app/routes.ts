@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { EventpreviewComponent } from './components/eventpreview/eventpreview.component';
 import {EventmainpictureComponent } from './components/eventmainpicture/eventmainpicture.component';
 import {AbouteventComponent} from './components/aboutevent/aboutevent.component';
+import {SifipreviewComponent} from './components/sifipreview/sifipreview.component';
 //import { RegistracijaComponent } from './components/registracija/registracija.component';
 
 
@@ -27,6 +28,7 @@ const app_routes:Routes = [
   { path:'materijali', component: LearningpageComponent },
   { path:'prijava', component: PrijavaComponent },
   { path:'event', component: EventpreviewComponent },
+  { path:'sifipreview', component: SifipreviewComponent },
 //  { path:'registracija', component: RegistracijaComponent},
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];

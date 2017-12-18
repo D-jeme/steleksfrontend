@@ -22,6 +22,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { EventpreviewComponent } from './components/eventpreview/eventpreview.component';
 import { EventmainpictureComponent } from './components/eventmainpicture/eventmainpicture.component';
 import { AbouteventComponent } from './components/aboutevent/aboutevent.component';
+import { SifipreviewComponent } from './components/sifipreview/sifipreview.component';
 //import {RegistracijaComponent} from './components/registracija/registracija.component';
 
 @NgModule({
@@ -43,7 +44,8 @@ import { AbouteventComponent } from './components/aboutevent/aboutevent.componen
     FooterComponent,
     EventpreviewComponent,
     EventmainpictureComponent,
-    AbouteventComponent
+    AbouteventComponent,
+    SifipreviewComponent
     //RegistracijaComponent
   ],
   imports: [
