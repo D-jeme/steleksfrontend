@@ -21,8 +21,6 @@ export class NavigationComponent implements OnInit {
   @HostListener("window:scroll", [])
   onWindowScroll() {
     let i;
-if(PageScrollConfig.defaultScrollOffset>50)
-$('#nav').addClass('shrink');
 
 }
 
