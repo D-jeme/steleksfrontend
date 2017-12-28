@@ -13,7 +13,7 @@ import { SponzoriComponent } from './components/sponzori/sponzori.component';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { AboutpageComponent } from './components/aboutpage/aboutpage.component';
 import { NewspageComponent } from './components/newspage/newspage.component';
-//import { GallerypageComponent } from './components/gallerypage/gallerypage.component';
+import { GallerypageComponent } from './components/gallerypage/gallerypage.component';
 import { SIFIpageComponent } from './components/sifipage/sifipage.component';
 import { ElektrijadapageComponent } from './components/elektrijadapage/elektrijadapage.component';
 import { LearningpageComponent } from './components/learningpage/learningpage.component';
@@ -36,7 +36,7 @@ import { SifipreviewComponent } from './components/sifipreview/sifipreview.compo
     MainpageComponent,
     AboutpageComponent,
     NewspageComponent,
-      //  GallerypageComponent,
+    GallerypageComponent,
     SIFIpageComponent,
     ElektrijadapageComponent,
     LearningpageComponent,
