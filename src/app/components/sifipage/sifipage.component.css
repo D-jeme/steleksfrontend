@@ -1,108 +1,159 @@
-form {
-    border: 3px solid #f1f1f1;
+.eventpicture{
+  width: 100%;
+  width:1250px;
+  height: 400px;
+  min-height: 650px;
+  background-image:url('https://image.ibb.co/k4T2Gb/sifi_flip.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position:center center;
+  opacity: 0.9;
 }
+.info-overflow::before{
+  position: absolute;
+  top: 0;
+  left: 0;
 
-input[type=text], input[type=image], input[type=file] {
-    width: 100%;
-    height: 10%;
-    padding: 5px 12px;
-    margin-left: 0px;
-    margin-right: 5px;
-    margin-bottom: 25px;
-    margin-top: 0px;
-    display: flex;
-    flex-direction: row;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background: linear-gradient(rgba(0, 47, 64, 0) 0%,rgba(0, 47, 64, 0) 30%, #002f40 100%);
 }
-
-
-/* Stil svih button-a */
-button {
-    background-color: #80bfff;
-    color: white;
-    border-radius: 5px;
-    padding: 14px 120px;
-    margin: 8px 0px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+.info-inner{
+  z-index: 2;
 }
-
-button:hover {
-    opacity: 0.8;
+.info-inner::after{
+    content: "";
+    display: table;
+    clear: both;
 }
-
-/* Dodatni stil za cancel button */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-.container {
-    padding: 25px;
-    width: 90%;
-    height: 90%;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    padding: 0px;
-}
-
-/* Modal sadrzaj */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto;
-    border: 5px solid #888;
-    width: 60%;
-}
-
-/* x button */
-.close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
+.event-info{
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-size: 46px;
+    line-height: 1em;
     font-weight: bold;
+    letter-spacing: -1px;
+    text-transform: uppercase;
 }
 
-.close:hover, .close:focus {
-    color: red;
-    cursor: pointer;
+.text {
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  font-style:normal;
+  font-size: 15px;
+  line-height: 1.3em;
+  font-weight:lighter;
+  letter-spacing: 0px;
+  text-transform:none;
+}
+.name{
+    font-size: 45px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    padding-bottom: 30px;
 }
 
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
+.info-overflow{
+  transform: translateZ(0);
+    height: 662px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 4;
 }
 
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
+.info-dash{
+    background-size: 100% auto;
+    bottom:  0px;
+    height: 492px;
+    top: auto;
+    width: 510px !important;
+    background:url('https://image.ibb.co/bKYS2b/gradient.png')right top no-repeat;
+    transform: translateX(0);
+    left: 0;
+    padding:30px;
+    position: absolute;
+    z-index: 4;
+}
+.info-dash:after{
+  content: "";
+  display: block;
+  height: 150px;
+  width: 100%;
 }
 
-@keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
+div{
+  display: block;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;;
+  margin: 0;
+  padding: 0;
+}
+*{
+  text-rendering: geometricPrecision;
+  box-sizing: border-box;
+  outline: 0;
 }
 
-/* promjena stila za span i cancel button za extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
+
+
+
+
+
+
+ul.tab {
+    list-style-type: none;
+    overflow: hidden;
+    border: 	#182627;
+    background-color: #303A3C;
+    font-family: "Lato", sans-serif;
+    width:150px;
+    padding: 0px;
+    margin-top:12px;
+}
+/* poravnanje u listi */
+ul.tab li {
+
+}
+
+/* stil za elemente liste */
+ul.tab li div {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+    width: 150px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    line-height: 1em;
+    letter-spacing: 0px;
+}
+
+/* hover */
+ul.tab li div:hover {
+    background-color: #e6e6fa;
+    cursor:
+}
+
+/* hover za trenutni na koji kliknemo */
+ul.tab li div:focus, .active {
+    background-color: #80bfff;
+}
+
+/* sadrzaj izabrane godine */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    font-family: "Lato", sans-serif;
 }

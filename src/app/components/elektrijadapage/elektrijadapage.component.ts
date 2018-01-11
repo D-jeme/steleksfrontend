@@ -34,7 +34,4 @@ export class ElektrijadapageComponent implements OnInit {
     }
       console.log(this.trenutniSadrzaj);
       }
-
-
-
 }
