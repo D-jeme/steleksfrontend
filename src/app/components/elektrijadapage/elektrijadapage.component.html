@@ -1,10 +1,14 @@
+
+
 <ul class="tab">
 
   <li *ngFor="let i of godineElektrijade;"><div (click)="f(i)">{{i}}</div></li>
 
 </ul>
 
-<div *ngIf="i==trneutniTab">{{trenutniSadrzaj}} </div>
+<h1>Elektrijada {{godina}}</h1>
+
+<div *ngIf="i==trneutniTab">{{sadrzaj}} </div>
 
 
 
