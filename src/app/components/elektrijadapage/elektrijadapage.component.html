@@ -1,47 +1,86 @@
+<div id="event" class="eventpicture animation-on">
 
+<div class="info-overflow">
+<div class="info-dash">
+    <div class="info-inner">
+      <div class="event-info">
+        <div class="name">
+          Elektrijada
+          </div>
+          <p class="text1">Međunarodni susreti studenata elektrotehnike, poznatiji kao Elektrijada, tradicionalno se održavaju skoro pola stoljeća na prostorima bivše Jugoslavije i predstavljaju najveći godišnji skup studenata elektrotehnike u jugoistočnoj Evropi, a i šire. Nakon perioda kriznih godina i ratnih dešavanja, Elektrijada kao simbol jedinstva globalne akademske zajednice i studentskog duha, ipak opstaje i svojim djelovanjem doprinosi cilju čvršćeg povezivanja, saradnje i razmjene studenata elektrotehnike. Elektrijada kroz svoje programe širi i populariše sve sfere aktivnog studentskog života – naučni rad, takmičenja u znanju, sportska takmičenja, edukativne programe, zabavu... Ali ono što je najbitnije napomenuti jeste činjenica da Elektrijada, kao veliki susret studenata ovog tipa, predstavlja multietnički i multinacionalni projekat vrijedan pažnje. Petodnevni program Elektrijade se održava na atraktivnim turističkim destinacijama, gdje se uz dobro organizovan program, lijepu prirodu i dobro poznatu energiju studenata, navedene aktivnosti sprovode u atmosferi zdrave konkurencije i toplog prijateljstva.
+          </div>
+    </div>
+</div>
+</div>
+</div>
 
 <ul class="tab">
 
-  <li *ngFor="let i of godineElektrijade;"><div (click)="f(i)">{{i}}</div></li>
-
+  <li *ngFor="let i of godineElektrijade;">
+    <div (click)="f(i)">{{i}}</div>
+  </li>
+  <!--<div class="okvir"></div> -->
 </ul>
 
 <h1>Elektrijada {{godina}}</h1>
 
-<div *ngIf="i==trneutniTab">{{sadrzaj}} </div>
+<div *ngIf="i==trenutniTab">{{sadrzaj}} </div>
+
+<div id="About"></div>
+
+<div id="2012"></div>
+
+<div id="2013"></div>
+
+<div id="2014"></div>
+
+<div id="2015"></div>
+
+<div id="2016"></div>
+
+<div id="2017"></div>
 
 
+<div class="PrikazPlasmana">
+  <figure class="prikaz"id ="prikazPrvog">
+  <div class="text">
 
-<div id="2012" class="tabcontent">
-  <h3>2012</h3>
-  <p>Elektrijada 2012 neki tekst
-  Medunarodni susreti studenata elektrotehnike, poznatiji kao Elektrijada, tradicionalno se odravaju skoro pola stoljeca na prostorima bive Jugoslavije i predstavljaju najveci godinji skup studenata elektrotehnike u jugoistocnoj Evropi, a i ire. Nakon perioda kriznih godina i ratnih deavanja, Elektrijada kao simbol jedinstva globalne akademske zajednice i studentskog duha, ipak opstaje i svojim djelovanjem doprinosi cilju cvrceg povezivanja, saradnje i razmjene studenata elektrotehnike. Elektrijada kroz svoje programe iri i popularie sve sfere aktivnog studentskog ivota  naucni rad, takmicenja u znanju, sportska takmicenja, edukativne programe, zabavu... Ali ono to je najbitnije napomenuti jeste cinjenica da Elektrijada, kao veliki susret studenata ovog tipa, predstavlja multietnicki i multinacionalni projekat vrijedan panje. Petodnevni program Elektrijade se odrava na atraktivnim turistickim destinacijama, gdje se uz dobro organizovan program, lijepu prirodu i dobro poznatu energiju studenata, navedene aktivnosti sprovode u atmosferi zdrave konkurencije i toplog prijateljstva. Putem Elektrijade studenti stupaju u kontakt sa privredom i firmama iz struke, uz ciju pomoc dolaze do sredstava za organizaciju skupa i na taj nacin ostvaruju prve korake poslovne saradnje korisne za buducnost. Posljednjih godina Elektrijada broji preko 2000 ucesnika sa 30 fakulteta iz citave Evrope.
-  </p>
+      <h2 class="NaslovTeme">Slobodan pad</h2>
+      <div class="takmicari">Slema Ahmetovic </div>
+        <div class="takmicari">Selma Hanjalic </div>
+    </div>
+
+    <div class="media">
+      <img src="assets/images/zlato.jpg" >
+    </div>
+    <a href="#"></a>
+  </figure>
+  <figure class="prikaz" id ="prikazDrugog">
+  <div class="text">
+
+      <h2 class="NaslovTeme">Mehanika fluida</h2>
+      <div class="takmicari">Amila Mujak </div>
+        <div class="takmicari">Amina Aljicevic </div>
+    </div>
+
+    <div class="media">
+      <img src="assets/images/srebro.jpg" >
+    </div>
+    <a href="#"></a>
+  </figure>
+  <figure class="prikaz" id ="prikazTreceg">
+  <div class="text">
+
+    <h2 class="NaslovTeme">Termodinamika</h2>
+    <div class="takmicari">Emir Avdisaphic</div>
+      <div class="takmicari">Nur ... </div>
+    </div>
+
+    <div class="media">
+      <img src="assets/images/bronza.jpg" >
+    </div>
+    <a href="#"></a>
+  </figure>
 </div>
 
-<div id="2013" class="tabcontent">
-  <h3>2013</h3>
-  <p>Elektrijada 2013 neki tekst
-    Medunarodni susreti studenata elektrotehnike, poznatiji kao Elektrijada, tradicionalno se odravaju skoro pola stoljeca na prostorima bive Jugoslavije i predstavljaju najveci godinji skup studenata elektrotehnike u jugoistocnoj Evropi, a i ire. Nakon perioda kriznih godina i ratnih deavanja, Elektrijada kao simbol jedinstva globalne akademske zajednice i studentskog duha, ipak opstaje i svojim djelovanjem doprinosi cilju cvrceg povezivanja, saradnje i razmjene studenata elektrotehnike. Elektrijada kroz svoje programe iri i popularie sve sfere aktivnog studentskog ivota  naucni rad, takmicenja u znanju, sportska takmicenja, edukativne programe, zabavu... Ali ono to je najbitnije napomenuti jeste cinjenica da Elektrijada, kao veliki susret studenata ovog tipa, predstavlja multietnicki i multinacionalni projekat vrijedan panje. Petodnevni program Elektrijade se odrava na atraktivnim turistickim destinacijama, gdje se uz dobro organizovan program, lijepu prirodu i dobro poznatu energiju studenata, navedene aktivnosti sprovode u atmosferi zdrave konkurencije i toplog prijateljstva. Putem Elektrijade studenti stupaju u kontakt sa privredom i firmama iz struke, uz ciju pomoc dolaze do sredstava za organizaciju skupa i na taj nacin ostvaruju prve korake poslovne saradnje korisne za buducnost. Posljednjih godina Elektrijada broji preko 2000 ucesnika sa 30 fakulteta iz citave Evrope.
-    </p>
-</div>
-
-<div id="2014" class="tabcontent">
-  <h3>2014</h3>
-  <p>Elektrijada 2014 neki tekst</p>
-</div>
-
-<div id="2015" class="tabcontent">
-  <h3>2015</h3>
-  <p>Elektrijada 2015 neki tekst</p>
-</div>
-
-<div id="2016" class="tabcontent">
-  <h3>2016</h3>
-  <p>Elektrijada 2016 neki tekst</p>
-</div>
-
-<div id="2017" class="tabcontent">
-  <h3>2017</h3>
-  <p>Elektrijada 2017 neki tekst</p>
-</div>
+<app-sponzori></app-sponzori>

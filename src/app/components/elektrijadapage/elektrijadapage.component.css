@@ -1,25 +1,141 @@
+.eventpicture{
+  width: 100%;
+  height: 400px;
+  min-height: 650px;
+  background-image:url('https://image.ibb.co/k4T2Gb/sifi_flip.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position:center center;
+  opacity: 0.9;
+}
+.info-overflow::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background: linear-gradient(rgba(0, 47, 64, 0) 0%,rgba(0, 47, 64, 0) 30%, #002f40 100%);
+}
+.info-inner{
+  z-index: 2;
+}
+.info-inner::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.event-info{
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-size: 46px;
+    line-height: 1em;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.text1 {
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  font-style:normal;
+  font-size: 15px;
+  line-height: 1.3em;
+  font-weight:lighter;
+  letter-spacing: 0px;
+  text-transform:none;
+}
+.name{
+    font-size: 45px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    padding-bottom: 30px;
+}
+
+.info-overflow{
+  transform: translateZ(0);
+    height: 662px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+}
+
+.info-dash{
+    background-size: 100% auto;
+    bottom:  0px;
+    height: 492px;
+    top: auto;
+    width: 510px !important;
+    background:url('https://image.ibb.co/bKYS2b/gradient.png')right top no-repeat;
+    transform: translateX(0);
+    left: 0;
+    padding:30px;
+    position: absolute;
+    z-index: 4;
+}
+.info-dash:after{
+  content: "";
+  display: block;
+  height: 150px;
+  width: 100%;
+}
+
+div{
+  display: block;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;;
+  margin: 0;
+  padding: 0;
+}
+*{
+  text-rendering: geometricPrecision;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+
+
+
+
+
+
 ul.tab {
     list-style-type: none;
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #add8e6;
+    border: 	#182627;
+    background-color: #303A3C;
     font-family: "Lato", sans-serif;
+    width:150px;
+    padding: 0px;
+    margin-top:12px;
 }
 /* poravnanje u listi */
 ul.tab li {
-  float: left;
+
 }
 
 /* stil za elemente liste */
 ul.tab li div {
-    display: inline-block;
-    color: black;
+    display: block;
+    color: #fff;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    width: 150px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    line-height: 1em;
+    letter-spacing: 0px;
 }
 
 /* hover */
@@ -36,7 +152,88 @@ ul.tab li div:focus, .active {
 /* sadrzaj izabrane godine */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    font-family: "Lato", sans-serif;
+    padding: 20px 12px;
+    float:center;
+    font-family: 'Roboto Condensed';
 }
+
+.okvir {
+  list-style-type: none;
+  overflow: hidden;
+  border: 	#182627;
+  background-color: #303A3C;
+  font-family: "Lato", sans-serif;
+  width:150px;
+  padding: 0px;
+  margin-top:12px;
+  height:300px;
+}
+
+
+
+
+
+
+
+div.PrikazPlasmana{
+  width: 700px;
+  height: 500px;
+  display:table;
+  margin: 0 auto;
+
+
+}
+ figure.prikaz {
+   font-family: 'Raleway', Arial, sans-serif;
+   color: #fff;
+   position: relative;
+   float: left;
+   overflow: hidden;
+   margin: 2%;
+   max-width: 320px;
+   width: 100%;
+   height: 180px;
+   background-color: #ffffff;
+   color: #000000;
+   text-align: left;
+   font-size: 16px;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ }
+ #prikazPrvog{
+   float: none;
+   display: table;
+   margin: 0 auto;
+
+ }
+ #prikazDrugog{
+   float: left;
+ }
+ #prikazTreceg{
+   float: left;
+   margin-top: 35px;
+ }
+ div.text{
+   float: left;
+   width: 75%;
+   margin:0;
+   height: 180px;
+ }
+ div.media{
+   float: right;
+   width: 25%;
+   margin:0;
+ }
+div.takmicari{
+  margin: 6px;
+}
+ h2.NaslovTeme{
+   margin: 10px;
+   text-align: left;
+ }
+ img{
+   flex:0 auto;
+   float: right;
+   height: 100px;
+   margin: 10px 0 25px 0px;
+   width: 80px;
+ }
