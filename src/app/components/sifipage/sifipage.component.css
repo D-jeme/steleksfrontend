@@ -101,12 +101,6 @@ div{
   outline: 0;
 }
 
-
-
-
-
-
-
 ul.tab {
     list-style-type: none;
     overflow: hidden;
@@ -169,19 +163,11 @@ ul.tab li div:focus, .active {
   height:300px;
 }
 
-
-
-
-
-
-
 div.PrikazPlasmana{
   width: 700px;
   height: 500px;
   display:table;
   margin: 0 auto;
-
-
 }
  figure.prikaz {
    font-family: 'Raleway', Arial, sans-serif;
