@@ -101,7 +101,18 @@ div{
   outline: 0;
 }
 
+.prvi{
+  width: 10%;
+  float: left;
+  height: 554px;
+}
+.drugi_dio{
+  width: 90%;
+  float: left;
+  margin-top: 15px;
+  height: 400px;
 
+}
 
 
 
@@ -173,7 +184,11 @@ ul.tab li div:focus, .active {
 
 
 
+h1{
+  text-align: center;
+  margin: 5px;
 
+}
 
 div.PrikazPlasmana{
   width: 700px;

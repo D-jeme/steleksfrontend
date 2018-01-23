@@ -11,7 +11,7 @@
 }
 .info-overflow::before{
   position: absolute;
-  top:900px;
+  bottom:-420px;
   left: 0;
 
   z-index: 3;
