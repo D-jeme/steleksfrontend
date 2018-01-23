@@ -1,3 +1,26 @@
+
+.eventpicture{
+
+  margin-top: 10px;
+  min-height: 20px;
+  background-image:url('https://image.ibb.co/kMz9WR/final.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position:center center;
+}
+.info-overflow::before{
+  position: absolute;
+  top:900px;
+  left: 0;
+
+  z-index: 3;
+  width: 100%;
+  height: 50%;
+  display: block;
+  content: "";
+  background: linear-gradient(rgba(0, 47, 64, 0) 70%,rgba(0, 47, 64, 0) 50%, #002f40 100%);
+}
 .image {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -16,10 +39,26 @@
       -webkit-transform: scale(1.01);
 }
 .images{
-  width: 100%;
+
   display: table;
-  margin-left:10px;
-  margin-right: 5px;
+  margin: 0 auto;
+}
+.text{
+  color: white;
+  z-index: 7;
+  font-weight: bold;
+}
+.heading{
+  margin-top:10px;
+}
+.add{
+  display: inline-block;
+  background: transparent;
+  color: #06d7d9;
+  border: 2px solid #06d7d9;
+  display: table;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 form {
@@ -59,7 +98,8 @@ button:hover {
 }
 
 .container {
-    padding: 16px;
+    padding: 2px;
+    z-index: 4;
 }
 
 .modal {
@@ -102,7 +142,27 @@ button:hover {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
+#skills{
+  padding: 5px;
+  margin-top: 10px;
 
+}
+#skills1{
+
+  color:white;
+  padding: 5px;
+  margin-top: 10px;
+  background-image: url("https://image.ibb.co/kMz9WR/final.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  width:100%;
+  height: 300px;
+  opacity: 1;
+  min-height: 250px;
+}
 @-webkit-keyframes animatezoom {
     from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}

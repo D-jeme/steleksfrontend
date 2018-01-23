@@ -3,20 +3,20 @@
 
 	display: table;
 	margin: auto;
-	height:auto;
-	padding: 25px;
+	height: 350px;;
+	padding: 35px;
 }
 .footer{
 	width: 80%;
 }
 .sadrzaj1{
 	float:left;
-	width:55%;
+	width:59%;
 	height: 100%;
 }
 .sadrzaj2{
 	float:right;
-	width:45%;
+	width:41%;
 	height: 100%;
 }
 .sve{
@@ -31,11 +31,12 @@ iframe{
 	margin-top: 15px;
 	width: 85%;
 	height: 250px;
-	padding-left: 25px;
+	padding-left: 0px;
 }
 h1{
 	margin:5px;
-	padding-left: 30px;
+	padding-left: 0px;
+	margin-left: 0px;
 }
 p{
 	margin-top: 15px;
