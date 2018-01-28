@@ -23,7 +23,12 @@ import { EventpreviewComponent } from './components/eventpreview/eventpreview.co
 import { EventmainpictureComponent } from './components/eventmainpicture/eventmainpicture.component';
 import { AbouteventComponent } from './components/aboutevent/aboutevent.component';
 import { SifipreviewComponent } from './components/sifipreview/sifipreview.component';
+import { TekstComponent } from './components/tekst/tekst.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { FormaElektrijadaComponent } from './components/formaelektrijada/formaelektrijada.component';
 //import {RegistracijaComponent} from './components/registracija/registracija.component';
+
+
 
 @NgModule({
   declarations: [
@@ -45,7 +50,10 @@ import { SifipreviewComponent } from './components/sifipreview/sifipreview.compo
     EventpreviewComponent,
     EventmainpictureComponent,
     AbouteventComponent,
-    SifipreviewComponent
+    SifipreviewComponent,
+    TekstComponent,
+    SkillsComponent,
+    FormaElektrijadaComponent
     //RegistracijaComponent
   ],
   imports: [
