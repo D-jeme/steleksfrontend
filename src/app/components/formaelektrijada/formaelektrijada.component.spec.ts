@@ -3,9 +3,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { TekstComponent } from './forma-elektrijada.component';
+import { FormaElektrijadaComponent } from './formaelektrijada.component';
 
-describe('TekstComponent', () => {
+describe('FormaElektrijadaComponent', () => {
   let component: FormaElektrijadaComponent;
   let fixture: ComponentFixture<FormaElektrijadaComponent>;
 
