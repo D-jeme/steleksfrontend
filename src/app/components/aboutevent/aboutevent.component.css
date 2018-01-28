@@ -1,6 +1,7 @@
 .okvir {
     margin: auto;
     padding: 50px;
+    
 }
 h1 {
     text-align: center;
@@ -33,4 +34,5 @@ h1 {
 .images{
   width: 100%;
     display: table;
+
 }
