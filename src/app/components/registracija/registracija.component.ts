@@ -1,4 +1,4 @@
-/*import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-registracija',
@@ -7,7 +7,7 @@
 })
 export class RegistracijaComponent implements OnInit {
 
-  Name: String;
+/*  Name: String;
   Surname: String;
   Username: String;
   Password: String;
@@ -19,9 +19,9 @@ export class RegistracijaComponent implements OnInit {
   this.Password = "";
 
  }
-
+*/
   ngOnInit() {
 
   }
 
-}*/
+}
