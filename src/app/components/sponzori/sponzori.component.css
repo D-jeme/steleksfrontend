@@ -10,13 +10,12 @@
   background-position:center center;
 }
 .info-overflow::before{
-  position: absolute;
-  bottom:-420px;
-  left: 0;
+
+  position: relative;
 
   z-index: 3;
   width: 100%;
-  height: 50%;
+  height: 35%;
   display: block;
   content: "";
   background: linear-gradient(rgba(0, 47, 64, 0) 70%,rgba(0, 47, 64, 0) 50%, #002f40 100%);
