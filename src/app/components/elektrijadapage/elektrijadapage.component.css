@@ -107,14 +107,19 @@ div{
   height: 554px;
 }
 .drugi_dio{
-  width: 90%;
+  margin-left: 25px;
+  width: 70%;
   float: left;
   margin-top: 15px;
   height: 400px;
 
 }
 
+.medalje{
+  float: none;
+  width: 100%;
 
+}
 
 
 

@@ -24,7 +24,6 @@
 
 
 
-<div *ngIf="i==trenutniTab">{{sadrzaj}} </div>
 
 <div id="About"></div>
 
@@ -41,7 +40,9 @@
 <div id="2017"></div>
 </div>
 <div class="drugi_dio">
-  
+<div  *ngIf="i==trenutniTab">{{sadrzaj}} </div>
+</div>
+<div class="medalje">
 <div class="PrikazPlasmana">
   <figure class="prikaz"id ="prikazPrvog">
   <div class="text">
