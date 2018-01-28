@@ -1,7 +1,7 @@
 
 .eventpicture{
 
-  margin-top: 10px;
+
   min-height: 20px;
   background-image:url('https://image.ibb.co/kMz9WR/final.jpg');
   background-repeat: no-repeat;
@@ -13,9 +13,9 @@
 
   position: relative;
 
-  z-index: 3;
+  z-index: 4;
   width: 100%;
-  height: 35%;
+  height: 100%;
   display: block;
   content: "";
   background: linear-gradient(rgba(0, 47, 64, 0) 70%,rgba(0, 47, 64, 0) 50%, #002f40 100%);
