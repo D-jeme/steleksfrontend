@@ -1,15 +1,16 @@
 import {Component } from '@angular/core';
+import {NgModule} from '@angular/core';
 
 @Component({
  selector: 'my-gallery',
- template: `
- <gallerypage [datasource]=images></gallerypage>
-`,
+ templateUrl: './gallery.component.html',
+ styleUrls: ['./gallery.component.css']
 })
 
 export class GalleryComponent { 
   images;
 
+  
   constructor(){
      this.images = [
    {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0367_Easy-Resize.com_.jpg",  

@@ -1,0 +1,82 @@
+ul.tab {
+    list-style-type: none;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #add8e6;
+    font-family: "Lato", sans-serif;
+    margin-top:65px;
+}
+/* poravnanje u listi */
+ul.tab li {
+  float: left;
+}
+
+/* stil za elemente liste */
+ul.tab li div {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+/* hover */
+ul.tab li div:hover {
+    background-color: #e6e6fa;
+
+}
+
+/* hover za trenutni na koji kliknemo */
+ul.tab li div:focus, .active {
+    background-color: #80bfff;
+}
+
+
+/*za submenu css*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

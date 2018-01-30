@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 import { AppRouting } from './routes';
 
 
-
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MainpictureComponent } from './components/mainpicture/mainpicture.component';

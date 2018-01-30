@@ -1,1 +1,80 @@
+<ul  class="tab">
+        <li class="dropdown">
+          <div>
+            <button class="dropbtn">Sifi</button>
+            <div class="dropdown-content">
+              <li *ngFor="let i of godineSifi;">
+                <div (click)="f(i)">{{i}}</div>
+              </li>
+            </div>
+          </div>
+        </li>
+    
+        <li class="dropdown">
+            <div>
+              <button class="dropbtn">Elektrijada</button>
+              <div class="dropdown-content">
+                <li *ngFor="let i of godineElektrijade;">
+                  <div (click)="f(i)">{{i}}</div>
+                </li>
+              </div>
+            </div>
+          </li>
+    
+        <li class="dropdown">
+            <div>
+              <button class="dropbtn">Liga robota</button>
+              <div class="dropdown-content">
+                <li *ngFor="let i of godineLigaRobota;">
+                  <div (click)="f(i)">{{i}}</div>
+                </li>
+              </div>
+            </div>
+          </li>
+    
+          <li class="dropdown">
+              <div>
+                <button class="dropbtn">Steleksijada</button>
+                <div class="dropdown-content">
+                  <li *ngFor="let i of godineSteleksijada;">
+                    <div (click)="f(i)">{{i}}</div>
+                  </li>
+                </div>
+              </div>
+            </li>
+    
+            <li class="dropdown">
+                <div>
+                  <button class="dropbtn">Kviz</button>
+                  <div class="dropdown-content">
+                    <li *ngFor="let i of godineKviz;">
+                      <div (click)="f(i)">{{i}}</div>
+                    </li>
+                  </div>
+                </div>
+              </li>
+    
+              <li class="dropdown">
+                  <div>
+                    <button class="dropbtn">Izleti</button>
+                    <div class="dropdown-content">
+                      <li *ngFor="let i of godineIzleti;">
+                        <div (click)="f(i)">{{i}}</div>
+                      </li>
+                    </div>
+                  </div>
+                </li>
+    
+                <li class="dropdown">
+                    <div>
+                      <button class="dropbtn">Ostalo</button>
+                      <div class="dropdown-content">
+                        <li *ngFor="let i of godineOstalo;">
+                          <div (click)="f(i)">{{i}}</div>
+                        </li>
+                      </div>
+                    </div>
+                  </li>
+    </ul>
+    <div *ngIf="i==trenutniTab">{{sadrzaj}} </div>
 <gallerypage [datasource]=images></gallerypage>
