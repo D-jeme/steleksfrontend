@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRouting } from './routes';
 
+
+
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MainpictureComponent } from './components/mainpicture/mainpicture.component';
@@ -14,6 +16,7 @@ import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { AboutpageComponent } from './components/aboutpage/aboutpage.component';
 import { NewspageComponent } from './components/newspage/newspage.component';
 import { GallerypageComponent } from './components/gallerypage/gallerypage.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 import { SIFIpageComponent } from './components/sifipage/sifipage.component';
 import { ElektrijadapageComponent } from './components/elektrijadapage/elektrijadapage.component';
 import { LearningpageComponent } from './components/learningpage/learningpage.component';
@@ -42,6 +45,7 @@ import {RegistracijaComponent} from './components/registracija/registracija.comp
     AboutpageComponent,
     NewspageComponent,
     GallerypageComponent,
+    GalleryComponent,
     SIFIpageComponent,
     ElektrijadapageComponent,
     LearningpageComponent,

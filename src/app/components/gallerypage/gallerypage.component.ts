@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
-  selector: 'app-gallerypage',
-  templateUrl: './gallerypage.component.html',
-  styleUrls: ['./gallerypage.component.css']
+ selector: 'gallerypage',
+ templateUrl: './gallerypage.component.html',
+ styleUrls: ['./gallerypage.component.css']
 })
-export class GallerypageComponent implements OnInit {
+export class GallerypageComponent{ 
 
-  constructor() { }
+  @Input() datasource;
+  selectedImage;
 
-  ngOnInit() {
+  setSelectedImage(image){
+     this.selectedImage= image;	
   }
-
+  navigate(forward){
+    var index = this.datasource.indexOf(this.selectedImage)+(forward ? 1: -1);
+    if(index >= 0 && index < this.datasource.length){
+       this.selectedImage = this.datasource[index];	
+    }
+ }
 }
