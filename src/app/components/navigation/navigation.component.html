@@ -2,11 +2,11 @@
 
 
   <nav role="navigation" id="nav-main" class="okayNav clearfix">
-    <a class="logo" href="#">
+    <a class="logo" [routerLink]="['/#']">
              Steleks
           </a>
     <ul>
-      <li><a href="#">Početna</a></li>
+      <li><a [routerLink]="['/#']">Početna</a></li>
       <li><a [routerLink]="['/about']">O nama</a></li>
       <li><a [routerLink]="['/news']">Vijesti</a></li>
       <li><a [routerLink]="['/upravniodbor']">Upravni odbor</a></li>
