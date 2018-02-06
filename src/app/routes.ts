@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutpageComponent } from './components/aboutpage/aboutpage.component';
 import { ElektrijadapageComponent } from './components/elektrijadapage/elektrijadapage.component';
 import { GallerypageComponent } from './components/gallerypage/gallerypage.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { AlbumipageComponent } from './components/albumipage/albumipage.component';
 import { LearningpageComponent } from './components/learningpage/learningpage.component';
 import { UpravniodborComponent } from './components/upravniodbor/upravniodbor.component';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
@@ -16,7 +18,8 @@ import {AbouteventComponent} from './components/aboutevent/aboutevent.component'
 import {SifipreviewComponent} from './components/sifipreview/sifipreview.component';
 import {FormaElektrijadaComponent} from './components/formaelektrijada/formaelektrijada.component';
 import { RegistracijaComponent } from './components/registracija/registracija.component';
-import { AdminComponent } from './components/admin/admin.component';
+import {FormaSifiComponent} from './components/formasifi/formasifi.component';
+
 
 const app_routes:Routes = [
   { path:'', component: MainpageComponent },
@@ -24,13 +27,15 @@ const app_routes:Routes = [
   { path:'news', component: NewspageComponent },
   { path:'sifi', component: SIFIpageComponent },
   { path:'upravniodbor', component: UpravniodborComponent },
-  { path:'gallery', component: GallerypageComponent },
+  { path:'gallery', component: AlbumipageComponent },
+  { path:'galerija', component: GalleryComponent },
   { path:'elektrijada', component: ElektrijadapageComponent },
   { path:'materijali', component: LearningpageComponent },
   { path:'prijava', component: PrijavaComponent },
   { path:'event', component: EventpreviewComponent },
   { path:'sifipreview', component: SifipreviewComponent },
   { path:'formaelektrijada', component: FormaElektrijadaComponent },
+  { path:'formasifi', component: FormaSifiComponent },
   { path:'registracija', component: RegistracijaComponent},
   { path:'admin', component: AdminComponent},
   { path: '**', pathMatch: 'full', redirectTo: '' }
