@@ -16,6 +16,9 @@ export class FormaSifiComponent implements OnInit {
 
 
       addFieldValue1() {
+        console.log("hbhygbbuh");
+        console.log(this.newAttribute1);
+        console.log(this.fieldArray1);
           this.fieldArray1.push(this.newAttribute1)
           this.newAttribute1 = {};
       }
