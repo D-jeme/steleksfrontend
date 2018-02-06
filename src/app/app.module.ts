@@ -15,6 +15,7 @@ import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { AboutpageComponent } from './components/aboutpage/aboutpage.component';
 import { NewspageComponent } from './components/newspage/newspage.component';
 import { GallerypageComponent } from './components/gallerypage/gallerypage.component';
+import { AlbumipageComponent } from './components/albumipage/albumipage.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { SIFIpageComponent } from './components/sifipage/sifipage.component';
 import { ElektrijadapageComponent } from './components/elektrijadapage/elektrijadapage.component';
@@ -45,6 +46,7 @@ import {RegistracijaComponent} from './components/registracija/registracija.comp
     NewspageComponent,
     GallerypageComponent,
     GalleryComponent,
+    AlbumipageComponent,
     SIFIpageComponent,
     ElektrijadapageComponent,
     LearningpageComponent,
