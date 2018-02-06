@@ -27,6 +27,7 @@ import { TekstComponent } from './components/tekst/tekst.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { FormaElektrijadaComponent } from './components/formaelektrijada/formaelektrijada.component';
 import {RegistracijaComponent} from './components/registracija/registracija.component';
+import { FormaSifiComponent } from './components/formasifi/formasifi.component';
 
 
 
@@ -54,7 +55,8 @@ import {RegistracijaComponent} from './components/registracija/registracija.comp
     TekstComponent,
     SkillsComponent,
     FormaElektrijadaComponent,
-    RegistracijaComponent
+    RegistracijaComponent,
+    FormaSifiComponent
   ],
   imports: [
     BrowserModule,

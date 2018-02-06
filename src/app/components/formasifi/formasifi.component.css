@@ -1,7 +1,8 @@
 .elektrijada
 {
-  background: #466368;
-  background: linear-gradient(to right,#085078, #85D8CE);
+  background: #ffffff;
+    background: linear-gradient(to bottom,#16222a, #3a6073);
+/*  background: linear-gradient(to right,#085078, #85D8CE);*/
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -13,24 +14,23 @@
 }
 .form-content{
   position: absolute;
-	width:720px;
-	height:520px;
+	width:1100px;
+	height:560px;
 	background-color: #fff;
 	margin:100px auto;
 	border-radius: 5px;
 	padding:20px;
 	left:50%;
 	top:50%;
-	margin-left:-360px;
+	margin-left:-550px;
 	margin-top:-250px;
+  display: block;
+  overflow: auto;
+
 }
 @media only screen and (max-width: 1367px){
   div.elektrijada{
     min-width: 0;
-  }
-  div.form-content{
-    min-width: 0;
-
   }
 }
 h2{background: #4D4D4D;
@@ -43,7 +43,7 @@ h2{background: #4D4D4D;
     padding: 20px;
     margin: -20px -20px -20px -20px;
 }
-.form-content input[type="year"],textarea,input[type="prvo"],input[type="drugo"],input[type="trece"]{
+.form-content input[type="year"],textarea,input[type="prvo"],input[type="drugo"],input[type="trece"],input[type="nazivrada"]{
    box-sizing: border-box;
    outline: none;
    display: block;
@@ -72,6 +72,9 @@ h2{background: #4D4D4D;
   .field-split{
     width: 33%;
 }
+.field-split1{
+  width: 33%;
+}
 .field-style{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -86,7 +89,19 @@ h2{background: #4D4D4D;
     -o-transition: all 0.30s ease-in-out;
 
 }
+.field-style1{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 8px;
+    outline: none;
 
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+
+}
 
 .align-left{
     float:left;
@@ -101,17 +116,17 @@ legend{
 background-color:#4D4D4D;
 }
 .form-content input[type="button"]{
-    -moz-box-shadow: inset 0px 1px 0px 0px #4D4D4D;
-    -webkit-box-shadow: inset 0px 1px 0px 0px #4D4D4D;
-    box-shadow: inset 0px 1px 0px 0px #4D4D4D;
+    -moz-box-shadow: inset 0px 1px 0px 0px ##4D4D4D;
+    -webkit-box-shadow: inset 0px 1px 0px 0px ##4D4D4D;
+    box-shadow: inset 0px 1px 0px 0px ##4D4D4D;
     background-color: #4D4D4D;
-    border: 1px solid #4D4D4D;
+    border: 1px solid ##4D4D4D;
     display: inline-block;
     cursor: pointer;
     color: #FFFFFF;
     font-family: 'Roboto-Condensed';
     font-size: 12px;
-    margin-left: 550px;
+    margin-left: 940px;
     margin-top: 50px;
     padding: 5px 28px;
     text-decoration: none;
@@ -120,4 +135,17 @@ background-color:#4D4D4D;
 .form-content input[type="button"]:hover {
     background:linear-gradient(to bottom, #666666 5%, #808080 100%);
     background-color:#666666;
+}
+.table{
+  margin-top: 10px;
+  width: 344px;
+  height: 50px;
+
+}
+.form-control{
+  height:20px;
+}
+.btn{
+  font-size: 10px;
+  padding: 4px;
 }
