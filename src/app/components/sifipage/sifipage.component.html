@@ -5,43 +5,26 @@
     <div class="info-inner">
       <div class="event-info">
         <div class="name">
-          Sifi
+          SIFI
           </div>
-          <p class="text1">Udruženje studenata Elektrotehničkog fakulteta Sarajevo “STELEKS” po drugi put organizuje smotru studentskih radova pod nazivom Sarajevo Innovations Festival (“SIFI”). Festival će se održati 25. i 26. oktobra u prostorijama Elektrotehničkog fakulteta u Sarajevu.“SIFI 2017” je odlična prilika da prezentirate svoje radove, razmijenite ideje, upoznate se sa vrsnim stručnjacima iz različitih oblasti, njihovim radovima i iskustvima, ali i sa budućim poslodavcima. Raznovrstan
-          program manifestacije obuhvata kako edukativne, tako i zabavne sadržaje. Renomirani predavači ce održati predavanja o aktuelnim temama iz oblasti elektrotehnike.</p>
-      </div>
+          <p class="text1">Udruženje studenata Elektrotehničkog fakulteta Sarajevo “STELEKS” po drugi put organizuje smotru studentskih radova pod nazivom Sarajevo Innovations Festival (“SIFI”). Festival će se održati 25. i 26. oktobra u prostorijama Elektrotehničkog fakulteta u Sarajevu.“SIFI 2017” je odlična prilika da prezentirate svoje radove, razmijenite ideje, upoznate se sa vrsnim stručnjacima iz različitih oblasti, njihovim radovima i iskustvima, ali i sa budućim poslodavcima. Raznovrstan program manifestacije obuhvata kako edukativne, tako i zabavne sadržaje. Renomirani predavači će održati predavanja o aktuelnim temama iz oblasti elektrotehnike.ZAŠTO SE ORGANIZUJE SIFI?Ciljevi SIFI-a su povećanje kvaliteta studentskih radova, poticanje inovativnih ideja i ohrabrivanje mladih stručnjaka da svoje ideje plasiraju na tržište. Većini studenata jedina motivacija za izradu studentskih radova su ocjene na predmetima, što po našem mišljenju uzrokuje manjak novih ideja i inovacija, te ne priprema studente da “prodaju” svoje ideje.</div>
     </div>
 </div>
 </div>
 </div>
-
+<div class="prvi">
 <ul class="tab">
 
   <li *ngFor="let i of godineSifija;">
     <div (click)="f(i)">{{i}}</div>
   </li>
-  <!--<div class="okvir"></div> -->
 </ul>
 
-<h1>SIFI {{godina}}</h1>
-
-<div *ngIf="i==trenutniTab">{{sadrzaj}}</div>
-
-<div id="About"></div>
-
-<div id="2012"></div>
-
-<div id="2013"></div>
-
-<div id="2014"></div>
-
-<div id="2015"></div>
-
-<div id="2016"></div>
-
-<div id="2017"></div>
-
-
+</div>
+<div class="drugi_dio">
+<div class="text2" *ngIf="i==trenutniTab">{{sadrzaj}} </div>
+</div>
+<div class="medalje">
 <div class="PrikazPlasmana">
   <figure class="prikaz"id ="prikazPrvog">
   <div class="text">
@@ -82,6 +65,7 @@
     </div>
     <a href="#"></a>
   </figure>
+</div>
 </div>
 
 <app-sponzori></app-sponzori>
