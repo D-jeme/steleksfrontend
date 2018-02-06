@@ -19,7 +19,7 @@ import {SifipreviewComponent} from './components/sifipreview/sifipreview.compone
 import {FormaElektrijadaComponent} from './components/formaelektrijada/formaelektrijada.component';
 import { RegistracijaComponent } from './components/registracija/registracija.component';
 import {FormaSifiComponent} from './components/formasifi/formasifi.component';
-
+import {AdminComponent} from './components/admin/admin.component';
 
 const app_routes:Routes = [
   { path:'', component: MainpageComponent },
