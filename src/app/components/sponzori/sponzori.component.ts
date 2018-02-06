@@ -11,5 +11,4 @@ export class SponzoriComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

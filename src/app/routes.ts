@@ -16,7 +16,7 @@ import {AbouteventComponent} from './components/aboutevent/aboutevent.component'
 import {SifipreviewComponent} from './components/sifipreview/sifipreview.component';
 import {FormaElektrijadaComponent} from './components/formaelektrijada/formaelektrijada.component';
 import { RegistracijaComponent } from './components/registracija/registracija.component';
-
+import { AdminComponent } from './components/admin/admin.component';
 
 const app_routes:Routes = [
   { path:'', component: MainpageComponent },
@@ -32,6 +32,7 @@ const app_routes:Routes = [
   { path:'sifipreview', component: SifipreviewComponent },
   { path:'formaelektrijada', component: FormaElektrijadaComponent },
   { path:'registracija', component: RegistracijaComponent},
+  { path:'admin', component: AdminComponent},
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 

@@ -1,41 +1,38 @@
-<div class="container">
-  <form>
-    <div class="form-group row">
-      <label for="username" class="col-2 col-form-label">Ime</label>
-      <div class="col-10">
-        <input class="form-control"  [(ngModel)]="name" type="text" placeholder="Amina" id="name" name="name">
-      </div>
+<div class="elektrijada">
+<form class="wrapper">
+  <h1>REGISTRACIJA</h1>
+  <hr>
+  <fieldset class="groupBox">
+  <input type="text" placeholder="Ime" required>
+  <input type="text" placeholder="Prezime" required>
+  <input type="text" placeholder="Email" required>
+  <input type="text" placeholder="Fakultetski mail" required>
+  <input type="text" placeholder="Broj telefona" required>
+  <input type="text" placeholder="Broj indeksa" required>
+</fieldset>
+  <fieldset class="groupBox">
+  <input type="text" placeholder="Korisničko ime" required>
+  <input type="text" placeholder="Lozinka" required>
+  <input type="text" placeholder="Potvrdi lozinku" required>
 
-      <div class="form-group row">
-        <label for="username" class="col-2 col-form-label">Prezime</label>
-        <div class="col-10">
-          <input class="form-control"  [(ngModel)]="Surname" type="text" placeholder="Aljicevic" id="surname" name="surname">
-        </div>
-      </div>
-    </div>
-
-    <div class="form-group row">
-      <label for="username" class="col-2 col-form-label">Username</label>
-      <div class="col-10">
-        <input class="form-control"  [(ngModel)]="Username" type="text" placeholder="AAljicevic11" id="username" name="username">
-      </div>
-    </div>
-
-    <form class="form-horizontal">
-      <div class="form-group">
-        <label class="control-label col-sm-2" for="email">Email:</label>
-        <div class="col-sm-10">
-          <p class="form-control-static">someone@example.com</p>
-        </div>
-      </div>
-    </form>
-
-    <div class="form-group row">
-      <label for="password" class="col-2 col-form-label">Password</label>
-      <div class="col-10">
-        <input class="form-control" type="password"  [(ngModel)]="Password" id="password"  name="password">
-      </div>
-    </div>
-    <input class="btn btn-primary" type="submit" value="Submit" (click)="print()">
-  </form>
+  <select required class="combobox">
+  <option value="" disabled selected>Odsjek</option>
+  <option value="RI">Računarstvo i informatika</option>
+  <option value="AE">Automatika i elektronika</option>
+  <option value="EE">Energetika</option>
+  <option value="TK">Telekomunikacije</option>
+</select>
+  <select required class="combobox">
+  <option value="" disabled selected>Godina studija</option>
+  <option value="1">1 BSc</option>
+  <option value="2">2 BSc</option>
+  <option value="3">3 BSc</option>
+  <option value="1M">1 MSc</option>
+  <option value="2M">2 MSc</option>
+</select>
+<input type="file" style="display: none" #file>
+<button class="button" (click)="file.click()"> Dodaj sliku </button>
+</fieldset>
+  <button type="submit" class="button2" type="Potvrdi">POTVRDI</button>
+</form>
 </div>

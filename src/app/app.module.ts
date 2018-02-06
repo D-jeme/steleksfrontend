@@ -27,8 +27,7 @@ import { TekstComponent } from './components/tekst/tekst.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { FormaElektrijadaComponent } from './components/formaelektrijada/formaelektrijada.component';
 import {RegistracijaComponent} from './components/registracija/registracija.component';
-
-
+import {AdminComponent} from './components/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +53,8 @@ import {RegistracijaComponent} from './components/registracija/registracija.comp
     TekstComponent,
     SkillsComponent,
     FormaElektrijadaComponent,
-    RegistracijaComponent
+    RegistracijaComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

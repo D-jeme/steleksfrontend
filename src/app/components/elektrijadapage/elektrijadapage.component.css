@@ -40,6 +40,16 @@
     text-transform: uppercase;
 }
 
+.text2 {
+  color: auto;
+  margin-left: 40px;
+  margin-top: 30px;
+  letter-spacing: 0px;
+  font-family: 'Roboto Condensed';
+  font-style:normal;
+  font-size: 15px;
+}
+
 .text1 {
   color: #fff;
   font-family: 'Roboto Condensed';
@@ -104,34 +114,31 @@ div{
 .prvi{
   width: 10%;
   float: left;
-  height: 554px;
+  height: 100%;
 }
 .drugi_dio{
   margin-left: 25px;
-  width: 70%;
+  width: 85%;
   float: left;
   margin-top: 15px;
-  height: 400px;
 
 }
 
 .medalje{
   float: none;
   width: 100%;
-
 }
-
-
 
 ul.tab {
     list-style-type: none;
     overflow: hidden;
     border: 	#182627;
-    background-color: #303A3C;
+    background-color: #2D3B3C;  /* ili ova boja? #2A3C41 	*/
     font-family: "Lato", sans-serif;
     width:150px;
     padding: 0px;
     margin-top:12px;
+    height: 100%;
 }
 /* poravnanje u listi */
 ul.tab li {
@@ -182,17 +189,12 @@ ul.tab li div:focus, .active {
   width:150px;
   padding: 0px;
   margin-top:12px;
-  height:300px;
+  height:100%;
 }
-
-
-
-
 
 h1{
   text-align: center;
   margin: 5px;
-
 }
 
 div.PrikazPlasmana{
@@ -200,9 +202,8 @@ div.PrikazPlasmana{
   height: 500px;
   display:table;
   margin: 0 auto;
-
-
 }
+
  figure.prikaz {
    font-family: 'Raleway', Arial, sans-serif;
    color: #fff;
@@ -219,6 +220,7 @@ div.PrikazPlasmana{
    font-size: 16px;
    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
  }
+
  #prikazPrvog{
    float: none;
    display: table;

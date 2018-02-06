@@ -7,21 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistracijaComponent implements OnInit {
 
-/*  Name: String;
-  Surname: String;
-  Username: String;
-  Password: String;
-
-  constructor() {
-  this.Name="";
-  this.Surname="";
-  this.Username = "";
-  this.Password = "";
-
- }
-*/
   ngOnInit() {
 
   }
-
 }
