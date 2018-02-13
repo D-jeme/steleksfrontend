@@ -1,13 +1,16 @@
 <div class="elektrijada">
-  <form class="wrapper">
-    <h1>PRIJAVA</h1>
-    <hr>
-      <fieldset class="groupBox">
-        <input [(ngModel)]="Username" type="text" placeholder="Username..." id="username" name="username">
-        <input type="text" placeholder="Password..." [(ngModel)]="Password" id="password"  name="password" style="margin-bottom:20px">
-        <a href="http://localhost:4200/admin">
-    <button class="button" type="button">PRIJAVA</button>
+<div class="form-content">
+
+<form>
+    <fieldset class="groupBox">
+      <h2>PRIJAVA</h2>
+
+        <input [(ngModel)]="Username" type="text" placeholder="Username..." id="username" name="username" style="margin-top:50px">
+      <input type="text" placeholder="Password..." [(ngModel)]="Password" id="password"  name="password" style="margin-bottom:20px">
+      <a href="http://localhost:4200/admin">
+  <input type="button" value="Prijavi se" />
 </a>
-    </fieldset>
-  </form>
+  </fieldset>
+</form>
+</div>
 </div>

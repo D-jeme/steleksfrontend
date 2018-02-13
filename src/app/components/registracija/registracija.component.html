@@ -1,20 +1,23 @@
 <div class="elektrijada">
-<form class="wrapper">
-  <h1>REGISTRACIJA</h1>
-  <hr>
+<div class="form-content">
+<form>
+  <h2>REGISTRACIJA</h2>
   <fieldset class="groupBox">
   <input type="text" placeholder="Ime" required>
   <input type="text" placeholder="Prezime" required>
   <input type="text" placeholder="Email" required>
+</fieldset>
+<fieldset class="groupBox">
   <input type="text" placeholder="Fakultetski mail" required>
   <input type="text" placeholder="Broj telefona" required>
   <input type="text" placeholder="Broj indeksa" required>
 </fieldset>
-  <fieldset class="groupBox">
+  <fieldset class="groupBox" style="margin-top:5px;">
   <input type="text" placeholder="Korisničko ime" required>
   <input type="text" placeholder="Lozinka" required>
   <input type="text" placeholder="Potvrdi lozinku" required>
-
+</fieldset>
+<fieldset class="groupBox" style="margin-top:5px;">
   <select required class="combobox">
   <option value="" disabled selected>Odsjek</option>
   <option value="RI">Računarstvo i informatika</option>
@@ -31,8 +34,9 @@
   <option value="2M">2 MSc</option>
 </select>
 <input type="file" style="display: none" #file>
-<button class="button" (click)="file.click()"> Dodaj sliku </button>
+<button class="button2" (click)="file.click()"> Dodaj sliku </button>
 </fieldset>
-  <button type="submit" class="button2" type="Potvrdi">POTVRDI</button>
+  <input type="button" value="Registruj se" />
 </form>
+</div>
 </div>

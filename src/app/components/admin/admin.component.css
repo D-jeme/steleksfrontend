@@ -1,80 +1,73 @@
-ul{
-  list-style:none;
+th, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table {
+  background: #d9d9d9;
+  border: 2px solid white;
+  border-collapse: collapse;
+  width: 70%;
+  margin:0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Arial';
+}
+tr:nth-child(even) {
+  background: #ececec;
 }
 
-ul li{
-  float:left;
-  padding:10px;
-  border-bottom:1px solid #000;
-  border-right:1px solid #000;
+tr:first-child {
+  border-bottom: 2px solid #333;
 }
-
-ul li:nth-child(3n){
-  background-color:#888;
-}
-
-ul li:nth-child(3n+1){
-  clear:both;
-  border-left:1px solid #000;
-  background-color:#ccc;
-}
-
-ul li:nth-child(-n+3){
-  border-top:1px solid #000;
-}
-
-
-table, tr, th, td {
-    border: 1px solid black;
-}
-
 
 .elektrijada
 {
-  background: #16222A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #16222A;
+  background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);
+  background: linear-gradient(to bottom, #3A6073, #16222A);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   width:100%;
-  height: 100%;
-  padding: 30px;
+  height: 1300px;
+  opacity: 1;
+  padding-top: 100px;
 }
-
-.wrapper {
+.form-content{
   position: relative;
-  background-color: rgba(255,255,255,0.6);
-  margin: 60px auto;
-  padding: 25px;
-  width: 40%;
-  height: 500px;  /*ispraviti*/
+  height: auto;
+  width: 50%;
+  display: table;
+  margin:0px auto;
+ background-color: #fff;
 }
-
-/* linija ispod registracije */
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #fff;
-    padding-bottom: 15px;
+@media only screen and (max-width: 1367px){
+  div.elektrijada{
+    min-width: 0;
+  }
+  div.form-content{
+    min-width: 0;
+  }
 }
-
-h1 {
+h2{background: #4D4D4D;
   text-align: center;
-  color: #4D4D4D;
-  font-size: 36px;
-  line-height: 0;
-  font-weight: 600;
-  padding-bottom: 15px;
-  padding-top: 15px;
+    text-transform: uppercase;
+    font-family: 'Roboto-Condensed';
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 100;
+    padding: 30px;
 }
 
 input[type="text"]{
   width: 100%;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px;
@@ -82,7 +75,7 @@ input[type="text"]{
   font-weight: 400;
   background-color: white;
   color: #3B3B3D;
-  border: 1px solid white;
+  border: 1px solid #cccccc;
   border-radius: 4px;
   float: left;
 }
@@ -96,74 +89,147 @@ input[type="text"]{
     color: #aaa;
   }
 
-  .button2 {
-    background-color: #4D4D4D;
-    color: white;
-    border-radius: 5px;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+  .groupBox {
+    width: 70%;
+    margin:0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border: 1px solid  #b3b3b3;
+    border-radius: 0px;
+    background-color: #e6e6e6;
   }
 
-
-.button {
-  width: 100%;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 14px 20px;
-  font-size: 15px;
-  font-weight: 400;
-  background-color: #666666;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  float: left;
+/* button za brisanje */
+.button1 {
+  -moz-box-shadow: inset 0px 1px 0px 0px #595959;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #595959;
+  box-shadow: inset 0px 1px 0px 0px #595959;
+  background-color: #595959;
+  border: 1px solid #595959;
+  display: inline-block;
   cursor: pointer;
-  transition: background-color 0.16s ease-out;
-  }
-
-button:hover {
-    background:linear-gradient(to bottom, #666666 5%, #808080 100%);
-    background-color:#666666;
+  color: gray;
+  font-size: 12px;
+  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float:right;
+  padding: 5px 18px;
+  text-decoration: none;
+  border-radius: 4px;
+  color: white;
+}
+.button2 {
+  -moz-box-shadow: inset 0px 1px 0px 0px #595959;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #595959;
+  box-shadow: inset 0px 1px 0px 0px #595959;
+  background-color: #595959;
+  border: 1px solid #595959;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: 'Roboto-Condensed';
+  font-size: 14px;
+  margin:0 auto;
+  margin-top: 40px;
+  float:left;
+  padding: 5px 18px;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
+button{
+  -moz-box-shadow: inset 0px 1px 0px 0px #595959;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #595959;
+  box-shadow: inset 0px 1px 0px 0px #595959;
+  background-color: #595959;
+  border: 1px solid #595959;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: 'Roboto-Condensed';
+  font-size: 15px;
+  margin: 35px;
+  margin-right: 110px;
+  margin-top: 15px;
+  float:right;
+  padding: 5px 28px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+button:hover, .button1:hover {
+  background:linear-gradient(to bottom, #666666 5%, #808080 100%);
+  background-color:#666666;
+}
 
-@media screen and (max-width: 1130px) {
-  .wrapper{
+@media screen and (max-width: 1300px) {
+  .form-content{
     width: 40%;
+  }
+  .elektrijada{
+    height: 1300px;
+  }
+  input[type="text"]{
+    width: 80%;
+    margin-left: 20px;
+    margin-left: 20px;
+  }
+  button {
+    margin-left: 85px;
+    margin-right: 85px;
+    margin-bottom: 40px;
+  }
+  .groupBox {
+    padding: 7px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 920px) {
-  .wrapper{
+  .form-content{
     width: 50%;
+  }
+  input[type="text"]{
+    width: 80%;
+    margin-left: 20px;
+    margin-left: 20px;
   }
 }
 
 @media screen and (max-width: 720px) {
-  .wrapper{
-    width: 60%;
+  .form-content{
+    width: 100%;
+    padding: 20px;
+  }
+  button {
+    margin:0 auto;
+    margin-bottom: 40px;
+  }
+  .groupBox {
+    padding: 7px;
+    margin-bottom: 30px;
+  }
+  input[type="text"] {
+    margin: 15px;
+    margin-bottom: 5px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .wrapper{
-    margin: 60px 0px;
-    width: 100%;
+  .form-content{
+    width: 50%;
   }
 }
 
-.groupBox {
-  float: left;
-  width: 90%;
-  margin-right: 10px;
-  margin-left: 10px;
-  padding: 28px;
-    border-color: black;
-    border-radius: 4px;
-    border-style: double;
+.error {
+  color: red;
+  text-align: center;
+}
+
+.poruka {
+  color:green;
+  text-align: center;
 }
