@@ -1,7 +1,7 @@
 .backgroundimg{
-background-image: url("https://image.ibb.co/kMz9WR/final.jpg");
+
 background-size: cover;
-background-position: center center;
+background-position: top center;
 background-attachment: fixed;
 background-repeat: no-repeat;
 
@@ -19,13 +19,14 @@ color: #fff;
 font-weight: bold;
 line-height: 80px;
 letter-spacing: .18em;
-padding-top: 140px;
+padding-top: 190px;
 padding-left: 15px;
 
 }
 .content-table{
 display: table;
 text-align: center;
+
 width: 100%;
 height:100%;
 }
@@ -74,7 +75,7 @@ transition-duration: 0.9s;
 
 
   min-height: 662px;
-  background-image:url('https://image.ibb.co/kMz9WR/final.jpg');
+background-image: url('../../assets/images/pozadina.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
@@ -84,7 +85,7 @@ transition-duration: 0.9s;
   position: absolute;
   top: 0;
   left: 0;
-
+padding-top: 80px;
   z-index: 3;
   width: 100%;
   height: 100%;
@@ -109,6 +110,7 @@ transition-duration: 0.9s;
     font-weight: bold;
     letter-spacing: -1px;
     height: 100%;
+
 
 }
 

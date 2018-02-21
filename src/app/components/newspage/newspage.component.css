@@ -4,7 +4,7 @@ div.vijesti-screen {
   display: table;
   margin: 0 auto;
   min-width: 1480px;
-  margin-top: 25px;
+  margin-top: 60px;
 
 }
 @media only screen and (max-width: 1367px){

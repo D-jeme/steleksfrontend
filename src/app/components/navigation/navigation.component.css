@@ -1,34 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-header{
-  margin: 20px 20px ;
-  overflow: hidden;
 
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 150;
-  display: table;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.95);
-
-}
 .page-scroll-header {
     background-color: #ccc !important;
-    opacity: 0.9;
+
 }
 .my-header {
     transition: background-color 2s ease-out;
 }
 
 .logo{
+
   display: inline-block;
   font-size: 30px;
+
 }
-ul{
-  list-style: none;
-  display: inline-block;
+img{
+  max-height: 50px;
+  max-width: 50px;
 }
-li{
+
+
+nav {
+    top: 10px;
+    z-index: 150;
+  display: table;
+  position: fixed;
+padding: 3px;
+  margin: 0 auto;
+background: rgba(255, 255, 255, 0.95);
+width: 100%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    opacity: 0.9;
+mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+
+
+
+}
+
+nav ul {
+  padding-top: 5px;
+  padding-left: 0px;
+margin:0;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
   display: inline-block;
-  margin: 0 15px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+nav ul li a {
+
+  margin-right: 15px;
+  margin-left: 15px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: #4b799b;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: #4b799b;
 }

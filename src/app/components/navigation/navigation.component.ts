@@ -18,7 +18,10 @@ export class NavigationComponent implements OnInit {
   currPos:Number =0;
   startPos:Number =0;
   changePos: Number=100;
-  constructor(){}
+  steleks:string;
+  constructor(){
+    this.steleks='assets/images/steleksLogo.png';
+  }
 
   updateHeader(evt) {
       this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
