@@ -1,51 +1,51 @@
-<div id="forma" class="elektrijada">
+<body>
+<div class="sifi">
 <div class="form-content">
-<h2>Sarajevo Innovations Festival</h2>
-<form>
- <input type="year" name="field1" placeholder="Godina"/>
-  <textarea placeholder="About" onkeyup="adjust_textarea(this)"></textarea>
-
-  <li>
-    <fieldset name="Prvo mjesto"class="field-style field-split align-left">
-      <legend >Prvo mjesto</legend>
-      <input type="nazivrada" name="field2" placeholder="Naziv rada"/>
-
-    </fieldset>
-    <fieldset name="Drugo mjesto"class="field-style field-split align-left">
-      <legend>Drugo mjesto</legend>
-      <input type="drugo" name="field3" placeholder="Naziv rada"/>
-    </fieldset>
-    <fieldset name="Trece mjesto"class="field-style field-split align-left">
-      <legend>Treće mjesto</legend>
-     <input type="trece" name="field4" placeholder="Naziv rada"/>
-    </fieldset>
-
-</li>
+  <h2>Sarajevo Innovations Festival</h2>
+  <fieldset class="groupBox1">
+    <form>
+    <input type="text" name="year" placeholder="Godina"/>
+    <textarea placeholder="About" onkeyup="adjust_textarea(this)"></textarea>
+  </form>
+</fieldset>
+<fieldset class="groupBox">
+  <form>
+  <legend >Prvo mjesto</legend>
+ <input type="text" name="faculty1" placeholder="Naziv rada"/>
+ <input type="file" style="display: none" #file>
+ <button class="button2" (click)="file.click()"> Dodaj rad </button>
 
 </form>
+ <table >
+     <tbody>
+         <tr *ngFor="let field1 of fieldArray1; let i = index">
+             <td>
+                 <input [(ngModel)]="field1.name" class="form-control" type="text" name="{{field1.name}}" placeholder="Učesnik"/>
+             </td>
+             <td>
+                 <button class="btn btn-default"  type="button" (click)="deleteFieldValue1(i)">Delete</button>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <input class="form-control" type="text" id="newAttributeName1" [(ngModel)]="newAttribute1.name" name="newAttributeName1" placeholder="Učesnik"/>
+             </td>
+             <td>
+                 <button class="btn btn-default" type="button" (click)="addFieldValue1()">Add</button>
+             </td>
+         </tr>
+     </tbody>
+ </table>
+</fieldset>
 
-<li>
-<table class="table field-style1 field-split1 align-left">
-    <tbody>
-        <tr *ngFor="let field1 of fieldArray1; let i = index">
-            <td>
-                <input [(ngModel)]="field1.name" class="form-control" type="text" name="{{field1.name}}" placeholder="Učesnik"/>
-            </td>
-            <td>
-                <button class="btn btn-default"  type="button" (click)="deleteFieldValue1(i)">Delete</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input class="form-control" type="text" id="newAttributeName1" [(ngModel)]="newAttribute1.name" name="newAttributeName1" placeholder="Učesnik"/>
-            </td>
-            <td>
-                <button class="btn btn-default" type="button" (click)="addFieldValue1()">Add</button>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<table class="table field-style1 field-split1 align-left">
+<fieldset class="groupBox">
+  <form>
+  <legend>Drugo mjesto</legend>
+  <input type="text" name="faculty2" placeholder="Naziv rada"/>
+  <input type="file" style="display: none" #file>
+  <button class="button2" (click)="file.click()"> Dodaj rad </button>
+</form>
+<table >
     <tbody>
         <tr *ngFor="let field2 of fieldArray2; let j = index">
             <td>
@@ -65,31 +65,42 @@
         </tr>
     </tbody>
 </table>
-<table class="table field-style1 field-split1 align-left">
-    <tbody>
-        <tr *ngFor="let field3 of fieldArray3; let k = index">
-            <td>
-                <input [(ngModel)]="field3.name" class="form-control" type="text" name="{{field3.name}}" placeholder="Učesnik"/>
-            </td>
-            <td>
-                <button class="btn btn-default"  type="button" (click)="deleteFieldValue3(k)">Delete</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input class="form-control" type="text" id="newAttributeName3" [(ngModel)]="newAttribute3.name" name="newAttributeName3" placeholder="Učesnik"/>
-            </td>
-            <td>
-                <button class="btn btn-default" type="button" (click)="addFieldValue3()">Add</button>
-            </td>
-        </tr>
-    </tbody>
-</table>
-</li>
-<form>
-<input type="button" value="Dodaj" />
+</fieldset>
+
+<fieldset class="groupBox">
+  <form>
+  <legend>Trece mjesto</legend>
+  <input type="text" name="faculty3" placeholder="Naziv rada"/>
+  <input type="file" style="display: none" #file>
+  <button class="button2" (click)="file.click()"> Dodaj rad </button>
+  </form>
+  <table>
+      <tbody>
+          <tr *ngFor="let field3 of fieldArray3; let k = index">
+              <td>
+                  <input [(ngModel)]="field3.name" class="form-control" type="text" name="{{field3.name}}" placeholder="Učesnik"/>
+              </td>
+              <td>
+                  <button class="btn btn-default"  type="button" (click)="deleteFieldValue3(k)">Delete</button>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <input class="form-control" type="text" id="newAttributeName3" [(ngModel)]="newAttribute3.name" name="newAttributeName3" placeholder="Učesnik"/>
+              </td>
+              <td>
+                  <button class="btn btn-default" type="button" (click)="addFieldValue3()">Add</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+</fieldset>
+ <fieldset class="groupBox2">
+   <form>
+  <input type="button" value="Dodaj" />
 </form>
-
+</fieldset>
 </div>
-
 </div>
+</body>
