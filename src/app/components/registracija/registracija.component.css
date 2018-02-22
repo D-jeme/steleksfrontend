@@ -10,7 +10,7 @@
   width:100%;
   height: 800px;
   opacity: 1;
-  padding-top: 100px;
+  padding-top: 125px;
 }
 
 .combobox {
@@ -140,7 +140,7 @@ h2{background: #4D4D4D;
     font-size: 14px;
     margin: 35px;
     margin-right: 50px;
-    margin-top: 15px;
+    margin-top: 8px;
     float:right;
     padding: 5px 28px;
     text-decoration: none;
@@ -168,6 +168,7 @@ h2{background: #4D4D4D;
   }
   .elektrijada{
     height: 1300px;
+    padding-top: 160px;
   }
   .form-content input[type="button"]{
     margin-right: 75px;
@@ -183,6 +184,9 @@ h2{background: #4D4D4D;
 @media screen and (max-width: 720px) {
   .groupBox{
     width: 80%;
+  }
+  .elektrijada{
+    padding-top: 180px;
   }
 }
 

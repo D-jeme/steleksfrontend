@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { PrijavaComponent } from './prijava.component';
+import { PrijavaModeratorComponent } from './prijavamoderator.component';
 
-describe('PrijavaComponent', () => {
-  let component: PrijavaComponent;
-  let fixture: ComponentFixture<PrijavaComponent>;
+describe('PrijavaModeratorComponent', () => {
+  let component: PrijavaModeratorComponent;
+  let fixture: ComponentFixture<PrijavaModeratorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PrijavaComponent ]
+      declarations: [ PrijavaModeratorComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PrijavaComponent);
+    fixture = TestBed.createComponent(PrijavaModeratorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
