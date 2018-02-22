@@ -214,13 +214,11 @@ hr {
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+h2{
+  font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+  position: center;
 }
 
 p {

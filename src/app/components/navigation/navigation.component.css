@@ -57,10 +57,10 @@ nav ul li a {
 
   margin-right: 15px;
   margin-left: 15px;
-  font-family: "Open Sans";
+  font-family: 'Roboto', sans-serif;
   text-transform:uppercase;
   color: #4b799b;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   text-decoration: none;
   display: block;
