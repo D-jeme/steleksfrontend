@@ -46,11 +46,11 @@ export class UpravniodborComponent implements OnInit {
     this.edina_osmanspahic='assets/images/edina_osmanspahic.jpg';
 
     this.clanovi=new Array<ClanUO>();
-    this.prvi=new ClanUO('Fuad', 'Hajdarević', 'Predsjednik', this.fuad_hajdarevic);
+    this.prvi=new ClanUO('Fuad', 'Hajdarević', 'Predsjednik STELEKS-a', this.fuad_hajdarevic);
     this.clanovi.push(this.prvi);
-    this.drugi=new ClanUO('Amina', 'Aljićević', 'Potpredsjednik', this.amina_aljicevic);
+    this.drugi=new ClanUO('Amina', 'Aljićević', 'Potpredsjednik STELEKS-a', this.amina_aljicevic);
     this.clanovi.push(this.drugi);
-    this.treci=new ClanUO('Mehmed', 'Kadrić', 'Sekretar', this.mehmed_kadric);
+    this.treci=new ClanUO('Mehmed', 'Kadrić', 'Sekretar STELEKS-a', this.mehmed_kadric);
     this.clanovi.push(this.treci);
     this.cetvrti=new ClanUO('Nur', 'Osmanbegović', 'Koordinator sektora za odnose s javnošću', this.nur_osmanbegovic);
     this.clanovi.push(this.cetvrti);

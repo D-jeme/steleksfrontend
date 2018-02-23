@@ -62,9 +62,11 @@ table {
   width: 270px;
 
   background: #f2f2f2;
+  -webkit-box-shadow: 0 0 0.9em #999;
+          box-shadow: 0 0 0.9em #999;
   border-radius: 3px;
   cursor: pointer;
-  height: 17.5em;
+  height: 17em;
   padding: 1.5em;
   position: relative;
   -webkit-transition: height 0.4s, -webkit-box-shadow 0.5s;
@@ -126,7 +128,36 @@ table {
 }
 
 img{
-  width: 205px;
+  width: 215px;
   margin:0px auto;
   display: block;
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 1130px) {
+  table{
+    margin-top: 190px;
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  table{
+    margin-top: 180px;
+    width: 76%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  table{
+    margin-top: 190px;
+    width: 59%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  table{
+    margin-top: 190px;
+    width: 59%;
+  }
 }
