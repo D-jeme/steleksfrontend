@@ -5,25 +5,42 @@
   font-family: sans-serif;
   font-weight: bold;
   font-size: 16px;
-  padding: 50px;
-  
+  padding: 20px;
   margin-top: 50px;
+  padding-left: 50px;
 }
 
 .footer .footer-left,
 .footer .footer-center,
+.footer .footer-right2,
 .footer .footer-right {
   display: inline-block;
   vertical-align: top;
+  margin-top: 10px;
+  margin-left:15px;
 }
-
-
-/* footer left*/
 
 .footer .footer-left {
-  width: 33%;
+  width: 22%;
   padding-right: 15px;
 }
+
+.footer .footer-center {
+  width: 25%;
+  padding-top: 20px;
+}
+
+.footer .footer-right2 {
+  width: 22%;
+  padding-top: 20px;
+  padding-left:25px;
+}
+
+.footer .footer-right {
+  width: 25%;
+  padding-top: 15px;
+}
+
 
 .footer .about {
   line-height: 20px;
@@ -60,12 +77,6 @@
   margin-bottom: 5px;
 }
 
-
-/* footer center*/
-
-.footer .footer-center {
-  width: 30%;
-}
 
 .footer .footer-center i {
   background-color: #33383b;
@@ -122,28 +133,35 @@
   color: #0099ff;
 }
 
-.footer .menu {
-  color: #ffffff;
-  margin: 20px 0 12px;
-  padding: 0;
-}
-
-.footer .menu a {
-  display: inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color: inherit;
-}
-
-.footer .menu a:hover {
-  color: #0099ff;
-}
-
 .footer .name {
   color: #0099ff;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
+}
+
+.lokacija {
+  width:100%;
+  margin:10px;
+  position:block;
+}
+
+.left {
+  float:left;
+  padding-left: 20px;
+}
+
+.friends {
+  margin:0px auto;
+  display: block;
+  color: white;
+  text-decoration: underline;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.friends2 {
+  margin-bottom: 60px;
 }
 
 @media (max-width: 767px) {
@@ -160,5 +178,148 @@
   }
   .footer .footer-center i {
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .footer .footer-left {
+    width: 38%;
+  }
+  .footer .footer-right2 {
+    width: 40%;
+    margin-right: 40px;
+    padding-left: 40px;
+  }
+  .footer .footer-center {
+    margin-top: 0px;
+    float: left;
+    width: 45%;
+  }
+  .friends {
+    padding-left: 50px;
+    text-align: left;
+  }
+  .friends2 {
+    margin-bottom: 30px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right2,
+  .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .footer .footer-left {
+    width: 38%;
+  }
+  .footer .footer-right2 {
+    width: 40%;
+    margin-right: 62px;
+    padding-left: 40px;
+  }
+  .footer .footer-center {
+    margin-top: 0px;
+    float: left;
+    width: 50%;
+  }
+  .friends {
+    padding-left: 50px;
+    text-align: left;
+  }
+  .friends2 {
+    margin-bottom: 30px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right2,
+  .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .footer .footer-left {
+    width: 38%;
+    margin-bottom: 0px;
+  }
+  .footer .footer-right2 {
+    width: 40%;
+    margin-right: 52px;
+    padding-left: 39px;
+  }
+  .footer .footer-center {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: left;
+    width: 50%;
+  }
+  .friends {
+    padding-left: 50px;
+    text-align: left;
+  }
+  .friends2 {
+    margin-bottom: 30px;
+  }
+  .footer {
+    padding-left: 20px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right2,
+  .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  .footer .footer-left {
+    width: 100%;
+  }
+  .footer .footer-right2 {
+    width: 100%;
+  }
+  .footer .footer-center {
+    margin-top: 0px;
+    float: left;
+    width: 100%;
+  }
+  .friends {
+    padding-left: 40px;
+    text-align: left;
+  }
+  .friends2 {
+    margin-bottom: 30px;
+  }
+  .footer {
+    padding-left: 20px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right2,
+  .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left:0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-left {
+    width: 100%;
+  }
+  .footer-right {
+    width: 100%;
+  }
+  .footer-center {
+    width: 100%;
   }
 }
