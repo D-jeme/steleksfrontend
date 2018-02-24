@@ -2,8 +2,7 @@
   background-color: #414141;
   width: 100%;
   text-align: left;
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   padding: 20px;
   margin-top: 50px;
@@ -42,22 +41,6 @@
 }
 
 
-.footer .about {
-  line-height: 20px;
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.footer .about span {
-  display: block;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
 .footer .icons {
   margin-top: 25px;
 }
@@ -91,9 +74,10 @@
   vertical-align: middle;
 }
 
-.footer .footer-center i.fa-envelope {
-  font-size: 17px;
+.fa-envelope a{
+  font-size: 18px;
   line-height: 38px;
+  font-weight: 700;
 }
 
 .footer .footer-center p {
@@ -108,10 +92,12 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 .footer .footer-center p a {
-  color: #0099ff;
+  color: #6492b4;
   text-decoration: none;
 }
 
@@ -130,13 +116,13 @@
 }
 
 .footer h2 span {
-  color: #0099ff;
+  color: #6492b4;
 }
 
 .footer .name {
-  color: #0099ff;
+  color: #6492b4;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -163,6 +149,13 @@
 .friends2 {
   margin-bottom: 60px;
 }
+.friends2 a{
+  color: #6492b4;
+  font-weight: 700;
+}
+
+
+
 
 @media (max-width: 767px) {
   .footer {
