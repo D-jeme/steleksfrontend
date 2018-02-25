@@ -144,3 +144,14 @@ div{
   box-sizing: border-box;
   outline: 0;
 }
+@media screen and (min-width: 1500px) {
+  .eventpicture{
+    min-height: 790px;
+  }
+  .info-overflow{
+    height: 790px;
+  }
+  .slogan{
+    padding-top: 300px;
+  }
+}

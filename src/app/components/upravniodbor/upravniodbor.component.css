@@ -20,7 +20,7 @@ hr {
 }
 
 .picture{
-min-height: 600px;
+min-height: 495px;
 background-image: url('../../assets/images/citaona1.png');
 
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@ background-image: url('../../assets/images/citaona1.png');
 }
 .info-overflow{
   transform: translateZ(0);
-    height: 600px;
+    height: 495px;
     overflow: hidden;
     position: absolute;
     width: 100%;

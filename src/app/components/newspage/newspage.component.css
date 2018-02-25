@@ -132,7 +132,7 @@ figure.vijest:hover button {
 
 
 .picture{
-min-height: 500px;
+min-height: 495px;
 background-image: url('../../assets/images/vijesti.png');
 
   background-repeat: no-repeat;
@@ -143,7 +143,7 @@ background-image: url('../../assets/images/vijesti.png');
 }
 .info-overflow{
   transform: translateZ(0);
-    height: 500px;
+    height: 495px;
     overflow: hidden;
     position: absolute;
     width: 100%;

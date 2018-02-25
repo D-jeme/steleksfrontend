@@ -1,5 +1,5 @@
 .picture{
-min-height: 600px;
+min-height: 495px;
 background-image: url('../../assets/images/aboutus.jpg');
 
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@ background-image: url('../../assets/images/aboutus.jpg');
 }
 .info-overflow{
   transform: translateZ(0);
-    height: 600px;
+    height: 495px;
     overflow: hidden;
     position: absolute;
     width: 100%;
@@ -89,7 +89,6 @@ ul{
 }
 .slike{
   float: left;
-  padding-left: 150px;
 display: inline-block;
 }
 img{
@@ -159,7 +158,7 @@ img{
     height: 850px;
   }
   .slike{
-    margin-right: 250px;
+    margin-left: 150px;
   }
   .content{
     width: 100%;
@@ -169,10 +168,10 @@ img{
 }
 @media screen and (max-width: 1366px) {
   .picture{
-    min-height: 600px;
+    min-height: 495px;
   }
   .info-overflow{
-    height: 600px;
+    height: 495px;
   }
 }
 .s{
