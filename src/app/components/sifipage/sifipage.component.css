@@ -1,8 +1,6 @@
 .eventpicture{
-  width: 100%;
-  height: 400px;
-  min-height: 650px;
-  background-image:url('https://image.ibb.co/k4T2Gb/sifi_flip.png');
+  min-height: 660px;
+  background-image:url('../../assets/images/sifi.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
@@ -29,47 +27,55 @@
     display: table;
     clear: both;
 }
-.event-info{
-    color: #fff;
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-size: 46px;
-    line-height: 1em;
-    font-weight: bold;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-}
+
 
 .text2 {
   color: auto;
   margin-left: 40px;
   margin-top: 30px;
-  letter-spacing: 0px;
-  font-family: 'Roboto Condensed';
-  font-style:normal;
-  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 200px;
 }
-
+.medalje{
+  padding-bottom: 100px;
+}
 .text1 {
   color: #fff;
-  font-family: 'Roboto Condensed';
-  font-style:normal;
-  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 23px;
   line-height: 1.3em;
   font-weight:lighter;
   letter-spacing: 0px;
   text-transform:none;
 }
 .name{
-    font-size: 45px;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 45px;
+    padding-bottom: 30px;
+}
+.name span{
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     letter-spacing: -1px;
     line-height: 40px;
     padding-bottom: 30px;
+    padding-left: 100px;
 }
+
 
 .info-overflow{
   transform: translateZ(0);
-    height: 662px;
+    height: 672px;
     overflow: hidden;
     position: absolute;
     width: 100%;
@@ -134,7 +140,7 @@ ul.tab {
     overflow: hidden;
     border: 	#182627;
     background-color: #2D3B3C;  /* ili ova boja? #2A3C41 	*/
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     width:150px;
     padding: 0px;
     margin-top:12px;
@@ -155,8 +161,8 @@ ul.tab li div {
     transition: 0.3s;
     font-size: 20px;
     width: 150px;
-    font-family: 'Roboto Condensed';
-    font-style: normal;
+    font-family: 'Roboto',sans-serif;
+    font-style: 500;
     line-height: 1em;
     letter-spacing: 0px;
 }
@@ -177,7 +183,7 @@ ul.tab li div:focus, .active {
     display: none;
     padding: 20px 12px;
     float:center;
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto',sans-serif;
 }
 
 .okvir {
@@ -185,7 +191,6 @@ ul.tab li div:focus, .active {
   overflow: hidden;
   border: 	#182627;
   background-color: #303A3C;
-  font-family: "Lato", sans-serif;
   width:150px;
   padding: 0px;
   margin-top:12px;
@@ -198,14 +203,13 @@ h1{
 }
 
 div.PrikazPlasmana{
-  width: 700px;
-  height: 500px;
+  width: 60%;
+  height: auto;
   display:table;
   margin: 0 auto;
 }
 
  figure.prikaz {
-   font-family: 'Raleway', Arial, sans-serif;
    color: #fff;
    position: relative;
    float: left;
@@ -217,7 +221,6 @@ div.PrikazPlasmana{
    background-color: #ffffff;
    color: #000000;
    text-align: left;
-   font-size: 16px;
    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
  }
 
@@ -238,7 +241,8 @@ div.PrikazPlasmana{
    float: left;
    width: 75%;
    margin:0;
-   height: 180px;
+   height: auto;
+   padding-bottom:20px;
  }
  div.media{
    float: right;
@@ -247,10 +251,15 @@ div.PrikazPlasmana{
  }
 div.takmicari{
   margin: 6px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Roboto',sans-serif;
 }
  h2.NaslovTeme{
    margin: 10px;
    text-align: left;
+   font-weight: 500;
+   font-family: 'Roboto',sans-serif;
  }
  img{
    flex:0 auto;
@@ -259,3 +268,213 @@ div.takmicari{
    margin: 10px 0 25px 0px;
    width: 80px;
  }
+ @media screen and (min-width: 1500px) {
+   .eventpicture{
+     min-height: 790px;
+   }
+   .info-overflow{
+     height: 802px;
+   }
+   .PrikazPlasmana{
+     width: 40%;
+   }
+   #prikazPrvog{
+     margin-left:250px;
+   }
+
+
+ }
+ @media screen and (max-width: 680px) {
+   .text1{
+     width: 70%;
+     font-size: 21px;
+   }
+   .name,.name span{
+       font-size: 35px;
+     }
+
+   .info-dash{
+     height: 500px;
+   }
+
+
+
+ }
+ @media screen and (max-width: 720px) {
+
+   figure{
+     float: left;
+     width:90%;
+   }
+   #prikazPrvog{
+     padding-left: 0;
+     margin-left: 10px;
+     margin-bottom: 10px;
+     float: left;
+   }
+   #prikazDrugog{
+     padding-left: 0;
+     margin-left: 10px;
+     margin-bottom: 10px;
+     float: left;
+   }
+   #prikazTreceg{
+     padding-left: 0;
+     margin-left: 10px;
+     margin-top: 0;
+     padding-top: 0;
+     float: left;
+   }
+   .prikaz{
+     padding-left: 0;
+     margin-left: 10px;
+
+     float: left;
+   }
+   .PrikazPlasmana{
+     width:80%;
+
+   }
+
+   .text{
+     padding-right: 80px;
+   }
+
+
+
+ }
+ @media screen and (max-width: 680px){
+
+ figure{
+   float: left;
+   width:90%;
+ }
+ #prikazPrvog{
+   padding-left: 0;
+   margin-left: 10px;
+   margin-bottom: 10px;
+   float: left;
+ }
+ #prikazDrugog{
+   padding-left: 0;
+   margin-left: 10px;
+   margin-bottom: 10px;
+   float: left;
+ }
+ #prikazTreceg{
+   padding-left: 0;
+   margin-left: 10px;
+   margin-top: 0;
+   padding-top: 0;
+   float: left;
+ }
+ .prikaz{
+   padding-left: 0;
+   margin-left: 10px;
+
+   float: left;
+ }
+ .PrikazPlasmana{
+   width:80%;
+
+ }
+
+ .text{
+   padding-right: 60px;
+
+ }
+
+
+}
+@media screen and (max-width: 920px){
+
+figure{
+  float: left;
+  width:90%;
+}
+#prikazPrvog{
+  padding-left: 20;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  float: left;
+}
+#prikazDrugog{
+  padding-left: 20;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  float: left;
+}
+#prikazTreceg{
+  padding-left: 20;
+  margin-left: 20px;
+  margin-top: 0;
+  padding-top: 0;
+  float: left;
+}
+.prikaz{
+  padding-left: 20;
+  margin-left: 20px;
+
+  float: left;
+}
+.PrikazPlasmana{
+  width:80%;
+
+}
+
+.text{
+  padding-right: 60px;
+
+}
+.text2{
+  padding-left: 30px;
+
+}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    figure{
+      float: left;
+      width:90%;
+
+    }
+    #prikazPrvog{
+      padding-left: 20;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      float: left;
+    }
+    #prikazDrugog{
+      padding-left: 20;
+      margin-left: 20px;
+      margin-bottom: 15px;
+      float: left;
+    }
+    #prikazTreceg{
+      padding-left: 20;
+      margin-left: 20px;
+      margin-top: 0;
+      padding-top: 0;
+      float: left;
+    }
+    .prikaz{
+      padding-left: 20;
+      margin-left: 20px;
+
+      float: left;
+    }
+    .PrikazPlasmana{
+      width:80%;
+
+    }
+
+    .text{
+      padding-right: 60px;
+
+    }
+    .text2{
+      padding-left: 30px;
+
+    }
+}
