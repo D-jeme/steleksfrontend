@@ -1,119 +1,25 @@
-<header>
-  <h1>Upravni odbor</h1>
+<div>
+  <div class="picture">
+    <div class="info-overflow">
 
-
-</header>
-
-<section id="tiles">
-  <div class="thumbnail">
-    <div class="pic">
-      <img [src]="fuad_hajdarevic" alt="name" />
     </div>
-    <span class="name">Predsjednik</span>
-
   </div>
-  <div class="thumbnail">
-    <div class="pic">
-      <img [src]="amina_aljicevic" alt="name" />
-    </div>
-    <span class="name">Potpredsjednik</span>
-
-  </div>
-</section>
-
-
-
-
-
-<div class="uo">
-
-  <div class="wrapper"  >
-    <img [src]="fuad_hajdarevic" alt=" nece da se ucita"  class="image"  style="width:100%; height:70%;"  />
-    <div class="middle">
-      <div class="text">Fuad Hajdarević</div>
-    </div>
-    <div class="titula" >Predsjednik</div>
-  </div>
-
-  <div class="wrapper"  >
-  <img [src]="amina_aljicevic" alt=" nece da se ucita"  class="image"   style="width:100%; height:70%;"   />
-  <div class="middle">
-    <div class="text">Amina Aljićević</div>
-  </div>
-    <div class="titula" >Potpredsjednik</div>
-  </div>
-
-  <div class="wrapper"  >
-    <img [src]="mehmed_kadric" alt="nece da se ucita"  class="image"  style="width:100%; height:70%;"   />
-    <div class="middle">
-      <div class="text">Mehmed Kadrić</div>
-    </div>
-      <div class="titula" >Sekretar</div>
-  </div>
-
-  <div class="wrapper"  >
-  <img [src]="harun_muhic" alt=" nece da se ucita" class="image"  style="width:100%; height:70%;"    />
-  <div class="middle">
-    <div class="text">Harun Muhić</div>
-  </div>
-    <div class="titula" >Koordinaotor za nauku</div>
-  </div>
-
-  <div class="wrapper"  >
-    <img [src]="miran_hadziomerovic" alt="nece da se ucita"  class="image"   style="width:100%; height:70%;"   />
-    <div class="middle">
-      <div class="text">Miran Hadžiomerović</div>
-    </div>
-      <div class="titula" >Koordinator za sport</div>
-  </div>
-
-  <div class="wrapper"  >
-  <img [src]="nur_osmanbegovic" alt=" nece da se ucita"  class="image"  style="width:100%; height:70%;"    />
-  <div class="middle">
-    <div class="text">Nur Osmanbegović</div>
-  </div>
-    <div class="titula" >PR</div>
-  </div>
-
-  <div class="wrapper"  >
-    <img [src]="adis_dedic" alt="nece da se ucita"  class="image"  style="width:100%; height:70%;"   />
-    <div class="middle">
-      <div class="text">Adis Dedić</div>
-    </div>
-      <div class="titula" >Koordinator za kulturu i zabavu</div>
-  </div>
-
-  <div class="wrapper"  >
-  <img [src]="osman_merhemic" alt=" nece da se ucita"  class="image"  style="width:100%; height:70%;"   />
-  <div class="middle">
-    <div class="text">Osman Merhemić</div>
-  </div>
-    <div class="titula" >Zamjenik koordinatora za nauku</div>
-  </div>
-
-
-  <div class="wrapper"  >
-    <img [src]="almin_repesa" alt="nece da se ucita"  class="image"  style="width:100%; height:70%;"   />
-    <div class="middle">
-      <div class="text">Almin Repeša</div>
-    </div>
-      <div class="titula" >Zamjenik koordinatora za sport</div>
-  </div>
-
-  <div class="wrapper"  >
-  <img [src]="edina_osmanspahic" alt=" nece da se ucita"  class="image"  style="width:100%; height:70%;"   />
-  <div class="middle">
-    <div class="text">Edina Osmanbegović</div>
-  </div>
-    <div class="titula" >Zamjenik PR-a</div>
-  </div>
-
-  <div class="wrapper">
-    <img [src]="erol_terovic" alt="nece da se ucita"  class="image"   style="width:100%; height:70%;"   />
-    <div class="middle">
-      <div class="text">Erol Terović </div>
-    </div>
-      <div class="titula" >Zamjenik koordinatora za kulturu i zabavu</div>
-  </div>
-
-</div>
+  <h1> Upravni odbor </h1>
+  <hr class="primary">
+<table>
+    <tr *ngFor="let i of clanovi; let j=index">
+      <td>
+        <div class="cards">
+          <!--<hr class="divider"/>-->
+          <img class="image" src={{i.slika}}>
+          <div class="info">
+            <hr class="divider"/>
+            <p class="slova">{{dajNaziv(i)}}</p>
+            <p class="slova2">{{i.uloga}}</p>
+          </div>
+        </div>
+    </td>
+    </tr>
+</table>
+<div>
+<app-footer><app-footer>

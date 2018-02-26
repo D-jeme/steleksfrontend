@@ -1,46 +1,209 @@
-header{
-  padding-top: 100px;
-
-  background: #2980b9;
-  color: white;
-  min-height: 90px;
-
-  border-bottom: 10px solid #2c3e50;
-
-}
-* {box-sizing: border-box;}
-
-section#tiles {
- padding: 20px;
- overflow: auto;
- text-align: center;
-
-
-   }
-   span {
-     font-size: 14px;
-     line-height: 1.5em;
-   }
-
- img{
-   width: 200px;
- }
-.pic{
-  border-radius: 50%;
-  overflow: hidden;
+body {
+  position: absolute;
+  height: 100%;
   width: 100%;
-  height: 140px;
-  margin: 10px auto 25px;
+  margin: 0;
 }
-.thumbnail{
+h1{
+  margin-top: 40px;
+position: center;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 50px;
+text-align: center;
 
-    width: 160px;
-    padding: 10px;
-    background: #ddd;
-    display: inline-block;
-    text-align: center;
-    margin: 0 5px 10px;
-    border: 2px solid #ddd;
-    cursor: pointer;
-    transition: all 0.2s ease;
+}
+hr {
+  max-width: 70px;
+  border-width: 3px;
+  border-color: #06d7d9;
+}
+
+.picture{
+min-height: 495px;
+background-image: url('../../assets/images/citaona1.png');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position:center center;
+
+}
+.info-overflow{
+  transform: translateZ(0);
+    height: 495px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+
+}
+.info-overflow::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+padding-top: 80px;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background: linear-gradient(rgba(0, 47, 64, 0) 0%,rgba(0, 47, 64, 0) 50%, #002f40 100%);
+}
+
+td {
+    padding: 5px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr {
+  display: inline-block;
+  margin: 2px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+table {
+  background: white;
+  width: 79%;
+  margin:0 auto;
+  margin-top: 60px;
+  margin-bottom: 150px;
+  font-family: 'Arial';
+}
+
+.divider {
+  border-bottom: 1px solid #d9d9d9;
+  opacity: 0.5;
+}
+
+
+.slova{
+  font-size: 18px;
+  margin:0px auto;
+  display: table;
+  font-style: normal;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  color: #404040;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.slova2{
+  font-size: 17px;
+  margin:0px auto;
+  display: table;
+  font-style: normal;
+  font-family: Roboto, sans-serif;
+  color: #404040;
+  text-align: center;
+}
+.cards {
+    /*-webkit-filter: grayscale(100%);
+    	filter: grayscale(100%);
+    	-webkit-transition: .3s ease-in-out;
+    	transition: .3s ease-in-out;*/
+  width: 270px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /*background: #f2f2f2;
+  -webkit-box-shadow: 0 0 0.9em #999;
+          box-shadow: 0 0 0.9em #999;*/
+  border-radius: 3px;
+  cursor: pointer;
+  height: 17em;
+  position: relative;
+  -webkit-transition: height 0.4s, -webkit-box-shadow 0.5s;
+  transition: height 0.4s, -webkit-box-shadow 0.5s;
+  transition: height 0.4s, box-shadow 0.5s;
+  transition: height 0.4s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+.cards:hover {
+  filter:none;
+  -webkit-box-shadow: 0 0 2.5em #999;
+          box-shadow: 0 0 2.5em #999;
+  height: 26em;
+  -webkit-transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
+  transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
+  transition: height 0.3s ease, box-shadow 0.5s ease;
+  transition: height 0.3s ease, box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
+}
+.cards:hover .divider {
+  opacity: 0.5;
+}
+.cards:hover .info {
+  -webkit-transition: top 0.5s ease, opacity 1s ease;
+  transition: top 0.5s ease, opacity 1s ease;
+  visibility: visible;
+  top: 1%;
+  opacity: 1;
+}
+.cards:hover .icon {
+  font-size: 2em;
+
+  -webkit-transition: font-size 0.3s, left 0.3s;
+  transition: font-size 0.3s, left 0.3s;
+}
+.cards .info {
+
+  visibility: hidden;
+  top: -50%;
+  opacity: 0;
+}
+.cards .icon {
+  color: #febbbb;
+  font-size: 4em;
+  text-align: center;
+  padding: 0em;
+  position: relative;
+  left: 43%;
+  top: 0em;
+  -webkit-transition: font-size 0.3s ease, left 0.3s ease;
+  transition: font-size 0.3s ease, left 0.3s ease;
+}
+
+.cards .lead {
+  color: #999;
+  font-weight: 100;
+  font-size: 2em;
+  text-align: center;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+img{
+  width: 100%;
+  margin:0px auto;
+  display: block;
+}
+
+@media screen and (max-width: 1130px) {
+  table{
+    margin-top: 190px;
+    width: 58%;
   }
+}
+
+@media screen and (max-width: 920px) {
+  table{
+    margin-top: 180px;
+    width: 76%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  table{
+    margin-top: 190px;
+    width: 59%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  table{
+    margin-top: 190px;
+    width: 59%;
+  }
+}
