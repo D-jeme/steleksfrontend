@@ -1,139 +1,149 @@
-ul { padding:0; width:780px; margin:20px auto}
-li { display:inline;}
-    .tn{ 
- margin:2px 0px;
- box-shadow:#999 1px 1px 3px 1px; 
- cursor: pointer 
+html{
+
+
+      background: #16222A;
+      background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);
+      background: linear-gradient(to bottom, #3A6073, #16222A);
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      width:100%;
+      height: 1300px;
+      opacity: 1;
+      padding-top: 50px;
+
+
+}
+#overlay {
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+ul {
+
+  width:780px;
+   margin:20px auto;
+    padding-top: 100px;
+  }
+  .gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+li {
+  display:inline;
+}
+.tn{
+margin: 2px;
+ box-shadow:#999 1px 1px 3px 1px;
+ cursor: pointer;
+ width:24%;
+ opacity: .88;
 	}
-	@media (min-width: 576px)
-	{
-		.modal-dialog{
-			max-width: 700px;
-			margin: 30px auto;
-		}
-		
-	}
-	/*click, boja, sjene da ljepse izgleda, albume preko ngFOR,*/
+
+h1{
+  text-align: center;
+  font-size: 30px;
+}
 div#selectedImageModal.modal.fade.in
 {
-	width:700px;
-	padding-left:200px;
-	padding-top:200px;
-	padding-right: 200px;
-	
 	margin: 0px;
 	border:0px;
 	align-content: center;
 }
-.modal-dialog{
-	background-color:black;
-	width:700px;
-	padding-top:0px;
-	padding-right: 0px;
-	padding-left: 0px;
-	margin: 0px;
-	border:0px;
 
-}
-.modal-content{
-	width: 680px;
-}
 
-.modal-body {
-  width: 100%;
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  padding-bottom: 60px;
-  padding-left:10px;
-  padding-right: 10px;
-  padding-top:0px;
-  display: inline-block;
-  vertical-align: middle;
+.seq-prev,
+.seq-next{
   position: relative;
-  z-index: 1;
- 
-  width: auto;
-  height: auto;
- 
+  top: -55%;
+
+  width: 35px;
+  height: 66px;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  transition-duration: .5s;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.3;
+  /* Image replacement */
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+.seq-next{
+  right: -45%;
+  background: url("https://raw.githubusercontent.com/SequenceJS/modern-slide-in/ef79a3005818c71087c6abca2cda48f91ff3eb01/images/bt-next.png");
+}
+.seq-prev {
+right:45%;
+  background: url("https://raw.githubusercontent.com/SequenceJS/modern-slide-in/ef79a3005818c71087c6abca2cda48f91ff3eb01/images/bt-prev.png");
 }
 
+.seq-next:hover {
+  transform: translate3d(4px, 0, 0);
+  opacity: 0.6;
+}
+
+.seq-prev:hover {
+  transform: translate3d(-4px, 0, 0);
+  opacity: 0.6;
+}
+.modal{
+  padding: 75px;
+  padding-bottom: 50px;
 
 
+  text-align: center;
+
+  display: table;
+  margin: 0 auto;
 
 
-.selectedImage{ 
-	position:relative;
-	width:90%;
-	padding-left:5%;
-	padding-top:5%;
-	padding-right: 5%;
-	height: 70%;
-
-	background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 10px 10px 10px;
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    z-index: 1;
-
-    width: 100%;
-    height: auto;
+  max-height: 400px;
+  left: 50%;
+transform: translateX(-50%);
+}
+.selectedImage{
+  height: 100%;
+  max-height: 600px;
+  max-width: 1000px;
+  transition: 0.5s;
 	}
-	*{
-		box-sizing: border-box;
-	 }
-	
-.selectedImage img{
-	position: relative;
-	font-size: 2em;
-	width:90%;
-	height:100%;
-	
-	margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-	text-align: center;
-    cursor: pointer;
-	vertical-align: baseline;
-	box-sizing: border-box;
-}
-/*
-.selectedImage{ 
-	width:640px;
-	position:relative }
 
 .selectedImage img{
-		max-width: 100%;
-		max-height: 100%;
-}*/
+  float: left;
+  width: 100%;
+background-size: contain;
+  margin: 5px auto;
+  padding-left: 5px;
+  padding-right:5px;
+  height: 100%;
+  max-height: 590px;
+}
+.modal-all{
+background-color: white;
+height: 100%;
+width:100%;
+max-height: 600px;
+
+
+}
+
 .caption{
-	position:absolute;
-    height:50px;
-	width:100%;
-	top:410;
-	left:0;
-	opacity:0.9;
-	background-color:black;
-	color:white;
-	padding:5px;
-	font-family:verdana;
-	font-size:12px;
+
 }
 p {
    -webkit-margin-before: 5px !important;
    -webkit-margin-after: 5px !important;
-}
-
- 
-
-.arrow-back{
-	position:relative;
-	
-}
-.arrow-forward{
-	position:absolute;
-	right:10px;
-	
+   width: 100%;
 }

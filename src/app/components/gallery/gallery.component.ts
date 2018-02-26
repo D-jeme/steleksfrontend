@@ -7,13 +7,29 @@ import {NgModule} from '@angular/core';
  styleUrls: ['./gallery.component.css']
 })
 
-export class GalleryComponent { 
+export class GalleryComponent {
   images;
 
-  
+
+
   constructor(){
      this.images = [
-   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0367_Easy-Resize.com_.jpg",  
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0367_Easy-Resize.com_.jpg",
+   "title":"Naslov1",
+   "caption":"Elektrijada 2015"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0378_Easy-Resize.com_.jpg",
+   "title":"Naslov2",
+   "caption":"Opis2"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0006_Easy-Resize.com_.jpg",
+   "title":"Naslov3",
+   "caption":"Opis3"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0055_Easy-Resize.com_.jpg",
+   "title":"Naslov4",
+   "caption":"Opis4"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0152_Easy-Resize.com_.jpg",
+   "title":"Naslov5",
+   "caption":"Opis5"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0367_Easy-Resize.com_.jpg",
    "title":"Naslov1",
    "caption":"Opis1"},
    {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0378_Easy-Resize.com_.jpg",
@@ -28,14 +44,73 @@ export class GalleryComponent {
    {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0152_Easy-Resize.com_.jpg",
    "title":"Naslov5",
    "caption":"Opis5"},
-   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/dsc_0543_Easy-Resize.com_.jpg",
-   "title":"Naslov6",
-   "caption":"Opis6"},
-     ];
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0367_Easy-Resize.com_.jpg",
+   "title":"Naslov1",
+   "caption":"Opis1"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0378_Easy-Resize.com_.jpg",
+   "title":"Naslov2",
+   "caption":"Opis2"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0006_Easy-Resize.com_.jpg",
+   "title":"Naslov3",
+   "caption":"Opis3"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0055_Easy-Resize.com_.jpg",
+   "title":"Naslov4",
+   "caption":"Opis4"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0152_Easy-Resize.com_.jpg",
+   "title":"Naslov5",
+   "caption":"Opis5"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0367_Easy-Resize.com_.jpg",
+   "title":"Naslov1",
+   "caption":"Opis1"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0378_Easy-Resize.com_.jpg",
+   "title":"Naslov2",
+   "caption":"Opis2"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0006_Easy-Resize.com_.jpg",
+   "title":"Naslov3",
+   "caption":"Opis3"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0055_Easy-Resize.com_.jpg",
+   "title":"Naslov4",
+   "caption":"Opis4"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0152_Easy-Resize.com_.jpg",
+   "title":"Naslov5",
+   "caption":"Opis5"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0367_Easy-Resize.com_.jpg",
+   "title":"Naslov1",
+   "caption":"Opis1"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0378_Easy-Resize.com_.jpg",
+   "title":"Naslov2",
+   "caption":"Opis2"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0006_Easy-Resize.com_.jpg",
+   "title":"Naslov3",
+   "caption":"Opis3"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0055_Easy-Resize.com_.jpg",
+   "title":"Naslov4",
+   "caption":"Opis4"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0152_Easy-Resize.com_.jpg",
+   "title":"Naslov5",
+   "caption":"Opis5"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0367_Easy-Resize.com_.jpg",
+   "title":"Naslov1",
+   "caption":"Opis1"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0378_Easy-Resize.com_.jpg",
+   "title":"Naslov2",
+   "caption":"Opis2"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0006_Easy-Resize.com_.jpg",
+   "title":"Naslov3",
+   "caption":"Opis3"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0055_Easy-Resize.com_.jpg",
+   "title":"Naslov4",
+   "caption":"Opis4"},
+   {"url":"http://steleks.ba/wp-content/gallery/elektrijada-2016/DSC_0152_Easy-Resize.com_.jpg",
+   "title":"Naslov5",
+   "caption":"Opis5"},
+
+ ]
+
   }
 }
 /*
-  STARI HTML 
+  STARI HTML
   <ul  class="tab">
         <li class="dropdown">
           <div>
@@ -47,7 +122,7 @@ export class GalleryComponent {
             </div>
           </div>
         </li>
-    
+
         <li class="dropdown">
             <div>
               <button class="dropbtn">Elektrijada</button>
@@ -58,7 +133,7 @@ export class GalleryComponent {
               </div>
             </div>
           </li>
-    
+
         <li class="dropdown">
             <div>
               <button class="dropbtn">Liga robota</button>
@@ -69,7 +144,7 @@ export class GalleryComponent {
               </div>
             </div>
           </li>
-    
+
           <li class="dropdown">
               <div>
                 <button class="dropbtn">Steleksijada</button>
@@ -80,7 +155,7 @@ export class GalleryComponent {
                 </div>
               </div>
             </li>
-    
+
             <li class="dropdown">
                 <div>
                   <button class="dropbtn">Kviz</button>
@@ -91,7 +166,7 @@ export class GalleryComponent {
                   </div>
                 </div>
               </li>
-    
+
               <li class="dropdown">
                   <div>
                     <button class="dropbtn">Izleti</button>
@@ -102,7 +177,7 @@ export class GalleryComponent {
                     </div>
                   </div>
                 </li>
-    
+
                 <li class="dropdown">
                     <div>
                       <button class="dropbtn">Ostalo</button>

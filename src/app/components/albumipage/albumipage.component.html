@@ -1,13 +1,67 @@
-<div class="h5co-photos-section">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-4 animate-box" *ngFor="let i of albumi;">
-                <a (click)="f(i)" class="grid-photo img-popup" style="background-image: url({{i.backgroundSlika}}); background-size: 100% 80%;">
-                  <div class="desc">
-                    <h3>{{i.naziv}}</h3>
-                    <span>{{i.brojSlika}} fotografija</span>
-                  </div>
-                </a>
-              </div>
-        </div>
-  
+
+<html>
+
+<ul id="albums">
+    		<li>
+    			<a [routerLink]="['/galerija']" title="" >
+    				<img src="{{albumi[0].backgroundSlika}}" width="" height="" alt="" />
+            	<img src="{{albumi[1].backgroundSlika}}" width="" height="" alt="" />
+              	<img src="{{albumi[2].backgroundSlika}}" width="" height="" alt="" />
+                	<img src="{{albumi[3].backgroundSlika}}" width="" height="" alt="" />
+
+                  <p>+{{albumi[0].brojSlika}}</p>
+    			</a>
+
+    			<h5>{{albumi[0].naziv}}</h5>
+    		</li>
+        <li>
+    			<a [routerLink]="['/galerija']" title="" >
+    				<img src="{{albumi[3].backgroundSlika}}" width="" height="" alt="" />
+            	<img src="{{albumi[1].backgroundSlika}}" width="" height="" alt="" />
+              	<img src="{{albumi[2].backgroundSlika}}" width="" height="" alt="" />
+                	<img src="{{albumi[3].backgroundSlika}}" width="" height="" alt="" />
+
+<p>+{{albumi[01].brojSlika}}</p>
+    			</a>
+    			<h5>{{albumi[1].naziv}}</h5>
+    		</li>
+        <li>
+          <a [routerLink]="['/galerija']" title="" >
+            <img src="{{albumi[2].backgroundSlika}}" width="" height="" alt="" />
+              <img src="{{albumi[1].backgroundSlika}}" width="" height="" alt="" />
+                <img src="{{albumi[2].backgroundSlika}}" width="" height="" alt="" />
+                  <img src="{{albumi[3].backgroundSlika}}" width="" height="" alt="" />
+
+  <p>+{{albumi[1].brojSlika}}</p>
+          </a>
+
+          <h5>{{albumi[3].naziv}}</h5>
+        </li>
+
+      <li>
+        <a [routerLink]="['/galerija']" title="" >
+          <img src="{{albumi[0].backgroundSlika}}" width="" height="" alt="" />
+            <img src="{{albumi[1].backgroundSlika}}" width="" height="" alt="" />
+              <img src="{{albumi[2].backgroundSlika}}" width="" height="" alt="" />
+                <img src="{{albumi[3].backgroundSlika}}" width="" height="" alt="" />
+
+<p>+{{albumi[2].brojSlika}}</p>
+        </a>
+
+        <h5>{{albumi[2].naziv}}</h5>
+      </li>
+
+    <li>
+      <a [routerLink]="['/galerija']" title="" >
+        <img src="{{albumi[1].backgroundSlika}}" width="" height="" alt="" />
+          <img src="{{albumi[1].backgroundSlika}}" width="" height="" alt="" />
+            <img src="{{albumi[2].backgroundSlika}}" width="" height="" alt="" />
+              <img src="{{albumi[3].backgroundSlika}}" width="" height="" alt="" />
+
+  <p>+{{albumi[3].brojSlika}}</p>
+      </a>
+
+      <h5>{{albumi[2].naziv}}</h5>
+    </li>
+      </ul>
+</html>
