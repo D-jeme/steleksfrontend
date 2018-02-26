@@ -9,7 +9,8 @@ html{
       background-attachment: fixed;
       background-repeat: no-repeat;
       width:100%;
-      height: 1300px;
+      min-height: 1440px;
+      height: 100%;
       opacity: 1;
       padding-top: 50px;
 
@@ -45,7 +46,7 @@ li {
 margin: 2px;
  box-shadow:#999 1px 1px 3px 1px;
  cursor: pointer;
- width:23.5%;
+ width:24%;
  opacity: .88;
 	}
 
@@ -146,4 +147,60 @@ p {
    -webkit-margin-before: 5px !important;
    -webkit-margin-after: 5px !important;
    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  ul {
+
+        width: 100%;
+        min-width: 300px;
+        padding: 10px;
+        padding-top: 100px;
+
+      }
+      .gallery{
+        width: 100%;
+        min-width: 300px;
+      }
+      .tn{
+
+       box-shadow:#999 1px 1px 3px 1px;
+       cursor: pointer;
+       width:48%;
+       opacity: .88;
+      	}
+
+      .modal{
+        max-height: 300px;
+      }
+      .selectedImage{
+        height: 250px;
+        margin-top: 100px;
+        width: 300px;
+
+      }
+      .modal-all{
+        height: 280px;
+      }
+      .selectedImage img{
+        max-height: 300px;
+      }
+      .seq-next{
+        right: -35%;
+
+
+      }
+      .seq-prev {
+      right:35%;
+
+      }
+      .seq-prev,
+      .seq-next{
+
+        top: -60%;
+
+
+      }
+
+
 }

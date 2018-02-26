@@ -8,9 +8,10 @@ html{
     background-attachment: fixed;
     background-repeat: no-repeat;
     width:100%;
-    height: 1300px;
+    height: 100%;
     opacity: 1;
-    padding-top: 100px;
+    min-height: 1440px;
+
 
 }
 #albums{
@@ -135,7 +136,7 @@ font-size: 30px;
 
         			}
 }
-@media only screen and (max-width: 1368px) {
+@media only screen and (max-width: 1400px) {
   #albums li {
 
         width: 33%;
@@ -146,5 +147,30 @@ font-size: 30px;
 
       }
 
-        
+
+}
+@media only screen and (max-width: 500px) {
+  #albums li {
+
+        width: 100%;
+          max-width: 300px;
+          padding: 0;
+          padding-bottom: 50px;
+          margin: 0;
+      }
+      #albums{
+        max-width: 250px;
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        padding-top: 200px;
+      }
+      #albums img {
+        min-height: 240px;
+        min-width: 280px;
+        width: 100%;
+
+  			}
+
+
 }
