@@ -139,6 +139,12 @@ font-size: 30px;
   #albums li {
 
         width: 33%;
+      }
+      #albums{
 
-        }
+        width: 100%;
+
+      }
+
+        
 }
