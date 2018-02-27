@@ -4,25 +4,64 @@ body {
   font-size: 10px;
   padding: 5em;
 }
+.eventpicture{
 
+  margin-top: 10px;
+  min-height: 20px;
+background-image:url('assets/images/liga_robota.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position:center center;
+  opacity: 0.85;
 
+}
+.info-overflow::before{
+
+  position: relative;
+
+  z-index: 3;
+  width: 100%;
+  height: 35%;
+  display: block;
+  content: "";
+  background: linear-gradient(rgba(0, 47, 64, 0) 30%,rgba(0, 47, 64, 0) 50%, #002f40 100%);
+}
+
+article{
+  z-index: 100;
+  opacity: 1;
+  float: left;
+  width: 30%;
+  margin: 15px;
+
+}
 
 .title {
   display: table;
   margin: auto;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
+  color: black;
+
+
 
 }
-
+.container1{
+  display: table;
+  margin: 0 auto;
+}
 .row{
   padding-top: 50px;
   padding-bottom: 50px;
+  display: table;
+  margin: 0 auto;
+
 }
 
 
 .divider {
-  border-bottom: 1px solid #febbbb;
+  border-bottom: 1px solid #06d7d9;
 }
 
 
@@ -31,15 +70,18 @@ body {
 }
 #1{
   float: left;
-  color: red;
+
 
 }
 #3{
   float: right;
+
 }
 #2{
   float: left;
+
 }
+
 .cards {
 margin: 6px;
   width: 363px;
@@ -56,6 +98,7 @@ margin: 6px;
   transition: height 0.4s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
 }
 .cards:hover {
+
   -webkit-box-shadow: 0 0 2em #999;
           box-shadow: 0 0 2em #999;
   height: 38em;
@@ -73,6 +116,7 @@ margin: 6px;
   visibility: visible;
   top: 1%;
   opacity: 1;
+  height: 1000px;
 }
 .cards:hover .icon {
   font-size: 2em;
@@ -85,18 +129,12 @@ margin: 6px;
   visibility: hidden;
   top: -50%;
   opacity: 0;
+
 }
-.cards .icon {
-  color: #febbbb;
-  font-size: 4em;
-  text-align: center;
-  padding: 0em;
-  position: relative;
-  left: 43%;
-  top: 0em;
-  -webkit-transition: font-size 0.3s ease, left 0.3s ease;
-  transition: font-size 0.3s ease, left 0.3s ease;
+p{
+  height: 100%;
 }
+
 .cards .title {
   color: #999;
   text-align: center;
