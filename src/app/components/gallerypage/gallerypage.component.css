@@ -1,6 +1,4 @@
 html{
-
-
       background: #16222A;
       background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);
       background: linear-gradient(to bottom, #3A6073, #16222A);
@@ -155,7 +153,7 @@ p {
         width: 100%;
         min-width: 300px;
         padding: 10px;
-        padding-top: 100px;
+
 
       }
       .gallery{
@@ -172,11 +170,13 @@ p {
 
       .modal{
         max-height: 300px;
+        padding: 0;
       }
       .selectedImage{
         height: 250px;
         margin-top: 100px;
         width: 300px;
+
 
       }
       .modal-all{
