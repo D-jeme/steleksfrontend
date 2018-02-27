@@ -1,21 +1,21 @@
 <div class="elektrijada">
 <div class="form-content">
-<form>
+<div>
   <h2>REGISTRACIJA</h2>
   <fieldset class="groupBox">
-  <input type="text" placeholder="Ime" required>
-  <input type="text" placeholder="Prezime" required>
-  <input type="text" placeholder="Email" required>
+  <input type="text" [(ngModel)]="ime" name="ime" placeholder="Ime" required>
+  <input type="text" [(ngModel)]="prezime" name="prezime" placeholder="Prezime" required>
+  <input type="text" [(ngModel)]="email" name="email" placeholder="Email" required>
 </fieldset>
 <fieldset class="groupBox">
-  <input type="text" placeholder="Fakultetski mail" required>
-  <input type="text" placeholder="Broj telefona" required>
-  <input type="text" placeholder="Broj indeksa" required>
+  <input type="text" [(ngModel)]="emailFakultet" name="emailFakultet" placeholder="Fakultetski mail" required>
+  <input type="text" [(ngModel)]="brojTelefona" name="brojTelefona" placeholder="Broj telefona" required>
+  <input type="text" [(ngModel)]="brojIndeksa" name="brojIndeksa" placeholder="Broj indeksa" required>
 </fieldset>
   <fieldset class="groupBox" style="margin-top:5px;">
-  <input type="text" placeholder="Korisničko ime" required>
-  <input type="text" placeholder="Lozinka" required>
-  <input type="text" placeholder="Potvrdi lozinku" required>
+  <input type="text" [(ngModel)]="korisnickoIme" name="korisnickoIme" placeholder="Korisničko ime" required>
+  <input type="text" [(ngModel)]="lozinka" name="lozinka" placeholder="Lozinka" required>
+  <input type="text" [(ngModel)]="lozinka2" name="lozinka2" placeholder="Potvrdi lozinku" required>
 </fieldset>
 <fieldset class="groupBox" style="margin-top:5px;">
   <select required class="combobox">
@@ -33,10 +33,11 @@
   <option value="1M">1 MSc</option>
   <option value="2M">2 MSc</option>
 </select>
-<input type="file" style="display: none" #file>
-<button class="button2" (click)="file.click()"> Dodaj sliku </button>
+<input type="file" name="pic" accept="image/*">
 </fieldset>
-  <input type="button" value="Registruj se" />
-</form>
+  <div class="error" *ngIf="errorMessage!=''">{{errorMessage}}</div>
+  <div class="poruka" *ngIf="messageUspjesno!=''">{{messageUspjesno}}</div>
+  <button (click)="dodajClan()">Registruj se</button>
+</div>
 </div>
 </div>

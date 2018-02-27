@@ -121,13 +121,13 @@ input[type="text"]{
 h2{background: #4D4D4D;
   text-align: center;
     text-transform: uppercase;
-    font-family: 'Roboto-Condensed';
+    font-family: 'Roboto', sans-serif;
     color: #ffffff;
     font-size: 22px;
     font-weight: 100;
     padding: 30px;
 }
-.form-content input[type="button"]{
+button{
     -moz-box-shadow: inset 0px 1px 0px 0px #4D4D4D;
     -webkit-box-shadow: inset 0px 1px 0px 0px #4D4D4D;
     box-shadow: inset 0px 1px 0px 0px #4D4D4D;
@@ -136,8 +136,8 @@ h2{background: #4D4D4D;
     display: inline-block;
     cursor: pointer;
     color: #FFFFFF;
-    font-family: 'Roboto-Condensed';
-    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
     margin: 35px;
     margin-right: 50px;
     margin-top: 8px;
@@ -147,9 +147,23 @@ h2{background: #4D4D4D;
     text-transform: uppercase;
     border-radius: 4px;
 }
-.form-content input[type="button"]:hover {
+button:hover {
     background:linear-gradient(to bottom, #666666 5%, #808080 100%);
     background-color:#666666;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.poruka {
+  color:green;
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -170,7 +184,7 @@ h2{background: #4D4D4D;
     height: 1300px;
     padding-top: 160px;
   }
-  .form-content input[type="button"]{
+  button{
     margin-right: 75px;
   }
 }
