@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ClanUO } from '../../models/upravniodbor';
 
 @Component({
   selector: 'app-upravniodbor',
@@ -77,24 +78,7 @@ export class UpravniodborComponent implements OnInit {
     this.clanovi.push(clan);
   }
 
-  dodajClanove2(ime, prezime, uloga, slika) {  // kada iz baze saljemo ime, prezime, sliku i ulogu, dodaje se novi clan
-    this.novi=new ClanUO(ime, prezime, uloga, slika);
-    this.clanovi.push(this.novi);
-  }
   dajNaziv(clan) {
     return clan.ime + ' ' + clan.prezime;
-  }
-}
-
-class ClanUO {
-  ime: string;
-  prezime: string;
-  uloga: string;
-  slika: string;
-  constructor(ime, prezime, uloga, slika) {
-    this.ime=ime;
-    this.prezime=prezime;
-    this.uloga=uloga;
-    this.slika=slika;
   }
 }
