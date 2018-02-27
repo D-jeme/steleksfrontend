@@ -170,7 +170,7 @@ p {
    width: 100%;
 }
 
-<<<<<<< HEAD
+
 @media screen and (min-width: 1600px) {
   body{
     height:100%;
@@ -181,7 +181,7 @@ p {
     body{
       height: 100%;
     }
-=======
+}
 @media only screen and (max-width: 500px) {
   ul {
 
@@ -238,5 +238,5 @@ p {
       }
 
 
->>>>>>> 7e950bc7cdbf0d82c8350863056561379ec5501c
+
 }
