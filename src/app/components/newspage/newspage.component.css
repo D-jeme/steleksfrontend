@@ -8,11 +8,7 @@ div.vijesti-screen {
   padding: 99px;
   padding-top: 40px;
 }
-@media only screen and (max-width: 1367px){
-  div.vijesti-screen{
-    min-width: 0;
-  }
-}
+
 
 figure.vijest {
   font-family: 'Roboto', sans-serif;
@@ -132,9 +128,9 @@ figure.vijest:hover button {
 
 
 .picture{
-min-height: 495px;
-background-image: url('../../assets/images/vijesti.png');
 
+background-image: url('../../assets/images/vijesti.png');
+  min-height: 495px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -143,7 +139,7 @@ background-image: url('../../assets/images/vijesti.png');
 }
 .info-overflow{
   transform: translateZ(0);
-    height: 495px;
+  height: 495px;
     overflow: hidden;
     position: absolute;
     width: 100%;
@@ -260,5 +256,24 @@ hr {
     margin-bottom: 40px;
     padding-left: 0px;
     display: inline-block;
+  }
+}
+@media only screen and (min-width: 1600px){
+  .picture{
+  min-height: 720px;
+  }
+  .info-overflow{
+    height: 720px;
+  }
+}
+@media only screen and (max-width: 1367px ){
+  div.vijesti-screen{
+    min-width: 0;
+  }
+  .picture{
+  min-height: 495px;
+  }
+  .info-overflow{
+    min-height: 495px;
   }
 }
