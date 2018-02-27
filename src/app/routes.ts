@@ -22,6 +22,8 @@ import { FormaSifiComponent} from './components/formasifi/formasifi.component';
 import { AdminOpcijeComponent} from './components/adminopcije/adminopcije.component';
 import { AdminComponent} from './components/admin/admin.component';
 import { ModeratorOpcijeComponent} from './components/moderatoropcije/moderatoropcije.component';
+import { SuperAdminComponent} from './components/superadmin/superadmin.component';
+import { SuperAdminOpcijeComponent} from './components/superadminopcije/superadminopcije.component';
 
 const app_routes:Routes = [
   { path:'', component: MainpageComponent },
@@ -42,6 +44,8 @@ const app_routes:Routes = [
   { path:'adminopcije', component: AdminOpcijeComponent},
   { path:'admin', component: AdminComponent},
   { path:'moderatoropcije', component: ModeratorOpcijeComponent},
+  { path:'superadmin', component: SuperAdminComponent},
+  { path:'superadminopcije', component: SuperAdminOpcijeComponent},
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 

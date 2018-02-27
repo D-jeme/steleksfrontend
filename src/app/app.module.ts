@@ -34,6 +34,8 @@ import { FormaSifiComponent } from './components/formasifi/formasifi.component';
 import { AdminOpcijeComponent} from './components/adminopcije/adminopcije.component';
 import { AdminComponent} from './components/admin/admin.component';
 import { ModeratorOpcijeComponent} from './components/moderatoropcije/moderatoropcije.component';
+import { SuperAdminComponent} from './components/superadmin/superadmin.component';
+import { SuperAdminOpcijeComponent} from './components/superadminopcije/superadminopcije.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +68,8 @@ import { ModeratorOpcijeComponent} from './components/moderatoropcije/moderatoro
     FormaSifiComponent,
     AdminComponent,
     ModeratorOpcijeComponent,
+    SuperAdminComponent,
+    SuperAdminOpcijeComponent,
   ],
   imports: [
     BrowserModule,
