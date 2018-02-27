@@ -10,7 +10,7 @@ import { UpravniodborComponent } from './components/upravniodbor/upravniodbor.co
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { NewspageComponent } from './components/newspage/newspage.component';
 import { SIFIpageComponent } from './components/sifipage/sifipage.component';
-import { PrijavaModeratorComponent } from './components/prijavamoderator/prijavamoderator.component';
+import { ModeratorComponent } from './components/moderator/moderator.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EventpreviewComponent } from './components/eventpreview/eventpreview.component';
 import { EventmainpictureComponent } from './components/eventmainpicture/eventmainpicture.component';
@@ -19,9 +19,9 @@ import { SifipreviewComponent} from './components/sifipreview/sifipreview.compon
 import { FormaElektrijadaComponent} from './components/formaelektrijada/formaelektrijada.component';
 import { RegistracijaComponent } from './components/registracija/registracija.component';
 import { FormaSifiComponent} from './components/formasifi/formasifi.component';
+import { AdminOpcijeComponent} from './components/adminopcije/adminopcije.component';
 import { AdminComponent} from './components/admin/admin.component';
-import { PrijavaAdminComponent} from './components/prijavaadmin/prijavaadmin.component';
-import { ModeratorComponent} from './components/moderator/moderator.component';
+import { ModeratorOpcijeComponent} from './components/moderatoropcije/moderatoropcije.component';
 
 const app_routes:Routes = [
   { path:'', component: MainpageComponent },
@@ -33,15 +33,15 @@ const app_routes:Routes = [
   { path:'galerija', component: GalleryComponent },
   { path:'elektrijada', component: ElektrijadapageComponent },
   { path:'materijali', component: LearningpageComponent },
-  { path:'prijavamoderator', component: PrijavaModeratorComponent },
+  { path:'moderator', component: ModeratorComponent },
   { path:'event', component: EventpreviewComponent },
   { path:'sifipreview', component: SifipreviewComponent },
   { path:'formaelektrijada', component: FormaElektrijadaComponent },
   { path:'formasifi', component: FormaSifiComponent },
   { path:'registracija', component: RegistracijaComponent},
+  { path:'adminopcije', component: AdminOpcijeComponent},
   { path:'admin', component: AdminComponent},
-  { path:'prijavaadmin', component: PrijavaAdminComponent},
-  { path:'moderator', component: ModeratorComponent},
+  { path:'moderatoropcije', component: ModeratorOpcijeComponent},
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 

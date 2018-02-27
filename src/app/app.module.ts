@@ -20,7 +20,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { SIFIpageComponent } from './components/sifipage/sifipage.component';
 import { ElektrijadapageComponent } from './components/elektrijadapage/elektrijadapage.component';
 import { LearningpageComponent } from './components/learningpage/learningpage.component';
-import { PrijavaModeratorComponent } from './components/prijavamoderator/prijavamoderator.component';
+import { ModeratorComponent } from './components/moderator/moderator.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EventpreviewComponent } from './components/eventpreview/eventpreview.component';
 import { EventmainpictureComponent } from './components/eventmainpicture/eventmainpicture.component';
@@ -29,11 +29,11 @@ import { SifipreviewComponent } from './components/sifipreview/sifipreview.compo
 import { TekstComponent } from './components/tekst/tekst.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { FormaElektrijadaComponent } from './components/formaelektrijada/formaelektrijada.component';
-import {RegistracijaComponent} from './components/registracija/registracija.component';
+import { RegistracijaComponent} from './components/registracija/registracija.component';
 import { FormaSifiComponent } from './components/formasifi/formasifi.component';
-import {AdminComponent} from './components/admin/admin.component';
-import {PrijavaAdminComponent} from './components/prijavaadmin/prijavaadmin.component';
-import {ModeratorComponent} from './components/moderator/moderator.component';
+import { AdminOpcijeComponent} from './components/adminopcije/adminopcije.component';
+import { AdminComponent} from './components/admin/admin.component';
+import { ModeratorOpcijeComponent} from './components/moderatoropcije/moderatoropcije.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +52,7 @@ import {ModeratorComponent} from './components/moderator/moderator.component';
     SIFIpageComponent,
     ElektrijadapageComponent,
     LearningpageComponent,
-    PrijavaModeratorComponent,
+    ModeratorComponent,
     FooterComponent,
     EventpreviewComponent,
     EventmainpictureComponent,
@@ -62,10 +62,10 @@ import {ModeratorComponent} from './components/moderator/moderator.component';
     SkillsComponent,
     FormaElektrijadaComponent,
     RegistracijaComponent,
-    AdminComponent,
+    AdminOpcijeComponent,
     FormaSifiComponent,
-    PrijavaAdminComponent,
-    ModeratorComponent,
+    AdminComponent,
+    ModeratorOpcijeComponent,
   ],
   imports: [
     BrowserModule,

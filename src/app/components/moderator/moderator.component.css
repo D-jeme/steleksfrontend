@@ -1,73 +1,30 @@
-th, td {
-    border: 2px solid white;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 5px;
-    text-align: left;
-}
-table {
-  background: #d9d9d9;
-  border: 2px solid white;
-  border-collapse: collapse;
-  width: 70%;
-  margin:0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-family: 'Arial';
-}
-tr:nth-child(even) {
-  background: #ececec;
+html {
+    height: 100%;
 }
 
-tr:first-child {
-  border-bottom: 2px solid #333;
-}
+body{
 
-.elektrijada
-{
+  position: absolute;
+  width:100%;
+  height:100%;
+  margin: 0;
   background: #16222A;
   background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);
   background: linear-gradient(to bottom, #3A6073, #16222A);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  width:100%;
-  height: 1300px;
   opacity: 1;
-  padding-top: 100px;
 }
-.form-content{
-  position: relative;
+.prijava
+{
+  width: 100%;
   height: auto;
-  width: 50%;
-  display: table;
-  margin:0px auto;
- background-color: #fff;
-}
-@media only screen and (max-width: 1367px){
-  div.elektrijada{
-    min-width: 0;
-  }
-  div.form-content{
-    min-width: 0;
-  }
-}
-h2{background: #4D4D4D;
-  text-align: center;
-    text-transform: uppercase;
-    font-family: 'Roboto-Condensed';
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 100;
-    padding: 30px;
+  padding-top: 125px;
+  padding-bottom: 50px;
 }
 
 input[type="text"]{
-  width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
+  width: 87%;
+  margin-left: 35px;
+  margin-right: 35px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px;
@@ -77,7 +34,7 @@ input[type="text"]{
   color: #3B3B3D;
   border: 1px solid #cccccc;
   border-radius: 4px;
-  float: left;
+  font-family: 'Roboto', sans-serif;
 }
 
   input[type="text"]:focus {
@@ -89,147 +46,147 @@ input[type="text"]{
     color: #aaa;
   }
 
-  .groupBox {
-    width: 70%;
-    margin:0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 40px;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    border: 1px solid  #b3b3b3;
-    border-radius: 0px;
-    background-color: #e6e6e6;
-  }
 
-/* button za brisanje */
-.button1 {
-  -moz-box-shadow: inset 0px 1px 0px 0px #595959;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #595959;
-  box-shadow: inset 0px 1px 0px 0px #595959;
-  background-color: #595959;
-  border: 1px solid #595959;
-  display: inline-block;
-  cursor: pointer;
-  color: gray;
-  font-size: 12px;
-  margin: 5px;
-  margin-left: 10px;
+.groupBox {
+
+  width: 100%;
   margin-right: 10px;
-  float:right;
-  padding: 5px 18px;
-  text-decoration: none;
-  border-radius: 4px;
-  color: white;
-}
-.button2 {
-  -moz-box-shadow: inset 0px 1px 0px 0px #595959;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #595959;
-  box-shadow: inset 0px 1px 0px 0px #595959;
-  background-color: #595959;
-  border: 1px solid #595959;
-  display: inline-block;
-  cursor: pointer;
-  color: #FFFFFF;
-  font-family: 'Roboto-Condensed';
-  font-size: 14px;
-  margin:0 auto;
-  margin-top: 40px;
-  float:left;
-  padding: 5px 18px;
-  text-decoration: none;
-  border-radius: 4px;
+  margin-left: 10px;
+    border-color: black;
+    border-style: double;
+    z-index: 32;
+    background-color: #fff;
 }
 
-button{
-  -moz-box-shadow: inset 0px 1px 0px 0px #595959;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #595959;
-  box-shadow: inset 0px 1px 0px 0px #595959;
-  background-color: #595959;
-  border: 1px solid #595959;
-  display: inline-block;
-  cursor: pointer;
-  color: #FFFFFF;
-  font-family: 'Roboto-Condensed';
-  font-size: 15px;
-  margin: 35px;
-  margin-right: 110px;
-  margin-top: 15px;
-  float:right;
-  padding: 5px 28px;
-  text-decoration: none;
-  border-radius: 4px;
-}
-button:hover, .button1:hover {
-  background:linear-gradient(to bottom, #666666 5%, #808080 100%);
-  background-color:#666666;
+.form-content{
+  position: relative;
+  height: auto;
+  width: 40%;
+  display: table;
+  margin:0px auto;
+	border-radius: 5px;
+	padding:20px;
 }
 
-@media screen and (max-width: 1300px) {
+h2{background: #4D4D4D;
+  text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 100;
+    padding: 30px;
+}
+.form-content input[type="submit"]{
+    -moz-box-shadow: inset 0px 1px 0px 0px #4D4D4D;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #4D4D4D;
+    box-shadow: inset 0px 1px 0px 0px #4D4D4D;
+    background-color: #4D4D4D;
+    border: 1px solid #4D4D4D;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 39px;
+    float:right;
+    padding: 5px 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+.form-content input[type="submit"]:hover {
+    background:linear-gradient(to bottom, #666666 5%, #808080 100%);
+    background-color:#666666;
+}
+@media screen and (max-width: 1130px) {
   .form-content{
-    width: 40%;
+    width: 50%;
+    padding:20px;
   }
-  .elektrijada{
-    height: 1300px;
+  .prijava{
+    height: auto;
+    padding-top: 160px;
+    padding-bottom: 80px;
   }
   input[type="text"]{
     width: 80%;
-    margin-left: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-left: 40px;
   }
-  button {
-    margin-left: 85px;
-    margin-right: 85px;
-    margin-bottom: 40px;
-  }
-  .groupBox {
-    padding: 7px;
-    margin-bottom: 30px;
+  .form-content input[type="submit"] {
+    margin-right: 50px;
   }
 }
 
 @media screen and (max-width: 920px) {
   .form-content{
     width: 50%;
+    padding:20px;
   }
+  input[type="text"]{
+    width: 80%;
+    margin-left: 30px;
+    margin-left: 30px;
+  }
+  .prijava{
+    height: auto;
+    padding-top: 160px;
+    padding-bottom: 80px;
+  }
+  .form-content input[type="submit"] {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 720px) {
   input[type="text"]{
     width: 80%;
     margin-left: 20px;
     margin-left: 20px;
   }
-}
+  .groupBox{
+    width: 95%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 
-@media screen and (max-width: 720px) {
-  .form-content{
-    width: 100%;
-    padding: 20px;
+  .prijava{
+    height: auto;
+    padding-top: 160px;
+    padding-bottom: 80px;
   }
-  button {
-    margin:0 auto;
-    margin-bottom: 40px;
+  .form-content input[type="submit"] {
+    margin-right: 35px;
   }
-  .groupBox {
-    padding: 7px;
-    margin-bottom: 30px;
-  }
-  input[type="text"] {
-    margin: 15px;
-    margin-bottom: 5px;
-  }
+
 }
 
 @media screen and (max-width: 600px) {
   .form-content{
-    width: 50%;
+    width: 100%;
+    padding:20px;
+
+  }
+  .prijava{
+    height: auto;
+    padding-top: 160px;
+    padding-bottom: 80px;
+  }
+  input[type="text"]{
+    width: 80%;
+    margin-left: 30px;
+    margin-left: 30px;
+  }
+  .form-content input[type="submit"] {
+    margin-right: 35px;
   }
 }
-
-.error {
-  color: red;
-  text-align: center;
-}
-
-.poruka {
-  color:green;
-  text-align: center;
+@media only screen and (max-width: 1367px){
+  div.prijava{
+    min-width: 0;
+  }
+  div.form-content{
+    min-width: 0;
+  }
 }
