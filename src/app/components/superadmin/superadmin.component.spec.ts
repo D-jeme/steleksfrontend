@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { PrijavaModeratorComponent } from './prijavamoderator.component';
+import { AdminComponent } from './superadmin.component';
 
-describe('PrijavaModeratorComponent', () => {
-  let component: PrijavaModeratorComponent;
-  let fixture: ComponentFixture<PrijavaModeratorComponent>;
+describe('SuperAdminComponent', () => {
+  let component: SuperAdminComponent;
+  let fixture: ComponentFixture<SuperAdminComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PrijavaModeratorComponent ]
+      declarations: [ SuperAdminComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PrijavaModeratorComponent);
+    fixture = TestBed.createComponent(SuperAdminComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

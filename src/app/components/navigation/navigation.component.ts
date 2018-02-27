@@ -19,8 +19,13 @@ export class NavigationComponent implements OnInit {
   startPos:Number =0;
   changePos: Number=100;
   steleks:string;
+  meni:string;
+  prikazi:boolean;
+
   constructor(){
     this.steleks='assets/images/steleksLogo.png';
+    this.meni='assets/images/menu.png';
+    this.prikazi=false;
   }
 
   updateHeader(evt) {
@@ -30,6 +35,20 @@ export class NavigationComponent implements OnInit {
       } else {
           this.isScrolled = false;
       }
+  }
+  klik()
+  {
+    let elem=document.getElementById("mob1");
+    if(this.prikazi==false) {
+      this.prikazi=true;
+        elem.style.display="block";
+      }
+    else{
+    this.prikazi=false;
+
+    elem.style.display="none";
+  }
+
   }
 
   ngOnInit() {

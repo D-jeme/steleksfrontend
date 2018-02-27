@@ -6,6 +6,7 @@
     <ul>
       <li><a class="logo" href="#">
         <img [src]="steleks" >     </a></li>
+
       <li><a [routerLink]="['/#']">Početna</a></li>
       <li><a [routerLink]="['/about']">O nama</a></li>
       <li><a [routerLink]="['/news']">Vijesti</a></li>
@@ -15,6 +16,32 @@
       <li><a [routerLink]="['/gallery']">Galerija</a></li>
 
     </ul>
+
+    <div class="drugi">
+      <div class="lijevo">
+      <a class="logo" href="#">
+        <img [src]="steleks" >     </a>
+      </div>
+      <div class="desno" (click)=klik()>
+      <a class="menu"  >
+        <img [src]="meni" >     </a>
+
+      </div>
+
+      <ul class="mob" id="mob1">
+
+        <li><a [routerLink]="['/#']">Početna</a></li>
+        <li><a [routerLink]="['/about']">O nama</a></li>
+        <li><a [routerLink]="['/news']">Vijesti</a></li>
+        <li><a [routerLink]="['/upravniodbor']">Upravni odbor</a></li>
+        <li><a [routerLink]="['/elektrijada']">Elektrijada</a></li>
+        <li><a [routerLink]="['/sifi']">Sifi</a></li>
+        <li><a [routerLink]="['/gallery']">Galerija</a></li>
+
+      </ul>
+
+    </div>
+
 
   </nav>
 </header>

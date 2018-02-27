@@ -20,7 +20,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { SIFIpageComponent } from './components/sifipage/sifipage.component';
 import { ElektrijadapageComponent } from './components/elektrijadapage/elektrijadapage.component';
 import { LearningpageComponent } from './components/learningpage/learningpage.component';
-import { PrijavaModeratorComponent } from './components/prijavamoderator/prijavamoderator.component';
+import { ModeratorComponent } from './components/moderator/moderator.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EventpreviewComponent } from './components/eventpreview/eventpreview.component';
 import { EventmainpictureComponent } from './components/eventmainpicture/eventmainpicture.component';
@@ -29,12 +29,20 @@ import { SifipreviewComponent } from './components/sifipreview/sifipreview.compo
 import { TekstComponent } from './components/tekst/tekst.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { FormaElektrijadaComponent } from './components/formaelektrijada/formaelektrijada.component';
-import {RegistracijaComponent} from './components/registracija/registracija.component';
+import { RegistracijaComponent} from './components/registracija/registracija.component';
 import { FormaSifiComponent } from './components/formasifi/formasifi.component';
+<<<<<<< HEAD
 import {AdminComponent} from './components/admin/admin.component';
 import {PrijavaAdminComponent} from './components/prijavaadmin/prijavaadmin.component';
 import {ModeratorComponent} from './components/moderator/moderator.component';
 import { FormaSponzoriComponent } from './components/formasponzori/formasponzori.component';
+=======
+import { AdminOpcijeComponent} from './components/adminopcije/adminopcije.component';
+import { AdminComponent} from './components/admin/admin.component';
+import { ModeratorOpcijeComponent} from './components/moderatoropcije/moderatoropcije.component';
+import { SuperAdminComponent} from './components/superadmin/superadmin.component';
+import { SuperAdminOpcijeComponent} from './components/superadminopcije/superadminopcije.component';
+>>>>>>> 7e950bc7cdbf0d82c8350863056561379ec5501c
 
 @NgModule({
   declarations: [
@@ -53,7 +61,7 @@ import { FormaSponzoriComponent } from './components/formasponzori/formasponzori
     SIFIpageComponent,
     ElektrijadapageComponent,
     LearningpageComponent,
-    PrijavaModeratorComponent,
+    ModeratorComponent,
     FooterComponent,
     EventpreviewComponent,
     EventmainpictureComponent,
@@ -63,11 +71,18 @@ import { FormaSponzoriComponent } from './components/formasponzori/formasponzori
     SkillsComponent,
     FormaElektrijadaComponent,
     RegistracijaComponent,
-    AdminComponent,
+    AdminOpcijeComponent,
     FormaSifiComponent,
+<<<<<<< HEAD
     PrijavaAdminComponent,
     ModeratorComponent,
     FormaSponzoriComponent
+=======
+    AdminComponent,
+    ModeratorOpcijeComponent,
+    SuperAdminComponent,
+    SuperAdminOpcijeComponent,
+>>>>>>> 7e950bc7cdbf0d82c8350863056561379ec5501c
   ],
   imports: [
     BrowserModule,

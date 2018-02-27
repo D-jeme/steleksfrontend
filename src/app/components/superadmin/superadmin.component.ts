@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import  {PrijavaService} from '../../services/prijava.service';
 
 @Component({
-  selector: 'app-prijavaadmin',
-  templateUrl: './prijavaadmin.component.html',
-  styleUrls: ['./prijavaadmin.component.css'],
+  selector: 'app-superadmin',
+  templateUrl: './superadmin.component.html',
+  styleUrls: ['./superadmin.component.css'],
   providers: [PrijavaService]
 })
-export class PrijavaAdminComponent implements OnInit {
+export class SuperAdminComponent implements OnInit {
 
   Username: string;
   Password: string;

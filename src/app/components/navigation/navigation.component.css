@@ -10,16 +10,14 @@
 }
 
 .logo{
-
   display: inline-block;
   font-size: 30px;
-
 }
+
 img{
   max-height: 50px;
   max-width: 50px;
 }
-
 
 nav {
     top: 10px;
@@ -33,9 +31,6 @@ width: 100%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     opacity: 0.9;
 mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
-
-
-
 }
 
 nav ul {
@@ -71,3 +66,82 @@ nav ul li a:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #4b799b;
 }
+.drugi{
+  display: none;
+}
+#mob1{
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+
+nav{
+  position: static;
+  padding: 0;
+  margin: 2px;
+  opacity: 1;
+  mask-image: none;
+  height: 55px;
+}
+
+  ul{
+    display: none;
+  }
+
+  .mob {
+    padding-left: 0;
+
+    list-style: none;
+    margin: 0;
+    display: block;
+    opacity: 1;
+    border: solid 1px #C9C9C9;
+    border-top: none;
+    border-left: none;
+    transition: all 0.3s ease;
+  }
+
+
+    li {
+      display: block;
+      width: 95%;
+      z-index: 100000;
+      margin: 0 auto;
+      padding: 0 auto;
+    }
+      a {
+        display: block;
+        padding: 0.5em;
+        text-decoration: none;
+        font-size: 0.85em;
+        transition: all 0.3s ease;
+      }
+
+  .logo{
+    margin-left: 10px;
+    padding: 0;
+  }
+
+  .menu{
+    padding: 0;
+    margin-right: 10px;
+    padding-top: 3px;
+  }
+  .lijevo{
+    float: left;
+    width: 25%;
+    padding-left: 15px;
+  }
+  .desno{
+    float: right;
+    width: 25%;
+    padding-right: 15px;
+  }
+  .drugi{
+    display: block;
+  }
+  .li{
+    padding-right: 10px;
+    display: block;
+  }
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 0%, #ffffff 0%, rgba(255, 255, 255, 0) 0%);
+  }

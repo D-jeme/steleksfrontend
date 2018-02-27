@@ -1,7 +1,11 @@
 html{
+<<<<<<< HEAD
 
 
     /*  background: #16222A;
+=======
+      background: #16222A;
+>>>>>>> 7e950bc7cdbf0d82c8350863056561379ec5501c
       background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);
       background: linear-gradient(to bottom, #3A6073, #16222A);
       background-size: cover;
@@ -9,7 +13,8 @@ html{
       background-attachment: fixed;
       background-repeat: no-repeat;
       width:100%;
-      height: 1300px;
+      min-height: 1440px;
+      height: 100%;
       opacity: 1;
       padding-top: 50px;
 
@@ -62,7 +67,7 @@ li {
 margin: 2px;
  box-shadow:#999 1px 1px 3px 1px;
  cursor: pointer;
- width:23.5%;
+ width:24%;
  opacity: .88;
 	}
 
@@ -165,6 +170,7 @@ p {
    width: 100%;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 1600px) {
   body{
     height:100%;
@@ -175,4 +181,62 @@ p {
     body{
       height: 100%;
     }
+=======
+@media only screen and (max-width: 500px) {
+  ul {
+
+        width: 100%;
+        min-width: 300px;
+        padding: 10px;
+
+
+      }
+      .gallery{
+        width: 100%;
+        min-width: 300px;
+      }
+      .tn{
+
+       box-shadow:#999 1px 1px 3px 1px;
+       cursor: pointer;
+       width:48%;
+       opacity: .88;
+      	}
+
+      .modal{
+        max-height: 300px;
+        padding: 0;
+      }
+      .selectedImage{
+        height: 250px;
+        margin-top: 100px;
+        width: 300px;
+
+
+      }
+      .modal-all{
+        height: 280px;
+      }
+      .selectedImage img{
+        max-height: 300px;
+      }
+      .seq-next{
+        right: -35%;
+
+
+      }
+      .seq-prev {
+      right:35%;
+
+      }
+      .seq-prev,
+      .seq-next{
+
+        top: -60%;
+
+
+      }
+
+
+>>>>>>> 7e950bc7cdbf0d82c8350863056561379ec5501c
 }
