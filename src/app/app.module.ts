@@ -162,4 +162,4 @@ import { SuperAdminOpcijeComponent} from './components/superadminopcije/superadm
 
 })
 
-export class AppModule { } 
+export class AppModule { }
