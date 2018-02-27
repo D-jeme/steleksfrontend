@@ -101,7 +101,7 @@ img{
 }
 
 .content{
-  width: 80%;
+  width: 100%;
   padding-right: 0;
   padding-left: 0;
   margin-left: 0;
@@ -115,7 +115,7 @@ img{
 }
 
 .content{
-  width: 80%;
+  width: 100%;
   padding-right: 0;
   padding-left: 0;
   margin-left: 0;
@@ -128,11 +128,35 @@ img{
 
 }
 
-.content{
-  width: 80%;
-  padding-right: 0;
-  padding-left: 0;
-  margin-left: 0;
+h2{
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #4b799b;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+p{
+  padding-top: 50px;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 0px;
+  margin-left: 0px;
+
+}
+.historija{
+  padding-left: 15px;
+  margin-left: 15px;
+}
+.projekti{
+  padding-left: 10px;
+  margin-left: 10px;
+}
+.nazivi{
+  font-size: 20px;
 }
 }
 @media screen and (max-width: 920px) {
@@ -142,7 +166,7 @@ img{
 }
 
 .content{
-  width: 80%;
+  width: 100%;
 
 }
 
