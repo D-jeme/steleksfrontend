@@ -48,37 +48,3 @@
   </div>
 
 </div>
-
-<button class="add" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Dodaj sponzora</button>
-
-
-
-<div id="id01" class="modal">
-
-  <form class="modal-content animate">
-    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-    <div class="container">
-      <label><b>Naziv sponzora</b></label>
-      <input type="text" placeholder="Unesite naziv" name="uname" required>
-
-      <input type="file" name="pic" required accept="image/*">
-
-      <button type="submit">Save</button>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-    </div>
-  </form>
-</div>
-
-<script>
-var modal = document.getElementById('id01');
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>

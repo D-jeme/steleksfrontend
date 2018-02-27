@@ -34,6 +34,7 @@ import { FormaSifiComponent } from './components/formasifi/formasifi.component';
 import {AdminComponent} from './components/admin/admin.component';
 import {PrijavaAdminComponent} from './components/prijavaadmin/prijavaadmin.component';
 import {ModeratorComponent} from './components/moderator/moderator.component';
+import { FormaSponzoriComponent } from './components/formasponzori/formasponzori.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import {ModeratorComponent} from './components/moderator/moderator.component';
     FormaSifiComponent,
     PrijavaAdminComponent,
     ModeratorComponent,
+    FormaSponzoriComponent
   ],
   imports: [
     BrowserModule,

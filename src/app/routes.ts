@@ -22,6 +22,7 @@ import { FormaSifiComponent} from './components/formasifi/formasifi.component';
 import { AdminComponent} from './components/admin/admin.component';
 import { PrijavaAdminComponent} from './components/prijavaadmin/prijavaadmin.component';
 import { ModeratorComponent} from './components/moderator/moderator.component';
+import { FormaSponzoriComponent } from './components/formasponzori/formasponzori.component';
 
 const app_routes:Routes = [
   { path:'', component: MainpageComponent },
@@ -42,6 +43,8 @@ const app_routes:Routes = [
   { path:'admin', component: AdminComponent},
   { path:'prijavaadmin', component: PrijavaAdminComponent},
   { path:'moderator', component: ModeratorComponent},
+  { path:'formasponzori', component: FormaSponzoriComponent},
+
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 

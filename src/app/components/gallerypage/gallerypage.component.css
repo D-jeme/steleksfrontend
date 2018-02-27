@@ -1,7 +1,7 @@
 html{
 
 
-      background: #16222A;
+    /*  background: #16222A;
       background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);
       background: linear-gradient(to bottom, #3A6073, #16222A);
       background-size: cover;
@@ -13,6 +13,15 @@ html{
       opacity: 1;
       padding-top: 50px;
 
+*/
+    height: 100%;
+}
+body{
+  position: absolute;
+  width:100%;
+  height:auto;
+  margin: 0;
+  background-image:url('../../assets/images/galerijapozadina.png');background-repeat:repeat;
 
 }
 #overlay {
@@ -24,6 +33,14 @@ html{
   left: 0;
   display: none;
   text-align: center;
+}
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #213545;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 ul {
 
@@ -146,4 +163,16 @@ p {
    -webkit-margin-before: 5px !important;
    -webkit-margin-after: 5px !important;
    width: 100%;
+}
+
+@media screen and (min-width: 1600px) {
+  body{
+    height:100%;
+  }
+}
+@media only screen and (max-width: 1024px) and (max-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    body{
+      height: 100%;
+    }
 }
