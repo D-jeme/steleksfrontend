@@ -1,11 +1,11 @@
 html{
-<<<<<<< HEAD
 
 
-    /*  background: #16222A;
-=======
+
+background: #16222A;
+
       background: #16222A;
->>>>>>> 7e950bc7cdbf0d82c8350863056561379ec5501c
+
       background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);
       background: linear-gradient(to bottom, #3A6073, #16222A);
       background-size: cover;
@@ -18,8 +18,6 @@ html{
       opacity: 1;
       padding-top: 50px;
 
-*/
-    height: 100%;
 }
 body{
   position: absolute;
