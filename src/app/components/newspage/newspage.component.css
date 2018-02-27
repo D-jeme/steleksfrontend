@@ -262,13 +262,3 @@ hr {
     display: inline-block;
   }
 }
-@media screen and (min-width: 1600px) {
-  .picture{
-    min-height: 850px;
-  }
-  .info-overflow{
-    height: 850px;
-  }
-
-
-}
