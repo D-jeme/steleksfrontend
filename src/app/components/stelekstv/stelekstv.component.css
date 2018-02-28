@@ -200,7 +200,7 @@ h2{
 		padding: 0;
 		padding-bottom: 55px;
 	}
-	
+
 	iframe{
 		display: table;
 		margin:0 auto;
@@ -224,31 +224,7 @@ h2{
 	}
 }
 @media screen and (min-width: 1600px) {
-	.sadrzaj1{
-		width: 100%;
-		float: left;
-		height:auto;
-		margin:0;
-		padding: 0;
-		padding-bottom: 55px;
-	}
 
-	.sadrzaj2{
-		width: 100%;
-		float: left;
-		height:auto;
-		margin:0;
-		padding: 0;
-	}
-	.home{
-		width: 100%;
-
-		display: table;
-		margin:auto;
-		height: auto;
-		padding: 20px;
-
-	}
 }
 @media only screen and (max-width: 1024px) and (max-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 1.5) {
