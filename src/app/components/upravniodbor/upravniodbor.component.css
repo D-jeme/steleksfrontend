@@ -59,16 +59,17 @@ td {
 
 tr {
   display: inline-block;
-  margin: 2px;
-  margin-top: 10px;
+  margin: 1px;
+  margin-top: 1px;
   margin-bottom: 0px;
 }
 
 table {
   background: white;
-  width: 79%;
+  width: 59%;
   margin:0 auto;
   margin-top: 60px;
+  display: block;
   margin-bottom: 150px;
   font-family: 'Arial';
 }
@@ -78,6 +79,9 @@ table {
   opacity: 0.5;
 }
 
+p {
+  margin-bottom: 40px;
+}
 
 .slova{
   font-size: 18px;
@@ -100,20 +104,37 @@ table {
   color: #404040;
   text-align: center;
 }
+
+  .cards:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 77, 77, 0.5);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+
+  .cards:hover:before {
+    background: none;
+  }
+
 .cards {
-    /*-webkit-filter: grayscale(100%);
-    	filter: grayscale(100%);
-    	-webkit-transition: .3s ease-in-out;
-    	transition: .3s ease-in-out;*/
-  width: 270px;
+  width: 240px;
   margin-top: 0px;
   margin-bottom: 0px;
-  /*background: #f2f2f2;
-  -webkit-box-shadow: 0 0 0.9em #999;
-          box-shadow: 0 0 0.9em #999;*/
+  -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+  -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+  box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
   border-radius: 3px;
   cursor: pointer;
-  height: 17em;
+  height: 100%;
   position: relative;
   -webkit-transition: height 0.4s, -webkit-box-shadow 0.5s;
   transition: height 0.4s, -webkit-box-shadow 0.5s;
@@ -124,7 +145,7 @@ table {
   filter:none;
   -webkit-box-shadow: 0 0 2.5em #999;
           box-shadow: 0 0 2.5em #999;
-  height: 26em;
+  height: 100%;
   -webkit-transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
   transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
   transition: height 0.3s ease, box-shadow 0.5s ease;
@@ -136,7 +157,7 @@ table {
 .cards:hover .info {
   -webkit-transition: top 0.5s ease, opacity 1s ease;
   transition: top 0.5s ease, opacity 1s ease;
-  visibility: visible;
+  display: block;
   top: 1%;
   opacity: 1;
 }
@@ -147,10 +168,11 @@ table {
   transition: font-size 0.3s, left 0.3s;
 }
 .cards .info {
-
-  visibility: hidden;
+  display: none;
   top: -50%;
   opacity: 0;
+  padding: 20px;
+  padding-top: 10px;
 }
 .cards .icon {
   color: #febbbb;
@@ -176,34 +198,32 @@ table {
 
 img{
   width: 100%;
+  height:245px;
   margin:0px auto;
   display: block;
 }
 
+
+
 @media screen and (max-width: 1130px) {
   table{
-    margin-top: 190px;
-    width: 58%;
+    margin-top: 50px;
+    width: 77%;
   }
 }
 
 @media screen and (max-width: 920px) {
   table{
-    margin-top: 180px;
-    width: 76%;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  table{
-    margin-top: 190px;
-    width: 59%;
+    margin-top: 50px;
+    width: 69%;
   }
 }
 
 @media screen and (max-width: 600px) {
   table{
-    margin-top: 190px;
+    margin:0px auto;
+    display: table;
+    margin-top: 50px;
     width: 59%;
   }
 }

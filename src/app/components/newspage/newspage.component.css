@@ -3,9 +3,9 @@
 div.vijesti-screen {
   display: table;
   margin: 0 auto;
-  min-width: 100%;
+  width: 70%;
   margin-top: 5px;
-  padding: 99px;
+  padding: 0px;
   padding-top: 40px;
 }
 
@@ -174,13 +174,12 @@ hr {
   border-color: #06d7d9;
 }
 
-@media only screen and (max-width: 1030px){
+@media only screen and (max-width: 1400px){
   div.vijesti-screen{
     min-width: 0;
-    padding-left: 23px;
     margin-top: 0px;
     padding-bottom: 20px;
-    min-width: 100%;
+    min-width: 50%;
   }
   figure.vijest{
     margin-left: 20px;
@@ -189,72 +188,104 @@ hr {
   }
 }
 
-@media only screen and (max-width: 920px){
+@media only screen and (max-width: 1030px){
   div.vijesti-screen{
-    min-width: 0;
-    padding-left: 50px;
-    margin-top: 20px;
-    min-width: 100%;
+    width:60%;
+    padding: 0px;
+    margin:0px auto;
+    display: table;
+    margin-top: 40px;
   }
   figure.vijest{
-    margin-left: 70px;
     margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 920px){
+  div.vijesti-screen{
+    width:80%;
+    padding: 0px;
+    margin:0px auto;
+    display: table;
+    margin-top: 40px;
+  }
+  figure.vijest{
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px;
     display: inline-block;
   }
 }
 
 @media only screen and (max-width: 800px){
   div.vijesti-screen{
-    min-width: 0;
-    padding: 15px;
-    margin-top: 60px;
-    min-width: 100%;
+    width:80%;
+    padding: 0px;
+    margin:0px auto;
+    display: table;
+    margin-top: 40px;
   }
   figure.vijest{
-    margin-left: 70px;
-    margin-top: 20px;
-    display: inline;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px;
+    display: inline-block;
   }
 }
 
 @media only screen and (max-width: 420px){
   div.vijesti-screen{
-    min-width: 0;
-    padding: 20px;
+    width:65%;
+    padding: 0px;
+    margin:0px auto;
+    display: table;
     margin-top: 40px;
   }
   figure.vijest{
-    margin-left: 60px;
     margin-bottom: 40px;
-    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
     display: inline-block;
   }
 }
 
 @media only screen and (max-width: 390px){
   div.vijesti-screen{
-    min-width: 0;
-    padding: 8px;
+    width:65%;
+    padding: 0px;
+    margin:0px auto;
+    display: table;
     margin-top: 40px;
   }
   figure.vijest{
-    margin-left: 50px;
     margin-bottom: 40px;
-    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
     display: inline-block;
   }
 }
 
 @media only screen and (max-width: 370px){
   div.vijesti-screen{
-    min-width: 0;
+    width:65%;
     padding: 0px;
+    margin:0px auto;
+    display: table;
     margin-top: 40px;
   }
   figure.vijest{
-    margin-left: 50px;
     margin-bottom: 40px;
-    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
     display: inline-block;
   }
 }
