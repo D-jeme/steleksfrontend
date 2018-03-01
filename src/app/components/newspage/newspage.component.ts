@@ -10,30 +10,32 @@ import { Router} from '@angular/router';
     providers: [EventService]
 })
 export class NewspageComponent implements OnInit {
-showStyle: false;
+sadrzaj: Array<string>
 events: Array<Event>;
 
+
   constructor(private _eventService: EventService, private router: Router) {
-  this.events=[ new Event("Elektrijada Rimini",
-"http://elektrijada.net/wp-content/uploads/2016/03/12799056_588726494624596_3241526187894899946_n.png","56. medunarodni susret studenata elektrotehnike održati ce se u Italiji, u gradu Rimini od 12. do 17. maja 2016.", "")];
+
+    this.events=[];
 
 }
 
   ngOnInit() {
       this._eventService.prijava().subscribe(
         data =>{
-          console.log("KRaMPA:", data);
-          
+
+
+          for(let i=0;i<data.array.length;i++)
+          {
+
+            this.events.push(new Event(data.array[i].title,data.array[i].imgUrl,data.array[i].shortText,""));
+
+          }
+
+
+
         }
       );
   }
 
-
-  getStyle() {
-    if(this.showStyle) {
-      return "yellow";
-    } else {
-      return "";
-    }
-  }
 }
