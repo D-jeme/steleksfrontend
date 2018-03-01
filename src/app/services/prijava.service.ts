@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class PrijavaService {
-  url:string="https://steleksproba.herokuapp.com";
+  url:string="https://steleksdevelopment.herokuapp.com";
 
   constructor(private _http:Http){}
 

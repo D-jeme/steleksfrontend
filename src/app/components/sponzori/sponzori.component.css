@@ -19,14 +19,15 @@
 }
 
 tr {
-  display: inline-block;
+  float: left;
   margin: 0px;
+  width:12.5%;
 }
 
 table {
-  width: 90%;
+  width: 80%;
   margin:0 auto;
-  display: block;
+  display: table;
   font-family: 'Roboto', sans-serif;
   margin-bottom:0px;
 }
@@ -70,6 +71,10 @@ section {
     margin-bottom: 0px;
     width: 90%;
   }
+  tr {
+    display: table;
+    margin: 0px;
+  }
 }
 
 @media screen and (max-width: 920px) {
@@ -80,6 +85,10 @@ section {
     margin-bottom: 0px;
     width: 79%;
   }
+  tr {
+    display: table;
+    margin: 0px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -89,6 +98,10 @@ section {
     margin-top: 0px;
     width: 75%;
   }
+  tr {
+    display: table;
+    margin: 0px;
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -97,5 +110,9 @@ section {
     display: table;
     margin-top: 0px;
     width: 85%;
+  }
+  tr {
+    display: table;
+    margin: 0px;
   }
 }

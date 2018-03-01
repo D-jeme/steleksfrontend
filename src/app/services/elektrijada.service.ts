@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ElektrijadaService {
-  url:string="https://steleksproba.herokuapp.com";
+  url:string="https://steleksdevelopment.herokuapp.com";
 
   constructor(private _http:Http){}
 

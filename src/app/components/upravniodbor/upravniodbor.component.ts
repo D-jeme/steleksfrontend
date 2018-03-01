@@ -15,7 +15,7 @@ export class UpravniodborComponent implements OnInit {
   erol_terovic:string;
   miran_hadziomerovic:string;
   harun_muhic:string;
-  osman_merhemic:string;
+  osman_mehremic:string;
   almin_repesa:string;
   edina_osmanspahic:string;
   prvi: ClanUO;
@@ -40,9 +40,9 @@ export class UpravniodborComponent implements OnInit {
     this.nur_osmanbegovic='assets/images/nur_osmanbegovic.jpg'
     this.adis_dedic='assets/images/adis_dedic.jpg';
     this.erol_terovic='assets/images/erol_terovic.jpg';
-    this.miran_hadziomerovic='assets/images/miran_hadziomerovic.jpg';
+    this.miran_hadziomerovic='assets/images/miran_hadziomerovic.png';
     this.harun_muhic='assets/images/harun_muhic.jpg';
-    this.osman_merhemic='assets/images/osman_merhemic.jpg';
+    this.osman_mehremic='assets/images/osman_mehremic.jpg';
     this.almin_repesa='assets/images/almin_repesa.jpg';
     this.edina_osmanspahic='assets/images/edina_osmanspahic.jpg';
 
@@ -67,7 +67,7 @@ export class UpravniodborComponent implements OnInit {
     this.clanovi.push(this.deveti);
     this.deseti=new ClanUO('Harun', 'Muhić', 'Koordinator sektora za nauku', this.harun_muhic);
     this.clanovi.push(this.deseti);
-    this.jedanaesti=new ClanUO('Osman', 'Merhemić', 'Zamjenik koordinatora sektora za nauku', this.osman_merhemic);
+    this.jedanaesti=new ClanUO('Osman', 'Mehremić', 'Zamjenik koordinatora sektora za nauku', this.osman_mehremic);
     this.clanovi.push(this.jedanaesti);
    }
 

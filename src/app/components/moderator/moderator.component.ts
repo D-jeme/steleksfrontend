@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import  {PrijavaService} from '../../services/prijava.service';
+import  { ModeratorPrijavaService } from '../../services/moderatorprijava.service';
 
 @Component({
   selector: 'app-moderator',
   templateUrl: './moderator.component.html',
   styleUrls: ['./moderator.component.css'],
-  providers: [PrijavaService]
+  providers: [ModeratorPrijavaService]
 })
 export class ModeratorComponent implements OnInit {
 
   Username: string;
   Password: string;
 
-  constructor(private _prijavaService: PrijavaService) {
+  constructor(private _moderatorPrijavaService: ModeratorPrijavaService) {
   this.Username = "";
   this.Password = "";
  }
@@ -23,7 +23,7 @@ export class ModeratorComponent implements OnInit {
 
   print(){
     console.log(this.Username+":"+this.Password);
-    this._prijavaService.prijava(this.Username, this.Password);
+    this._moderatorPrijavaService.prijava(this.Username, this.Password);
 
 
   }

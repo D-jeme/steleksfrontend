@@ -9,7 +9,7 @@
 <hr class="primary">
 <div class="vijesti-screen">
 
-<figure class="vijest" *ngFor="let i of events">
+<figure class="vijest" *ngFor="let i of events;">
   <img src={{i.slika}} class="imgs" >
   <div class="datum"><span class="dan">12</span><span class="mjesec">Maj</span></div>
   <figcaption>
@@ -17,8 +17,8 @@
     <p>
     {{i.kratkiTekst}}
     </p>
-    <button class="button">Pročitaj više</button>
-  </figcaption><a href="#"></a>
+    <button [routerLink]="[i.link]" class="button">Pročitaj više</button>
+  </figcaption><a ></a>
 </figure>
 
 </div>

@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class SponzoriService {
-  url:string="https://steleksproba.herokuapp.com";
+  url:string="https://steleksdevelopment.herokuapp.com";
 
   constructor(private _http:Http){}
 
@@ -17,7 +17,7 @@ export class SponzoriService {
     headers.append('Content-Type', 'application/json');
     //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
     console.log(body);
-    this._http.post(this.url + '/user/login',
+    this._http.post(this.url + '/api/sponsors',
     body,
       {
         headers: headers
