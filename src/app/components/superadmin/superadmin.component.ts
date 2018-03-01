@@ -23,8 +23,9 @@ export class SuperAdminComponent implements OnInit {
 
   print(){
     console.log(this.Username+":"+this.Password);
-    this._prijavaService.prijava(this.Username, this.Password);
     this.router.navigateByUrl('/superadminopcije');
+    this._prijavaService.prijava(this.Username, this.Password);
+    
 
   }
 

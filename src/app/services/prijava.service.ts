@@ -21,7 +21,7 @@ export class PrijavaService {
       }
     ).map(res=> res.json()).subscribe(
       data => {
-          console.log(data);
+          console.log(body);
           localStorage.setItem('currentUser', JSON.stringify({ token: data.token, user: data.user }));
         },
     error =>{
