@@ -1,0 +1,17 @@
+<body>
+<div class="prijava">
+<div class="form-content">
+
+<form>
+    <fieldset class="groupBox">
+      <h2>Galerija</h2>
+      <input type="text" name="year" placeholder="Naziv albuma"/>
+      <input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." multiple/>
+      <button type="button" (click)="upload()">Upload</button>
+      <input type="button" value="Dodaj" />
+
+  </fieldset>
+</form>
+</div>
+</div>
+</body>

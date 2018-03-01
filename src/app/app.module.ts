@@ -74,6 +74,14 @@ import { SuperAdminComponent} from './components/superadmin/superadmin.component
 
 import { SuperAdminOpcijeComponent} from './components/superadminopcije/superadminopcije.component';
 
+import { FormaGalerijaComponent } from './components/formagalerija/formagalerija.component';
+
+import { FormaBeforeEventComponent } from './components/formabeforeevent/formabeforeevent.component';
+
+import { FormaAfterEventComponent } from './components/formaafterevent/formaafterevent.component';
+
+import { FormaSponzoriComponent } from './components/formasponzori/formasponzori.component';
+
 
 
 @NgModule({
@@ -141,6 +149,14 @@ import { SuperAdminOpcijeComponent} from './components/superadminopcije/superadm
     SuperAdminComponent,
 
     SuperAdminOpcijeComponent,
+
+    FormaGalerijaComponent,
+
+    FormaBeforeEventComponent,
+
+    FormaAfterEventComponent,
+
+    FormaSponzoriComponent,
 
   ],
 
