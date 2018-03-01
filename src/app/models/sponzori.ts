@@ -1,8 +1,8 @@
 export class Sponzor {
-  private slika: String;
-  private nazivSponzora: String;
-  constructor(slika: String, nazivSponzora: String) {
+    slika: String;
+    naziv: String;
+  constructor(slika: String, naziv: String) {
     this.slika=slika;
-    this.nazivSponzora=nazivSponzora;
+    this.naziv=naziv;
   }
 }

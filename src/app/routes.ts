@@ -50,7 +50,13 @@ import { SuperAdminComponent} from './components/superadmin/superadmin.component
 
 import { SuperAdminOpcijeComponent} from './components/superadminopcije/superadminopcije.component';
 
+import { FormaGalerijaComponent } from './components/formagalerija/formagalerija.component';
 
+import { FormaBeforeEventComponent } from './components/formabeforeevent/formabeforeevent.component';
+
+import { FormaAfterEventComponent } from './components/formaafterevent/formaafterevent.component';
+
+import { FormaSponzoriComponent } from './components/formasponzori/formasponzori.component';
 
 const app_routes:Routes = [
 
@@ -93,6 +99,14 @@ const app_routes:Routes = [
   { path:'superadmin', component: SuperAdminComponent},
 
   { path:'superadminopcije', component: SuperAdminOpcijeComponent},
+
+  { path:'formagalerija', component: FormaGalerijaComponent},
+
+  { path:'formabeforeevent', component: FormaBeforeEventComponent},
+
+  { path:'formaafterevent', component: FormaAfterEventComponent},
+
+  { path:'formasponzori', component: FormaSponzoriComponent},
 
   { path: '**', pathMatch: 'full', redirectTo: '' }
 
