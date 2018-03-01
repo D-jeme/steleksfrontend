@@ -26,9 +26,13 @@ export class AdminComponent implements OnInit {
   }
 
   print(){
+    this.router.navigateByUrl('/adminopcije');
     console.log(this.Username+":"+this.Password);
     this._prijavaService.prijava(this.Username, this.Password);
-    this.router.navigateByUrl('/adminopcije');
+
+
+
+
   }
 
 

@@ -13,7 +13,7 @@ export class PrijavaService {
     var headers = new Headers();
     headers.append('Content-Type', 'application/json');
     //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
-
+console.log(body);
     this._http.post(this.url + '/user/login',
     body,
       {
@@ -21,7 +21,7 @@ export class PrijavaService {
       }
     ).map(res=> res.json()).subscribe(
       data => {
-          console.log(data);
+          console.log(body);
           localStorage.setItem('currentUser', JSON.stringify({ token: data.token, user: data.user }));
         },
     error =>{
