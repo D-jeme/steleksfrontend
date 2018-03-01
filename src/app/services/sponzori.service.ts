@@ -25,6 +25,7 @@ export class SponzoriService {
     ).map(res=> res.json()).subscribe(
       data => {
           console.log("cao");
+          console.log(data);
           localStorage.setItem('currentUser', JSON.stringify({ sponzor: data.sponzor }));
         },
     error =>{

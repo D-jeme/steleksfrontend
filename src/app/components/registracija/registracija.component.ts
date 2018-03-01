@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { RegistrovaniClan } from '../../models/registracijastudent';
+import { RegistracijaService } from '../../services/registracija.service';
 @Component({
   selector: 'app-registracija',
   templateUrl: './registracija.component.html',
-  styleUrls: ['./registracija.component.css']
+  styleUrls: ['./registracija.component.css'],
+  providers: [RegistracijaService],
 })
 export class RegistracijaComponent implements OnInit {
   private registrovani: Array<RegistrovaniClan>;
@@ -22,17 +24,15 @@ export class RegistracijaComponent implements OnInit {
   private messageUspjesno: String='';
   private novi: RegistrovaniClan;
 
-  constructor() {
+  constructor(private _registracijaService: RegistracijaService) {
     this.registrovani=new Array<RegistrovaniClan>();
   }
 
   ngOnInit() {
   }
 
-  dodajClan() {
+  print() {
     this.errorMessage='';
-    console.log("imeeee");
-    console.log(this.ime);
     if(this.ime=='' || this.prezime=='' || this.email=='' || this.emailFakultet=='' || this.brojTelefona=='' ||
     this.brojIndeksa=='' || this.korisnickoIme=='' || this.lozinka=='' || this.lozinka2=='') {
       this.errorMessage='Molimo popunite sva polja!';
@@ -47,7 +47,7 @@ export class RegistracijaComponent implements OnInit {
     console.log("ima li te");
     this.novi=new RegistrovaniClan(this.ime, this.prezime, this.email, this.emailFakultet, this.brojTelefona, this.brojIndeksa,
     this.korisnickoIme, this.lozinka, this.odsjek, this.godinaStudija);
-    this.registrovani.push(this.novi);
+    this._registracijaService.prijava(this.novi);
     this.errorMessage='';
     this.messageUspjesno='Uspjesno!';
     }
