@@ -103,14 +103,14 @@ right:45%;
   opacity: 0.6;
 }
 .modal{
-  padding: 75px;
-  padding-bottom: 50px;
+  padding: 75px 90px 150px 90px;
+
 
 
   text-align: center;
 
   display: table;
-  margin: 0 auto;
+
 
 
   max-height: 400px;

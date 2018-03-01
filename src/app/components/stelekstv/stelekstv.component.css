@@ -223,7 +223,12 @@ h2{
 
 	}
 }
+<<<<<<< HEAD
 
+=======
+@media screen and (min-width: 1600px) {
+}
+>>>>>>> 47ad55169eccbeb66c86d8a13a07cb18cba1a6ca
 @media only screen and (max-width: 1024px) and (max-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 1.5) {
 		.sadrzaj1{
