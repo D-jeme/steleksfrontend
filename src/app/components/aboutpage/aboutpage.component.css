@@ -50,7 +50,7 @@ hr {
   border-color: #06d7d9;
 }
 .historija{
-padding-top: 90px;
+padding-top: 10px;
 padding-left: 60px;
 
 }
@@ -64,7 +64,7 @@ h2{
 }
 p{
   padding-top: 50px;
-  text-align: left;
+  text-align: justify;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -126,6 +126,9 @@ img{
 .slike{
   padding: 0;
 
+}
+img{
+  
 }
 
 h2{
