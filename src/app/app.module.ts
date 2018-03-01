@@ -157,7 +157,6 @@ import { FormaSponzoriComponent } from './components/formasponzori/formasponzori
     FormaAfterEventComponent,
 
     FormaSponzoriComponent,
-
   ],
 
   imports: [

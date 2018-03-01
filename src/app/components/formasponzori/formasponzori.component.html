@@ -5,9 +5,9 @@
 <form>
     <fieldset class="groupBox">
       <h2>Sponzori</h2>
-      <input type="text" name="year" placeholder="Naziv sponzora"/>
-      <input type="file" name="pic" accept="image/*">
-      <input type="button" value="Dodaj" />
+      <input type="text" [(ngModel)]="sponzor.naziv" name="naziv" placeholder="Naziv sponzora"/>
+      <input type="file" [(ngModel)]="sponzor.slika" name="slika" accept="image/*">
+      <input type="button" (click)="print()" value="Dodaj" />
 
   </fieldset>
 </form>
