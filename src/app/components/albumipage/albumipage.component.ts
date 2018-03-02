@@ -9,6 +9,7 @@ export class AlbumipageComponent implements OnInit {
 
   albumi : Array<Album>;
   showStyle: false;
+  
   images;
   constructor() {
     this.albumi=[new Album("Elektrijada 2016","assets/images/elektrijada2016.jpg",["URL"], 100),

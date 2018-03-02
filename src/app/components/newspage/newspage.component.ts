@@ -49,8 +49,8 @@ str: Array<string>
 
           this.events[0].link="/event2";
             this.events[1].link="/event3";
-              this.events[2].link="/event4";
-                this.events[3].link="/event5";
+              this.events[2].link="/event";
+                this.events[3].link="/event4";
         }
       );
   }
