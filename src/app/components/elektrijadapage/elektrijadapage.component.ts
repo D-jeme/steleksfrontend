@@ -7,6 +7,7 @@ import { Elektrijada } from '../../models/elektrijada';
 })
 export class ElektrijadapageComponent implements OnInit {
   godineElektrijade: Array<String>;
+  v: number;
   //private godineElektrijeSadrzaj: Array<Elektrijada>;
   godineElektrijadeSadrzaj: Array<String>;
   naslovi: Array<String>;

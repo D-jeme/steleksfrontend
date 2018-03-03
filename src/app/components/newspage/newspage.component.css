@@ -3,7 +3,7 @@
 div.vijesti-screen {
   display: table;
   margin: 0 auto;
-  width: 70%;
+  width: 74%;
   margin-top: 5px;
   padding: 0px;
   padding-top: 40px;
@@ -289,13 +289,14 @@ hr {
     display: inline-block;
   }
 }
-@media only screen and (min-width: 1600px){
+@media only screen and (min-width: 1700px){
   .picture{
   min-height: 720px;
   }
   .info-overflow{
     height: 720px;
   }
+
 }
 @media only screen and (max-width: 1367px ){
   div.vijesti-screen{

@@ -8,7 +8,9 @@
   margin-top: 50px;
   padding-left: 50px;
 }
-
+img{
+  height: 60px;
+}
 .footer .footer-left,
 .footer .footer-center,
 .footer .footer-right2,
