@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormaSifiComponent implements OnInit {
 
-      private fieldArray1: Array<any> = [];
-      private newAttribute1: any = {};
-      private fieldArray2: Array<any> = [];
-      private newAttribute2: any = {};
-      private fieldArray3: Array<any> = [];
-      private newAttribute3: any = {};
+       fieldArray1: Array<any> = [];
+       newAttribute1: any = {};
+       fieldArray2: Array<any> = [];
+       newAttribute2: any = {};
+       fieldArray3: Array<any> = [];
+       newAttribute3: any = {};
 
 
       addFieldValue1() {

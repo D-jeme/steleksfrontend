@@ -9,7 +9,7 @@ import  { Sponzor } from '../../models/sponzori';
   providers: [SponzoriService]
 })
 export class FormaSponzoriComponent implements OnInit {
-  private sponzor: Sponzor;
+  sponzor: Sponzor;
   constructor(private _sponzoriService: SponzoriService) {
     this.sponzor=new Sponzor("","");
  }

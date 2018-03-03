@@ -8,21 +8,21 @@ import { RegistracijaService } from '../../services/registracija.service';
   providers: [RegistracijaService],
 })
 export class RegistracijaComponent implements OnInit {
-  private registrovani: Array<RegistrovaniClan>;
-  private ime: String='';
-  private prezime: String='';
-  private email: String='';
-  private emailFakultet: String='';
-  private brojTelefona: String='';
-  private brojIndeksa: String='';
-  private korisnickoIme: String='';
-  private lozinka: String='';
-  private lozinka2: String='';
-  private odsjek: String='';
-  private godinaStudija: String='';
-  private errorMessage: String='';
-  private messageUspjesno: String='';
-  private novi: RegistrovaniClan;
+  registrovani: Array<RegistrovaniClan>;
+  ime: String='';
+  prezime: String='';
+  email: String='';
+  emailFakultet: String='';
+  brojTelefona: String='';
+  brojIndeksa: String='';
+  korisnickoIme: String='';
+  lozinka: String='';
+  lozinka2: String='';
+  odsjek: String='';
+  godinaStudija: String='';
+  errorMessage: String='';
+  messageUspjesno: String='';
+  novi: RegistrovaniClan;
 
   constructor(private _registracijaService: RegistracijaService) {
     this.registrovani=new Array<RegistrovaniClan>();

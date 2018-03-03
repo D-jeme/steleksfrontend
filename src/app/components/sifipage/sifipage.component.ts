@@ -8,17 +8,17 @@ import { Elektrijada } from '../../models/elektrijada';
 })
 
 export class SIFIpageComponent implements OnInit {
-  private godineSifija: Array<String>;
+  godineSifija: Array<String>;
   //private godineElektrijeSadrzaj: Array<Elektrijada>;
-  private godineSifijaSadrzaj: Array<String>;
-  private naslovi: Array<String>;
-  private naslov: String;
-  private trenutniSadrzaj: String;
-  private sadrzaj: String;
-  private trenutniTab:number;
-  private brojac:number=0;
-  private godina:String="";
-  private pomocni: String="Lorem ipsum dolor sit amet, detracto platonem te sed. Dicam utamur mandamus quo no, vim eu consul dissentias. Te pri latine temporibus. Libris iuvaret epicuri per ut, ad vel libris erroribus. Ut veritus delectus eleifend eam. Cu unum reprehendunt delicatissimi eam, eum dolor epicurei contentiones te, ne vel porro perfecto. Ex sed epicuri convenire, mei ne eleifend delicatissimi. Tantas electram comprehensam no qui, et primis complectitur mea, cum id case duis mediocrem. Consulatu theophrastus in eam, mea ad omnes definiebas. Quo posse latine te, mel dictas similique temporibus an. Nam possit reformidans eu. Ad nostro nusquam per. Eu gubergren maiestatis his. Purto lucilius pertinacia ut per, possit labitur vis ei. Essent sanctus deleniti mea ex, has ocurreret intellegam at. Nec agam oportere posidonium et. Ne omnium vocent sapientem eos, cum erat meis causae an. Quo dico tollit cu. Ex altera utroque invidunt vix, periculis principes ad est. Eirmod reprimique reprehendunt cu ius, mei mollis ancillae no, nam ad tantas reprimique. Ea qui mandamus interesset consequuntur, ne choro munere integre pro. Suas option in eos, id nam aperiam dolorum inciderint. Usu vitae sapientem gubergren ex."
+  godineSifijaSadrzaj: Array<String>;
+  naslovi: Array<String>;
+  naslov: String;
+  trenutniSadrzaj: String;
+  sadrzaj: String;
+  trenutniTab:number;
+  brojac:number=0;
+  godina:String="";
+  pomocni: String="Lorem ipsum dolor sit amet, detracto platonem te sed. Dicam utamur mandamus quo no, vim eu consul dissentias. Te pri latine temporibus. Libris iuvaret epicuri per ut, ad vel libris erroribus. Ut veritus delectus eleifend eam. Cu unum reprehendunt delicatissimi eam, eum dolor epicurei contentiones te, ne vel porro perfecto. Ex sed epicuri convenire, mei ne eleifend delicatissimi. Tantas electram comprehensam no qui, et primis complectitur mea, cum id case duis mediocrem. Consulatu theophrastus in eam, mea ad omnes definiebas. Quo posse latine te, mel dictas similique temporibus an. Nam possit reformidans eu. Ad nostro nusquam per. Eu gubergren maiestatis his. Purto lucilius pertinacia ut per, possit labitur vis ei. Essent sanctus deleniti mea ex, has ocurreret intellegam at. Nec agam oportere posidonium et. Ne omnium vocent sapientem eos, cum erat meis causae an. Quo dico tollit cu. Ex altera utroque invidunt vix, periculis principes ad est. Eirmod reprimique reprehendunt cu ius, mei mollis ancillae no, nam ad tantas reprimique. Ea qui mandamus interesset consequuntur, ne choro munere integre pro. Suas option in eos, id nam aperiam dolorum inciderint. Usu vitae sapientem gubergren ex."
 
   constructor() {
     this.godineSifija = ['About', '2012', '2013', '2014', '2015', '2016', '2017'];

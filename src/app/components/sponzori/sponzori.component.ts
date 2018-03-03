@@ -7,15 +7,15 @@ import { Sponzor } from '../../models/sponzori';
   styleUrls: ['./sponzori.component.css']
 })
 export class SponzoriComponent implements OnInit {
-  private bhtelecom: String;
-  private bsts: String;
-  private disti: String;
-  private diveco: String;
-  private infostudio: String;
-  private mistral: String;
-  private zira: String;
-  private sue: String;
-  private sponzori: Array<Sponzor>;
+  bhtelecom: String;
+  bsts: String;
+  disti: String;
+  diveco: String;
+  infostudio: String;
+  mistral: String;
+  zira: String;
+  sue: String;
+  sponzori: Array<Sponzor>;
   constructor() {
     this.bhtelecom ='assets/images/bhtelecom2.jpg';
     this.bsts='assets/images/BSTS_logo2.png';

@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./adminopcije.component.css']
 })
 export class AdminOpcijeComponent implements OnInit {
-  private moderatori: Array<String>;
-  private br: number;
-  private showSelected: boolean;
-  private ime: string= '';
-  private prezime: string= '';
-  private messageUspjesno: string= '';
-  private errorMessageIme: string= '';
-  private errorMessagePrezime: string= '';
+  moderatori: Array<String>;
+  br: number;
+  showSelected: boolean;
+  ime: string= '';
+  prezime: string= '';
+  messageUspjesno: string= '';
+  errorMessageIme: string= '';
+  errorMessagePrezime: string= '';
   constructor() {
     this.br=0;
     this.showSelected=false;
