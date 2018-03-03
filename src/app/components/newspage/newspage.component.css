@@ -85,6 +85,7 @@ figure.vijest h3 {
   font-weight: 600;
   color: #333333;
   text-transform: uppercase;
+  font-size: 23px;
 }
 figure.vijest p {
   font-family: 'Roboto', sans-serif;
@@ -172,6 +173,10 @@ hr {
   max-width: 70px;
   border-width: 3px;
   border-color: #06d7d9;
+}
+
+figcaption{
+  width:90%;
 }
 
 @media only screen and (max-width: 1400px){

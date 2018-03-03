@@ -43,7 +43,7 @@ str: Array<string>
           this.events[3].naziv="STELEKS Kviz";
 
           this.events[0].kratkiTekst="56. međunarodni susret studenata elektrotehnike održati će se u Italiji, u gradu Rimini od 12. do 17. maja 2016.";
-          this.events[1].kratkiTekst="Pozivamo sve studente, asistetne i profesore Elektrotehničkog fakulteta Univerziteta u Sarajevu na JAVNU RASPRAVU.";
+          this.events[1].kratkiTekst="Pozivamo sve studente, asistente i profesore Elektrotehničkog fakulteta Univerziteta u Sarajevu na Steleksijadu.";
           this.events[2].kratkiTekst="STELEKS po prvi put organizuje League of Robots i poziva sve zainteresirane da se prijave i odlično zabave!";
           this.events[3].kratkiTekst="STELEKS u toku akademske 2015./16. godine u cilju spajanja nauke, zabave i nagrada organizuje STELEKS kvizove.";
 

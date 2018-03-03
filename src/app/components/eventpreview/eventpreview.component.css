@@ -3,7 +3,7 @@
     height: 400px;
 
     min-height: 650px;
-    background-image:url('assets/images/liga_robota.png');
+    background-image:url('https://image.ibb.co/dFnbXn/face_1520081338168_9543.jpg');
     background-size: cover;
     background-attachment:fixed;
     background-position:center center;
@@ -72,7 +72,7 @@
       height: 492px;
       top: auto;
       width: 510px !important;
-        background-image:url('assets/images/liga_robota.png')right top no-repeat;
+      background:url('https://image.ibb.co/bKYS2b/gradient.png')right top no-repeat;
       transform: translateX(0);
       left: 0;
       padding:30px;

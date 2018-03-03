@@ -9,7 +9,7 @@ body {
 
   margin-top: 10px;
   min-height: 20px;
-  background-image:url('assets/images/liga_robota.png');
+  background-image:url('https://image.ibb.co/dFnbXn/face_1520081338168_9543.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
@@ -61,7 +61,7 @@ article{
 }
 
 p {
-  height: 100%;
+  height: auto;
 }
 
 
@@ -79,7 +79,9 @@ text-align: center;
   border-color: #06d7d9;
   margin-bottom: 50px;
 }
-
+.info{
+  height: auto;
+}
 .divider {
   border-bottom: 1px solid #06d7d9;
 }
@@ -112,7 +114,7 @@ margin: 6px;
   background: #f2f2f2;
   border-radius: 3px;
   cursor: pointer;
-  height: 17em;
+  height: 13em;
   padding: 1.5em;
   position: relative;
   -webkit-transition: height 0.4s, -webkit-box-shadow 0.5s;
@@ -124,7 +126,7 @@ margin: 6px;
 
   -webkit-box-shadow: 0 0 2em #999;
           box-shadow: 0 0 2em #999;
-  height: 38em;
+  height: auto;
   -webkit-transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
   transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
   transition: height 0.3s ease, box-shadow 0.5s ease;
@@ -139,7 +141,7 @@ margin: 6px;
   visibility: visible;
   top: 1%;
   opacity: 1;
-  height: 1000px;
+  height:auto;
 }
 .cards:hover .icon {
   font-size: 2em;
@@ -159,6 +161,7 @@ margin: 6px;
   color: #999;
   text-align: center;
   font-weight: 300;
+  font-size: 20px;
 }
 .cards .lead {
   color: #999;
@@ -237,7 +240,7 @@ margin: 6px;
 
     -webkit-box-shadow: 0 0 2em #999;
             box-shadow: 0 0 2em #999;
-    height: 38em;
+    height: auto;
     -webkit-transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
     transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
     transition: height 0.3s ease, box-shadow 0.5s ease;
@@ -274,7 +277,7 @@ margin: 6px;
 
     -webkit-box-shadow: 0 0 2em #999;
             box-shadow: 0 0 2em #999;
-    height: 38em;
+    height: auto;
     -webkit-transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
     transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
     transition: height 0.3s ease, box-shadow 0.5s ease;
