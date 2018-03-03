@@ -4,11 +4,12 @@ body {
   font-size: 10px;
   padding: 5em;
 }
+
 .eventpicture{
 
   margin-top: 10px;
   min-height: 20px;
-background-image:url('http://www.zastavki.com/pictures/originals/2014/World___Italy_Summer_vacation_at_the_beach_in_the_resort_of_Rimini__Italy_063110_.jpg');
+  background-image:url('http://www.zastavki.com/pictures/originals/2014/World___Italy_Summer_vacation_at_the_beach_in_the_resort_of_Rimini__Italy_063110_.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
@@ -49,8 +50,8 @@ article{
 
 .text2{
   color: auto;
-  margin-left: 40px;
-  margin-top: 40px;
+  margin:0px auto;
+  display: block;
   letter-spacing: 1px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -183,22 +184,106 @@ margin: 6px;
 }
 
 @media screen and (max-width: 1130px) {
+  .row{
+    display: inline-block;
+    margin: 0px auto;
+    width:100%;
+  }
+  article {
+    width:30%;
+  }
+  .cards {
+  margin: 6px;
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    background: #f2f2f2;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 13em;
+    padding: 1.5em;
+    position: relative;
+    -webkit-transition: height 0.4s, -webkit-box-shadow 0.5s;
+    transition: height 0.4s, -webkit-box-shadow 0.5s;
+    transition: height 0.4s, box-shadow 0.5s;
+    transition: height 0.4s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  }
 }
 
 @media screen and (max-width: 920px) {
+  .row{
+    display: table;
+    margin: 0px auto;
+    padding: 0px;
+  }
+  article {
+    width:28%;
+  }
+  .cards {
+  margin: 6px;
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+    background: #f2f2f2;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 13em;
+    padding: 1.5em;
+    position: relative;
+    -webkit-transition: height 0.4s, -webkit-box-shadow 0.5s;
+    transition: height 0.4s, -webkit-box-shadow 0.5s;
+    transition: height 0.4s, box-shadow 0.5s;
+    transition: height 0.4s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  }
+  .cards:hover {
+
+    -webkit-box-shadow: 0 0 2em #999;
+            box-shadow: 0 0 2em #999;
+    height: 38em;
+    -webkit-transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
+    transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
+    transition: height 0.3s ease, box-shadow 0.5s ease;
+    transition: height 0.3s ease, box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
+  }
 }
 
-@media screen and (max-width: 720px) {
-}
 
 @media screen and (max-width: 680px) {
-
   .row{
     display: table;
     margin: 0 auto;
     width:300px;
   }
   article {
-    width:100%;
+    width:80%;
+  }
+  .cards {
+  margin: 6px;
+    width: 250px;
+    font-family: 'Roboto', sans-serif;
+    background: #f2f2f2;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 13em;
+    padding: 1.5em;
+    position: relative;
+    -webkit-transition: height 0.4s, -webkit-box-shadow 0.5s;
+    transition: height 0.4s, -webkit-box-shadow 0.5s;
+    transition: height 0.4s, box-shadow 0.5s;
+    transition: height 0.4s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  }
+  .cards:hover {
+
+    -webkit-box-shadow: 0 0 2em #999;
+            box-shadow: 0 0 2em #999;
+    height: 38em;
+    -webkit-transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
+    transition: height 0.3s ease, -webkit-box-shadow 0.5s ease;
+    transition: height 0.3s ease, box-shadow 0.5s ease;
+    transition: height 0.3s ease, box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
+  }
+  .eventpicture{
+    margin: 2px;
+  }
+  .info-overflow{
+    margin: 2px;
   }
 }

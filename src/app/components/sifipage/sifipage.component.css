@@ -188,8 +188,8 @@ ul.tab li div {
 
 /* hover */
 ul.tab li div:hover {
-    background-color: #e6e6fa; /*#999999;*/
-    cursor:
+  background-color: #b3b3b3; /*#999999;*/
+  cursor: pointer;
 }
 
 /* hover za trenutni na koji kliknemo */

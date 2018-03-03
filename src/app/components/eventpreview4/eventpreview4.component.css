@@ -1,7 +1,7 @@
-
 .eventpicture{
   width: 100%;
   height: 400px;
+
   min-height: 650px;
   background-image:url('http://steleks.ba/wp-content/gallery/osmomartovski-steleks-kviz/ed2f2602641466cfe2b3cfa4f55a4d7d9868bae1b7bec51d4372f7883aa6d283.jpg');
   background-repeat: no-repeat;
@@ -100,4 +100,39 @@ div{
   text-rendering: geometricPrecision;
   box-sizing: border-box;
   outline: 0;
+}
+
+@media screen and (max-width: 1130px) {
+}
+
+@media screen and (max-width: 920px) {
+}
+
+@media screen and (max-width: 720px) {
+}
+
+@media screen and (max-width: 680px) {
+  .info-dash{
+      background-size: 100% auto;
+      bottom:  0px;
+      height: 492px;
+      top: auto;
+      width: 350px !important;
+      background:url('https://image.ibb.co/bKYS2b/gradient.png')right top no-repeat;
+      transform: translateX(0);
+      left: 0;
+      padding:30px;
+      position: absolute;
+      z-index: 4;
+  }
+  .info-dash:after{
+    content: "";
+    display: block;
+    height: 150px;
+    width: 100%;
+  }
+  .eventpicture{
+    margin: 2px;
+  }
+  
 }
