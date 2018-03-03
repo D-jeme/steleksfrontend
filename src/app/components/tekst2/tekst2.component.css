@@ -34,7 +34,6 @@ article{
   float: left;
   width: 30%;
   margin: 15px;
-
 }
 
 .container1{
@@ -181,4 +180,25 @@ margin: 6px;
   color: #fff;
   -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
+}
+
+@media screen and (max-width: 1130px) {
+}
+
+@media screen and (max-width: 920px) {
+}
+
+@media screen and (max-width: 720px) {
+}
+
+@media screen and (max-width: 680px) {
+
+  .row{
+    display: table;
+    margin: 0 auto;
+    width:300px;
+  }
+  article {
+    width:100%;
+  }
 }
