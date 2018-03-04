@@ -11,14 +11,14 @@
 
 <figure class="vijest" *ngFor="let i of events">
   <img src={{i.slika}} class="imgs" >
-  <div class="datum"><span class="dan">12</span><span class="mjesec">Maj</span></div>
+  <div class="datum"><span class="dan">{{i.dan}}</span><span class="mjesec">{{i.mjesec}}</span></div>
   <figcaption>
     <h3>{{i.naziv}}</h3>
     <p>
     {{i.kratkiTekst}}
     </p>
-    <button class="button">Pročitaj više</button>
-  </figcaption><a href="#"></a>
+    <button (click)="onClick(i.id)" class="button">Pročitaj više</button>
+  </figcaption>
 </figure>
 
 </div>

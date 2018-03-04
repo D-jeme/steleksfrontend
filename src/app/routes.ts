@@ -72,6 +72,10 @@ const app_routes:Routes = [
 
   { path:'gallery', component: AlbumipageComponent },
 
+
+  { path: 'galerija/:id', component: GalleryComponent },
+
+
   { path:'galerija', component: GalleryComponent },
 
   { path:'elektrijada', component: ElektrijadapageComponent },
@@ -81,6 +85,10 @@ const app_routes:Routes = [
   { path:'moderator', component: ModeratorComponent },
 
   { path:'event', component: EventpreviewComponent },
+
+
+  { path:'event/:id', component: EventpreviewComponent },
+
 
   { path:'sifipreview', component: SifipreviewComponent },
 

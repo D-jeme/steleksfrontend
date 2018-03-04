@@ -6,6 +6,7 @@ body{
   position: absolute;
   width:100%;
   height:auto;
+  min-height: 2000px;
   margin: 0;
   padding: 0;
   background-image:url('../../assets/images/galerijapozadina.png');background-repeat:repeat;
@@ -39,6 +40,7 @@ h5{
 
 		#albums img {
       min-height: 250px;
+      max-height: 250px;
       min-width: 300px;
       width: 100%;
 			height: auto;
