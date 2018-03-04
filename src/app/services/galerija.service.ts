@@ -1,31 +1,36 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
-import {NewspageComponent} from '../components/newspage/newspage.component'
+import {GallerypageComponent} from '../components/gallerypage/gallerypage.component'
 import { Router} from '@angular/router';
 
 @Injectable()
-export class EventService {
+export class GalerijaService {
   url:string="https://steleksdevelopment.herokuapp.com";
+  idGalerije:String;
 
-  constructor(private _http:Http){}
+  constructor(private _http:Http){this.idGalerije="";}
 
-  prijava() {
-    console.log("tu saam");
+  postaviIdGalerije(id:String){
+    this.idGalerije='/api/albums/'+id;
+    console.log("imal meeeee",this.idGalerije);
+  }
+
+  dajSlike( ) {
+
     var headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    console.log(this.url + '/api/events/news')
-    return this._http.get( this.url + '/api/events/news', {
+
+    return this._http.get( this.url + this.idGalerije , {
       headers: headers
     } )
       .map( data => {
-        console.log("PODACI");
-        console.log(data.json());
+  console.log("imal meeeee" );
         return data.json();
       } );
 
-
   }
+
 
 
 
