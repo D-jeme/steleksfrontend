@@ -82,17 +82,9 @@ import { FormaAfterEventComponent } from './components/formaafterevent/formaafte
 
 import { FormaSponzoriComponent } from './components/formasponzori/formasponzori.component';
 
-import { Tekst2Component } from './components/tekst2/tekst2.component';
 
-import { Tekst3Component } from './components/tekst3/tekst3.component';
 
-import { Tekst4Component } from './components/tekst4/tekst4.component';
 
-import { Eventpreview2Component } from './components/eventpreview2/eventpreview2.component';
-
-import { Eventpreview3Component } from './components/eventpreview3/eventpreview3.component';
-
-import { Eventpreview4Component } from './components/eventpreview4/eventpreview4.component';
 
 @NgModule({
 
@@ -166,20 +158,9 @@ import { Eventpreview4Component } from './components/eventpreview4/eventpreview4
 
     FormaAfterEventComponent,
 
-    FormaSponzoriComponent,
+    FormaSponzoriComponent
 
-    Tekst2Component,
-
-    Tekst3Component,
-
-    Tekst4Component,
-
-    Eventpreview2Component,
-
-    Eventpreview3Component,
-
-    Eventpreview4Component,
-  ],
+],
 
   imports: [
 
@@ -189,7 +170,7 @@ import { Eventpreview4Component } from './components/eventpreview4/eventpreview4
 
     HttpModule,
 
-    AppRouting
+    AppRouting,
 
   ],
 

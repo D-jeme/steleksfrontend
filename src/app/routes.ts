@@ -58,11 +58,7 @@ import { FormaAfterEventComponent } from './components/formaafterevent/formaafte
 
 import { FormaSponzoriComponent } from './components/formasponzori/formasponzori.component';
 
-import { Eventpreview2Component } from './components/eventpreview2/eventpreview2.component';
 
-import { Eventpreview3Component } from './components/eventpreview3/eventpreview3.component';
-
-import { Eventpreview4Component } from './components/eventpreview4/eventpreview4.component';
 
 const app_routes:Routes = [
 
@@ -122,11 +118,6 @@ const app_routes:Routes = [
 
   { path:'formasponzori', component: FormaSponzoriComponent},
 
-  { path:'event2', component: Eventpreview2Component },
-
-  { path:'event3', component: Eventpreview3Component },
-
-  { path:'event4', component: Eventpreview4Component },
 
   { path: '**', pathMatch: 'full', redirectTo: '' }
 
