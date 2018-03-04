@@ -1,0 +1,42 @@
+{
+  "name": "steleksbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/xfsinanx/SteleksBackend.git"
+  },
+  "author": "Faruk Sinanovic, Aldo Selimovic, Selmir Satrovic, Tarik Ahmetovic, Nejra Bahtic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/xfsinanx/SteleksBackend/issues"
+  },
+  "homepage": "https://gitlab.com/xfsinanx/SteleksBackend#README",
+  "dependencies": {
+    "@babel/preset-env": "^7.0.0-beta.34",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-webpack-loaders": "^0.9.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.13.5",
+    "nodemon": "^1.14.3",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.4.0"
+  }
+}
