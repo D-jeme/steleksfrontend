@@ -1,6 +1,7 @@
 import * as ModeratorController from '../controllers/moderator.controller'
 import passport from 'passport'
 import * as AuthStuff from '../middlewares/auth'
+import Role from '../models/role'
 
 const express = require( 'express' )
 
@@ -21,10 +22,12 @@ router.route( '/superadmin' )
 
 router.post('/login', passport.authenticate("local", {
     failureRedirect: 'login'
-}), (req,res) => {
+}), async(req,res) => {
 
   delete req.user._doc.hash
   delete req.user._doc.salt
+
+  req.user._doc.role = (await Role.findOne( { _id: req.user._doc.role } )).role
 
   res.send(req.user);
 })
