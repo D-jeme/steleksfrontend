@@ -1576,7 +1576,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var PrijavaService = (function () {
     function PrijavaService(_http) {
         this._http = _http;
-        this.url = "https://steleksdevelopment.herokuapp.com";
+        this.url = "http://localhost:8080";
     }
     PrijavaService.prototype.prijava = function (user, password) {
         var body = JSON.stringify({ username: user, password: password });
@@ -2575,7 +2575,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ElektrijadaService = (function () {
     function ElektrijadaService(_http) {
         this._http = _http;
-        this.url = "https://steleksdevelopment.herokuapp.com";
+        this.url = "http://localhost:8080";
     }
     ElektrijadaService.prototype.prijava = function (elektrijada) {
         console.log("ima li te ");
@@ -2628,7 +2628,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var EventService = (function () {
     function EventService(_http) {
         this._http = _http;
-        this.url = "https://steleksdevelopment.herokuapp.com";
+        this.url = "http://localhost:8080";
     }
     EventService.prototype.prijava = function () {
         console.log("tu saam");
@@ -2720,7 +2720,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ModeratorPrijavaService = (function () {
     function ModeratorPrijavaService(_http) {
         this._http = _http;
-        this.url = "https://steleksdevelopment.herokuapp.com";
+        this.url = "http://localhost:8080";
     }
     ModeratorPrijavaService.prototype.prijava = function (user, password) {
         var body = { username: user, password: password };
@@ -2780,7 +2780,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var RegistracijaService = (function () {
     function RegistracijaService(_http) {
         this._http = _http;
-        this.url = "https://steleksdevelopment.herokuapp.com";
+        this.url = "http://localhost:8080";
     }
     RegistracijaService.prototype.prijava = function (clan) {
         console.log("ima li te ");
@@ -2835,7 +2835,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var SponzoriService = (function () {
     function SponzoriService(_http) {
         this._http = _http;
-        this.url = "https://steleksdevelopment.herokuapp.com";
+        this.url = "http://localhost:8080";
     }
     SponzoriService.prototype.prijava = function (sponzor) {
         console.log("ima li te ");

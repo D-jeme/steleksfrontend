@@ -6,7 +6,7 @@ import { Router} from '@angular/router';
 
 @Injectable()
 export class EventPreviewService {
-  url:string="https://steleksdevelopment.herokuapp.com";
+  url:string="http://localhost:8080";
   idEventa:String;
 
   constructor(private _http:Http){this.idEventa="";}
