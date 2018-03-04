@@ -41,7 +41,7 @@ const port = process.env.PORT || 8080
 
 app.use( ( req, res, next ) => {
   res.setHeader( 'Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS' )
-  res.setHeader( 'Access-Control-Allow-Origin', 'http://localhost:4200' )//res.setHeader( 'Access-Control-Allow-Origin', 'http://localhost:3000' )
+  res.setHeader( 'Access-Control-Allow-Origin', 'http://localhost:4200' )
   res.setHeader( 'Access-Control-Allow-Headers', 'Authorization, Origin, X-Requested-With, Content-Type, Accept' )
   res.setHeader( 'Access-Control-Allow-Credentials', true )
   next()
@@ -55,6 +55,7 @@ app.use( bodyParser.urlencoded({
 app.use(session({
   secret: "Adanoo",
   resave: false,
+  proxy : true,
   saveUninitialized: false
 }))
 
@@ -65,7 +66,7 @@ passport.deserializeUser(Moderator.deserializeUser())
 
 app.use(passport.initialize())
 app.use(passport.session())
-app.use(express.static('public'))
+
 //OVDJE STAVLJAJTE RUTE ROUTES
 app.use( '/api/roles', roleRoutes )
 app.use( '/api/boards', boardRoutes )

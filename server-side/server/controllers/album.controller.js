@@ -43,7 +43,11 @@ export const getOtherAlbums = async( req, res ) => {
 export const getRepresentativeAlbums = async( req, res ) => {
   try {
     const eventTypes = await EventType.find( {} ).select( "_id" )
-    const albums = await Album.find( { eventType: { $in: eventTypes } }, { imgUrls: { $slice: 5 } } ).skip((req.body.skip? req.body.skip: 0) * 10).limit(10)
+    const albums = await Album.find( { eventType: { $in: eventTypes } }, { imgUrls: { $slice: 4 } } ).skip((req.body.skip? req.body.skip: 0) * 10).limit(10).populate({
+      path: 'eventType',
+      model: 'EventType',
+      select: 'eventType'
+    })
     return res.send({ array: albums })
   } catch (e) {
     return res.status(500).send(e)

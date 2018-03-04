@@ -22,7 +22,12 @@ export const createEvent = async( req, res ) => {
 
 export const getEventsNews = async( req, res ) => {
   try {
-    const events = await Events.find( {} ).select('_id title shortText imgUrl startsAt').sort({ updatedAt: "desc" }).limit( 10 )
+    const events = await Events.find( {} ).populate({
+      path: 'eventType',
+      model: 'EventType',
+      select: 'eventType'
+    }).select('_id title shortText imgUrl startsAt eventType').sort({ updatedAt: "desc" })//.limit( 10 )
+
     return res.send( { array: events } )
   } catch (e) {
     return res.status(500).send(e)
@@ -31,7 +36,7 @@ export const getEventsNews = async( req, res ) => {
 
 export const getEventById = async( req, res ) => {
   try {
-    const event = await Events.findOne( { _id: req.params._id } ).populate( 'sponsors album' )
+    const event = await Events.findOne( { _id: req.params._id } ).populate( 'sponsors album eventType' )
     return res.send(event)
   } catch (e) {
     return res.status(500).send(e)
@@ -71,7 +76,7 @@ export const getSpecificEvents = async( req, res ) => {
 export const getEventDates = async( req, res ) => {
   try {
     const eventType = await EventType.findOne( { eventType: req.params.eventType } ).select("_id")
-    const dates = await Event.find( { eventType: eventType } ).select("_id startsAt finishedAt updatedAt createdAt")
+    const dates = await Events.find( { eventType: eventType } ).select("_id startsAt finishedAt updatedAt createdAt")
     return res.send( { array: dates } )
   } catch (e) {
     return res.status(500).send(e)

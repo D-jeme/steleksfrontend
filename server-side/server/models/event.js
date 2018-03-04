@@ -30,7 +30,7 @@ const eventSchema = new Schema( {
       } ],
   eventType:{
       type:Schema.ObjectId,
-      ref:'EventTypes',
+      ref:'EventType',
   },
   createdBy: {
     type: Schema.ObjectId,
