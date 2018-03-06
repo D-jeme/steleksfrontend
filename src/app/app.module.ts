@@ -42,7 +42,7 @@ import { ElektrijadapageComponent } from './components/elektrijadapage/elektrija
 
 import { LearningpageComponent } from './components/learningpage/learningpage.component';
 
-import { ModeratorComponent } from './components/moderator/moderator.component';
+
 
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -120,7 +120,7 @@ import { FormaSponzoriComponent } from './components/formasponzori/formasponzori
 
     LearningpageComponent,
 
-    ModeratorComponent,
+
 
     FooterComponent,
 

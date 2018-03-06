@@ -1,72 +1,38 @@
 import { Component, OnInit } from '@angular/core';
+import  {PrijavaService} from '../../services/prijava.service';
+import { Osoba } from '../../models/osoba';
 
 @Component({
   selector: 'app-superadminopcije',
   templateUrl: './superadminopcije.component.html',
-  styleUrls: ['./superadminopcije.component.css']
+  styleUrls: ['./superadminopcije.component.css'],
+  providers:[PrijavaService]
 })
 export class SuperAdminOpcijeComponent implements OnInit {
-  admini: Array<String>;
-  br: number;
-  showSelected: boolean;
-  ime: string= '';
-  prezime: string= '';
-  messageUspjesno: string= '';
-  errorMessageIme: string= '';
-  errorMessagePrezime: string= '';
-  constructor() {
-    this.br=0;
-    this.showSelected=false;
-    this.admini = ['Admin naziv'];
+
+  admini:Array<Osoba>;
+  constructor(private _prijavaService: PrijavaService) {
+    this.admini=[];
   }
 
   ngOnInit() {
+    setTimeout(()=>{    //<<<---    using ()=> syntax
+console.log("imal me");
+      this._prijavaService.dajAdmine().subscribe(
+        data =>{
+
+          for(let i=0;i<data.array.length;i++)
+          {
+            if(data.array[i].role.role=="admin")
+            this.admini.push(new Osoba(data.array[i]._id,data.array[i].username));
+
+          }
+          console.log("admini",this.admini);
+
+        }
+      );
+    },1500);
   }
 
-  redniBroj(i) {
-    this.br=0;
-    for(let n in this.admini) {
-      this.br++;
-      if(this.admini[n]==i) {
-        return this.br;
-      }
-    }
-    return this.br;
-  }
 
-  obrisiAdmina(n) {
-      this.admini.splice(n, 1);
-      this.br--;
-  }
-
-  ShowButton(){
-    this.showSelected = true;
-  }
-
-  HideButton(){
-    this.messageUspjesno='';
-    this.errorMessageIme='';
-    this.errorMessagePrezime='';
-    this.ime='';
-    this.prezime='';
-    this.showSelected = false;
-  }
-
-  dodajAdmina() {
-    if(this.ime=='') {
-      this.errorMessagePrezime='';
-      this.errorMessageIme='Molimo Vas da unesete ime!';
-    }
-    else if(this.prezime=='') {
-      this.errorMessageIme='';
-      this.errorMessagePrezime='Molimo Vas da unesete prezime!';
-    }
-    else {
-      this.errorMessageIme='';
-      this.errorMessagePrezime='';
-      this.br++;
-      this.admini.push(this.ime+' '+this.prezime);
-      this.messageUspjesno='Uspjesno ste dodali novog admina.';
-    }
-  }
 }

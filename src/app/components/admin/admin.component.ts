@@ -25,11 +25,22 @@ export class AdminComponent implements OnInit {
 
   }
 
-  print(){
-    this.router.navigateByUrl('/adminopcije');
-    console.log(this.Username+":"+this.Password);
-    this._prijavaService.prijava(this.Username, this.Password);
 
+
+  print(){
+
+
+    this._prijavaService.prijava(this.Username, this.Password);
+    setTimeout(()=>{
+    console.log("rola u adminu",this._prijavaService.dajRolu());
+    if(this._prijavaService.dajRolu()=="admin")
+        this.router.navigateByUrl('/adminopcije');
+    else if(this._prijavaService.dajRolu()=="moderator")
+        this.router.navigateByUrl('/moderatoropcije');
+    else if(this._prijavaService.dajRolu()=="superadmin")
+        this.router.navigateByUrl('/superadminopcije')
+
+},1500);
 
 
 

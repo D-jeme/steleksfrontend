@@ -22,7 +22,6 @@ import { NewspageComponent } from './components/newspage/newspage.component';
 
 import { SIFIpageComponent } from './components/sifipage/sifipage.component';
 
-import { ModeratorComponent } from './components/moderator/moderator.component';
 
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -84,7 +83,7 @@ const app_routes:Routes = [
 
   { path:'materijali', component: LearningpageComponent },
 
-  { path:'moderator', component: ModeratorComponent },
+
 
   { path:'event', component: EventpreviewComponent },
 
