@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HostListener} from "@angular/core";
-import { DOCUMENT } from "@angular/platform-browser";
+
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import {PageScrollConfig} from 'ng2-page-scroll';
+import  {PrijavaService} from '../../services/prijava.service';
 
 
 @Component({
@@ -11,7 +12,8 @@ import {PageScrollConfig} from 'ng2-page-scroll';
   styleUrls: ['./navigation.component.css'],
   host: {
        '(window:scroll)': 'updateHeader($event)'
-   }
+   },
+       providers: [PrijavaService]
 })
 export class NavigationComponent implements OnInit {
   isScrolled=false;
@@ -21,12 +23,16 @@ export class NavigationComponent implements OnInit {
   steleks:string;
   meni:string;
   prikazi:boolean;
+  logo:string;
 
-  constructor(){
+  constructor(private _prijavaService: PrijavaService){
     this.steleks='assets/images/steleksLogo.png';
+    this.logo='assets/images/korisnik.png';
     this.meni='assets/images/menu.png';
     this.prikazi=false;
   }
+
+
 
   updateHeader(evt) {
       this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
@@ -52,6 +58,20 @@ export class NavigationComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  ngOnChanges(){
+    setTimeout(()=>{ console.log("a ovdjeee");
+    console.log("ad li je prijavljen",this._prijavaService.dajPrijavu());
+      if(this._prijavaService.dajPrijavu())
+      {
+
+
+      document.getElementById("user").style.display="block";
+      console.log("prijavljen");
+      }
+      else   {document.getElementById("user").style.display="block";
+      console.log("neprijavljen");}},1000);
   }
   @HostListener("window:scroll", [])
   onWindowScroll() {

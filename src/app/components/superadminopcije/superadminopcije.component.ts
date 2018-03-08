@@ -24,7 +24,7 @@ console.log("imal me");
           for(let i=0;i<data.array.length;i++)
           {
             if(data.array[i].role.role=="admin")
-            this.admini.push(new Osoba(data.array[i]._id,data.array[i].username));
+            this.admini.push(new Osoba(data.array[i]._id,data.array[i].username,data.array[i].isActive));
 
           }
           console.log("admini",this.admini);
@@ -33,6 +33,7 @@ console.log("imal me");
       );
     },1500);
   }
+
 
 
 }

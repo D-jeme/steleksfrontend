@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
+import { Osoba } from '../models/osoba';
 import 'rxjs/add/operator/map';
 
 @Injectable()
 export class PrijavaService {
   url:string="http://localhost:8080";
   rola:string;
+  prijavljen:boolean;
 
-  constructor(private _http:Http){this.rola="";}
+  constructor(private _http:Http){this.rola="";this.prijavljen=true;}
 
 
 
@@ -29,39 +31,53 @@ console.log(body);
       data => {
           console.log("podaci rola",data.role);
           this.rola=data.role;
+          this.prijavljen=true;
+          console.log("prijavljen sam",this.prijavljen);
 
         },
     error =>{
       console.log(error);
+      this.prijavljen=false;
     }
 
     );
 }
-/*
-izbrisiModeratora(user:string) {
-  var body = JSON.stringify({username: user});
+
+odjava(){
+  console.log("tu saam");
+  var headers = new Headers();
+  headers.append('Content-Type', 'application/json');
+
+  return this._http.get( this.url + '/api/moderators/logout', {
+    headers: headers,
+    withCredentials: true
+  } )
+    .map( data => {
+
+      return data.json();
+    } );
+
+
+}
+
+izbrisiModeratora(osoba: Osoba) {
+  var body = JSON.stringify({username: osoba.username});
   var headers = new Headers();
   headers.append('Content-Type', 'application/json');
   //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
-console.log(body);
+
   this._http.delete(this.url + '/api/moderators',
-  body,
+
     {
+      body:body,
       headers: headers,
       withCredentials: true
     }
-  ).map(res=> res.json()).subscribe(
-    data => {
-        console.log("Izbrisao");
-
-      },
-  error =>{
-    console.log(error);
-  }
-
-  );
+  ).subscribe((ok)=>{console.log(ok)});
 }
-*/
+
+
+
 dajModeratore(){
   console.log("tu saam");
   var headers = new Headers();
@@ -96,6 +112,9 @@ dajAdmine(){
 }
 dajRolu(){
   return this.rola;
+}
+dajPrijavu(){
+  return this.prijavljen;
 }
 
 }

@@ -14,7 +14,7 @@ router.route( '/' )
   .put( AuthStuff.isLoggedIn, AuthStuff.isAdmin, ModeratorController.changeModeratorCredentials )
 
 router.route( '/admin' )
-.get( AuthStuff.isLoggedIn, AuthStuff.isSuperAdmin, ModeratorController.getModerators )
+  .get( AuthStuff.isLoggedIn, AuthStuff.isSuperAdmin, ModeratorController.getModerators )
   .post( AuthStuff.isLoggedIn, AuthStuff.isSuperAdmin, ModeratorController.createAdmin )
   .put( AuthStuff.isLoggedIn, AuthStuff.isSuperAdmin, ModeratorController.changeAdminCredentials )
 

@@ -107,7 +107,8 @@ export const removeModerator = async( req, res ) => {
   try {
     const moderator = await Moderator.findOne( { username: req.body.username } ).populate( 'role' )
     if( moderator.role.role != MODERATOR ) return res.status(403).send( { message: 'You can only remove moderators' } )
-    moderator.isActive = false
+    if(moderator.isActive) moderator.isActive = false
+    else moderator.isActive = true
     moderator.save( (err) => {
       if(err) return res.status(400).send( err )
       delete moderator._doc.salt

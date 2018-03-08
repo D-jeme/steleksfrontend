@@ -4,13 +4,13 @@ th, td {
 }
 th, td {
     padding: 5px;
-    text-align: left;
+    text-align: center;
 }
 table {
   background: #d9d9d9;
   border: 2px solid white;
   border-collapse: collapse;
-  width: 70%;
+  width: 60%;
   margin:0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -111,18 +111,18 @@ input[type="text"]{
   box-shadow: inset 0px 1px 0px 0px #595959;
   background-color: #595959;
   border: 1px solid #595959;
-  display: inline-block;
+  display: block;
   cursor: pointer;
   color: gray;
   font-size: 12px;
-  margin: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-  float:right;
+  margin: 5px auto;
+  width: 100%;
+
   padding: 5px 18px;
   text-decoration: none;
   border-radius: 4px;
   color: white;
+  text-align: center;
 }
 .button2 {
   -moz-box-shadow: inset 0px 1px 0px 0px #595959;
