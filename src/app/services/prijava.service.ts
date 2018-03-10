@@ -37,7 +37,13 @@ console.log(body);
           this.rola=data.role;
           this.prijavljen=true;
 
-          console.log("prijavljen sam",this.prijavljen);
+          console.log("prijavljen je :",data.username);
+          localStorage.setItem('signed',JSON.stringify(this.prijavljen));
+          localStorage.setItem('reload',JSON.stringify(true));
+          localStorage.setItem('username',data.username);
+          localStorage.setItem('rola',data.role);
+
+
 
         },
     error =>{
@@ -49,7 +55,7 @@ console.log(body);
 }
 
 odjava(){
-  console.log("tu saam");
+  console.log("odjavljen sam");
   var headers = new Headers();
   headers.append('Content-Type', 'application/json');
 
@@ -58,6 +64,7 @@ odjava(){
     withCredentials: true
   } )
     .map( data => {
+      console.log("sta se desava");
 
       return data.json();
     } );

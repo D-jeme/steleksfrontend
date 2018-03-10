@@ -6,8 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./moderatoropcije.component.css']
 })
 export class ModeratorOpcijeComponent implements OnInit {
-
+rld: any;
   ngOnInit() {
+    this.rld = localStorage.getItem('reload');console.log("reload",this.rld);
+    if(this.rld=="true"){this.load();
+       localStorage.setItem('reload',JSON.stringify(false));}
   }
 
+
+load(){
+  location.reload();
+}
 }

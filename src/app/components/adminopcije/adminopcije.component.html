@@ -6,10 +6,13 @@
 
       <th>Naziv moderatora</th>
       <th style="text-align:center;">Aktivnost</th>
+      <th></th>
     </tr>
     <tr *ngFor="let i of moderatori">
 
       <td>{{i.username}}</td>
+      <td *ngIf="i.aktivan" >aktivan</td>
+      <td *ngIf="!i.aktivan" >neaktivan</td>
       <td style="width:15%;">
 
           <button class="button1" *ngIf="i.aktivan" (click)="delete(i)">Deaktiviraj</button>

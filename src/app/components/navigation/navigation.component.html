@@ -1,13 +1,13 @@
 <header class="my-header" [ngClass]= "{'page-scroll-header': isScrolled}">
 
 
-  <nav role="navigation" id="nav-main" class="okayNav clearfix">
+  <nav role="navigation" id="nav-main" class="okayNav">
 
     <ul>
-      <li><a class="logo" href="#">
+      <li><a class="logo" href="/">
         <img [src]="steleks" >     </a></li>
 
-      <li><a [routerLink]="['/#']">Početna</a></li>
+        <li><a [routerLink]="['/#']">Početna</a></li>
       <li><a [routerLink]="['/about']">O nama</a></li>
       <li><a [routerLink]="['/news']">Vijesti</a></li>
       <li><a [routerLink]="['/upravniodbor']">Upravni odbor</a></li>
@@ -15,12 +15,12 @@
       <li><a [routerLink]="['/sifi']">Sifi</a></li>
       <li><a [routerLink]="['/gallery']">Galerija</a></li>
 
-      <a class="logo" id ="user" href="#">
-        <img [src]="logo" >     </a>
-        <a class="opcije" href="#">ee
-        </a>
+      <a class="logo" id ="user"   >
+        <img [src]="logo" (click)=detalji()>     </a>
 
     </ul>
+
+
 
     <div class="drugi">
       <div class="lijevo">
@@ -49,5 +49,13 @@
 
 
   </nav>
+
+  <ul class="opt" id="prikaziOpcije">
+
+  <li><a class="opcije" >{{username}}</a></li>
+  <li><a class="opcije" (click)=route()>Opcije {{rola}}a</a></li>
+
+    <li><a class="opcije" href="/" (click)=odjava()>Odjavi se</a></li>
+</ul>
 </header>
 <!-- /header -->

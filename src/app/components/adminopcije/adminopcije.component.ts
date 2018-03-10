@@ -11,19 +11,24 @@ import { Router} from '@angular/router';
 })
 export class AdminOpcijeComponent implements OnInit {
   moderatori: Array<Osoba>;
-  aktivan : boolean;
+  aktivan : number;
+  rld: any;
+  aktivnost:string;
 
 @Input() rola;
 
-  constructor(private _prijavaService: PrijavaService,  private router: Router) {this.moderatori=[];
+  constructor(private _prijavaService: PrijavaService,  private router: Router) {this.moderatori=[];this.aktivan=0;
 
 
   }
 
   ngOnInit() {
+    this.rld = localStorage.getItem('reload');console.log("reload",this.rld);
+    if(this.rld=="true"){this.load();
+       localStorage.setItem('reload',JSON.stringify(false));}
 
 
-    setTimeout(()=>{    //<<<---    using ()=> syntax
+    setTimeout(()=>{  //<<<---    using ()=> syntax
 console.log("hahhaahh",this._prijavaService.dajPrijavu());
       this._prijavaService.dajModeratore().subscribe(
         data =>{
@@ -33,14 +38,20 @@ console.log("osoblje",data);
             if(data.array[i].role.role=="moderator"){
             this.moderatori.push(new Osoba(data.array[i]._id,data.array[i].username,data.array[i].isActive));
             this.aktivan=data.array[i].isActive;
+            if(data.array[i].isActive)this.aktivnost="aktivan";
+            else this.aktivnost="neaktivan";
             console.log("aktivan",data.array[i].isActive);
             }
 
           }
+}
 
-        }
-      );
-    },500);
+);},1300);
+
+  }
+
+  load(){
+    location.reload();
   }
 
   delete(osoba: Osoba){

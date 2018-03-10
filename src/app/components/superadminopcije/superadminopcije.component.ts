@@ -11,12 +11,16 @@ import { Osoba } from '../../models/osoba';
 export class SuperAdminOpcijeComponent implements OnInit {
 
   admini:Array<Osoba>;
+  rld: any;
   constructor(private _prijavaService: PrijavaService) {
     this.admini=[];
   }
 
   ngOnInit() {
-    setTimeout(()=>{    //<<<---    using ()=> syntax
+    this.rld = localStorage.getItem('reload');console.log("reload",this.rld);
+    if(this.rld=="true"){this.load();
+       localStorage.setItem('reload',JSON.stringify(false));}
+
 console.log("imal me");
       this._prijavaService.dajAdmine().subscribe(
         data =>{
@@ -31,9 +35,11 @@ console.log("imal me");
 
         }
       );
-    },1500);
+    
   }
 
-
+  load(){
+    location.reload();
+  }
 
 }
