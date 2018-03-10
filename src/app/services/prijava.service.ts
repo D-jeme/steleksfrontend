@@ -1,15 +1,19 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Input, Output, EventEmitter } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 import { Osoba } from '../models/osoba';
 import 'rxjs/add/operator/map';
 
 @Injectable()
+
 export class PrijavaService {
   url:string="http://localhost:8080";
   rola:string;
-  prijavljen:boolean;
+prijavljen:boolean;
 
-  constructor(private _http:Http){this.rola="";this.prijavljen=true;}
+
+
+
+  constructor(private _http:Http){this.rola="";this.prijavljen=false;}
 
 
 
@@ -29,9 +33,10 @@ console.log(body);
       }
     ).map(res=> res.json()).subscribe(
       data => {
-          console.log("podaci rola",data.role);
+
           this.rola=data.role;
           this.prijavljen=true;
+
           console.log("prijavljen sam",this.prijavljen);
 
         },
@@ -113,7 +118,8 @@ dajAdmine(){
 dajRolu(){
   return this.rola;
 }
-dajPrijavu(){
+ dajPrijavu():boolean{
+  console.log("servis",this.prijavljen);
   return this.prijavljen;
 }
 

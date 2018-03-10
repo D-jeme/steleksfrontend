@@ -30,7 +30,10 @@ export class AdminComponent implements OnInit {
   print(){
 
 
+
+
     this._prijavaService.prijava(this.Username, this.Password);
+    console.log("ovo",this._prijavaService.prijava(this.Username, this.Password));
     setTimeout(()=>{
     console.log("rola u adminu",this._prijavaService.dajRolu());
     if(this._prijavaService.dajRolu()=="admin")

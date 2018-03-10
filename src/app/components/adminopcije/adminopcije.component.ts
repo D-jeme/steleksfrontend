@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,EventEmitter,Output,Input } from '@angular/core';
 import  {PrijavaService} from '../../services/prijava.service';
 import { Osoba } from '../../models/osoba';
 import { Router} from '@angular/router';
@@ -13,14 +13,18 @@ export class AdminOpcijeComponent implements OnInit {
   moderatori: Array<Osoba>;
   aktivan : boolean;
 
+@Input() rola;
+
   constructor(private _prijavaService: PrijavaService,  private router: Router) {this.moderatori=[];
 
 
   }
 
   ngOnInit() {
-    setTimeout(()=>{    //<<<---    using ()=> syntax
 
+
+    setTimeout(()=>{    //<<<---    using ()=> syntax
+console.log("hahhaahh",this._prijavaService.dajPrijavu());
       this._prijavaService.dajModeratore().subscribe(
         data =>{
 console.log("osoblje",data);

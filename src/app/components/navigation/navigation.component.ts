@@ -31,6 +31,10 @@ export class NavigationComponent implements OnInit {
     this.meni='assets/images/menu.png';
     this.prikazi=false;
   }
+onVoted(agreed:boolean)
+  {
+    console.log("jel ovo ravno");
+  }
 
 
 
@@ -58,11 +62,9 @@ export class NavigationComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
 
-  ngOnChanges(){
-    setTimeout(()=>{ console.log("a ovdjeee");
-    console.log("ad li je prijavljen",this._prijavaService.dajPrijavu());
+    setTimeout(()=>{ 
+    console.log("da li je prijavljen",this._prijavaService.dajPrijavu());
       if(this._prijavaService.dajPrijavu())
       {
 
@@ -71,6 +73,20 @@ export class NavigationComponent implements OnInit {
       console.log("prijavljen");
       }
       else   {document.getElementById("user").style.display="block";
+      console.log("neprijavljen");}},1000);
+  }
+
+  ngOnChanges(){
+    setTimeout(()=>{ console.log("a ovdjeee");
+    console.log("da li je prijavljen",this._prijavaService.dajPrijavu());
+      if(this._prijavaService.dajPrijavu())
+      {
+
+
+      document.getElementById("user").style.display="block";
+      console.log("prijavljen");
+      }
+      else if(!this._prijavaService.dajPrijavu())  {document.getElementById("user").style.display="none";
       console.log("neprijavljen");}},1000);
   }
   @HostListener("window:scroll", [])
