@@ -14,6 +14,14 @@ export class AdminOpcijeComponent implements OnInit {
   aktivan : number;
   rld: any;
   aktivnost:string;
+  show:boolean;
+  username:string;
+  password:string;
+  potvrdapassworda:string;
+  username1:string;
+  password1:string;
+  potvrdapassworda1:string;
+  show1:boolean;
 
 @Input() rola;
 
@@ -49,7 +57,37 @@ console.log("osoblje",data);
 );},1300);
 
   }
+  prikazi(){
+    if(this.show==true){
+      this.show=false;
+      this.show1=false;}
+    else {this.show=true;this.show1=false;}
 
+  }
+  prikazi1(){
+    if(this.show1==true){
+      this.show1=false;
+      this.show=false;
+    }
+    else {
+      this.show1=true;
+      this.show=false;
+    }
+
+  }
+dodajModeratora()
+{ if(this.password==this.potvrdapassworda){
+  this._prijavaService.dodajModeratora(this.username,this.password);
+  console.log("dobar password");
+}
+else console.log("Sifre se ne podudaraju");
+}
+updateModeratora(){
+  if(this.password1==this.potvrdapassworda1)
+  this._prijavaService.updateModeratora(this.username1,this.password1);
+  else console.log("Sifre se ne podudaraju");
+
+}
   load(){
     location.reload();
   }

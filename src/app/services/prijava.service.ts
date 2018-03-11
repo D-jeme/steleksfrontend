@@ -53,7 +53,99 @@ console.log(body);
 
     );
 }
+dodajModeratora(user:string, password:string) {
+  var body = JSON.stringify({username: user, password: password});
+  var headers = new Headers();
+  headers.append('Content-Type', 'application/json');
+  //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
+console.log(body);
+  this._http.post(this.url + '/api/moderators/',
+  body,
+    {
+      headers: headers,
+      withCredentials: true
+    }
+  ).map(res=> res.json()).subscribe(
+    data => {
 
+      },
+  error =>{
+    console.log(error);
+    this.prijavljen=false;
+  }
+
+  );
+}
+
+dodajAdmina(user:string, password:string) {
+  var body = JSON.stringify({username: user, password: password});
+  var headers = new Headers();
+  headers.append('Content-Type', 'application/json');
+  //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
+console.log(body);
+  this._http.post(this.url + '/api/moderators/admin',
+  body,
+    {
+      headers: headers,
+      withCredentials: true
+    }
+  ).map(res=> res.json()).subscribe(
+    data => {
+      },
+  error =>{
+    console.log(error);
+    this.prijavljen=false;
+  }
+
+  );
+}
+
+updateAdmina(user:string, password:string) {
+  var body = JSON.stringify({username: user, password: password});
+  var headers = new Headers();
+  headers.append('Content-Type', 'application/json');
+  //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
+console.log(body);
+  this._http.put(this.url + '/api/moderators/admin',
+  body,
+    {
+      headers: headers,
+      withCredentials: true
+    }
+  ).map(res=> res.json()).subscribe(
+    data => {
+      },
+  error =>{
+    console.log(error);
+    this.prijavljen=false;
+  }
+
+  );
+}
+
+
+updateModeratora (user:string, password:string) {
+  var body = JSON.stringify({username: user, password: password});
+  var headers = new Headers();
+  headers.append('Content-Type', 'application/json');
+  //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
+console.log(body);
+  this._http.put(this.url + '/api/moderators/',
+  body,
+    {
+      headers: headers,
+      withCredentials: true
+    }
+  ).map(res=> res.json()).subscribe(
+    data => {
+      },
+  error =>{
+    console.log(error);
+    this.prijavljen=false;
+  }
+
+  );
+}
 odjava(){
   console.log("odjavljen sam");
   var headers = new Headers();

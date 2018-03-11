@@ -12,8 +12,35 @@ export class SuperAdminOpcijeComponent implements OnInit {
 
   admini:Array<Osoba>;
   rld: any;
+  username:string;
+  password:string;
+  potvrdapassworda:string;
+show:boolean;
+username1:string;
+password1:string;
+potvrdapassworda1:string;
+show1:boolean;
+
   constructor(private _prijavaService: PrijavaService) {
     this.admini=[];
+  }
+  prikazi(){
+    if(this.show==true){
+      this.show=false;
+      this.show1=false;}
+    else {this.show=true;this.show1=false;}
+
+  }
+  prikazi1(){
+    if(this.show1==true){
+      this.show1=false;
+      this.show=false;
+    }
+    else {
+      this.show1=true;
+      this.show=false;
+    }
+
   }
 
   ngOnInit() {
@@ -35,7 +62,18 @@ console.log("imal me");
 
         }
       );
-    
+
+  }
+  dodajAdmina(){
+    if(this.password==this.potvrdapassworda)
+    this._prijavaService.dodajAdmina(this.username,this.password);
+    else console.log("Sifre se ne podudaraju");
+  }
+  updateAdmina(){
+    if(this.password1==this.potvrdapassworda1)
+    this._prijavaService.updateAdmina(this.username1,this.password1);
+    else console.log("Sifre se ne podudaraju");
+
   }
 
   load(){

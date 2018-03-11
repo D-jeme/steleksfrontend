@@ -16,20 +16,41 @@
     </tr>
   </table>
   <div>
-    <button (click)="ShowButton()">Registracija novog admina</button>
-    <div *ngIf="showSelected==true">
+    <div class="dugmad">
+    <button class="lijevi" (click)="prikazi()">Registracija novog moderatora</button>
+    <button class="desno" (click)="prikazi1()">Update postojeceg moderatora</button>
+  </div>
+    <div *ngIf="show==true">
       <fieldset class="groupBox">
-        <input type="text" [(ngModel)]="ime"  placeholder="Ime" required>
-        <input type="text" [(ngModel)]="prezime" placeholder="Prezime" required>
-        <input type="text" placeholder="Tip" required>
-        <div class="error" *ngIf="errorMessageIme!=''">{{errorMessageIme}}</div>
+        <h3>Registracija novog admina</h3>
+        <input type="text" [(ngModel)]="username"  placeholder="Username" required>
+        <input type="password" [(ngModel)]="password" placeholder="Password" required>
+         <input type="password" [(ngModel)]="potvrdapassworda" placeholder="Potvrdite password" required>
+        <!--<div class="error" *ngIf="errorMessageIme!=''">{{errorMessageIme}}</div>
         <div class="error" *ngIf="errorMessagePrezime!=''">{{errorMessagePrezime}}</div>
         <div class="poruka" *ngIf="messageUspjesno!=''">{{messageUspjesno}}</div>
         <button class="button2" (click)="HideButton()">Cancel</button>
-        <button class="button2" (click)="dodajAdmina()" style="float:right;">Add</button>
+        <button class="button2" (click)="postaviAktivnost()">Cancel</button> -->
+        <button class="button2" (click)="dodajAdmina()" style="float:right;">Dodaj admina</button>
 
       </fieldset>
     </div>
+    <div *ngIf="show1==true">
+      <fieldset class="groupBox">
+        <h3>Promjena sifre admina</h3>
+        <input type="text" [(ngModel)]="username1"  placeholder="Username" required>
+        <input type="password" [(ngModel)]="password1" placeholder="Password" required>
+         <input type="password" [(ngModel)]="potvrdapassworda1" placeholder="Potvrdite password" required>
+        <!--<div class="error" *ngIf="errorMessageIme!=''">{{errorMessageIme}}</div>
+        <div class="error" *ngIf="errorMessagePrezime!=''">{{errorMessagePrezime}}</div>
+        <div class="poruka" *ngIf="messageUspjesno!=''">{{messageUspjesno}}</div>
+        <button class="button2" (click)="HideButton()">Cancel</button>
+        <button class="button2" (click)="postaviAktivnost()">Cancel</button> -->
+        <button class="button2" (click)="updateAdmina()" style="float:right;">Izmjeni admina</button>
+
+      </fieldset>
+    </div>
+
   </div>
   </div>
 </div>

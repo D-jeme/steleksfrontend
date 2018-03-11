@@ -24,6 +24,9 @@ tr:nth-child(even) {
 tr:first-child {
   border-bottom: 2px solid #333;
 }
+h3{
+  text-align: center;
+}
 
 .elektrijada
 {
@@ -93,16 +96,27 @@ input[type="text"]{
   }
 
   .groupBox {
+width: 60%;
+margin:0 auto;
+margin-top: 10px;
+margin-bottom: 30px;
+padding: 30px;
+padding-top: 5px;
+padding-bottom: 10px;
+border: 1px solid  #b3b3b3;
+border-radius: 0px;
+background-color: #e6e6e6;
+  }
+  .dugmad{
     width: 70%;
-    margin:0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 40px;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    border: 1px solid  #b3b3b3;
-    border-radius: 0px;
-    background-color: #e6e6e6;
+    margin: 0 auto;
+    height: 50px;
+  }
+  .lijevi{
+    float: left;
+  }
+  .desno{
+    float: right;
   }
 
 /* button za brisanje */
@@ -155,11 +169,10 @@ button{
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
-  margin: 35px;
-  margin-right: 110px;
-  margin-top: 15px;
-  float:right;
-  padding: 5px 28px;
+  margin: 5px;
+
+  
+  padding: 5px 8px;
   text-decoration: none;
   border-radius: 4px;
 }
@@ -173,9 +186,7 @@ button:hover, .button1:hover {
     width: 50%;
   }
   button {
-    margin-left: 85px;
-    margin-right: 145px;
-    margin-bottom: 40px;
+
   }
 }
 
@@ -184,9 +195,7 @@ button:hover, .button1:hover {
     width: 50%;
   }
   button {
-    margin-left: 85px;
-    margin-right: 105px;
-    margin-bottom: 40px;
+
   }
 }
 
@@ -215,9 +224,7 @@ button:hover, .button1:hover {
     margin-left: 20px;
   }
   button {
-    margin-left: 85px;
-    margin-right: 85px;
-    margin-bottom: 40px;
+
   }
   .groupBox {
     padding: 7px;
@@ -242,8 +249,7 @@ button:hover, .button1:hover {
     padding: 20px;
   }
   button {
-    margin:0 auto;
-    margin-bottom: 40px;
+
   }
   .groupBox {
     padding: 7px;
