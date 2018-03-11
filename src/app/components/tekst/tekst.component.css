@@ -1,11 +1,4 @@
-body {
-  background: #febbbb;
-  background: linear-gradient(135deg, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
-  font-size: 10px;
-  padding: 5em;
-}
-
-.eventpicture{
+.eventpicture2{
 
   margin-top: 10px;
   min-height: 20px;
@@ -17,7 +10,7 @@ body {
   opacity: 0.85;
 
 }
-.info-overflow::before{
+.info-overflow2::before{
 
   position: relative;
 
@@ -283,10 +276,10 @@ margin: 6px;
     transition: height 0.3s ease, box-shadow 0.5s ease;
     transition: height 0.3s ease, box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
   }
-  .eventpicture{
+  .eventpicture2{
     margin: 2px;
   }
-  .info-overflow{
+  .info-overflow2{
     margin: 2px;
   }
 }
