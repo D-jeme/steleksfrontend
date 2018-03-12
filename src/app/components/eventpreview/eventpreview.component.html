@@ -1,4 +1,5 @@
-<div id="event" class="eventpicture animation-on" style="background-image:url({{event.slika}});">
+<div id="event" class="eventpicture animation-on" [ngStyle]="{'background-image': 'url(' + event.slika + ')'}">
+
 
 <div class="info-overflow">
 <div class="info-dash">
@@ -30,7 +31,7 @@
   </div>
 </section>
 </div>
-<section  class="eventpicture2 animation-on">
+<section  class="eventpicture2 animation-on" [ngStyle]="{'background-image': 'url(' + event.slika + ')'}">
 <div class="info-overflow2">
 
 <div class="row">
