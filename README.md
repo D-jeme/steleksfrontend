@@ -1,1 +1,1 @@
-Steleksov frontend team
+Steleks

@@ -27,9 +27,31 @@ export class AlbumService {
   }
   postaviIdGalerije(id:String){
     this.idGalerije=id;
-    
+
   }
 
+    dodajAlbum(nazivGalerije:string,slike:[string],eventType:string) {
+      var body = JSON.stringify({nazivGalerije, slike,eventType});
+      var headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+      //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
+  console.log(body);
+      this._http.post(this.url + '/api/albums',
+      body,
+        {
+          headers: headers,
+          withCredentials: true
+        }
+      ).map(res=> res.json()).subscribe(
+        data => {
+
+          },
+      error =>{
+
+      }
+
+      );
+  }
 
 
 }

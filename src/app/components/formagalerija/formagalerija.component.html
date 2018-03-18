@@ -6,9 +6,16 @@
     <fieldset class="groupBox">
       <h2>Galerija</h2>
       <input type="text" name="year" placeholder="Naziv albuma"/>
-    <!--  <input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." multiple/>-->
-    <!--  <button type="button" (click)="upload()">Upload</button> -->
-      <input type="button" value="Dodaj" />
+   <!--<input type="file"id="1"  ng2FileSelect [(ngModel)]="uploader" class="nesto" placeholder="Upload file..." accept=".jpg, .jpeg, .png" multiple/>-->
+<a>Tip eventa</a>
+   <select >
+       <option *ngFor="let i of events">{{i}}</option>
+   </select>
+<input type="file"  ng2FileSelect [uploader]="uploader" accept="image/*" multiple/><br/>
+      <button (click)="upload()">Upload</button>
+
+      <!--<cl-image  [public-id]="imageId" [cloud-name]="uploader.cloudName"></cl-image>-->
+
 
   </fieldset>
 </form>

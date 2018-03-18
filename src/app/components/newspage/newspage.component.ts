@@ -27,7 +27,7 @@ onClick (id) {
   ngOnInit() {
 
 
-      this._eventService.prijava().subscribe(
+      this._eventService.dajEvents().subscribe(
         data =>{
 
           for(let i=0;i<data.array.length;i++)

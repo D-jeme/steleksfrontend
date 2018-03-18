@@ -9,6 +9,9 @@ import { HttpModule } from '@angular/http';
 import { AppRouting } from './routes';
 
 
+import { FileUploadModule } from 'ng2-file-upload';
+import { Ng2CloudinaryModule } from 'ng2-cloudinary';
+
 
 
 
@@ -41,8 +44,6 @@ import { SIFIpageComponent } from './components/sifipage/sifipage.component';
 import { ElektrijadapageComponent } from './components/elektrijadapage/elektrijadapage.component';
 
 import { LearningpageComponent } from './components/learningpage/learningpage.component';
-
-
 
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -163,6 +164,8 @@ import { FormaSponzoriComponent } from './components/formasponzori/formasponzori
 ],
 
   imports: [
+            Ng2CloudinaryModule,
+      FileUploadModule,
 
     BrowserModule,
 
