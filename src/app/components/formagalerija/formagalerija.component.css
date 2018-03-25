@@ -60,6 +60,7 @@ input[type="file"]{
   }
 
 
+
 .groupBox {
 
   width: 100%;
@@ -111,6 +112,9 @@ h2{background: #4D4D4D;
 .form-content input[type="button"]:hover {
     background:linear-gradient(to bottom, #666666 5%, #808080 100%);
     background-color:#666666;
+}
+#loader-1{
+  display: none;
 }
 @media screen and (max-width: 1130px) {
   .form-content{

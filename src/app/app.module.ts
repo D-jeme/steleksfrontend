@@ -11,6 +11,7 @@ import { AppRouting } from './routes';
 
 import { FileUploadModule } from 'ng2-file-upload';
 import { Ng2CloudinaryModule } from 'ng2-cloudinary';
+import {PopupModule} from 'ng2-opd-popup';
 
 
 
@@ -174,6 +175,7 @@ import { FormaSponzoriComponent } from './components/formasponzori/formasponzori
     HttpModule,
 
     AppRouting,
+        PopupModule.forRoot()
 
   ],
 
