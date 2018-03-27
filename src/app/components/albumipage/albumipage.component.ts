@@ -33,7 +33,7 @@ export class AlbumipageComponent implements OnInit {
     this._albumService.dajAlbume().subscribe(
 
       data =>{
-
+        console.log(data);
         for(let i=0;i<data.array.length;i++){
 
           this.albumi.push(new Album(data.array[i]._id,data.array[i].title,data.array[i].imgUrls,100));

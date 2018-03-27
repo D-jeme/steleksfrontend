@@ -4,6 +4,7 @@ import { FileUploader } from 'ng2-file-upload';
 import  {AlbumService} from '../../services/album.service';
 import  {EventTypeService} from '../../services/eventType.service';
 import {Popup} from 'ng2-opd-popup'
+import { Router} from '@angular/router';
 
 
 
@@ -17,10 +18,10 @@ import {Popup} from 'ng2-opd-popup'
 
 export class FormaGalerijaComponent implements OnInit,DoCheck {
 
-
-
+  nazivAlbuma:string;
+  eventTip:any;
   imageId: string;
-    imgs:Array<String>;
+    imgs:Array<string>;
     zavrsio:boolean=true;
     events: Array<String>;
 
@@ -30,16 +31,15 @@ export class FormaGalerijaComponent implements OnInit,DoCheck {
   uploader: CloudinaryUploader = new CloudinaryUploader(
        new CloudinaryOptions({ cloudName: 'du4cgdhn8', uploadPreset: 'd4hf19h6' })
    );
-  constructor(private popup: Popup ,private renderer : Renderer,private _albumService: AlbumService, private _eventTypeService: EventTypeService){
+  constructor(private popup: Popup ,private renderer : Renderer,private _albumService: AlbumService, private _eventTypeService: EventTypeService,private router: Router){
 
-
+    this.eventTip="";
       this.imgs=[];
       this.events=[];
         //Override onSuccessItem to retrieve the imageId
         this.uploader.onSuccessItem = (item: any, response: string, status: number, headers: any): any => {
             let res: any = JSON.parse(response);
 
-            //this.imageId = res.public_id;
           this.imageId=res.public_id;
           this.imgs.push(this.imageId);
           this.brojSlika++;
@@ -49,14 +49,19 @@ export class FormaGalerijaComponent implements OnInit,DoCheck {
         };
 
     }
-
+    onInput($event) {
+       $event.preventDefault();
+       this.eventTip=$event.target.value
+     }
     upload() {
 
         this.uploader.uploadAll();
-
+        console.log("naziv albuma je  ",this.nazivAlbuma);
+        console.log("tip eventa ej ",this.eventTip);
           console.log("da li se uploada",this.uploader.isUploading);
           console.log("slike",this.imgs);
           this.renderer.listenGlobal('document','this.uploader.isUploading',(event)=>{console.log("cija ovo rijeka");});
+
           // dispose the observable
           //this.fixed=this.uploader.isUploading;
         }
@@ -74,6 +79,9 @@ export class FormaGalerijaComponent implements OnInit,DoCheck {
     );
 
   }
+  YourCancelEvent(){
+    this.router.navigateByUrl('/');
+}
   ngDoCheck() {
        let elem=document.getElementById("loader-1");
 
@@ -86,10 +94,19 @@ export class FormaGalerijaComponent implements OnInit,DoCheck {
      else if(!this.uploader.isUploading && this.poceoUpload){
        elem.style.display="none";
        console.log("ne uploada se ",this.brojSlika);
-       
+           this._albumService.dodajAlbum(this.nazivAlbuma,this.imgs,this.eventTip);
        this.poceoUpload=false;
        this.popup.options={
-         color:"red"
+         header:"Upload-anje",
+         color:"green",
+         animationDuration:1.5,
+           cancleBtnContent: "Ostanite ovdje",
+           confirmBtnContent: "Vratite se na pocetnu",
+
+
+
+
+         animation: "fadeInDown"
        }
            this.popup.show();
                 this.brojSlika=0;

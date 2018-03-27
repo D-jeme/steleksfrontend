@@ -32,11 +32,11 @@ export class AdminOpcijeComponent implements OnInit {
 
   ngOnInit() {
     this.rld = localStorage.getItem('reload');console.log("reload",this.rld);
-    if(this.rld=="true"){this.load();
+    if(this.rld=="true"){
        localStorage.setItem('reload',JSON.stringify(false));}
 
 
-    setTimeout(()=>{  //<<<---    using ()=> syntax
+
 console.log("hahhaahh",this._prijavaService.dajPrijavu());
       this._prijavaService.dajModeratore().subscribe(
         data =>{
@@ -54,7 +54,7 @@ console.log("osoblje",data);
           }
 }
 
-);},1300);
+);
 
   }
   prikazi(){

@@ -20,7 +20,9 @@ body{
   padding-top: 125px;
   padding-bottom: 50px;
 }
-
+.btn1{
+  display: none;
+}
 input[type="text"]{
   width: 87%;
   margin-left: 35px;

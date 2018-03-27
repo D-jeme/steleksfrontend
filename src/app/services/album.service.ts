@@ -30,8 +30,8 @@ export class AlbumService {
 
   }
 
-    dodajAlbum(nazivGalerije:string,slike:[string],eventType:string) {
-      var body = JSON.stringify({nazivGalerije, slike,eventType});
+    dodajAlbum(title:string,imgUrls:Array<string>,eventType:string) {
+      var body = JSON.stringify({title,imgUrls,eventType});
       var headers = new Headers();
       headers.append('Content-Type', 'application/json');
       //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);

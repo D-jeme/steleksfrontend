@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit, OnChanges,DoCheck } from '@angular/core';
 import { HostListener} from "@angular/core";
 import { Subscription } from 'rxjs/Subscription';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
@@ -16,7 +16,7 @@ import { Router} from '@angular/router';
    },
        providers: [PrijavaService]
 })
-export class NavigationComponent implements OnInit, OnChanges {
+export class NavigationComponent implements OnInit, OnChanges,DoCheck {
   isScrolled=false;
   currPos:Number =0;
   startPos:Number =0;
@@ -105,22 +105,22 @@ export class NavigationComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-
-this.username=localStorage.getItem('username');
-this.rola=localStorage.getItem('rola');
-
-    this.user = JSON.parse(localStorage.getItem('signed'));
-  console.log("user",this.user);
-
-
-
-      if(this.user)
-      {
-      document.getElementById("user").style.display="block";
-      console.log("useeeeeer");
-      }
-      else   {document.getElementById("user").style.display="none";
-      console.log("neprijavljen");}
+//
+// this.username=localStorage.getItem('username');
+// this.rola=localStorage.getItem('rola');
+//
+//     this.user = JSON.parse(localStorage.getItem('signed'));
+//   console.log("user",this.user);
+//
+//
+//
+//       if(this.user)
+//       {
+//       document.getElementById("user").style.display="block";
+//       console.log("useeeeeer");
+//       }
+//       else   {document.getElementById("user").style.display="none";
+//       console.log("neprijavljen");}
   }
 
   ngOnChanges(){
@@ -129,6 +129,24 @@ this.rola=localStorage.getItem('rola');
   @HostListener("window:scroll", [])
   onWindowScroll() {
     let i;
+
+}
+ngDoCheck() {
+  this.username=localStorage.getItem('username');
+  this.rola=localStorage.getItem('rola');
+
+      this.user = JSON.parse(localStorage.getItem('signed'));
+    console.log("user",this.user);
+
+
+
+        if(this.user)
+        {
+        document.getElementById("user").style.display="block";
+        console.log("useeeeeer");
+        }
+        else   {document.getElementById("user").style.display="none";
+        console.log("neprijavljen");}
 
 }
 

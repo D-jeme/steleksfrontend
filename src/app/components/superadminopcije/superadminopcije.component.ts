@@ -45,7 +45,7 @@ show1:boolean;
 
   ngOnInit() {
     this.rld = localStorage.getItem('reload');console.log("reload",this.rld);
-    if(this.rld=="true"){this.load();
+    if(this.rld=="true"){
        localStorage.setItem('reload',JSON.stringify(false));}
 
 console.log("imal me");

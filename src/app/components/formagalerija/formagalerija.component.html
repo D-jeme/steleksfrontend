@@ -5,11 +5,11 @@
 <form>
     <fieldset class="groupBox">
       <h2>Galerija</h2>
-      <input type="text" name="year" placeholder="Naziv albuma"/>
+      <input [(ngModel)]="nazivAlbuma" type="text" name="year" placeholder="Naziv albuma"/>
    <!--<input type="file"id="1"  ng2FileSelect [(ngModel)]="uploader" class="nesto" placeholder="Upload file..." accept=".jpg, .jpeg, .png" multiple/>-->
 <a>Tip eventa</a>
-   <select >
-       <option *ngFor="let i of events">{{i}}</option>
+   <select id="tipeventa" (input)="onInput($event)">
+       <option *ngFor="let i of events" [ngValue]="eventTip">{{i}}</option>
    </select>
 <input type="file"  ng2FileSelect [uploader]="uploader" accept="image/*" multiple/><br/>
       <button (click)="upload()">Upload</button>
@@ -29,7 +29,7 @@
           </path>
         </svg>
       </div>
-<popup>Uspjesno ste dodali Album </popup>
+<popup (confirmClick)="YourCancelEvent()" >Uspjesno ste dodali Album </popup>
   </fieldset>
 </form>
 </div>
