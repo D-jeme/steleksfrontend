@@ -12,7 +12,7 @@
 .info-overflow::before{
 
   position: relative;
-  
+
 
   z-index: 3;
   width: 100%;
@@ -101,6 +101,7 @@ button:hover {
 .container {
     padding: 2px;
     z-index: 4;
+    margin-top:40px;
 }
 
 .modal {

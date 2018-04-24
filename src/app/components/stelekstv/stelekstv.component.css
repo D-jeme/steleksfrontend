@@ -1,3 +1,10 @@
+.tekst{
+	text-align: justify;
+	padding-right: 5px;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
 .home{
 	width: 80%;
 
@@ -11,21 +18,42 @@
 }
 .sadrzaj1{
 	float:left;
-	width:59%;
+	width:55%;
 	height: 100%;
 }
 .sadrzaj2{
+	background-color: #f2f2f2;
+	box-shadow: 2px 6px 15px #808080;
 	float:right;
-	width:41%;
+	width:45%;
 	height: 100%;
+	padding: 15px;
+}
+.naslov {
+	width:100%;
+	display:inline-block;
+}
+.naslov1 {
+	width:49%;
+	display:inline-block;
+}
+.naslov2 {
+	width:50%;
+	display:inline-block;
+	text-align:right;
+}
+.font {
+	font-weight:500;
+	font-size:20px;
 }
 .sve{
 	float: left;
-	width: 50%;
+	width: 60%;
 }
 .slika{
-	float: left;
-	width: 50%;
+	float: right;
+	margin-top: 12px;
+	width: 33%;
 }
 iframe{
 	margin-top: 15px;
@@ -81,7 +109,8 @@ h2{
 	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	font-weight: 400;
-	margin-left:5px;
+	margin-top: 15px;
+	margin-left:0px;
 	padding: 5px 28px;
 	text-decoration: none;
 	text-transform: uppercase;
