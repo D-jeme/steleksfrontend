@@ -38,17 +38,17 @@ height:100%;
   margin-right: 400px;
   padding-left: 15px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: #ffffff;
   font-size: 20px;
   width: 50%;
   padding-top: 30px;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   line-height: 30px;
+  position: absolute;
+  z-index: 2;
 }
-/*img.arrow{
 
-}*/
 .button{
 display: inline-bloc;
 background: transparent;
@@ -88,21 +88,14 @@ background-image: url('../../assets/images/pozadina.jpg');
   top: 0;
   left: 0;
 padding-top: 80px;
-  z-index: 3;
+  z-index: 1;
   width: 100%;
   height: 100%;
   display: block;
   content: "";
   background: linear-gradient(rgba(0, 47, 64, 0) 0%,rgba(0, 47, 64, 0) 50%, #002f40 100%);
 }
-.info-inner{
-  z-index: 2;
-}
-.info-inner::after{
-    content: "";
-    display: table;
-    clear: both;
-}
+
 .event-info{
     color: #fff;
     font-family: 'Roboto Condensed';
@@ -153,5 +146,85 @@ div{
   }
   .slogan{
     padding-top: 300px;
+  }
+}
+
+
+@media screen and (max-width: 1130px) {
+
+}
+
+@media screen and (max-width: 920px) {
+
+}
+
+@media screen and (max-width: 320px) {
+  .about{
+    min-width: 310px;
+    font-size:18px;
+    line-height: 20px;
+
+  }
+  .slogan{
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 400px){
+  .about{
+    min-width: 350px;
+    font-size:18px;
+    line-height: 20px;
+
+  }
+  .slogan{
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 410px){
+  .about{
+    min-width: 350px;
+    font-size:18px;
+    line-height: 20px;
+    padding-top: 100px;
+
+  }
+  .slogan{
+    padding-top: 50px;
+  }
+}
+@media only screen and (min-width: 700px){
+  .slogan{
+    padding-top: 100px;
+  }
+}
+
+
+@media screen and (min-width: 1600px) {
+
+  .about{
+    text-align: left;
+    margin-right: 400px;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 22px;
+    width: 50%;
+    padding-top: 60px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    position: absolute;
+    z-index: 2;
+  }
+  .slogan{
+    padding-top: 260px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    text-align: left;
+    color: #fff;
+    font-weight: 900;
+    line-height: 80px;
+    letter-spacing: .18em;
+    padding-left: 15px;
   }
 }
