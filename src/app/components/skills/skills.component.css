@@ -1,4 +1,3 @@
-
 .eventpicture{
 
   margin-top: 10px;
@@ -10,10 +9,7 @@
   background-position:center center;
 }
 .info-overflow::before{
-
   position: relative;
-
-
   z-index: 3;
   width: 100%;
   height: 35%;
@@ -161,7 +157,7 @@ button:hover {
   background-repeat: no-repeat;
 
   width:100%;
-  height: 300px;
+  height: 250px;
   opacity: 1;
   min-height: 250px;
 }
@@ -373,4 +369,53 @@ header.masthead .header-content .header-content-inner p {
 
 .devicons {
   font-size: 5rem;
+}
+
+@media only screen and (max-width: 1367px){
+  #skills1{
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .text{
+    color: black;
+  }
+  h3{
+    color:black;
+  }
+  h2{
+    color:black;
+  }
+  p{
+    color:black;
+  }
+  .eventpicture{
+    margin-top: 10px;
+    min-height: 20px;
+    background-image:none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:center center;
+  }
+  #skills1{
+    color:black;
+    padding: 5px;
+    margin-top: 10px;
+    background-image: none;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    width:100%;
+    height: 600px;
+    opacity: 1;
+    min-height: 250px;
+    margin-bottom: 30px;
+  }
+  .container{
+    margin-top:2px;
+  }
 }
