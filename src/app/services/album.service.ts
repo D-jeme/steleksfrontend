@@ -23,11 +23,10 @@ export class AlbumService {
 
         return data.json();
       } );
-
   }
+
   postaviIdGalerije(id:String){
     this.idGalerije=id;
-
   }
 
     dodajAlbum(title:string,imgUrls:Array<string>,eventType:string) {

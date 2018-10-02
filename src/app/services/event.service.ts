@@ -23,8 +23,6 @@ export class EventService {
         console.log(data.json());
         return data.json();
       } );
-
-
   }
 
 

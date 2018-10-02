@@ -8,11 +8,26 @@ import 'rxjs/add/operator/map';
 export class SponzoriService {
   url:string="http://localhost:8080";
 
-  constructor(private _http:Http){}
+  constructor(private _http:Http){
+  }
 
-  prijava(sponzor:Sponzor) {
-    console.log("ima li te ");
-    var body = JSON.stringify({sponzor:Sponzor});
+  dajSponzore() {
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    console.log(this.url + '/api/sponsors')
+    return this._http.get( this.url + '/api/sponsors', {
+      headers: headers,
+      withCredentials:true
+    } )
+      .map( data => {
+        console.log(data.json());
+        return data.json();
+      } );
+  }
+
+
+  prijava(name:String,imgUrl:String) {
+    var body = JSON.stringify({name, imgUrl, "redirectUrl":"https://ibb.co/fpirzz" ,"isActive":true, "isTemporary":true});
     var headers = new Headers();
     headers.append('Content-Type', 'application/json');
     //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
@@ -20,13 +35,12 @@ export class SponzoriService {
     this._http.post(this.url + '/api/sponsors',
     body,
       {
-        headers: headers
+        headers: headers,
+        withCredentials: true
       }
     ).map(res=> res.json()).subscribe(
       data => {
-          console.log("cao");
           console.log(data);
-          localStorage.setItem('currentUser', JSON.stringify({ sponzor: data.sponzor }));
         },
     error =>{
       console.log(error);

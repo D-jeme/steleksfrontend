@@ -5,10 +5,9 @@
 <form>
     <fieldset class="groupBox">
       <h2>Sponzori</h2>
-      <input type="text" [(ngModel)]="sponzor.naziv" name="naziv" placeholder="Naziv sponzora"/>
-      <input type="file" [(ngModel)]="sponzor.slika" name="slika" accept="image/*">
-      <input type="button" (click)="print()" value="Dodaj" />
-
+      <input type="text" [(ngModel)]="naziv" name="naziv" placeholder="Naziv sponzora"/>
+      <input type="file" ng2FileSelect [uploader]="uploader" name="slika" accept="image/*">
+      <input type="button" (click)="upload()" value="Dodaj" />
   </fieldset>
 </form>
 </div>
