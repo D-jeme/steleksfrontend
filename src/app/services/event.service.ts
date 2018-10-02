@@ -2,7 +2,10 @@ import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {NewspageComponent} from '../components/newspage/newspage.component'
+import { Event } from '../models/event';
 import { Router} from '@angular/router';
+
+
 
 @Injectable()
 export class EventService {
@@ -23,7 +26,57 @@ export class EventService {
         console.log(data.json());
         return data.json();
       } );
+<<<<<<< HEAD
+=======
   }
+
+
+  kreiranjeIzvjestaja(title:string, imgUrl:string, shortText:string, longText:string, startsAt:Date, finishedAt:Date ) {
+
+    var body = JSON.stringify({title: title, shortText: shortText, longText:longText, startsAt:startsAt, finishedAt:finishedAt , imgUrl:imgUrl});
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
+console.log(body);
+    this._http.post(this.url + '/api/events',
+    body,
+      {
+        headers: headers,
+        withCredentials: true
+      }
+    ).map(res=> res.json()).subscribe(
+      data => {
+        },
+    error =>{
+      console.log(error);
+    }
+    );
+
+}
+
+kreiranjeNajave(title:string, startsAt:Date,imgUrl:string,longText:string,shortText:string,ucesnici:string,mjesto:string,ucesce:string ) {
+  var body = JSON.stringify({title: title, startsAt:startsAt, imgUrl:imgUrl,longText:longText,shortText:shortText, participantText:ucesnici,placeText:mjesto,participationText:ucesce });
+  var headers = new Headers();
+  headers.append('Content-Type', 'application/json');
+  //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
+console.log(body);
+  this._http.post(this.url + '/api/events',
+  body,
+    {
+      headers: headers,
+      withCredentials: true
+    }
+  ).map(res=> res.json()).subscribe(
+    data => {
+      console.log(data);
+      },
+  error =>{
+    console.log(error);
+>>>>>>> 45c471d56f16941c2450c68e7eb9db259208b2b1
+  }
+  );
+}
+
 
 
 

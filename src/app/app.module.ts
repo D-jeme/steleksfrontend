@@ -12,6 +12,7 @@ import { AppRouting } from './routes';
 import { FileUploadModule } from 'ng2-file-upload';
 import { Ng2CloudinaryModule } from 'ng2-cloudinary';
 import {PopupModule} from 'ng2-opd-popup';
+import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
 
 
 
@@ -173,6 +174,7 @@ import { FormaSponzoriComponent } from './components/formasponzori/formasponzori
     FormsModule,
 
     HttpModule,
+    AngularDateTimePickerModule,
 
     AppRouting,
         PopupModule.forRoot()
