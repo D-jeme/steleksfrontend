@@ -10,14 +10,13 @@ export class UpravniodborComponent implements OnInit {
   amina_aljicevic: string;
   fuad_hajdarevic:string;
   mehmed_kadric:string;
-  nur_osmanbegovic:string;
+  edina_osmanspahic:string;
   adis_dedic:string;
   erol_terovic:string;
   miran_hadziomerovic:string;
   harun_muhic:string;
   osman_mehremic:string;
   almin_repesa:string;
-  edina_osmanspahic:string;
   prvi: ClanUO;
   drugi: ClanUO;
   treci: ClanUO;
@@ -28,7 +27,6 @@ export class UpravniodborComponent implements OnInit {
   osmi: ClanUO;
   deveti: ClanUO;
   deseti: ClanUO;
-  jedanaesti: ClanUO;
   novi: ClanUO;
   clanovi: Array<ClanUO>;
 
@@ -37,10 +35,9 @@ export class UpravniodborComponent implements OnInit {
     this.amina_aljicevic ='assets/images/amina_aljicevic.jpg';
     this.fuad_hajdarevic='assets/images/fuad_hajdarevic.jpg';
     this.mehmed_kadric='assets/images/mehmed_kadric.jpg';
-    this.nur_osmanbegovic='assets/images/nur_osmanbegovic.jpg'
     this.adis_dedic='assets/images/adis_dedic.jpg';
     this.erol_terovic='assets/images/erol_terovic.jpg';
-    this.miran_hadziomerovic='assets/images/miran_hadziomerovic.png';
+    this.miran_hadziomerovic='assets/images/miran_hadziomerovic.jpg';
     this.harun_muhic='assets/images/harun_muhic.jpg';
     this.osman_mehremic='assets/images/osman_mehremic.jpg';
     this.almin_repesa='assets/images/almin_repesa.jpg';
@@ -53,22 +50,20 @@ export class UpravniodborComponent implements OnInit {
     this.clanovi.push(this.drugi);
     this.treci=new ClanUO('Mehmed', 'Kadrić', 'Sekretar STELEKS-a', this.mehmed_kadric);
     this.clanovi.push(this.treci);
-    this.cetvrti=new ClanUO('Nur', 'Osmanbegović', 'Koordinator sektora za odnose s javnošću', this.nur_osmanbegovic);
+    this.cetvrti=new ClanUO('Edina', 'Osmanspahić', 'Koordinator sektora za odnose s javnošću', this.edina_osmanspahic);
     this.clanovi.push(this.cetvrti);
-    this.peti=new ClanUO('Edina', 'Osmanspahić', 'Zamjenik koordinatora sektora za odnose s javnošću', this.edina_osmanspahic);
+    this.peti=new ClanUO('Miran', 'Hadžiomerović', 'Koordinator sektora za sport', this.miran_hadziomerovic);
     this.clanovi.push(this.peti);
-    this.sesti=new ClanUO('Miran', 'Hadžiomerović', 'Koordinator sektora za sport', this.miran_hadziomerovic);
+    this.sesti=new ClanUO('Almin', 'Repeša', 'Zamjenik koordinatora sektora za sport', this.almin_repesa);
     this.clanovi.push(this.sesti);
-    this.sedmi=new ClanUO('Almin', 'Repeša', 'Zamjenik koordinatora sektora za sport', this.almin_repesa);
+    this.sedmi=new ClanUO('Adis', 'Dedić', 'Koordinator sektora za kulturu i zabavu', this.adis_dedic);
     this.clanovi.push(this.sedmi);
-    this.osmi=new ClanUO('Adis', 'Dedić', 'Koordinator sektora za kulturu i zabavu', this.adis_dedic);
+    this.osmi=new ClanUO('Erol', 'Terović', 'Zamjenik koordinatora sektora za kulturu i zabavu', this.erol_terovic);
     this.clanovi.push(this.osmi);
-    this.deveti=new ClanUO('Erol', 'Terović', 'Zamjenik koordinatora sektora za kulturu i zabavu', this.erol_terovic);
+    this.deveti=new ClanUO('Harun', 'Muhić', 'Koordinator sektora za nauku', this.harun_muhic);
     this.clanovi.push(this.deveti);
-    this.deseti=new ClanUO('Harun', 'Muhić', 'Koordinator sektora za nauku', this.harun_muhic);
+    this.deseti=new ClanUO('Osman', 'Mehremić', 'Zamjenik koordinatora sektora za nauku', this.osman_mehremic);
     this.clanovi.push(this.deseti);
-    this.jedanaesti=new ClanUO('Osman', 'Mehremić', 'Zamjenik koordinatora sektora za nauku', this.osman_mehremic);
-    this.clanovi.push(this.jedanaesti);
    }
 
   ngOnInit() {

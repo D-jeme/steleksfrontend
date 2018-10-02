@@ -34,7 +34,7 @@ onClick (id) {
           {
             const date = new Date(data.array[i].startsAt);
             console.log("TIp eventa",data.array[i].eventType.eventType);
-            this.events.push(new Event(data.array[i]._id,data.array[i].title,data.array[i].imgUrl,data.array[i].shortText, this.MONTHS[date.getMonth()],String(date.getDate()),data.array[i].eventType.eventType));
+            this.events.push(new Event(data.array[i]._id,data.array[i].title,data.array[i].imgUrl,data.array[i].shortText, "","","",this.MONTHS[date.getMonth()],String(date.getDate()),data.array[i].eventType.eventType));
 
           }
 
