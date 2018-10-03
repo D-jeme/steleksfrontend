@@ -26,8 +26,6 @@ export class EventService {
         console.log(data.json());
         return data.json();
       } );
-<<<<<<< HEAD
-=======
   }
 
 
@@ -72,12 +70,7 @@ console.log(body);
       },
   error =>{
     console.log(error);
->>>>>>> 45c471d56f16941c2450c68e7eb9db259208b2b1
   }
   );
 }
-
-
-
-
 }

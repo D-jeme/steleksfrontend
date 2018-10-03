@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 import { Sponzor } from '../models/sponzori';
+import { Router} from '@angular/router';
 
 import 'rxjs/add/operator/map';
 
@@ -14,7 +15,6 @@ export class SponzoriService {
   dajSponzore() {
     var headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    console.log(this.url + '/api/sponsors')
     return this._http.get( this.url + '/api/sponsors', {
       headers: headers,
       withCredentials:true
