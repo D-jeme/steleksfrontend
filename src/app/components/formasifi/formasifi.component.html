@@ -4,21 +4,20 @@
   <h2>Sarajevo Innovations Festival</h2>
   <fieldset class="groupBox1">
     <form>
-    <input type="text" name="year" placeholder="Godina"/>
-    <textarea placeholder="About" onkeyup="adjust_textarea(this)"></textarea>
+    <input [(ngModel)]="Year" [ngModelOptions]="{standalone: true}" type="text" name="year" placeholder="Godina"/>
+    <textarea [(ngModel)]="LongText" [ngModelOptions]="{standalone: true}" placeholder="Tekst" onkeyup="adjust_textarea(this)"></textarea>
   </form>
 </fieldset>
 <fieldset class="groupBox">
   <form>
   <legend >Prvo mjesto</legend>
- <input type="text" name="faculty1" placeholder="Naziv rada"/>
- <input type="file" style="display: none" #file>
- <button class="button2" (click)="file.click()"> Dodaj rad </button>
+ <input [(ngModel)]="NazivRada1" [ngModelOptions]="{standalone: true}" type="text" name="faculty1" placeholder="Naziv rada"/>
+ <input type="file" name="file" ngModel (change)="getRad1($event)">
 
 </form>
  <table >
      <tbody>
-         <tr *ngFor="let field1 of fieldArray1; let i = index">
+         <tr *ngFor="let field1 of Ucesnici1; let i = index">
              <td>
                  <input [(ngModel)]="field1.name" class="form-control" type="text" name="{{field1.name}}" placeholder="Učesnik"/>
              </td>
@@ -41,13 +40,12 @@
 <fieldset class="groupBox">
   <form>
   <legend>Drugo mjesto</legend>
-  <input type="text" name="faculty2" placeholder="Naziv rada"/>
-  <input type="file" style="display: none" #file>
-  <button class="button2" (click)="file.click()"> Dodaj rad </button>
+  <input [(ngModel)]="NazivRada2" [ngModelOptions]="{standalone: true}" type="text" name="faculty2" placeholder="Naziv rada"/>
+  <input type="file" name="file" ngModel (change)="getRad2($event)">
 </form>
 <table >
     <tbody>
-        <tr *ngFor="let field2 of fieldArray2; let j = index">
+        <tr *ngFor="let field2 of Ucesnici2; let j = index">
             <td>
                 <input [(ngModel)]="field2.name" class="form-control" type="text" name="{{field2.name}}" placeholder="Učesnik"/>
             </td>
@@ -70,13 +68,12 @@
 <fieldset class="groupBox">
   <form>
   <legend>Trece mjesto</legend>
-  <input type="text" name="faculty3" placeholder="Naziv rada"/>
-  <input type="file" style="display: none" #file>
-  <button class="button2" (click)="file.click()"> Dodaj rad </button>
+  <input [(ngModel)]="NazivRada3" [ngModelOptions]="{standalone: true}" type="text" name="faculty3" placeholder="Naziv rada"/>
+  <input type="file" name="file" ngModel (change)="getRad3($event)">
   </form>
   <table>
       <tbody>
-          <tr *ngFor="let field3 of fieldArray3; let k = index">
+          <tr *ngFor="let field3 of Ucesnici3; let k = index">
               <td>
                   <input [(ngModel)]="field3.name" class="form-control" type="text" name="{{field3.name}}" placeholder="Učesnik"/>
               </td>
@@ -98,7 +95,7 @@
 </fieldset>
  <fieldset class="groupBox2">
    <form>
-  <input type="button" value="Dodaj" />
+  <input type="button" value="Dodaj" (click)="print()"/>
 </form>
 </fieldset>
 </div>

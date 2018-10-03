@@ -1,51 +1,90 @@
 import { Component, OnInit } from '@angular/core';
+import  {EventService} from '../../services/event.service';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-formasifi',
   templateUrl: './formasifi.component.html',
-  styleUrls: ['./formasifi.component.css']
+  styleUrls: ['./formasifi.component.css'],
+  providers: [EventService]
 })
 export class FormaSifiComponent implements OnInit {
 
-       fieldArray1: Array<any> = [];
+       Year: string;
+       LongText: string;
+       NazivRada1: string;
+       NazivRada2: string;
+       NazivRada3: string;
+
+       Rad1 : FileList;
+       Rad2 : FileList;
+       Rad3 : FileList;
+
+
+
+       Ucesnici1: Array<any> = [];
        newAttribute1: any = {};
-       fieldArray2: Array<any> = [];
+       Ucesnici2: Array<any> = [];
        newAttribute2: any = {};
-       fieldArray3: Array<any> = [];
+       Ucesnici3: Array<any> = [];
        newAttribute3: any = {};
 
 
       addFieldValue1() {
-        console.log("hbhygbbuh");
-        console.log(this.newAttribute1);
-        console.log(this.fieldArray1);
-          this.fieldArray1.push(this.newAttribute1)
+          this.Ucesnici1.push(this.newAttribute1)
           this.newAttribute1 = {};
       }
 
       deleteFieldValue1(index) {
-          this.fieldArray1.splice(index, 1);
+          this.Ucesnici1.splice(index, 1);
       }
       addFieldValue2() {
-          this.fieldArray2.push(this.newAttribute2)
+          this.Ucesnici2.push(this.newAttribute2)
           this.newAttribute2 = {};
       }
 
       deleteFieldValue2(index) {
-          this.fieldArray2.splice(index, 1);
+          this.Ucesnici2.splice(index, 1);
       }
       addFieldValue3() {
-          this.fieldArray3.push(this.newAttribute3)
+          this.Ucesnici3.push(this.newAttribute3)
           this.newAttribute3 = {};
       }
 
       deleteFieldValue3(index) {
-          this.fieldArray3.splice(index, 1);
+          this.Ucesnici3.splice(index, 1);
       }
 
-  constructor() { }
+  constructor(private _eventService: EventService, private router: Router){
+    this.Year="";
+    this.LongText="";
+    this.NazivRada1="";
+    this.NazivRada2="";
+    this.NazivRada3="";
+  }
 
   ngOnInit() {
+  }
+  getRad1(event){
+      this.Rad1 = event.target.Rad1;
+  }
+  getRad2(event){
+      this.Rad2 = event.target.Rad2;
+  }
+  getRad3(event){
+      this.Rad3 = event.target.Rad3;
+  }
+  print(){
+
+    this._eventService.kreirajSifi(this.Year,this.LongText,this.NazivRada1,this.Rad1,this.Ucesnici1,this.NazivRada2,this.Rad2,this.Ucesnici2,this.NazivRada3,this.Rad3,this.Ucesnici3);
+    //console.log("ovo",this._eventService.kreiranjeIzvjestaja(this.Title, this.ShortText,this.LongText,this.StartDate,this.EndDate,this.BackPicture));
+    setTimeout(()=>{
+
+
+  },1500);
+
+  
+
   }
 
 }
