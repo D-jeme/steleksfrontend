@@ -76,10 +76,9 @@ console.log(body);
 
 
 dajsifi() {
-
   var headers = new Headers();
   headers.append('Content-Type', 'application/json');
-  return this._http.get( this.url + '/api/events', {
+  return this._http.get( this.url + '/api/events/news', {
     headers: headers,
     withCredentials: true
   } )
@@ -89,8 +88,23 @@ dajsifi() {
     } );
 }
 
-kreirajSifi(Year:string,LongText:string,NazivRada1:string,Rad1:FileList,Ucesnici1:Array<any>,NazivRada2:string,Rad2:FileList,Ucesnici2:Array<any>,NazivRada3:string,Rad3:FileList,Ucesnici3:Array<any>) {
-  var body = JSON.stringify({year:Year,longText:LongText,rankings:{firstPlace:{NazivRada1,Rad1,Ucesnici1},secondPlace:{NazivRada2,Rad2,Ucesnici2},thirdPlace:{NazivRada3,Rad3,Ucesnici3}},eventType:"sifi"});
+dajEventId(id: string) {
+  var headers = new Headers();
+  headers.append('Content-Type', 'application/json');
+  return this._http.get( this.url + '/api/events/' + id, {
+    headers: headers
+  } )
+    .map( data => {
+      console.log(data.json());
+      return data.json();
+    },
+    error =>{
+      console.log("Eroorrrrrrr: "+ error);
+    } );
+}
+
+kreirajSifi(title:string, shortText:string, startsAt: Date, finishedAt:Date, imgUrl:String, Year:string,LongText:string,NazivRada1:string,Rad1:FileList,Ucesnici1:Array<any>,NazivRada2:string,Rad2:FileList,Ucesnici2:Array<any>,NazivRada3:string,Rad3:FileList,Ucesnici3:Array<any>) {
+  var body = JSON.stringify({title:title, shortText:shortText, startsAt: startsAt, finishedAt:finishedAt, imgUrl:imgUrl, year:Year, longText:LongText,rankings:{firstPlace:{NazivRada1,Rad1,Ucesnici1},secondPlace:{NazivRada2,Rad2,Ucesnici2},thirdPlace:{NazivRada3,Rad3,Ucesnici3}}, eventType: "sifi"});
   var headers = new Headers();
   headers.append('Content-Type', 'application/json');
   //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
@@ -104,6 +118,7 @@ console.log(body);
   ).map(res=> res.json()).subscribe(
     data => {
       console.log(data);
+      console.log("Uspjesnooooo");
       },
   error =>{
     console.log(error);

@@ -22,13 +22,17 @@ export class FormaSifiComponent implements OnInit {
 
 
 
-       Ucesnici1: Array<any> = [];
+       Ucesnici1: Array<string> = [];
        newAttribute1: any = {};
-       Ucesnici2: Array<any> = [];
+       Ucesnici2: Array<string> = [];
        newAttribute2: any = {};
-       Ucesnici3: Array<any> = [];
+       Ucesnici3: Array<string> = [];
        newAttribute3: any = {};
-
+       shortText: string;
+       title: string;
+       startsAt: Date;
+       finishedAt: Date;
+       imgUrl: string;
 
       addFieldValue1() {
           this.Ucesnici1.push(this.newAttribute1)
@@ -61,6 +65,11 @@ export class FormaSifiComponent implements OnInit {
     this.NazivRada1="";
     this.NazivRada2="";
     this.NazivRada3="";
+    this.title="Sifi";
+    this.shortText="Sifi2";
+    this.startsAt=new Date("February 4, 2016 10:13:00");
+    this.finishedAt=new Date("February 5, 2016 10:13:00");
+    this.imgUrl='https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350';
   }
 
   ngOnInit() {
@@ -75,15 +84,15 @@ export class FormaSifiComponent implements OnInit {
       this.Rad3 = event.target.Rad3;
   }
   print(){
-
-    this._eventService.kreirajSifi(this.Year,this.LongText,this.NazivRada1,this.Rad1,this.Ucesnici1,this.NazivRada2,this.Rad2,this.Ucesnici2,this.NazivRada3,this.Rad3,this.Ucesnici3);
+    console.log("NAJVAZNIJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE: " + this.Ucesnici1.length);
+    this._eventService.kreirajSifi(this.title, this.shortText, this.startsAt, this.finishedAt, this.imgUrl, this.Year,this.LongText,this.NazivRada1,this.Rad1,this.Ucesnici1,this.NazivRada2,this.Rad2,this.Ucesnici2,this.NazivRada3,this.Rad3,this.Ucesnici3);
     //console.log("ovo",this._eventService.kreiranjeIzvjestaja(this.Title, this.ShortText,this.LongText,this.StartDate,this.EndDate,this.BackPicture));
     setTimeout(()=>{
 
 
   },1500);
 
-  
+
 
   }
 
