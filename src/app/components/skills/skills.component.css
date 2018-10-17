@@ -2,7 +2,7 @@
 
   margin-top: 10px;
   min-height: 20px;
-  background-image:url('https://image.ibb.co/kMz9WR/final.jpg');
+  background-image:url('../../assets/images/stem4crop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
@@ -150,7 +150,7 @@ button:hover {
   color:white;
   padding: 5px;
   margin-top: 10px;
-  background-image: url("https://image.ibb.co/kMz9WR/final.jpg");
+  background-image: url('../../assets/images/stem4plava.jpg');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;

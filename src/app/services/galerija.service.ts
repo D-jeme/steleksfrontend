@@ -13,7 +13,7 @@ export class GalerijaService {
 
   postaviIdGalerije(id:String){
     this.idGalerije='/api/albums/'+id;
-    console.log("imal meeeee",this.idGalerije);
+    console.log("imal meeeee1", this.idGalerije);
   }
 
   dajSlike( ) {
@@ -25,7 +25,7 @@ export class GalerijaService {
       headers: headers
     } )
       .map( data => {
-  console.log("imal meeeee" );
+  console.log("imal meeeee2" );
         return data.json();
       } );
 

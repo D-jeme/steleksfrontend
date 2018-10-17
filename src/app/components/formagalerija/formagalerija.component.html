@@ -5,16 +5,35 @@
 <form>
     <fieldset class="groupBox">
       <h2>Galerija</h2>
-      <input [(ngModel)]="nazivAlbuma" type="text" name="year" placeholder="Naziv albuma"/>
+
+      <p>Akcije: </p>
+
+      <input type="radio" id="kreiraj" (click)="odabranoKreiranje()" name="Kreiraj" value="male" checked>Kreiraj novi album
+      <input type="radio" id="update"  (click)="odabranoUpdate()" name="Kreiraj" value="female">Izmijeni postojeći album<br>
+
+
+
+      <input id="nzv" [(ngModel)]="nazivAlbuma" type="text" name="year" placeholder="Naziv albuma"/>
+    <!--  <input [(ngModel)]="idAlb" type="text" name="year" placeholder="id albuma"/>-->
+
    <!--<input type="file"id="1"  ng2FileSelect [(ngModel)]="uploader" class="nesto" placeholder="Upload file..." accept=".jpg, .jpeg, .png" multiple/>-->
-<a>Tip eventa</a>
+<div id="pre">
+<p>Tip eventa</p>
    <select id="tipeventa" (input)="onInput($event)">
        <option *ngFor="let i of events" [ngValue]="eventTip">{{i}}</option>
    </select>
-<input type="file"  ng2FileSelect [uploader]="uploader" accept="image/*" multiple/><br/>
-      <button (click)="upload()">Upload</button>
+</div>
+<div id="updateAL">
+         <p>Odaberi album:</p>
+         <select id="idAlbuma" (input)="onInput1($event)">
+             <option *ngFor="let i of albumi" [ngValue]="idAlbuma">{{i.naziv}}</option>
+         </select>
+</div>
+<input type="file"  ng2FileSelect [uploader]="uploader" accept="image/*"  multiple/><br/>
+      <button id="upl" (click)="upload()">Upload</button>
 
       <!--<cl-image  [public-id]="imageId" [cloud-name]="uploader.cloudName"></cl-image>-->
+
       <div class="loader ">
         <svg version="1.1" id="loader-1" x="0px" y="0px"
            width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">

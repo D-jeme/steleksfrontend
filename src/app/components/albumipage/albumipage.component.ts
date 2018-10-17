@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Album } from '../../models/album';
 import {AlbumService} from '../../services/album.service';
 import { Router} from '@angular/router';
+import { CloudinaryOptions, CloudinaryUploader } from 'ng2-cloudinary';
 
 
 @Component({
@@ -13,24 +14,28 @@ import { Router} from '@angular/router';
 export class AlbumipageComponent implements OnInit {
 
   albumi : Array<Album>;
+  nazivi : Array<String>;
   id:String;
 
+
   images;
+
+  uploader: CloudinaryUploader = new CloudinaryUploader(
+       new CloudinaryOptions({ cloudName: 'du4cgdhn8', uploadPreset: 'd4hf19h6' })
+   );
+
   constructor(private _albumService: AlbumService, private router: Router) {
     this.albumi=[];
 
-  }
 
+  }
 
   onClick (id) {
     this.router.navigate(['/galerija', id]);
   }
 
-
   ngOnInit() {
-
-
-    this._albumService.dajAlbume().subscribe(
+  this._albumService.dajAlbume().subscribe(
 
       data =>{
         console.log(data);

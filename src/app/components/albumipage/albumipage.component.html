@@ -1,16 +1,18 @@
 
 
 <body >
-<ul id="albums"  >
-    		<li *ngFor="let i of albumi" (click)="print(i.id)">
+<ul id="albums">
+    		<li  *ngFor="let i of albumi"  (click)="print(i.id)">
     			<a (click)="onClick(i.id)" title="">
-    				<img  *ngFor="let j of i.slike" src="{{j}}" width="" height="" alt="" />
 
+            <!--<cl-image *ngFor="let j of i.slike" width="400" height="320" crop="fill" public-id={{j}} cloud-name="du4cgdhn8">
 
-                  <p>+{{i.brojSlika}}</p>
+            </cl-image>
+-->
+<img *ngFor="let j of i.slike" src={{j}}>
     			</a>
 
-    			<h5>{{i.naziv}}</h5>
+          <h5>{{i.naziv}}</h5>
     		</li>
 
       </ul>
