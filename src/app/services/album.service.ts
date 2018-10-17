@@ -25,6 +25,32 @@ export class AlbumService {
       } );
 
   }
+  updateAlbum(id:string,imgUrls:Array<string>,title:string){
+    console.log("inace");
+    var body = JSON.stringify({title,imgUrls});
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
+console.log("tijelo",body);
+var url1='/api/albums/'+id;
+    this._http.put(this.url + url1,
+    body,
+      {
+        headers: headers,
+        withCredentials: true
+      }
+    ).map(res=> res.json()).subscribe(
+      data => {
+console.log("body",body);
+        },
+    error =>{
+
+    }
+
+    );
+
+
+  }
   postaviIdGalerije(id:String){
     this.idGalerije=id;
 
@@ -44,7 +70,7 @@ export class AlbumService {
         }
       ).map(res=> res.json()).subscribe(
         data => {
-
+console.log("body",body);
           },
       error =>{
 
