@@ -102,10 +102,6 @@ export class GallerypageComponent implements OnInit, OnDestroy{
     else document.getElementById("l").style.visibility="visible";
     if(this.indeks+4==this.slike.length) document.getElementById("d").style.visibility="hidden";
     else document.getElementById("d").style.visibility="visible";
-
-
-  
-
 }
 
 

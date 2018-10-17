@@ -24,7 +24,7 @@ export class AlbumService {
         return data.json();
       } );
   }
-<<<<<<< HEAD
+
   updateAlbum(id:string,imgUrls:Array<string>,title:string){
     console.log("inace");
     var body = JSON.stringify({title,imgUrls});
@@ -51,9 +51,7 @@ console.log("body",body);
 
 
   }
-=======
 
->>>>>>> 0115e6d3160c3578083c50f20b255f93763add49
   postaviIdGalerije(id:String){
     this.idGalerije=id;
   }
