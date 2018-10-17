@@ -15,7 +15,7 @@ export class SponzoriService {
   dajSponzore() {
     var headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this._http.get( this.url + '/api/sponsors', {
+    return this._http.get( this.url + '/api/sponsors/main', {
       headers: headers,
       withCredentials:true
     } )
@@ -27,7 +27,7 @@ export class SponzoriService {
 
 
   prijava(name:String,imgUrl:String) {
-    var body = JSON.stringify({name, imgUrl, "redirectUrl":"https://ibb.co/fpirzz" ,"isActive":true, "isTemporary":true});
+    var body = JSON.stringify({name, imgUrl, "redirectUrl":"https://ibb.co/fpirzz" ,"isActive":true, "isTemporary":false});
     var headers = new Headers();
     headers.append('Content-Type', 'application/json');
     //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);

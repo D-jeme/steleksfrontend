@@ -128,56 +128,106 @@ figure.vijest:hover button {
 }
 
 
-.picture{
 
-background-image: url('../../assets/images/vijesti.png');
-  min-height: 495px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position:center center;
 
-}
-.info-overflow{
-  transform: translateZ(0);
-  height: 495px;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    z-index: 4;
 
-}
-.info-overflow::before{
-  position: absolute;
-  top: 0;
-  left: 0;
-padding-top: 80px;
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-  display: block;
-  content: "";
-  background: linear-gradient(rgba(0, 47, 64, 0) 0%,rgba(0, 47, 64, 0) 50%, #002f40 100%);
-}
-
-h1{
-  margin-top: 40px;
-position: center;
-font-family: 'Roboto', sans-serif;
-font-weight: 700;
-font-size: 50px;
-text-align: center;
-
-}
-hr {
-  max-width: 70px;
-  border-width: 3px;
-  border-color: #06d7d9;
-}
 
 figcaption{
   width:90%;
 }
+
+
+
+
+
+div{
+  display: block;
+}
+.picture{
+margin-top: 0px;
+position: relative;
+height: 400px;
+overflow: hidden;
+}
+.about-us-photo {
+    min-width: 90%;
+    max-width: 100%;
+}
+img{
+  vertical-align: middle;
+}
+.title {
+    margin-top: 0;
+    line-height: 1em;
+    padding-top: 200px;
+    padding-bottom: 0px;
+    font-family: 'GillSans';
+    font-size: 31px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-shadow: 0 0 20px #000;
+    margin-bottom: 0;
+}
+.center{
+margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    float: none;
+  }
+
+.image-overlay {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(39, 39, 39, 0.7);
+    padding-top: 120px;
+}
+.triangle-wrapper {
+    height: 25px;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    display: block;
+}
+
+
+#left{
+  border-bottom: 23px solid #ffffff;
+  width: 50%;
+    bottom: 0;
+    background-color: transparent;
+    position: absolute;
+    border-right: 35px solid transparent;
+    left: 0;
+}
+#right{
+  border-bottom: 23px solid #ffffff;
+      right: 0;
+      width: 50%;
+    bottom: 0;
+    background-color: transparent;
+    border-left: 35px solid transparent;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1400px){
   div.vijesti-screen{
@@ -295,22 +345,12 @@ figcaption{
   }
 }
 @media only screen and (min-width: 1700px){
-  .picture{
-  min-height: 720px;
-  }
-  .info-overflow{
-    height: 720px;
-  }
+
 
 }
 @media only screen and (max-width: 1367px ){
   div.vijesti-screen{
     min-width: 0;
   }
-  .picture{
-  min-height: 495px;
-  }
-  .info-overflow{
-    min-height: 495px;
-  }
+
 }
