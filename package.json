@@ -22,7 +22,11 @@
     "@angular/router": "^3.3.1",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0",
     "angular-file-upload": "^2.5.0",
+<<<<<<< HEAD
     "angular2-lightbox": "^1.4.0",
+=======
+    "angular2-datetimepicker": "^1.1.1",
+>>>>>>> 0115e6d3160c3578083c50f20b255f93763add49
     "bootstrap": "^3.0.0-beta.2",
     "core-js": "^2.4.1",
     "jquery": "^3.3.1",

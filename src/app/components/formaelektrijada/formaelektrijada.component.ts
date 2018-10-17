@@ -34,7 +34,6 @@ export class FormaElektrijadaComponent implements OnInit {
     this.medalje=new Medalje(null,null,this.fakulteti,null,null);
     this.elektrijada=new Elektrijada(this.naziv,this.godina,this.sadrzaj,this.medalje,null);
     this._elektrijadaService.prijava(this.elektrijada);
-
   }
 
 }

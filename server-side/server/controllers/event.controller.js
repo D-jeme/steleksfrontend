@@ -12,8 +12,12 @@ export const getAllEvents = async(req, res) => {
 
 export const createEvent = async( req, res ) => {
   try {
+
+
     const eventType = await EventType.findOne( { eventType: req.body.eventType } )
     const event = await Events.create( { ...req.body, createdBy: req.user._id, eventType: eventType } )
+    console.log("backendddddddd");
+    console.log(req.body);
     return res.send(event)
   } catch (e) {
     return res.status(500).send(e)

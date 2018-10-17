@@ -14,7 +14,6 @@
 </div>
 <div class="prvi">
 <ul class="tab">
-
   <li *ngFor="let i of godineSifija;">
     <div (click)="f(i)">{{i}}</div>
   </li>
@@ -23,20 +22,19 @@
 </div>
 <div class="drugi_dio">
 <div class="text3" >
-  <h1> {{naslov}} </h1>
-  <hr class="primary">
   <div>{{sadrzaj}} </div>
 </div>
 </div>
 
 <div class="medalje">
 <div class="PrikazPlasmana">
-  <figure class="prikaz"id ="prikazPrvog">
+  <figure class="prikaz"id ="prikazPrvog" *ngIf="show==true">
   <div class="text">
 
-      <h2 class="NaslovTeme">Slobodan pad</h2>
-      <div class="takmicari">Selma Ahmetovic </div>
-        <div class="takmicari">Selma Hanjalic </div>
+      <h2 class="NaslovTeme">{{naziv1}}</h2>
+      <div *ngFor="let i of ucesnici1;">
+        <div class="takmicari"> {{i}}</div>
+       </div>
     </div>
 
     <div class="media">
@@ -44,12 +42,13 @@
     </div>
     <a href="#"></a>
   </figure>
-  <figure class="prikaz" id ="prikazDrugog">
+  <figure class="prikaz" id ="prikazDrugog" *ngIf="show==true">
   <div class="text">
 
-      <h2 class="NaslovTeme">Mehanika fluida</h2>
-      <div class="takmicari">Amila Mujak </div>
-        <div class="takmicari">Amina Aljicevic </div>
+      <h2 class="NaslovTeme">{{naziv2}}</h2>
+      <div *ngFor="let j of ucesnici2;">
+        <div class="takmicari">{{j}} </div>
+        </div>
     </div>
 
     <div class="media">
@@ -57,12 +56,13 @@
     </div>
     <a href="#"></a>
   </figure>
-<figure class="prikaz" id ="prikazTreceg">
+<figure class="prikaz" id ="prikazTreceg" *ngIf="show==true">
   <div class="text">
 
-    <h2 class="NaslovTeme">Termodinamika</h2>
-    <div class="takmicari">Emir Avdisaphic</div>
-      <div class="takmicari">Nur ... </div>
+    <h2 class="NaslovTeme">{{naziv3}}</h2>
+    <div *ngFor="let k of ucesnici3;">
+      <div class="takmicari">{{k}} </div>
+      </div>
     </div>
 
     <div class="media">

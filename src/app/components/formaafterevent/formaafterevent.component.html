@@ -4,25 +4,26 @@
 <form>
   <h2>Izvještaj događaja</h2>
   <fieldset class="groupBox1">
-    <input type="text" name="year" placeholder="Naziv događaja"/>
-    <input type="text" name="location" placeholder="Lokacija"/>
+    <input [(ngModel)]="Title" [ngModelOptions]="{standalone: true}" type="text" name="year" placeholder="Naziv događaja"/>
     <fieldset class="groupBox2">
-    <label for="datum">Datum događaja: </label>
-    <input type="text1" id="datum" name="datum" placeholder="dd.mm.yyyy."/>
+    <label for="datum">Datum početka događaja: </label>
+    
+    <angular2-date-picker [(ngModel)]="StartDate" type="text1" id="datum" name="datum" [settings]="settings"></angular2-date-picker>
+    <label for="datum">Datum završetka događaja: </label>
+    <angular2-date-picker [(ngModel)]="EndDate" type="text1" id="datum" name="datum" [settings]="settings"></angular2-date-picker>
+
     </fieldset>
     <fieldset class="groupBox2">
-    <label for="pozadina">Pozadina: </label>
-    <input type="file" id="pozadina" name="pozadina" accept="image/*">
+    <label for="pozadina">Slika: </label>
+    <input [(ngModel)]="BackPicture" [ngModelOptions]="{standalone: true}" type="file" id="pozadina" name="pozadina" accept="image/*">
     </fieldset>
-    <textarea placeholder="About" onkeyup="adjust_textarea(this)"></textarea>
-    <textarea placeholder="Učesnici" onkeyup="adjust_textarea(this)"></textarea>
-    <textarea placeholder="Mjesto" onkeyup="adjust_textarea(this)"></textarea>
-    <textarea placeholder="Učešće" onkeyup="adjust_textarea(this)"></textarea>
+    <textarea [(ngModel)]="LongText" [ngModelOptions]="{standalone: true}" placeholder="Tekst" onkeyup="adjust_textarea(this)"></textarea>
+    <textarea [(ngModel)]="ShortText" [ngModelOptions]="{standalone: true}" placeholder="Sažetak" onkeyup="adjust_textarea(this)"></textarea>
 
 </fieldset>
 <fieldset class="groupBox3">
   <form>
- <input type="button" value="Dodaj" />
+ <input type="button" value="Dodaj" (click)="print()"/>
 </form>
 </fieldset>
 </form>
