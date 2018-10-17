@@ -13,6 +13,9 @@ body{
   background: linear-gradient(to bottom, #3A6073, #16222A);
   opacity: 1;
 }
+#updateAL{
+  display: none;
+}
 .prijava
 {
   width: 100%;
@@ -23,8 +26,17 @@ body{
 .btn1{
   display: none;
 }
+select{
+  float: left;
+  width: 40%;
+  height: 27px;
+}
+.pre{
+  float: none;
+  height: 40px;
+}
 input[type="text"]{
-  width: 87%;
+  width: 65%;
   margin-left: 35px;
   margin-right: 35px;
   margin-top: 10px;
@@ -37,12 +49,13 @@ input[type="text"]{
   border: 1px solid #cccccc;
   border-radius: 4px;
   font-family: 'Roboto', sans-serif;
+
 }
 input[type="file"]{
   width: 87%;
   margin-left: 35px;
   margin-right: 35px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   padding: 5px;
   font-size: 14px;
@@ -83,6 +96,21 @@ input[type="file"]{
 	border-radius: 5px;
 	padding:20px;
 }
+#forma{
+  width: 70%;
+  position: relative;
+  float: left;
+}
+#update{
+  margin-left:20px;
+}
+p{
+  margin-left: 35px;
+  margin-right: 25px;
+  float: left;
+  width: 20%;
+}
+
 
 h2{background: #4D4D4D;
   text-align: center;
@@ -117,6 +145,10 @@ h2{background: #4D4D4D;
 }
 #loader-1{
   display: none;
+  float: left;
+}
+#upl{
+  float: left;
 }
 @media screen and (max-width: 1130px) {
   .form-content{

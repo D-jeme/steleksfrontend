@@ -1,236 +1,88 @@
 html{
-
-height: 100%;
-
-}
-body{
-  position: absolute;
-  width:100%;
-  height:auto;
-  margin: 0;
-  
-
-}
-#overlay {
-  background: rgba(0,0,0, .8);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  text-align: center;
-}
-h1{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  color: #213545;
-  font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 100px;
 }
 ul {
-
-  width:780px;
+  padding:0;
+   display: table;
+   width: 90%;
    margin:20px auto;
-    padding-top: 100px;
-  }
-  .gallery {
-  width: 640px;
-  margin: 0 auto;
-  padding: 5px;
-  background: #fff;
-  box-shadow: 0 1px 2px rgba(0,0,0,.3);
-}
-li {
-  display:inline;
-}
-.tn{
-margin: 2px;
+   float: left;
+ }
+li { display:inline;}
+    .tn{
+ margin:5px 3px;
  box-shadow:#999 1px 1px 3px 1px;
- cursor: pointer;
- width:24%;
- opacity: .88;
-	}
-
-h1{
-  text-align: center;
-  font-size: 30px;
+ cursor: pointer
+    }
+.modal-content {
+  width: 670px !important;
 }
-div#selectedImageModal.modal.fade.in
-{
-	margin: 0px;
-	border:0px;
-	align-content: center;
-}
-
-
-.seq-prev,
-.seq-next{
-  position: relative;
-  top: -55%;
-
-  width: 35px;
-  height: 66px;
-  border: none;
-  cursor: pointer;
-  pointer-events: auto;
-  transition-duration: .5s;
-  transform: translate3d(0, 0, 0);
-  opacity: 0.3;
-  /* Image replacement */
-  border: 0;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-}
-.seq-next{
-  right: -45%;
-  background: url("https://raw.githubusercontent.com/SequenceJS/modern-slide-in/ef79a3005818c71087c6abca2cda48f91ff3eb01/images/bt-next.png");
-}
-.seq-prev {
-right:45%;
-  background: url("https://raw.githubusercontent.com/SequenceJS/modern-slide-in/ef79a3005818c71087c6abca2cda48f91ff3eb01/images/bt-prev.png");
-}
-
-.seq-next:hover {
-  transform: translate3d(4px, 0, 0);
-  opacity: 0.6;
-}
-
-.seq-prev:hover {
-  transform: translate3d(-4px, 0, 0);
-  opacity: 0.6;
-}
-.modal{
-
-
-padding-left: 10%;
-padding-right: 10%;
-  text-align: center;
-
-
-  display: table;
-
-  left: 50%;
-transform: translateX(-50%);
-}
-.selectedImage{
-  height: 100%;
-  max-height: 550px;
-  min-height: 500px;
-  max-width: 1000px;
-  transition: 0.5s;
-	}
-
-.selectedImage img{
-  float: left;
-  width: 100%;
-background-size: contain;
-  margin: 5px auto;
-  padding-left: 5px;
-  padding-right:5px;
-  height: 100%;
-  max-height: 540px;
-}
-.modal-all{
-background-color: white;
-height: 100%;
-width:100%;
-max-height: 600px;
-
-
-}
-
-.caption{
-
+.traka{
+  adding:0;
+   display: table;
+   width: 75%;
+   margin:20px auto;
 }
 p {
    -webkit-margin-before: 5px !important;
    -webkit-margin-after: 5px !important;
-   width: 100%;
+}
+h1{
+  margin: auto;
+  display: table;
+  width: auto;
+  padding-bottom: 10px;
+}
+.tn1{
+  width: 19.5%;
+  height: 160px;
+}
+.btn-back, .btn-forward{
+	position:absolute;
+	opacity:0.9;
+	background-color:black;
+	padding:10px;
+	top:190;
+	color:white;
+	text-weight: bold;
+	cursor:pointer;
 }
 
-
-@media screen and (min-width: 1600px) {
-  body{
-    height:100%;
-  }
-  .modal{
-    padding-left: 20%;
-    padding-right: 20%;
+.btn-forward{
+	left:612;
 }
+#slika{
+  width: 660px;
+
+  height: 500px;
+
 }
-@media only screen and (max-width: 1024px) and (max-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    body{
-      height: 100%;
-    }
-  }
-@media only screen and (max-width: 768px){
-  body{
-    height: auto;
-  }
+.oko_slike{
+
 }
+.prikaz_slike{
+  margin: auto;
+  display: table;
+  width: auto;
+}
+.desno{
+  float: left;
+  width:50px;
+  height: 50px;
+  display: table;
+  margin-top:67.5px;
+}
+.lijevo{
 
-@media only screen and (max-width: 500px) {
-  ul {
+  float: left;
+  width:50px;
+  height: 50px;
+  visibility: hidden;
+  margin-top: 67.5px;
+}
+.lijevo:hover{
 
-        width: 100%;
-        min-width: 300px;
-        padding: 10px;
-
-
-      }
-      .gallery{
-        width: 100%;
-        min-width: 300px;
-      }
-      .tn{
-
-       box-shadow:#999 1px 1px 3px 1px;
-       cursor: pointer;
-       width:48%;
-       opacity: .88;
-      	}
-
-      .modal{
-        max-height: 250px;
-        padding-left: 1px;
-        padding-right:1px;
-
-      }
-      .selectedImage{
-        min-height: 0px;
-        height: 250px;
-
-        width: 300px;
-
-
-      }
-      .modal-all{
-        height: 280px;
-      }
-      .selectedImage img{
-        max-height: 300px;
-      }
-      .seq-next{
-        right: -35%;
-
-
-      }
-      .seq-prev {
-      right:35%;
-
-      }
-      .seq-prev,
-      .seq-next{
-
-        top: -60%;
-
-
-      }
-
-
+}
+.denso:hover{
 
 }

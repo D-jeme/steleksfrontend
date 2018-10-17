@@ -145,7 +145,14 @@ h2{
 
 
 
-
+.prvi{
+  float: left;
+  width: 50%;
+}
+.drugi{
+  float: right;
+  width: 50%;
+}
 
 
 
@@ -156,7 +163,6 @@ h2{
 
 .event_text{
   padding-top: 250px;
-  padding-right: 60%;
   font-size: 20px;
   padding-left: 5%;
   text-align: justify;
@@ -237,7 +243,7 @@ h2{
     border-radius: 100%;
     text-align: center;
     color: #ffff;
-    background-color: #1ee2e7;
+    background-color: #fea601;
 }
 
 .timeline>li .timeline-image h4 {
@@ -348,7 +354,6 @@ h2{
 }
 @media(min-width:330PX) {
   #about{
-
     float: none;
     padding-top: 50px;
     width: AUTO;

@@ -31,7 +31,7 @@ export class NavigationComponent implements OnInit, OnChanges,DoCheck {
   rola:string;
 
   constructor(private _prijavaService: PrijavaService,private router: Router){
-    console.log("koliko me puta ima");
+  //  console.log("koliko me puta ima");
     this.steleks='assets/images/steleksLogo.png';
     this.logo='assets/images/korisnik.png';
     this.meni='assets/images/menu.png';
@@ -58,7 +58,7 @@ export class NavigationComponent implements OnInit, OnChanges,DoCheck {
       }
   }
   detalji(){
-    console.log("il sam ovdje");
+
     let elem=document.getElementById("prikaziOpcije");
     if(elem.style.display=="block")
       elem.style.display="none";
@@ -72,7 +72,7 @@ export class NavigationComponent implements OnInit, OnChanges,DoCheck {
       let elem=document.getElementById("prikaziOpcije");
     this.rola=localStorage.getItem('rola');
     setTimeout(()=>{
-    console.log("rola u adminu",this._prijavaService.dajRolu());
+  //  console.log("rola u adminu",this._prijavaService.dajRolu());
     if(this.rola=="admin"){
         this.router.navigateByUrl('/adminopcije');
           elem.style.display="none";
@@ -136,17 +136,17 @@ ngDoCheck() {
   this.rola=localStorage.getItem('rola');
 
       this.user = JSON.parse(localStorage.getItem('signed'));
-    console.log("user",this.user);
+
 
 
 
         if(this.user)
         {
         document.getElementById("user").style.display="block";
-        console.log("useeeeeer");
+
         }
         else   {document.getElementById("user").style.display="none";
-        console.log("neprijavljen");}
+}
 
 }
 
