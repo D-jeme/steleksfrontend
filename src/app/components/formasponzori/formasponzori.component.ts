@@ -15,6 +15,8 @@ import { FileUploader } from 'ng2-file-upload';
 export class FormaSponzoriComponent implements OnInit, DoCheck {
   naziv: String;
   slika: String;
+  image:String;
+  url:any;
   uploader: CloudinaryUploader = new CloudinaryUploader(
        new CloudinaryOptions({ cloudName: 'du4cgdhn8', uploadPreset: 'd4hf19h6' })
    );
@@ -25,10 +27,11 @@ export class FormaSponzoriComponent implements OnInit, DoCheck {
      this.uploader.onSuccessItem = (item: any, response: string, status: number, headers: any): any => {
          let res: any = JSON.parse(response);
 
-       this.slika=res.public_id;
+       this.slika=res.public_id+".jpg";
  } }
 
   ngOnInit() {
+    this.url="https://res.cloudinary.com/du4cgdhn8/image/upload/";
   }
 
   ngDoCheck() {
@@ -38,7 +41,12 @@ export class FormaSponzoriComponent implements OnInit, DoCheck {
        this.poceoUpload=true;}
      else if(!this.uploader.isUploading && this.poceoUpload){
 
-           this._sponzoriService.prijava(this.naziv, this.slika);
+
+
+
+       this.image=this.url+this.slika;
+
+           this._sponzoriService.prijava(this.naziv, this.image);
        this.poceoUpload=false;
        this.popup.options={
          header:"Upload-anje",
