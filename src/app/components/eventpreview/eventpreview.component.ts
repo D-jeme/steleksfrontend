@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy} from '@angular/core';
 import { ActivatedRoute } from '@angular/router'
 import {EventPreviewService} from '../../services/eventpreview.service'
 import {Eventpreview} from '../../models/eventpreview'
@@ -9,13 +9,17 @@ import {Eventpreview} from '../../models/eventpreview'
   styleUrls: ['./eventpreview.component.css'],
   providers:[EventPreviewService]
 })
-export class EventpreviewComponent implements OnInit,OnDestroy {
+export class EventpreviewComponent implements OnInit,OnDestroy{
 
   id: number;
  private sub: any;
  sadrzaj: Array<Eventpreview>;
  event: Eventpreview;
  MONTHS: Array<String>;
+ izvjestaj: boolean;
+ mjesto: string;
+ ucesce: string;
+ ucesnici: string;
   constructor(private route: ActivatedRoute, private _eventpreviewService: EventPreviewService) {
     this.event=new Eventpreview("", "", "", "", "", "", "", "", "", "", "");
   this.MONTHS = ["JANUAR", "FEBRUAR", "MART", "APRIL", "MAJ", "JUNI", "JULI", "AUGUST", "SEPTEMBAR", "OKTOBAR", "NOVEMBAR", "DECEMBAR"];
@@ -42,9 +46,13 @@ console.log("velicina",data );
         this.event=new Eventpreview(data._id, data.title, "Lokacija", data.longText,
          data.imgUrl, this.MONTHS[date.getMonth()], String(date.getDate()), String(end.getDate()),
          data.participantText, data.placeText, data.participationText);
+         if(this.event.mjesto==null && this.event.ucesce==null && this.event.ucesce==null) this.izvjestaj=true;
+         else this.izvjestaj=false;
     }
-    );
+  );
+}
+  ngOnDestroy(){
+
   }
-  ngOnDestroy(){}
 
 }
