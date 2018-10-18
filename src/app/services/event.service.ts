@@ -52,8 +52,8 @@ console.log(body);
 
 }
 
-kreiranjeNajave(title:string, startsAt:Date,imgUrl:string,longText:string,shortText:string,ucesnici:string,mjesto:string,ucesce:string ) {
-  var body = JSON.stringify({title: title, startsAt:startsAt, imgUrl:imgUrl,longText:longText,shortText:shortText, participantText:ucesnici,placeText:mjesto,participationText:ucesce });
+kreiranjeNajave(title:string, startsAt:Date,finishedAt: Date, imgUrl:string,longText:string,shortText:string,ucesnici:string,mjesto:string,ucesce:string ) {
+  var body = JSON.stringify({title: title, startsAt:startsAt, finishedAt:finishedAt, imgUrl:imgUrl,longText:longText,shortText:shortText, participantText:ucesnici,placeText:mjesto,participationText:ucesce });
   var headers = new Headers();
   headers.append('Content-Type', 'application/json');
   //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
