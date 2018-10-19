@@ -69,7 +69,7 @@ export class FormaSifiComponent implements OnInit {
     this.shortText="Sifi2";
     this.startsAt=new Date("February 4, 2016 10:13:00");
     this.finishedAt=new Date("February 5, 2016 10:13:00");
-    this.imgUrl='https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350';
+    this.imgUrl='https://preview.ibb.co/iBHyML/sifi.png';
   }
 
   ngOnInit() {
