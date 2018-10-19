@@ -87,13 +87,16 @@
   padding-right: 15px;
   }
   .text-container{
-  margin-top: 40px;
-  font-size: 1.35em;
-  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  text-align: justify;
   color: #49494a;
-  line-height: 1.35em;
+  line-height: 28px;
   font-weight: 100;
   margin-bottom: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Roboto',sans-serif;
   }
   .prvi{
     float: left;
