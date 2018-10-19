@@ -95,6 +95,14 @@
   font-weight: 100;
   margin-bottom: 70px;
   }
+  .prvi{
+    float: left;
+    width: 50%;
+  }
+  .drugi{
+    float: right;
+    width: 63.5%;
+  }
 
 
 
@@ -128,15 +136,25 @@
   }
 
   @media screen and (min-width: 1600px) {
+.drugi{
+  width: 50%;
 
+}
 
   }
-  @media screen and (max-width: 1366px) {
+  @media screen and (max-width: 1367px) {
+    .drugi{
+      width:63.5%;
+    }
 
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1366px)
     and (-webkit-min-device-pixel-ratio: 1.5) {
+      .drugi{
+        width:63.5%;
+      }
+
 
   }
 
@@ -156,14 +174,6 @@
 
 
 
-  .prvi{
-    float: left;
-    width: 50%;
-  }
-  .drugi{
-    float: right;
-    width: 50%;
-  }
 
 
 

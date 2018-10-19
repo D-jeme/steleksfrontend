@@ -30,7 +30,7 @@ export const getEventsNews = async( req, res ) => {
       path: 'eventType',
       model: 'EventType',
       select: 'eventType'
-    }).select('_id title shortText imgUrl startsAt eventType').sort({ updatedAt: "desc" })//.limit( 10 )
+    }).select('_id title shortText imgUrl startsAt eventType').sort({ startsAt: "desc" })//.limit( 10 )
 
     return res.send( { array: events } )
   } catch (e) {
