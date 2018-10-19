@@ -132,3 +132,17 @@ body {
   float: none;
   width: 100%;
 }
+
+#am{
+  padding-top: 50px;
+}
+img{
+  width:360px;
+  height: 240px;
+}
+p{
+  padding-top: 20px;
+}
+h4{
+  padding-top: 30px;
+}
