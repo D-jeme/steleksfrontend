@@ -85,9 +85,10 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top:70px;
+  margin-bottom: 50px;
   }
   .text-container{
-  margin-top: 30px;
   font-size: 18px;
   text-align: justify;
   color: #49494a;
@@ -97,6 +98,8 @@
   padding-left: 10px;
   padding-right: 10px;
   font-family: 'Roboto',sans-serif;
+  width:90%;
+  margin:0px auto;
   }
   .prvi{
     float: left;
