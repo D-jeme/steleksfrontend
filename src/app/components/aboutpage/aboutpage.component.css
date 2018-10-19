@@ -56,7 +56,10 @@
   position: absolute;
   display: block;
   }
+#am{
 
+  padding-top: 40px;
+}
 
   #left{
   border-bottom: 23px solid #ffffff;
@@ -84,13 +87,16 @@
   padding-right: 15px;
   }
   .text-container{
-  margin-top: 40px;
-  font-size: 1.35em;
-  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  text-align: justify;
   color: #49494a;
-  line-height: 1.35em;
+  line-height: 28px;
   font-weight: 100;
   margin-bottom: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Roboto',sans-serif;
   }
   .prvi{
     float: left;
@@ -162,7 +168,11 @@
 
 
 
-
+.text-container{
+  font-family: 'Roboto', sans-serif;
+  font-size: 19.5px;
+  text-align: justify;
+}
 
 
 
@@ -172,7 +182,7 @@
 
   #event_slike{
     padding-top: 5%;
-    padding-left: 10%;
+    padding-left: 30%;
   }
 
   .event_text{
@@ -211,7 +221,7 @@
 
   .timeline>li {
       position: relative;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       min-height: 50px;
       width: 950px;
 
@@ -313,7 +323,7 @@
       }
 
       .timeline>li {
-          margin-bottom: 100px;
+          margin-bottom: 70px;
           min-height: 100px;
       }
 
