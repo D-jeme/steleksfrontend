@@ -3,7 +3,7 @@
 div.vijesti-screen {
   display: table;
   margin: 0 auto;
-  width: 74%;
+  width: 65.2%;
   margin-top: 5px;
   padding: 0px;
   padding-top: 40px;
@@ -236,6 +236,7 @@ margin-left: auto!important;
     margin-top: 0px;
     padding-bottom: 20px;
     min-width: 50%;
+    width:66%;
   }
   figure.vijest{
     margin-left: 20px;

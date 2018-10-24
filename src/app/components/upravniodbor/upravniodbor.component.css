@@ -83,7 +83,7 @@ tr {
 
 table {
   background: white;
-  width: 59%;
+  width: 53%;
   margin:0 auto;
   margin-top: 60px;
   display: block;
@@ -261,19 +261,16 @@ margin-left: auto!important;
     position: absolute;
 }
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1130px) {
   table{
     margin-top: 50px;
     width: 77%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  table{
+    margin-top: 50px;
+    width: 74%;
   }
 }
 
