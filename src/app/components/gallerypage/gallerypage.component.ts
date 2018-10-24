@@ -19,6 +19,7 @@ export class GallerypageComponent implements OnInit, OnDestroy{
 
   @Input() datasource;
   selectedImage;
+  selectedImage1;
   slike: Array<String>;
   traka: Array<String>;
   indeks:any;
@@ -52,7 +53,9 @@ export class GallerypageComponent implements OnInit, OnDestroy{
       console.log("naziv",this.naziv);
        for(let i=0;i<data.imgUrls.length;i++)
        {
-         if(i==0)this.selectedImage=data.imgUrls[i];
+         if(i==0){
+           this.selectedImage=data.imgUrls[i];
+           this.selectedImage1=data.imgUrls[i];}
        this.slike.push(data.imgUrls[i]);
        if(i<5)
        this.traka.push(data.imgUrls[i]);
