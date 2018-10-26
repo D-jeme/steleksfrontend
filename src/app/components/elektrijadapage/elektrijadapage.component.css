@@ -279,13 +279,91 @@ div.takmicari{
    font-weight: 500;
    font-family: 'Roboto',sans-serif;
  }
- img{
+ .medaljeimg{
    flex:0 auto;
    float: right;
    height: 100px;
    margin: 10px 0 25px 0px;
    width: 80px;
  }
+
+
+/*picture*/
+ div{
+   display: block;
+ }
+ .picture{
+ margin-top: 0px;
+ position: relative;
+ height: 380px;
+ overflow: hidden;
+ }
+ .about-us-photo {
+     min-width: 100%;
+     max-width: 110%;
+     vertical-align: middle;
+   }
+
+ .title {
+     margin-top: 0;
+     line-height: 1em;
+     padding-top: 180px;
+     padding-bottom: 0px;
+     font-family: 'GillSans';
+     font-size: 31px;
+     font-weight: 400;
+     color: #fff;
+     text-transform: uppercase;
+     letter-spacing: .2em;
+     text-shadow: 0 0 20px #000;
+     margin-bottom: 0;
+ }
+ .center{
+ margin-left: auto!important;
+     margin-right: auto!important;
+     text-align: center;
+     float: none;
+   }
+
+ .image-overlay {
+     position: absolute;
+     display: block;
+     width: 100%;
+     top: 0;
+     left: 0;
+     height: 100%;
+     background-color: rgba(39, 39, 39, 0.7);
+     padding-top: 120px;
+ }
+ .triangle-wrapper {
+     height: 25px;
+     width: 100%;
+     bottom: 0px;
+     position: absolute;
+     display: block;
+ }
+
+
+ #left{
+   border-bottom: 23px solid #ffffff;
+   width: 50%;
+     bottom: 0;
+     background-color: transparent;
+     position: absolute;
+     border-right: 35px solid transparent;
+     left: 0;
+ }
+ #right{
+   border-bottom: 23px solid #ffffff;
+       right: 0;
+       width: 50%;
+     bottom: 0;
+     background-color: transparent;
+     border-left: 35px solid transparent;
+     position: absolute;
+ }
+
+
  @media screen and (min-width: 1500px) {
    .eventpicture{
      min-height: 790px;
