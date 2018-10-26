@@ -4,7 +4,8 @@ import { Subscription } from 'rxjs/Subscription';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import {PageScrollConfig} from 'ng2-page-scroll';
 import  {PrijavaService} from '../../services/prijava.service';
-import { Router} from '@angular/router';
+
+import { Router, NavigationEnd } from '@angular/router';
 
 
 @Component({
@@ -92,6 +93,7 @@ export class NavigationComponent implements OnInit, OnChanges,DoCheck {
   klik()
   {
     let elem=document.getElementById("mob1");
+    elem.style.transition="2s";
     if(this.prikazi==false) {
       this.prikazi=true;
         elem.style.display="block";
@@ -104,24 +106,15 @@ export class NavigationComponent implements OnInit, OnChanges,DoCheck {
 
   }
 
-  ngOnInit() {
-//
-// this.username=localStorage.getItem('username');
-// this.rola=localStorage.getItem('rola');
-//
-//     this.user = JSON.parse(localStorage.getItem('signed'));
-//   console.log("user",this.user);
-//
-//
-//
-//       if(this.user)
-//       {
-//       document.getElementById("user").style.display="block";
-//       console.log("useeeeeer");
-//       }
-//       else   {document.getElementById("user").style.display="none";
-//       console.log("neprijavljen");}
-  }
+
+      ngOnInit() {
+          this.router.events.subscribe((evt) => {
+              if (!(evt instanceof NavigationEnd)) {
+                  return;
+              }
+              window.scrollTo(0, 0)
+          });
+      }
 
   ngOnChanges(){
 

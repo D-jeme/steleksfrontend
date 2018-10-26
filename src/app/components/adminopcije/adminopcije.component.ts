@@ -22,6 +22,7 @@ export class AdminOpcijeComponent implements OnInit {
   password1:string;
   potvrdapassworda1:string;
   show1:boolean;
+  user:any;
 
 @Input() rola;
 
@@ -33,8 +34,23 @@ export class AdminOpcijeComponent implements OnInit {
   ngOnInit() {
     this.rld = localStorage.getItem('reload');console.log("reload",this.rld);
     if(this.rld=="true"){
-       localStorage.setItem('reload',JSON.stringify(false));}
+       localStorage.setItem('reload',JSON.stringify(false));
+}
+       this.username=localStorage.getItem('username');
+       this.rola=localStorage.getItem('rola');
 
+           this.user = JSON.parse(localStorage.getItem('signed'));
+
+
+           console.log("rola",this.rola);
+           console.log("frajko",this.user);
+
+             if(!this.user||this.rola!="admin")
+             {
+             document.getElementById("user").style.display="block";
+ this.router.navigateByUrl('/admin');
+
+             }
 
 
 console.log("hahhaahh",this._prijavaService.dajPrijavu());

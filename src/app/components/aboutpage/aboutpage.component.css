@@ -126,7 +126,35 @@
   }
 
 
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 500px) {
+    .about-us-photo{
+      height: 225px;
+    }
+    .title {
+      padding-top: 50px;
+    }
+    .picture{
+      height: 230px;
+    }
+    .prvi{
+      display: none;
+    }
+    .drugi{
+      padding-bottom: 250px;
+    }
+    .nsl{
+      padding-top: 580px;
+    }
+    p{
+      display:none;
+    }
+    .timeline{
+      left: -50%;
+    }
+    .timeline-heading{
+      margin-top: 14px;
+    }
+
 
   }
   @media screen and (max-width: 720px) {
