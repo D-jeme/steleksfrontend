@@ -135,11 +135,6 @@ div{
   padding: 0;
 }
 
-.prvi{
-  width: 17%;
-  float: left;
-  height: 100%;
-}
 .drugi_dio{
   margin-left: 25px;
   width: 80%;
@@ -160,12 +155,16 @@ ul.tab {
     border: 	#182627;
     background-color: rgba(39, 39, 39, 0.7); /* ili ova boja? #2A3C41 	*/
     font-family: 'GillSans';
-    width:100%;
+    width: 100%;
     padding: 0px;
     margin-top:0px;
-    height: 100%;
+    bottom: 2%;
+    position: absolute;
+
 }
-/* poravnanje u listi */
+
+/* poravn
+anje u listi */
 ul.tab li {
 
 }
@@ -173,18 +172,29 @@ ul.tab li {
 /* stil za elemente liste */
 ul.tab li div {
     display: block;
-    color: #fff;
-    text-align: center;
+    color: #4b799b;
+
     padding: 16px 20px;
+    text-transform: uppercase;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 21px;
-    width: 100%;
-    height: 100%;
-    font-family: 'Roboto',sans-serif;
-    font-style: 500;
-    line-height: 1.9em;
-    letter-spacing: 0px;
+    font-family: 'Roboto', sans-serif;
+    text-transform:uppercase;
+    color: #4b799b;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    float: left;
+    width: 33%;
+}
+ul.tab li div:nth-of-type(1){
+  text-align: right;
+}
+ul.tab li div:nth-of-type(2){
+  text-align: center;
+}
+ul.tab li div:nth-of-type(3){
+  text-align: left;
 }
 
 /* hover */
@@ -297,7 +307,7 @@ div.takmicari{
  .picture{
  margin-top: 0px;
  position: relative;
- height: 380px;
+ height: 550px;
  overflow: hidden;
  }
  .about-us-photo {
@@ -311,7 +321,7 @@ div.takmicari{
      line-height: 1em;
      padding-top: 180px;
      padding-bottom: 0px;
-     font-family: 'GillSans';
+     font-family: 'Roboto',sans-serif;
      font-size: 31px;
      font-weight: 400;
      color: #fff;
@@ -365,330 +375,107 @@ div.takmicari{
      position: absolute;
  }
 
-
  @media screen and (min-width: 1500px) {
-   .eventpicture{
-     min-height: 790px;
-   }
-   .info-overflow{
-     height: 802px;
-   }
-   .PrikazPlasmana{
-     width: 40%;
-   }
-   #prikazPrvog{
-     margin-left:250px;
-   }
-
-
- }
- @media screen and (max-width: 680px) {
-   .text1{
-     width: 70%;
-     font-size: 21px;
-   }
-   .name,.name span{
-       font-size: 35px;
-     }
-
-   .info-dash{
-     height: 500px;
-   }
-
-
-
- }
- @media screen and (max-width: 720px) {
-
-   figure{
-     float: left;
-     width:90%;
-   }
-   #prikazPrvog{
-     padding-left: 0;
-     margin-left: 10px;
-     margin-bottom: 10px;
-     float: left;
-   }
-   #prikazDrugog{
-     padding-left: 0;
-     margin-left: 10px;
-     margin-bottom: 10px;
-     float: left;
-   }
-   #prikazTreceg{
-     padding-left: 0;
-     margin-left: 10px;
-     margin-top: 0;
-     padding-top: 0;
-     float: left;
-   }
-   .prikaz{
-     padding-left: 0;
-     margin-left: 10px;
-
-     float: left;
-   }
-   .PrikazPlasmana{
-     width:80%;
-
-   }
-
-   .text{
-     padding-right: 80px;
-   }
-
 
 
  }
  @media screen and (max-width: 680px){
 
- figure{
-   float: left;
-   width:90%;
- }
- #prikazPrvog{
-   padding-left: 0;
-   margin-left: 10px;
-   margin-bottom: 10px;
-   float: left;
- }
- #prikazDrugog{
-   padding-left: 0;
-   margin-left: 10px;
-   margin-bottom: 10px;
-   float: left;
- }
- #prikazTreceg{
-   padding-left: 0;
-   margin-left: 10px;
-   margin-top: 0;
-   padding-top: 0;
-   float: left;
- }
- .prikaz{
-   padding-left: 0;
-   margin-left: 10px;
+   ul.tab {
+       list-style-type: none;
+       overflow: hidden;
+       border: 	#182627;
+         background-color: rgba(39, 39, 39, 0.7);  /* ili ova boja? #2A3C41 	*/
+       font-family: 'GillSans';
+       width:100%;
+       position: absolute;
+       bottom: 2%;
+       padding: 0px;
+       margin-top:12px;
+   }
+   .title{
+     font-size: 18px;
+     padding-top: 0px;
+     margin-top: 0;
+   }
 
-   float: left;
- }
- .PrikazPlasmana{
-   width:80%;
+   .picture{
+     height: 300px;
+   }
 
- }
 
- .text{
-   padding-right: 60px;
+   /* stil za elemente liste */
+   ul.tab li div {
+       display: block;
+       color: #4b799b;
+       text-align: center;
 
- }
-
+       text-decoration: none;
+       transition: 0.3s;
+       font-size: 14px;
+       width: 33%;
+       font-family: 'Roboto',sans-serif;
+       font-style: 500;
+       line-height: 1.3em;
+       letter-spacing: 0.8px;
+   }
 
 }
 @media screen and (max-width: 920px){
 
-figure{
-  float: left;
-  width:90%;
-}
-#prikazPrvog{
-  padding-left: 20;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  float: left;
-}
-#prikazDrugog{
-  padding-left: 20;
-  margin-left: 20px;
-  margin-bottom: 15px;
-  float: left;
-}
-#prikazTreceg{
-  padding-left: 20;
-  margin-left: 20px;
-  margin-top: 0;
-  padding-top: 0;
-  float: left;
-}
-.prikaz{
-  padding-left: 20;
-  margin-left: 20px;
 
-  float: left;
-}
-.PrikazPlasmana{
-  width:80%;
-
-}
-
-.text{
-  padding-right: 60px;
-
-}
-.text2{
-  padding-left: 30px;
-
-}
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    figure{
-      float: left;
-      width:90%;
-
-    }
-    #prikazPrvog{
-      padding-left: 20;
-      margin-left: 20px;
-      margin-bottom: 10px;
-      float: left;
-    }
-    #prikazDrugog{
-      padding-left: 20;
-      margin-left: 20px;
-      margin-bottom: 15px;
-      float: left;
-    }
-    #prikazTreceg{
-      padding-left: 20;
-      margin-left: 20px;
-      margin-top: 0;
-      padding-top: 0;
-      float: left;
-    }
-    .prikaz{
-      padding-left: 20;
-      margin-left: 20px;
-
-      float: left;
-    }
-    .PrikazPlasmana{
-      width:80%;
-
-    }
-
-    .text{
-      padding-right: 60px;
-
-    }
-    .text2{
-      padding-left: 30px;
-
-    }
+{
 }
 
 @media only screen and (max-width: 1030px) {
-  .drugi_dio{
-    margin-right: 1px;
-    width: 70%;
-    float: left;
-    margin-top: 15px;
-    padding: 0px;
-  }
-  h1{
-    margin-top: 40px;
-  font-size: 25px;
 
-  }
-  hr {
-    max-width: 40px;
-    border-width: 3px;
-    margin-bottom: 50px;
-  }
-  .text3{
-    margin-left: 0px;
-    margin-top: 40px;
-    letter-spacing: 0px;
-    font-size: 15px;
-    padding-bottom: 80px;
-  }
-  .prvi {
-    width:15%;
-  }
-  ul.tab {
-      list-style-type: none;
-      overflow: hidden;
-      border: 	#182627;
-      background-color: #2D3B3C;  /* ili ova boja? #2A3C41 	*/
-      font-family: "Roboto", sans-serif;
-      width:100%;
-      padding: 0px;
-      margin-top:12px;
-      height: 100%;
-  }
 
-  /* stil za elemente liste */
-  ul.tab li div {
-      display: block;
-      color: #fff;
-      text-align: center;
-      padding: 14px 20px;
-      text-decoration: none;
-      transition: 0.3s;
-      font-size: 14px;
-      width: 100%;
-      height: 100%;
-      font-family: 'Roboto',sans-serif;
-      font-style: 500;
-      line-height: 1.3em;
-      letter-spacing: 1px;
-  }
 }
 
 @media only screen and (max-width: 720px) {
-  .drugi_dio{
-    margin-right: 1px;
-    width: 60%;
-    float: left;
-    margin-top: 15px;
-    padding: 0px;
-  }
-  h1{
-    margin-top: 40px;
-  font-size: 25px;
 
-  }
-  hr {
-    max-width: 40px;
-    border-width: 3px;
-    margin-bottom: 50px;
-  }
-  .text3{
-    margin-left: 0px;
-    margin-top: 40px;
-    letter-spacing: 0px;
-    font-size: 15px;
-    padding-bottom: 80px;
-  }
-  .prvi {
-    width:20%;
-  }
+}
+@media only screen and (max-width: 370px){
+
   ul.tab {
       list-style-type: none;
       overflow: hidden;
       border: 	#182627;
-      background-color: #2D3B3C;  /* ili ova boja? #2A3C41 	*/
-      font-family: "Roboto", sans-serif;
+        background-color: rgba(39, 39, 39, 0.7);  /* ili ova boja? #2A3C41 	*/
+      font-family: 'GillSans';
       width:100%;
+      position: absolute;
+      bottom: 2%;
       padding: 0px;
       margin-top:12px;
-      height: 100%;
   }
+  .title{
+    font-size: 18px;
+    padding-top: 0px;
+    margin-top: 0;
+  }
+
+  .picture{
+    height: 260px;
+  }
+
 
   /* stil za elemente liste */
   ul.tab li div {
       display: block;
-      color: #fff;
+      color: #4b799b;
       text-align: center;
-      padding: 14px 20px;
+
       text-decoration: none;
       transition: 0.3s;
       font-size: 14px;
-      width: 100%;
-      height: 100%;
+      width: 33%;
       font-family: 'Roboto',sans-serif;
       font-style: 500;
       line-height: 1.3em;
-      letter-spacing: 1px;
+      letter-spacing: 0.8px;
   }
 }
