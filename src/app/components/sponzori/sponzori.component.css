@@ -104,12 +104,12 @@ section {
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 420px) {
   table{
     margin:0px auto;
     display: table;
     margin-top: 0px;
-    width: 85%;
+    width: 54.5%;
   }
   tr {
     display: table;

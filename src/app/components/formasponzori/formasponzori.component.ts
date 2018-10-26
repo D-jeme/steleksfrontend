@@ -4,6 +4,7 @@ import  { SponzoriService } from '../../services/sponzori.service';
 import  { Sponzor } from '../../models/sponzori';
 import {Popup} from 'ng2-opd-popup';
 import { FileUploader } from 'ng2-file-upload';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-formasponzori',
@@ -13,6 +14,9 @@ import { FileUploader } from 'ng2-file-upload';
 })
 
 export class FormaSponzoriComponent implements OnInit, DoCheck {
+  username:String;
+  rola:String;
+  user:any;
   naziv: String;
   slika: String;
   image:String;
@@ -22,7 +26,7 @@ export class FormaSponzoriComponent implements OnInit, DoCheck {
    );
      poceoUpload:boolean=false;
      zavrsio:boolean=true;
-  constructor(private popup: Popup ,private renderer : Renderer,private _sponzoriService: SponzoriService) {
+  constructor(private popup: Popup ,private renderer : Renderer,private _sponzoriService: SponzoriService, private router: Router) {
      this.naziv="";
      this.uploader.onSuccessItem = (item: any, response: string, status: number, headers: any): any => {
          let res: any = JSON.parse(response);
@@ -32,6 +36,21 @@ export class FormaSponzoriComponent implements OnInit, DoCheck {
 
   ngOnInit() {
     this.url="https://res.cloudinary.com/du4cgdhn8/image/upload/";
+    this.username=localStorage.getItem('username');
+    this.rola=localStorage.getItem('rola');
+
+        this.user = JSON.parse(localStorage.getItem('signed'));
+
+
+        console.log("rola",this.rola);
+        console.log("frajko",this.user);
+
+          if(!this.user||this.rola!="moderator")
+          {
+          document.getElementById("user").style.display="block";
+this.router.navigateByUrl('/admin');
+
+          }
   }
 
   ngDoCheck() {

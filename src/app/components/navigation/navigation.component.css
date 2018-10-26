@@ -15,6 +15,7 @@
 }
 #prikaziOpcije{
   display: none;
+
 }
 
 
@@ -150,9 +151,12 @@ nav{
     border: solid 1px #C9C9C9;
     border-top: none;
     border-left: none;
-    transition: all 0.3s ease;
-  }
+    transition: 15s;
 
+  }
+.mob1{
+  transition: 0.5s;
+}
 
     li {
       display: block;
