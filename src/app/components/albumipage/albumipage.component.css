@@ -21,7 +21,10 @@ color: white;
 width: 100px;
   position:relative;
 z-index: 300;
-  font-size: 24px;
+  font-size: 28px;
+  margin-bottom: 5px;
+    text-transform: uppercase;
+visibility: hidden;
 
 }
 #albums{
@@ -38,6 +41,9 @@ z-index: 300;
       height: auto;
       float: left;
 			}
+#albums li:hover h5{
+  visibility: visible;
+}
 
 		#albums a, #albums a:visited {
 			width: 320px;
@@ -181,10 +187,11 @@ font-size: 30px;
         width: 100%;
           max-width: 300px;
           padding: 0;
-          padding-bottom: 50px;
+          padding-bottom: 80px;
           margin: 0;
       }
       #albums{
+        margin-left: 20px;
         max-width: 250px;
         width: 100%;
         margin: 0;
@@ -195,6 +202,7 @@ font-size: 30px;
         min-height: 240px;
         min-width: 280px;
         width: 100%;
+        height: 300px;
 
   			}
 

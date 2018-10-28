@@ -379,6 +379,21 @@ div.takmicari{
 
 
  }
+ @media screen and (max-width: 500px) {
+   .about-us-photo{
+     height: 225px;
+   }
+   .title {
+     padding-top: 50px;
+   }
+   .picture{
+     height: 229px;
+   }
+   .image-overlay{
+     height: 229px;
+   }
+
+ }
  @media screen and (max-width: 680px){
 
    ul.tab {
