@@ -13,30 +13,135 @@
     </div>
 </div>
 </div>
-</div>-->
-<div class="picture">
-  <img class="about-us-photo" src="assets/images/elektrijadaslika2.jpg">
-  <div class="image-overlay">
+</div>
+<div>
+<div class="prvi">
+<ul class="tab">
 
-    <div class="content">
-      <div class="title center" style="color: white; text-shadow: 1px 1px 10px rgb(84, 84, 84);">MEĐUNARODNI DOGAĐAJI</div>"
+  <li *ngFor="let i of naslovi;">
+    <div (click)=fun(i)>{{i}}</div>
+  </li>
+</ul>
+</div>
 
-      <ul class="tab">
-        <div class="tab1">
-        <li >
-          <div>Historija</div>
-          <div>Elektrijada</div>
-          <div>Stem Games</div>
-        </li>
-      </div>
-      </ul>
+<div class="drugi_dio_1" id="drugi_1">
+<div class="text3" >
+  <h1> {{naslovi[0]}} </h1>
+          <hr class="primary">
+  <div class="sadrzaj">
 
+    <div class="tekst">{{godineElektrijadeSadrzaj[0]}} </div>
+
+
+
+
+
+<div class="red1">
+    <div class="tekst1">{{historijaText[0]}}</div>
+      <img src='{{historijaSlike[0]}}' class="slika">
+  </div>
+
+  <div class="red2">
+    <div class="tekst1">{{historijaText[1]}}</div>
+      <img src='{{historijaSlike[1]}}' class="slika">
+  </div>
+
+    <div class="red1">
+      <div class="tekst1">{{historijaText[2]}}</div>
+        <img src='{{historijaSlike[2]}}' class="slika">
     </div>
+
+      <div class="red2">
+        <div class="tekst1">{{historijaText[3]}}</div>
+          <img src='{{historijaSlike[3]}}' class="slika">
+      </div>
+
+
 
   </div>
 </div>
+</div>
+
+<div class="drugi_dio_2" id="drugi_2">
+<div class="text3" >
+  <h1> {{naslovi[1]}} </h1>
+          <hr class="primary">
+  <div class="sadrzaj">
+
+    <div class="tekst">{{godineElektrijadeSadrzaj[1]}} </div>
 
 
 
-<!--<app-sponzori></app-sponzori>
-<app-footer></app-footer>-->
+
+
+<div class="red1">
+    <div class="tekst1">{{elektrijadaText[0]}}</div>
+      <img src='{{elektrijadaSlike[0]}}' class="slika">
+  </div>
+
+  <div class="red2">
+    <div class="tekst1">{{elektrijadaText[1]}}</div>
+      <img src='{{elektrijadaSlike[1]}}' class="slika">
+  </div>
+
+    <div class="red1">
+      <div class="tekst1">{{elektrijadaText[2]}}</div>
+        <img src='{{elektrijadaSlike[2]}}' class="slika">
+    </div>
+
+      <div class="red2">
+        <div class="tekst1">{{elektrijadaText[3]}}</div>
+          <img src='{{elektrijadaSlike[3]}}' class="slika">
+      </div>
+
+
+
+  </div>
+
+
+
+</div>
+</div>
+
+<div class="drugi_dio_1" id="drugi_3">
+<div class="text3" >
+  <h1> {{naslovi[2]}} </h1>
+          <hr class="primary">
+  <div class="sadrzaj">
+
+    <div class="tekst">{{godineElektrijadeSadrzaj[2]}} </div>
+
+
+
+
+
+<div class="red1">
+    <div class="tekst1">{{stemText[0]}}</div>
+      <img src='{{stemSlike[0]}}' class="slika">
+  </div>
+
+  <div class="red2">
+    <div class="tekst1">{{stemText[1]}}</div>
+      <img src='{{stemSlike[1]}}' class="slika">
+  </div>
+
+    <div class="red1">
+      <div class="tekst1">{{stemText[2]}}</div>
+        <img src='{{stemSlike[2]}}' class="slika">
+    </div>
+
+      <div class="red2">
+        <div class="tekst1">{{stemText[3]}}</div>
+          <img src='{{stemSlike[3]}}' class="slika">
+      </div>
+
+
+
+  </div>
+</div>
+</div>
+
+
+</div>
+<app-sponzori></app-sponzori>
+  <app-footer></app-footer>
