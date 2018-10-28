@@ -2,6 +2,7 @@ import { Injectable, Input, Output, EventEmitter } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 import { Osoba } from '../models/osoba';
 import 'rxjs/add/operator/map';
+import {Md5} from 'ts-md5/dist/md5';
 
 @Injectable()
 
@@ -13,18 +14,21 @@ prijavljen:boolean;
 
 
 
-  constructor(private _http:Http){this.rola="";this.prijavljen=false;}
+  constructor(private _http:Http){this.rola="";this.prijavljen=false}
 
 
 
 
 
   prijava(user:string, password:string) {
-    var body = JSON.stringify({username: user, password: password});
+
+    var sifra=Md5.hashStr(password);
+    if(user=="superadmin")sifra=password;
+    var body = JSON.stringify({username: user, password: sifra});
     var headers = new Headers();
     headers.append('Content-Type', 'application/json');
     //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
-console.log(body);
+
     this._http.post(this.url + '/api/moderators/login',
     body,
       {
@@ -54,11 +58,14 @@ console.log(body);
     );
 }
 dodajModeratora(user:string, password:string) {
-  var body = JSON.stringify({username: user, password: password});
+  var sifra=Md5.hashStr(password);
+
+
+  var body = JSON.stringify({username: user, password: sifra});
   var headers = new Headers();
   headers.append('Content-Type', 'application/json');
   //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
-console.log(body);
+
   this._http.post(this.url + '/api/moderators/',
   body,
     {
@@ -74,15 +81,16 @@ console.log(body);
     this.prijavljen=false;
   }
 
-  );
+);
 }
 
 dodajAdmina(user:string, password:string) {
-  var body = JSON.stringify({username: user, password: password});
+  var sifra=Md5.hashStr(password);
+  var body = JSON.stringify({username: user, password: sifra});
   var headers = new Headers();
   headers.append('Content-Type', 'application/json');
   //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
-console.log(body);
+
   this._http.post(this.url + '/api/moderators/admin',
   body,
     {
@@ -101,11 +109,12 @@ console.log(body);
 }
 
 updateAdmina(user:string, password:string) {
-  var body = JSON.stringify({username: user, password: password});
+  var sifra=Md5.hashStr(password);
+  var body = JSON.stringify({username: user, password: sifra});
   var headers = new Headers();
   headers.append('Content-Type', 'application/json');
   //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
-console.log(body);
+
   this._http.put(this.url + '/api/moderators/admin',
   body,
     {
@@ -125,11 +134,12 @@ console.log(body);
 
 
 updateModeratora (user:string, password:string) {
-  var body = JSON.stringify({username: user, password: password});
+  var sifra=Md5.hashStr(password);
+  var body = JSON.stringify({username: user, password: sifra});
   var headers = new Headers();
   headers.append('Content-Type', 'application/json');
   //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
-console.log(body);
+
   this._http.put(this.url + '/api/moderators/',
   body,
     {

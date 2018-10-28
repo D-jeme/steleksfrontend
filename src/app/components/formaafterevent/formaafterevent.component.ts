@@ -34,9 +34,12 @@ uploader: CloudinaryUploader = new CloudinaryUploader(
  );
  poceoUpload:boolean=false;
  zavrsio:boolean=true;
-
+user:any;
+rola:String;
+username:String;
 
   constructor(private _eventService: EventService, private router: Router, private popup: Popup ,private renderer : Renderer) {
+
   this.Title = "";
   this.BackPicture="";
   this.LongText="";
@@ -49,6 +52,21 @@ uploader: CloudinaryUploader = new CloudinaryUploader(
  }
   ngOnInit() {
     this.url="https://res.cloudinary.com/du4cgdhn8/image/upload/";
+    this.username=localStorage.getItem('username');
+    this.rola=localStorage.getItem('rola');
+
+        this.user = JSON.parse(localStorage.getItem('signed'));
+
+
+        console.log("rola",this.rola);
+        console.log("frajko",this.user);
+
+          if(!this.user||this.rola!="moderator")
+          {
+          document.getElementById("user").style.display="block";
+this.router.navigateByUrl('/admin');
+
+          }
   }
 
   ngDoCheck() {

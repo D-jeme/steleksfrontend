@@ -35,9 +35,11 @@
     "ng2-ui": "^0.14.1",
     "ngx-bootstrap": "^3.0.1",
     "node-sass": "^4.7.2",
+    "password-hash": "^1.2.2",
     "popper.js": "^1.12.9",
     "rxjs": "^5.0.1",
     "ts-helpers": "^1.1.1",
+    "ts-md5": "^1.2.4",
     "zone.js": "^0.7.2"
   },
   "devDependencies": {

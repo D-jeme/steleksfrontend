@@ -146,3 +146,25 @@ p{
 h4{
   padding-top: 30px;
 }
+@media screen and (max-width: 500px) {
+  .container{
+    padding-top: 0px;
+  }
+  #am{
+    padding-top: 0px;
+
+  }
+  .team-title{
+    padding-top: 0px;
+    display: table;
+    padding-bottom: 40px;
+    margin: auto;
+    width: auto;
+  }
+  span{
+    width: auto;
+    margin: auto;
+    display: table;
+  }
+
+}

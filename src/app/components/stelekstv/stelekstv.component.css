@@ -229,6 +229,9 @@ h2{
 		padding: 0;
 		padding-bottom: 55px;
 	}
+	.slika{
+		margin-right: 5px;
+	}
 
 	iframe{
 		display: table;
@@ -251,6 +254,15 @@ h2{
 		padding: 20px;
 
 	}
+}
+@@media screen and (max-width: 430px) {
+	.slika{
+		margin-right: 5px;
+	}
+	img{
+		margin-right: 3px;
+	}
+
 }
 
 

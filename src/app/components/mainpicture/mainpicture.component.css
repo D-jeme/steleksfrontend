@@ -158,18 +158,20 @@ div{
     padding-top: 50px;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 400px){
+@media screen and (min-width: 350px) and (max-width: 410px){
   .about{
     min-width: 350px;
     font-size:18px;
     line-height: 20px;
+    margin-top: 0px;
+padding-top: 160px;
 
   }
   .slogan{
     padding-top: 50px;
   }
 }
-@media screen and (min-width: 410px){
+@media screen and (min-width: 420px){
   .about{
     min-width: 350px;
     font-size:18px;

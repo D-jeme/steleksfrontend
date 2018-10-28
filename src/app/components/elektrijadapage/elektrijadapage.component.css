@@ -171,14 +171,20 @@ div{
   text-rendering: geometricPrecision;
   box-sizing: border-box;
   outline: 0;
+  margin:0;
+  padding: 0;
 }
 
+<<<<<<< HEAD
 .prvi{
   width: 14%;
   float: left;
   height: 100%;
 }
 .drugi_dio_2{
+=======
+.drugi_dio{
+>>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
   margin-left: 25px;
   width: 80%;
   float: left;
@@ -192,14 +198,18 @@ ul.tab {
     list-style-type: none;
     overflow: hidden;
     border: 	#182627;
-    background-color: #2D3B3C;  /* ili ova boja? #2A3C41 	*/
-    font-family: "Roboto", sans-serif;
-    width:100%;
+    background-color: rgba(39, 39, 39, 0.7); /* ili ova boja? #2A3C41 	*/
+    font-family: 'GillSans';
+    width: 100%;
     padding: 0px;
-    margin-top:12px;
-    height: 100%;
+    margin-top:0px;
+    bottom: 2%;
+    position: absolute;
+
 }
-/* poravnanje u listi */
+
+/* poravn
+anje u listi */
 ul.tab li {
 
 }
@@ -207,18 +217,29 @@ ul.tab li {
 /* stil za elemente liste */
 ul.tab li div {
     display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 20px;
+    color: #4b799b;
+
+    padding: 16px 20px;
+    text-transform: uppercase;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 21px;
-    width: 100%;
-    height: 100%;
-    font-family: 'Roboto',sans-serif;
-    font-style: 500;
-    line-height: 1.9em;
-    letter-spacing: 0px;
+    font-family: 'Roboto', sans-serif;
+    text-transform:uppercase;
+    color: #4b799b;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    float: left;
+    width: 33%;
+}
+ul.tab li div:nth-of-type(1){
+  text-align: right;
+}
+ul.tab li div:nth-of-type(2){
+  text-align: center;
+}
+ul.tab li div:nth-of-type(3){
+  text-align: left;
 }
 
 /* hover */
@@ -264,14 +285,36 @@ h1{
    height: auto;
    padding-bottom:20px;
  }
+<<<<<<< HEAD
 
  img{
+=======
+ div.media{
+   float: right;
+   width: 25%;
+   margin:0;
+ }
+div.takmicari{
+  margin: 6px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Roboto',sans-serif;
+}
+ h2.NaslovTeme{
+   margin: 10px;
+   text-align: left;
+   font-weight: 500;
+   font-family: 'Roboto',sans-serif;
+ }
+ .medaljeimg{
+>>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
    flex:0 auto;
    float: right;
    height: 100px;
    margin: 0px;
    width: 80px;
  }
+<<<<<<< HEAD
  @media screen and (min-width: 1500px) {
    .eventpicture{
      min-height: 790px;
@@ -279,70 +322,168 @@ h1{
    .info-overflow{
      height: 802px;
    }
+=======
+>>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
 
 
+/*picture*/
+ div{
+   display: block;
  }
- @media screen and (max-width: 680px) {
-   .text1{
-     width: 70%;
-     font-size: 21px;
-   }
-   .name,.name span{
-       font-size: 35px;
-     }
-
-   .info-dash{
-     height: 500px;
-   }
-
-
-
+ .picture{
+ margin-top: 0px;
+ position: relative;
+ height: 550px;
+ overflow: hidden;
  }
+<<<<<<< HEAD
  @media screen and (max-width: 720px) {
 
    figure{
      float: left;
      width:90%;
    }
-
-   .text{
-     padding-right: 80px;
+=======
+ .about-us-photo {
+     min-width: 100%;
+     max-width: 110%;
+     vertical-align: middle;
    }
 
+ .title {
+     margin-top: 0;
+     line-height: 1em;
+     padding-top: 180px;
+     padding-bottom: 0px;
+     font-family: 'Roboto',sans-serif;
+     font-size: 31px;
+     font-weight: 400;
+     color: #fff;
+     text-transform: uppercase;
+     letter-spacing: .2em;
+     text-shadow: 0 0 20px #000;
+     margin-bottom: 0;
+ }
+ .center{
+ margin-left: auto!important;
+     margin-right: auto!important;
+     text-align: center;
+     float: none;
+   }
+
+ .image-overlay {
+     position: absolute;
+     display: block;
+     width: 100%;
+     top: 0;
+     left: 0;
+     height: 100%;
+     background-color: rgba(39, 39, 39, 0.7);
+     padding-top: 120px;
+ }
+ .triangle-wrapper {
+     height: 25px;
+     width: 100%;
+     bottom: 0px;
+     position: absolute;
+     display: block;
+ }
+
+>>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
+
+ #left{
+   border-bottom: 23px solid #ffffff;
+   width: 50%;
+     bottom: 0;
+     background-color: transparent;
+     position: absolute;
+     border-right: 35px solid transparent;
+     left: 0;
+ }
+ #right{
+   border-bottom: 23px solid #ffffff;
+       right: 0;
+       width: 50%;
+     bottom: 0;
+     background-color: transparent;
+     border-left: 35px solid transparent;
+     position: absolute;
+ }
+
+ @media screen and (min-width: 1500px) {
 
 
  }
  @media screen and (max-width: 680px){
 
+<<<<<<< HEAD
  figure{
    float: left;
    width:90%;
  }
+=======
+   ul.tab {
+       list-style-type: none;
+       overflow: hidden;
+       border: 	#182627;
+         background-color: rgba(39, 39, 39, 0.7);  /* ili ova boja? #2A3C41 	*/
+       font-family: 'GillSans';
+       width:100%;
+       position: absolute;
+       bottom: 2%;
+       padding: 0px;
+       margin-top:12px;
+   }
+   .title{
+     font-size: 18px;
+     padding-top: 0px;
+     margin-top: 0;
+   }
+>>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
 
- .text{
-   padding-right: 60px;
+   .picture{
+     height: 300px;
+   }
 
- }
 
+   /* stil za elemente liste */
+   ul.tab li div {
+       display: block;
+       color: #4b799b;
+       text-align: center;
+
+       text-decoration: none;
+       transition: 0.3s;
+       font-size: 14px;
+       width: 33%;
+       font-family: 'Roboto',sans-serif;
+       font-style: 500;
+       line-height: 1.3em;
+       letter-spacing: 0.8px;
+   }
 
 }
 @media screen and (max-width: 920px){
 
+<<<<<<< HEAD
 figure{
   float: left;
   width:90%;
-}
-
-.text{
-  padding-right: 60px;
+=======
 
 }
-.text2{
-  padding-left: 30px;
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px)
+{
+>>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
+}
+
+@media only screen and (max-width: 1030px) {
+
 
 }
-}
 
+<<<<<<< HEAD
 @media only screen and (min-width: 1024px) and (max-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 1.5) {
     figure{
@@ -359,120 +500,50 @@ figure{
 
     }
 }
-
-@media only screen and (max-width: 1030px) {
-  .drugi_dio{
-    margin-right: 1px;
-    width: 70%;
-    float: left;
-    margin-top: 15px;
-    padding: 0px;
-  }
-  h1{
-    margin-top: 40px;
-  font-size: 25px;
-
-  }
-  hr {
-    max-width: 40px;
-    border-width: 3px;
-    margin-bottom: 50px;
-  }
-  .text3{
-    margin-left: 0px;
-    margin-top: 40px;
-    letter-spacing: 0px;
-    font-size: 15px;
-    padding-bottom: 80px;
-  }
-  .prvi {
-    width:15%;
-  }
-  ul.tab {
-      list-style-type: none;
-      overflow: hidden;
-      border: 	#182627;
-      background-color: #2D3B3C;  /* ili ova boja? #2A3C41 	*/
-      font-family: "Roboto", sans-serif;
-      width:100%;
-      padding: 0px;
-      margin-top:12px;
-      height: 100%;
-  }
-
-  /* stil za elemente liste */
-  ul.tab li div {
-      display: block;
-      color: #fff;
-      text-align: center;
-      padding: 14px 20px;
-      text-decoration: none;
-      transition: 0.3s;
-      font-size: 14px;
-      width: 100%;
-      height: 100%;
-      font-family: 'Roboto',sans-serif;
-      font-style: 500;
-      line-height: 1.3em;
-      letter-spacing: 1px;
-  }
-}
-
+=======
 @media only screen and (max-width: 720px) {
-  .drugi_dio{
-    margin-right: 1px;
-    width: 60%;
-    float: left;
-    margin-top: 15px;
-    padding: 0px;
-  }
-  h1{
-    margin-top: 40px;
-  font-size: 25px;
+>>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
 
-  }
-  hr {
-    max-width: 40px;
-    border-width: 3px;
-    margin-bottom: 50px;
-  }
-  .text3{
-    margin-left: 0px;
-    margin-top: 40px;
-    letter-spacing: 0px;
-    font-size: 15px;
-    padding-bottom: 80px;
-  }
-  .prvi {
-    width:20%;
-  }
+}
+@media only screen and (max-width: 370px){
+
   ul.tab {
       list-style-type: none;
       overflow: hidden;
       border: 	#182627;
-      background-color: #2D3B3C;  /* ili ova boja? #2A3C41 	*/
-      font-family: "Roboto", sans-serif;
+        background-color: rgba(39, 39, 39, 0.7);  /* ili ova boja? #2A3C41 	*/
+      font-family: 'GillSans';
       width:100%;
+      position: absolute;
+      bottom: 2%;
       padding: 0px;
       margin-top:12px;
-      height: 100%;
   }
+  .title{
+    font-size: 18px;
+    padding-top: 0px;
+    margin-top: 0;
+  }
+
+  .picture{
+    height: 260px;
+  }
+
 
   /* stil za elemente liste */
   ul.tab li div {
       display: block;
-      color: #fff;
+      color: #4b799b;
       text-align: center;
-      padding: 14px 20px;
+
       text-decoration: none;
       transition: 0.3s;
       font-size: 14px;
-      width: 100%;
-      height: 100%;
+      width: 33%;
       font-family: 'Roboto',sans-serif;
       font-style: 500;
       line-height: 1.3em;
-      letter-spacing: 1px;
+      letter-spacing: 0.8px;
   }
 }
 

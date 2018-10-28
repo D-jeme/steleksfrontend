@@ -227,7 +227,18 @@ margin-left: auto!important;
 
 
 
+@media screen and (max-width: 500px) {
+  .about-us-photo{
+    height: 225px;
+  }
+  .title {
+    padding-top: 50px;
+  }
+  .picture{
+    height: 230px;
+  }
 
+}
 
 
 @media only screen and (max-width: 1400px){

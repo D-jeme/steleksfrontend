@@ -9,6 +9,7 @@ import { Album } from '../../models/album';
 
 
 
+
 @Component({
   selector: 'app-formagalerija',
   templateUrl: './formagalerija.component.html',
@@ -35,6 +36,10 @@ export class FormaGalerijaComponent implements OnInit,DoCheck {
   poceoUpload:boolean=false;
   brojSlika: number=0;
   url:String;
+  username:String;
+  rola:String;
+  user:any;
+  
 
   uploader: CloudinaryUploader = new CloudinaryUploader(
        new CloudinaryOptions({ cloudName: 'du4cgdhn8', uploadPreset: 'd4hf19h6' })
@@ -97,6 +102,21 @@ export class FormaGalerijaComponent implements OnInit,DoCheck {
 
 
   ngOnInit() {
+    this.username=localStorage.getItem('username');
+    this.rola=localStorage.getItem('rola');
+
+        this.user = JSON.parse(localStorage.getItem('signed'));
+
+
+        console.log("rola",this.rola);
+        console.log("frajko",this.user);
+
+          if(!this.user||this.rola!="moderator")
+          {
+          document.getElementById("user").style.display="block";
+this.router.navigateByUrl('/admin');
+
+          }
 
     this._eventTypeService.dajEventTypes().subscribe(
       data=>{
