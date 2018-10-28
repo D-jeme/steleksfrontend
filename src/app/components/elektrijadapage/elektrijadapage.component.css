@@ -1,164 +1,78 @@
-#drugi_1{
-  display: table;
-}
-#drugi_2{
-  display: none;
-}
-#drugi_3{
-  display: none;
-}
-.red1 div{
-  float: right;
-  width: 49%;
-  height: 250px;
+/*picture*/
+ div{
+   display: block;
+ }
+ .picture{
+ margin-top: 0px;
+ position: relative;
+ height: 550px;
+ overflow: hidden;
+ }
+ .about-us-photo {
+     min-width: 100%;
+     max-width: 110%;
+     vertical-align: middle;
+   }
 
-}
-.red1 img{
-  float: left;
-  width: 49%;
-  height: 250px;
+ .title {
+     margin-top: 0;
+     line-height: 1em;
+     padding-top: 180px;
+     padding-bottom: 0px;
+     font-family: 'Roboto',sans-serif;
+     font-size: 31px;
+     font-weight: 400;
+     color: #fff;
+     text-transform: uppercase;
+     letter-spacing: .2em;
+     text-shadow: 0 0 20px #000;
+     margin-bottom: 0;
+ }
+ .center{
+ margin-left: auto!important;
+     margin-right: auto!important;
+     text-align: center;
+     float: none;
+   }
 
-}
-.red2 div{
-  float: left;
-  width: 49%;
-  height: 250px;
-
-}
-.red2 img{
-  float: right;
-  width: 49%;
-  height: 250px;
-
-}
-.red1{
-  height: 250px;
-  margin: 8px 0px 8px 0px;
-}
-.red2{
-  height: 250px;
-  margin: 8px 0px 8px 0px;
-}
-
-.eventpicture{
-  min-height: 660px;
-  background-image:url('../../assets/images/elektrijada.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment:fixed;
-  background-position:center center;
-  opacity: 0.9;
-}
-.info-overflow::before{
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-  display: block;
-  content: "";
-  background: linear-gradient(rgba(0, 47, 64, 0) 0%,rgba(0, 47, 64, 0) 30%, #002f40 100%);
-}
-.info-inner{
-  z-index: 2;
-}
-.info-inner::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-h1{
-  margin-top: 40px;
-position: center;
-font-family: 'Roboto', sans-serif;
-font-weight: 600;
-font-size: 30px;
-text-align: center;
-
-}
-hr {
-  max-width: 50px;
-  border-width: 3px;
-  border-color: #06d7d9;
-  margin-bottom: 50px;
-}
-
-.text3 {
-  color: auto;
-  margin-left: 40px;
-  margin-top: 40px;
-  letter-spacing: 1px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  padding-bottom: 80px;
-  text-align: justify;
-}
-
-.text1 {
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 1.3em;
-  font-weight:lighter;
-  letter-spacing: 0px;
-  text-transform:none;
-}
-.name{
-    font-size: 40px;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    letter-spacing: -1px;
-    line-height: 45px;
-    padding-bottom: 30px;
-}
-.name span{
-    font-size: 40px;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    letter-spacing: -1px;
-    line-height: 40px;
-    padding-bottom: 30px;
-    padding-left: 100px;
-}
+ .image-overlay {
+     position: absolute;
+     display: block;
+     width: 100%;
+     top: 0;
+     left: 0;
+     height: 100%;
+     background-color: rgba(39, 39, 39, 0.7);
+     padding-top: 120px;
+ }
+ .triangle-wrapper {
+     height: 25px;
+     width: 100%;
+     bottom: 0px;
+     position: absolute;
+     display: block;
+ }
 
 
-.info-overflow{
-  transform: translateZ(0);
-    height: 672px;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    z-index: 4;
-}
-
-.info-dash{
-    background-size: 100% auto;
-    bottom:  0px;
-    height: 492px;
-    top: auto;
-    width: 510px !important;
-    background:url('https://image.ibb.co/bKYS2b/gradient.png')right top no-repeat;
-    transform: translateX(0);
-    left: 0;
-    padding:30px;
-    position: absolute;
-    z-index: 4;
-}
-.info-dash:after{
-  content: "";
-  display: block;
-  height: 150px;
-  width: 100%;
-}
-
-div{
+ #left{
+   border-bottom: 23px solid #ffffff;
+   width: 50%;
+     bottom: 0;
+     background-color: transparent;
+     position: absolute;
+     border-right: 35px solid transparent;
+     left: 0;
+ }
+ #right{
+   border-bottom: 23px solid #ffffff;
+       right: 0;
+       width: 50%;
+     bottom: 0;
+     background-color: transparent;
+     border-left: 35px solid transparent;
+     position: absolute;
+ }
+ div{
   display: block;
   border: 0;
   font-size: 100%;
@@ -175,16 +89,7 @@ div{
   padding: 0;
 }
 
-<<<<<<< HEAD
-.prvi{
-  width: 14%;
-  float: left;
-  height: 100%;
-}
-.drugi_dio_2{
-=======
 .drugi_dio{
->>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
   margin-left: 25px;
   width: 80%;
   float: left;
@@ -193,6 +98,10 @@ div{
   padding-right: 0px;
 }
 
+.medalje{
+  float: none;
+  width: 100%;
+}
 
 ul.tab {
     list-style-type: none;
@@ -253,190 +162,114 @@ ul.tab li div:focus, .active {
     background-color: #80bfff;
 }
 
-/* sadrzaj izabrane godine */
-.tabcontent {
-    display: none;
-    padding: 20px 12px;
-    float:center;
-    font-family: 'Roboto',sans-serif;
+#drugi_1{
+  display: table;
 }
+#drugi_2{
+  display: none;
+}
+#drugi_3{
+  display: none;
+}
+.red1 div{
+  float: right;
+  width: 49%;
+  height: 250px;
 
-.okvir {
-  list-style-type: none;
-  overflow: hidden;
-  border: 	#182627;
-  background-color: #303A3C;
-  width:150px;
-  padding: 0px;
-  margin-top:12px;
-  height:100%;
+}
+.red1 img{
+  float: left;
+  width: 49%;
+  height: 250px;
+
+}
+.red2 div{
+  float: left;
+  width: 49%;
+  height: 250px;
+
+}
+.red2 img{
+  float: right;
+  width: 49%;
+  height: 250px;
+
+}
+.red1{
+  height: 250px;
+  margin: 8px 0px 8px 0px;
+}
+.red2{
+  height: 250px;
+  margin: 8px 0px 8px 0px;
 }
 
 h1{
-  text-align: center;
-  margin: 5px;
+  margin-top: 40px;
+position: center;
+font-family: 'Roboto', sans-serif;
+font-weight: 600;
+font-size: 30px;
+text-align: center;
+
+}
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #06d7d9;
+  margin-bottom: 50px;
+  left: 48%;
+  position: relative;
 }
 
-
- div.text{
-   float: left;
-   width: 75%;
-   margin:0;
-   height: auto;
-   padding-bottom:20px;
- }
-<<<<<<< HEAD
-
- img{
-=======
- div.media{
-   float: right;
-   width: 25%;
-   margin:0;
- }
-div.takmicari{
-  margin: 6px;
-  font-size: 20px;
+.text3 {
+  color: auto;
+  margin-left: 40px;
+  margin-top: 40px;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-family: 'Roboto',sans-serif;
+  font-size: 18px;
+  padding-bottom: 80px;
+  text-align: justify;
 }
- h2.NaslovTeme{
-   margin: 10px;
-   text-align: left;
-   font-weight: 500;
-   font-family: 'Roboto',sans-serif;
- }
- .medaljeimg{
->>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
-   flex:0 auto;
-   float: right;
-   height: 100px;
-   margin: 0px;
-   width: 80px;
- }
-<<<<<<< HEAD
- @media screen and (min-width: 1500px) {
-   .eventpicture{
-     min-height: 790px;
-   }
-   .info-overflow{
-     height: 802px;
-   }
-=======
->>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
+div{
+  display: block;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;;
+  margin: 0;
+  padding: 0;
+}
+*{
+  text-rendering: geometricPrecision;
+  box-sizing: border-box;
+  outline: 0;
+  margin:0;
+  padding: 0;
+}
 
+.prvi{
+  width: 14%;
+  float: left;
+  height: 100%;
+}
+.drugi_dio_2{
+  margin-left: 25px;
+  width: 80%;
+  float: left;
+  margin-top: 15px;
+  padding: 20px;
+  padding-right: 0px;
+}
 
-/*picture*/
- div{
-   display: block;
- }
- .picture{
- margin-top: 0px;
- position: relative;
- height: 550px;
- overflow: hidden;
- }
-<<<<<<< HEAD
- @media screen and (max-width: 720px) {
+@media screen and (min-width: 1500px) {
 
-   figure{
-     float: left;
-     width:90%;
-   }
-=======
- .about-us-photo {
-     min-width: 100%;
-     max-width: 110%;
-     vertical-align: middle;
-   }
-
- .title {
-     margin-top: 0;
-     line-height: 1em;
-     padding-top: 180px;
-     padding-bottom: 0px;
-     font-family: 'Roboto',sans-serif;
-     font-size: 31px;
-     font-weight: 400;
-     color: #fff;
-     text-transform: uppercase;
-     letter-spacing: .2em;
-     text-shadow: 0 0 20px #000;
-     margin-bottom: 0;
- }
- .center{
- margin-left: auto!important;
-     margin-right: auto!important;
-     text-align: center;
-     float: none;
-   }
-
- .image-overlay {
-     position: absolute;
-     display: block;
-     width: 100%;
-     top: 0;
-     left: 0;
-     height: 100%;
-     background-color: rgba(39, 39, 39, 0.7);
-     padding-top: 120px;
- }
- .triangle-wrapper {
-     height: 25px;
-     width: 100%;
-     bottom: 0px;
-     position: absolute;
-     display: block;
- }
-
->>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
-
- #left{
-   border-bottom: 23px solid #ffffff;
-   width: 50%;
-     bottom: 0;
-     background-color: transparent;
-     position: absolute;
-     border-right: 35px solid transparent;
-     left: 0;
- }
- #right{
-   border-bottom: 23px solid #ffffff;
-       right: 0;
-       width: 50%;
-     bottom: 0;
-     background-color: transparent;
-     border-left: 35px solid transparent;
-     position: absolute;
- }
-
- @media screen and (min-width: 1500px) {
-
-
- }
- @media screen and (max-width: 500px) {
-   .about-us-photo{
-     height: 225px;
-   }
-   .title {
-     padding-top: 50px;
-   }
-   .picture{
-     height: 229px;
-   }
-   .image-overlay{
-     height: 229px;
-   }
 
  }
  @media screen and (max-width: 680px){
 
-<<<<<<< HEAD
- figure{
-   float: left;
-   width:90%;
- }
-=======
    ul.tab {
        list-style-type: none;
        overflow: hidden;
@@ -454,7 +287,6 @@ div.takmicari{
      padding-top: 0px;
      margin-top: 0;
    }
->>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
 
    .picture{
      height: 300px;
@@ -480,17 +312,11 @@ div.takmicari{
 }
 @media screen and (max-width: 920px){
 
-<<<<<<< HEAD
-figure{
-  float: left;
-  width:90%;
-=======
 
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px)
 {
->>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
 }
 
 @media only screen and (max-width: 1030px) {
@@ -498,26 +324,7 @@ figure{
 
 }
 
-<<<<<<< HEAD
-@media only screen and (min-width: 1024px) and (max-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    figure{
-      float: left;
-      width:90%;
-    }
-
-    .text{
-      padding-right: 60px;
-
-    }
-    .text2{
-      padding-left: 30px;
-
-    }
-}
-=======
 @media only screen and (max-width: 720px) {
->>>>>>> 4e9efbc2ea44934a7cee18960d2238383af8b2b3
 
 }
 @media only screen and (max-width: 370px){
@@ -560,22 +367,4 @@ figure{
       line-height: 1.3em;
       letter-spacing: 0.8px;
   }
-}
-
-.team-member, .team-member .team-img {
-    position: relative;
-}
-.team-member {
-    overflow: hidden;
-}
-.team-member, .team-member .team-img {
-    position: relative;
-}
-img{
-  width:360px;
-  height: 240px;
-}
-
-.slika{
-  display: block
 }

@@ -1,28 +1,25 @@
-<!--<div id="event" class="eventpicture animation-on">
+<div class="picture">
+  <img class="about-us-photo" src="assets/images/elektrijadaslika2.jpg">
+  <div class="image-overlay">
 
-<div class="info-overflow">
-<div class="info-dash">
-    <div class="info-inner">
-      <div class="event-info">
-        <div class="name">
-          Elektrijada
-          </div>
-          <p class="text1">Međunarodni susreti studenata elektrotehnike, poznatiji kao Elektrijada, tradicionalno se održavaju skoro pola stoljeća na prostorima bivše Jugoslavije i predstavljaju najveći godišnji skup studenata elektrotehnike u jugoistočnoj Evropi, a i šire. Elektrijada kroz svoje programe širi i populariše sve sfere aktivnog studentskog života – naučni rad, takmičenja u znanju, sportska takmičenja, edukativne programe i zabavu.
-          </div>
+    <div class="content">
+      <div class="title center" style="color: white; text-shadow: 1px 1px 10px rgb(84, 84, 84);">MEĐUNARODNI DOGAĐAJI</div>"
+
+      <ul class="tab">
+        <div class="tab1">
+          <li >
+            <div (click)=fun(naslovi[0])>{{naslovi[0]}}</div>
+            <div (click)=fun(naslovi[1])>{{naslovi[1]}}</div>
+            <div (click)=fun(naslovi[2])>{{naslovi[2]}}</div>
+          </li>
+      </div>
+      </ul>
 
     </div>
-</div>
-</div>
-</div>
-<div>
-<div class="prvi">
-<ul class="tab">
 
-  <li *ngFor="let i of naslovi;">
-    <div (click)=fun(i)>{{i}}</div>
-  </li>
-</ul>
+  </div>
 </div>
+
 
 <div class="drugi_dio_1" id="drugi_1">
 <div class="text3" >
@@ -31,9 +28,6 @@
   <div class="sadrzaj">
 
     <div class="tekst">{{godineElektrijadeSadrzaj[0]}} </div>
-
-
-
 
 
 <div class="red1">
@@ -142,6 +136,5 @@
 </div>
 
 
-</div>
 <app-sponzori></app-sponzori>
   <app-footer></app-footer>
