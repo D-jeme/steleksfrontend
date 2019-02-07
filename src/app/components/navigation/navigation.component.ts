@@ -136,9 +136,13 @@ ngDoCheck() {
         if(this.user)
         {
         document.getElementById("user").style.display="block";
+        document.getElementById("hide").style.display="none";
+
 
         }
         else   {document.getElementById("user").style.display="none";
+        document.getElementById("hide").style.display="inline-block";
+
 }
 
 }
