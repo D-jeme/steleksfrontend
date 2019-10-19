@@ -44,6 +44,8 @@ EndDate: Date = new Date();
   this.Ucesnici="";
   this.Mjesto="";
   this.ShortText="";
+  this.StartDate = new Date();
+  this.EndDate =  new Date();
   this.uploader.onSuccessItem = (item: any, response: string, status: number, headers: any): any => {
       let res: any = JSON.parse(response);
 

@@ -4,6 +4,7 @@ import { Router} from '@angular/router';
 import { CloudinaryOptions, CloudinaryUploader } from 'ng2-cloudinary';
 import {Popup} from 'ng2-opd-popup';
 import { FileUploader } from 'ng2-file-upload';
+import { DatePicker } from 'angular2-datetimepicker';
 
 @Component({
   selector: 'app-formaafterevent',
@@ -19,6 +20,7 @@ export class FormaAfterEventComponent implements OnInit, DoCheck {
   ShortText: string;
   image: string;
 
+
   StartDate: Date = new Date();
     settings = {
         bigBanner: false,
@@ -27,6 +29,7 @@ export class FormaAfterEventComponent implements OnInit, DoCheck {
         defaultOpen: false
 }
 EndDate: Date = new Date();
+
 
 url:any;
 uploader: CloudinaryUploader = new CloudinaryUploader(
@@ -40,6 +43,8 @@ username:String;
 
   constructor(private _eventService: EventService, private router: Router, private popup: Popup ,private renderer : Renderer) {
 
+  this.StartDate =  new Date();
+  this.EndDate =  new Date();
   this.Title = "";
   this.BackPicture="";
   this.LongText="";
