@@ -174,25 +174,25 @@ ul.tab li div:focus, .active {
 .red1 div{
   float: right;
   width: 49%;
-  height: 250px;
+  height: 100%;
 
 }
 .red1 img{
   float: left;
-  width: 49%;
-  height: 250px;
+  width: 40%;
+  height: 100%;
 
 }
 .red2 div{
   float: left;
   width: 49%;
-  height: 250px;
+  height: 100%;
 
 }
 .red2 img{
   float: right;
   width: 49%;
-  height: 250px;
+  height: 100%;
 
 }
 .red1{
