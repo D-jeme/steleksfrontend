@@ -239,14 +239,20 @@ hr {
 .tekst {
  margin-left: 20%;
  margin-right: 20%;
- margin-bottom: 5%;
+ margin-bottom: 2%;
 }
+.tekst2 {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 0.5%;
+ }
 
 .primary1 {
  max-width: 50px;
  border-width: 3px;
  border-color: #06d7d9;
  margin-bottom: 30px;
+ margin-top: 20px;
  left: 48%;
  position: relative;
 }
@@ -287,7 +293,7 @@ div{
 
 
 }
-@media screen and (max-width: 680px){
+@media screen and (max-width: 800px){
 
   ul.tab {
       list-style-type: none;
@@ -311,6 +317,22 @@ div{
     height: 300px;
   }
 
+  .red1{
+    height: 250px;
+    margin: auto;
+    width: 90%;
+    align-content: middle;
+   }
+  .tekst {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+   }
+   .tekst2 {
+     margin-left: 5%;
+     margin-right: 5%;
+     margin-bottom: 0.5%;
+    }
 
   /* stil za elemente liste */
   ul.tab li div {
@@ -334,8 +356,24 @@ div{
 
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px)
+@media screen and (min-width: 800px) and (max-width: 1200px)
 {
+  .red1{
+    height: 300px;
+    margin: auto;
+    width: 60%;
+    align-content: middle;
+   }
+  .tekst {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+   }
+   .tekst2 {
+     margin-left: 10%;
+     margin-right: 10%;
+     margin-bottom: 0.5%;
+    }
 }
 
 @media only screen and (max-width: 1030px) {

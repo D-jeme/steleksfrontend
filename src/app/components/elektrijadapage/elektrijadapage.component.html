@@ -3,16 +3,17 @@
   <div class="image-overlay">
 
     <div class="content">
-      <div class="title center" style="color: white; text-shadow: 1px 1px 10px rgb(84, 84, 84);">MEĐUNARODNI DOGAĐAJI</div>"
+      <div class="title center" style="color: white; text-shadow: 1px 1px 10px rgb(84, 84, 84);">MEĐUNARODNI DOGAĐAJI
+      </div>"
 
       <ul class="tab">
         <div class="tab1">
-          <li >
+          <li>
             <div (click)=fun(naslovi[0])>{{naslovi[0]}}</div>
             <div (click)=fun(naslovi[1])>{{naslovi[1]}}</div>
             <div (click)=fun(naslovi[2])>{{naslovi[2]}}</div>
           </li>
-      </div>
+        </div>
       </ul>
 
     </div>
@@ -22,15 +23,17 @@
 
 
 <div class="drugi_dio_1" id="drugi_1">
-<div class="text3" >
-  <h1> {{naslovi[0]}} </h1>
-          <hr class="primary">
-  <div class="sadrzaj">
+  <div class="text3">
+    <h1> {{naslovi[0]}} </h1>
+    <hr class="primary1">
+    <div class="sadrzaj">
 
-    <div class="tekst">{{godineElektrijadeSadrzaj[0]}} </div>
+      <div class="tekst">{{godineElektrijadeSadrzaj[0]}} </div>
+      <div class="tekst2">{{godineElektrijadeSadrzaj[1]}} </div>
+      <br>
 
 
-<!--<div class="red1">
+      <!--<div class="red1">
     <div class="tekst1">{{historijaText[0]}}</div>
       <img src='{{historijaSlike[0]}}' class="slika">
   </div>
@@ -52,59 +55,70 @@
     -->
 
 
+    </div>
   </div>
-</div>
 </div>
 
 
 
 
 <div class="drugi_dio_1" id="drugi_2">
-<div class="text3" >
-  <h1> {{naslovi[1]}} </h1>
-          <hr class="primary">
-  <div class="sadrzaj">
-
-    <div class="tekst">{{godineElektrijadeSadrzaj[0]}} </div>
-
-    <h2>Elektrijada Bečići 2015</h2>
+  <div class="text3">
+    <h1> {{naslovi[1]}} </h1>
     <hr class="primary1">
-    <div class="red1">
-			<iframe src="https://www.youtube.com/embed/kyQKo3CUApU" frameborder="0" gesture="media" allow="encrypted-media;" allowfullscreen></iframe>
+    <div class="sadrzaj">
+
+      <div class="tekst">{{godineElektrijadeSadrzaj[2]}} </div>
+      <div class="tekst2">{{godineElektrijadeSadrzaj[3]}} </div>
+      <br>
+
+      <h2>Elektrijada Bečići 2015</h2>
+      <hr class="primary1">
+      <div class="red1">
+        <iframe src="https://www.youtube.com/embed/kyQKo3CUApU" frameborder="0" gesture="media" allow="encrypted-media;"
+          allowfullscreen></iframe>
+      </div>
+
+      <h2>Elektrijada Rimini 2016</h2>
+      <hr class="primary1">
+      <div class="red1">
+        <iframe src="https://www.youtube.com/embed/6Z8cdnZ63Uo" frameborder="0" gesture="media" allow="encrypted-media;"
+          allowfullscreen></iframe>
+      </div>
+
+      <h2>Elektrijada Budva 2017</h2>
+      <hr class="primary1">
+      <div class="red1">
+        <iframe src="https://www.youtube.com/embed/gLrQ7N7U_wI" frameborder="0" gesture="media" allow="encrypted-media;"
+          allowfullscreen></iframe>
+      </div>
     </div>
 
-    <h2>Elektrijada Rimini 2016</h2>
-    <hr class="primary1">
-    <div class="red1">
-			<iframe src="https://www.youtube.com/embed/6Z8cdnZ63Uo" frameborder="0" gesture="media" allow="encrypted-media;" allowfullscreen></iframe>
-    </div>
 
-    <h2>Elektrijada Budva 2017</h2>
-    <hr class="primary1">
-    <div class="red1">
-			<iframe src="https://www.youtube.com/embed/gLrQ7N7U_wI" frameborder="0" gesture="media" allow="encrypted-media;" allowfullscreen></iframe>
-    </div>
+
   </div>
-
-
-
-</div>
 </div>
 
 
 <div class="drugi_dio_1" id="drugi_3">
-<div class="text3" >
-  <h1> {{naslovi[2]}} </h1>
-          <hr class="primary">
-  <div class="sadrzaj">
+  <div class="text3">
+    <h1> {{naslovi[2]}} </h1>
+    <hr class="primary1">
+    <div class="sadrzaj">
 
-    <div class="tekst">{{godineElektrijadeSadrzaj[2]}} </div>
+      <div class="tekst">{{godineElektrijadeSadrzaj[4]}} </div>
+      <div class="tekst2">{{godineElektrijadeSadrzaj[5]}} </div>
+      <div class="tekst2">{{godineElektrijadeSadrzaj[6]}} </div>
+      <div class="tekst2">{{godineElektrijadeSadrzaj[7]}} </div>
+      <div class="tekst2">{{godineElektrijadeSadrzaj[8]}} </div>
+      <br>
+      <div class="red1">
+        <iframe src="https://www.youtube.com/embed/Y6qO0sc_m18"frameborder="0" gesture="media" allow="encrypted-media;"
+        allowfullscreen></iframe>
+      </div>
 
 
-
-
-
-<!--<div class="red1">
+        <!--<div class="red1">
     <div class="tekst1">{{stemText[0]}}</div>
       <img src='{{stemSlike[0]}}' class="slika">
   </div>
@@ -126,10 +140,10 @@
     -->
 
 
+      </div>
+    </div>
   </div>
-</div>
-</div>
 
 
-<app-sponzori></app-sponzori>
+  <app-sponzori></app-sponzori>
   <app-footer></app-footer>
