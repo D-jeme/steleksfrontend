@@ -134,7 +134,7 @@ body {
 }
 
 #am{
-  padding-top: 50px;
+  padding-top: 0px;
 }
 img{
   width:360px;
@@ -146,7 +146,7 @@ p{
 h4{
   padding-top: 30px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .container{
     padding-top: 0px;
   }

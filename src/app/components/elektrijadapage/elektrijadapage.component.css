@@ -1,119 +1,139 @@
 /*picture*/
- div{
-   display: block;
- }
- .picture{
- margin-top: 0px;
- position: relative;
- height: 550px;
- overflow: hidden;
- }
- .about-us-photo {
-     min-width: 100%;
-     max-width: 110%;
-     vertical-align: middle;
-   }
-
- .title {
-     margin-top: 0;
-     line-height: 1em;
-     padding-top: 180px;
-     padding-bottom: 0px;
-     font-family: 'Roboto',sans-serif;
-     font-size: 31px;
-     font-weight: 400;
-     color: #fff;
-     text-transform: uppercase;
-     letter-spacing: .2em;
-     text-shadow: 0 0 20px #000;
-     margin-bottom: 0;
- }
- .center{
- margin-left: auto!important;
-     margin-right: auto!important;
-     text-align: center;
-     float: none;
-   }
-
- .image-overlay {
-     position: absolute;
-     display: block;
-     width: 100%;
-     top: 0;
-     left: 0;
-     height: 100%;
-     background-color: rgba(39, 39, 39, 0.7);
-     padding-top: 120px;
- }
- .triangle-wrapper {
-     height: 25px;
-     width: 100%;
-     bottom: 0px;
-     position: absolute;
-     display: block;
- }
-
-
- #left{
-   border-bottom: 23px solid #ffffff;
-   width: 50%;
-     bottom: 0;
-     background-color: transparent;
-     position: absolute;
-     border-right: 35px solid transparent;
-     left: 0;
- }
- #right{
-   border-bottom: 23px solid #ffffff;
-       right: 0;
-       width: 50%;
-     bottom: 0;
-     background-color: transparent;
-     border-left: 35px solid transparent;
-     position: absolute;
- }
- div{
+div{
   display: block;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;;
-  margin: 0;
-  padding: 0;
+}
+.picture{
+margin-top: 0px;
+position: relative;
+height: 550px;
+overflow: hidden;
+}
+.about-us-photo {
+    min-width: 100%;
+    max-width: 110%;
+    vertical-align: middle;
+  }
+
+.title {
+    margin-top: 0;
+    line-height: 1em;
+    padding-top: 180px;
+    padding-bottom: 0px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 31px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-shadow: 0 0 20px #000;
+    margin-bottom: 0;
+}
+.center{
+margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    float: none;
+  }
+
+.image-overlay {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(39, 39, 39, 0.7);
+    padding-top: 120px;
+}
+.triangle-wrapper {
+    height: 25px;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    display: block;
+}
+
+
+#left{
+  border-bottom: 23px solid #ffffff;
+  width: 50%;
+    bottom: 0;
+    background-color: transparent;
+    position: absolute;
+    border-right: 35px solid transparent;
+    left: 0;
+}
+#right{
+  border-bottom: 23px solid #ffffff;
+      right: 0;
+      width: 50%;
+    bottom: 0;
+    background-color: transparent;
+    border-left: 35px solid transparent;
+    position: absolute;
+}
+div{
+ display: block;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+ margin: 0;
+ padding: 0;
 }
 *{
-  text-rendering: geometricPrecision;
-  box-sizing: border-box;
-  outline: 0;
-  margin:0;
-  padding: 0;
+ text-rendering: geometricPrecision;
+ box-sizing: border-box;
+ outline: 0;
+ margin:0;
+ padding: 0;
 }
 
 .drugi_dio{
-  margin-left: 25px;
-  width: 80%;
-  float: left;
-  margin-top: 15px;
-  padding: 20px;
-  padding-right: 0px;
+ margin-left: 25px;
+ width: 80%;
+ float: left;
+ margin-top: 15px;
+ padding: 20px;
+ padding-right: 0px;
+}
+
+h2 {
+ font-family: 'Roboto', sans-serif;
+ font-size: 25px;
+ font-weight: 500;
+ margin-top: 2%;
+ position: center;
+ text-align: center;
+}
+
+.video_elektrijada {
+ margin: auto;
+ width: 50%;
+ height: 100%;
+ align-content: middle;
 }
 
 .medalje{
-  float: none;
-  width: 100%;
+ float: none;
+ width: 100%;
+}
+
+.sadrzaj {
+ height: 100%;
 }
 
 ul.tab {
-    list-style-type: none;
-    overflow: hidden;
-    border: 	#182627;
-    background-color: rgba(39, 39, 39, 0.7); /* ili ova boja? #2A3C41 	*/
-    font-family: 'GillSans';
-    width: 100%;
-    padding: 0px;
-    margin-top:0px;
-    bottom: 2%;
-    position: absolute;
+   list-style-type: none;
+   overflow: hidden;
+   border: 	#182627;
+   background-color: rgba(39, 39, 39, 0.7); /* ili ova boja? #2A3C41 	*/
+   font-family: 'GillSans';
+   width: 100%;
+   padding: 0px;
+   margin-top:0px;
+   bottom: 2%;
+   position: absolute;
 
 }
 
@@ -125,87 +145,69 @@ ul.tab li {
 
 /* stil za elemente liste */
 ul.tab li div {
-    display: block;
-    color: #4b799b;
+   display: block;
+   color: #4b799b;
 
-    padding: 16px 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: 0.3s;
-    font-family: 'Roboto', sans-serif;
-    text-transform:uppercase;
-    color: #4b799b;
-    font-weight: 700;
-    font-size: 18px;
-    text-decoration: none;
-    float: left;
-    width: 33%;
+   padding: 16px 20px;
+   text-transform: uppercase;
+   text-decoration: none;
+   transition: 0.3s;
+   font-family: 'Roboto', sans-serif;
+   text-transform:uppercase;
+   color: #4b799b;
+   font-weight: 700;
+   font-size: 18px;
+   text-decoration: none;
+   float: left;
+   width: 33%;
 }
 ul.tab li div:nth-of-type(1){
-  text-align: right;
+ text-align: right;
 }
 ul.tab li div:nth-of-type(2){
-  text-align: center;
+ text-align: center;
 }
 ul.tab li div:nth-of-type(3){
-  text-align: left;
+ text-align: left;
 }
 
 /* hover */
 ul.tab li div:hover {
-    background-color: #b3b3b3; /*#999999;*/
-    cursor: pointer;
+   background-color: #b3b3b3; /*#999999;*/
+   cursor: pointer;
 }
 
 /* hover za trenutni na koji kliknemo */
 ul.tab li div:focus, .active {
-    background-color: #80bfff;
+   background-color: #80bfff;
 }
 
 #drugi_1{
-  display: table;
+ display: table;
 }
 #drugi_2{
-  display: none;
+ display: none;
 }
 #drugi_3{
-  display: none;
+ display: none;
 }
-.red1 div{
-  float: right;
-  width: 49%;
-  height: 250px;
 
-}
-.red1 img{
-  float: left;
-  width: 49%;
-  height: 250px;
-
-}
-.red2 div{
-  float: left;
-  width: 49%;
-  height: 250px;
-
-}
-.red2 img{
-  float: right;
-  width: 49%;
-  height: 250px;
-
-}
 .red1{
-  height: 250px;
-  margin: 8px 0px 8px 0px;
+ height: 400px;
+ margin: auto;
+ width: 50%;
+ align-content: middle;
 }
-.red2{
-  height: 250px;
-  margin: 8px 0px 8px 0px;
+
+iframe {
+ margin: auto;
+ display: block;
+ height: 100%;
+ width: 100%;
 }
 
 h1{
-  margin-top: 40px;
+ margin-top: 40px;
 position: center;
 font-family: 'Roboto', sans-serif;
 font-weight: 600;
@@ -214,120 +216,84 @@ text-align: center;
 
 }
 hr {
-  max-width: 50px;
-  border-width: 3px;
-  border-color: #06d7d9;
-  margin-bottom: 50px;
-  left: 48%;
-  position: relative;
+ max-width: 50px;
+ border-width: 3px;
+ border-color: #06d7d9;
+ margin-bottom: 50px;
+ left: 48%;
+ position: relative;
 }
 
 .text3 {
-  color: auto;
-  margin-left: 40px;
-  margin-top: 40px;
-  letter-spacing: 1px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  padding-bottom: 80px;
-  text-align: justify;
+ color: auto;
+ /*margin-left: 40px;*/
+ margin-top: 40px;
+ letter-spacing: 1px;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 400;
+ font-size: 18px;
+ padding-bottom: 80px;
+ text-align: justify;
 }
+
+.tekst {
+ margin-left: 20%;
+ margin-right: 20%;
+ margin-bottom: 2%;
+}
+.tekst2 {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 0.5%;
+ }
+
+.primary1 {
+ max-width: 50px;
+ border-width: 3px;
+ border-color: #06d7d9;
+ margin-bottom: 30px;
+ margin-top: 20px;
+ left: 48%;
+ position: relative;
+}
+
 div{
-  display: block;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;;
-  margin: 0;
-  padding: 0;
+ display: block;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+ margin: 0;
+ padding: 0;
 }
 *{
-  text-rendering: geometricPrecision;
-  box-sizing: border-box;
-  outline: 0;
-  margin:0;
-  padding: 0;
+ text-rendering: geometricPrecision;
+ box-sizing: border-box;
+ outline: 0;
+ margin:0;
+ padding: 0;
 }
 
 .prvi{
-  width: 14%;
-  float: left;
-  height: 100%;
+ width: 14%;
+ float: left;
+ height: 100%;
 }
 .drugi_dio_2{
-  margin-left: 25px;
-  width: 80%;
-  float: left;
-  margin-top: 15px;
-  padding: 20px;
-  padding-right: 0px;
+ margin-left: 25px;
+ width: 80%;
+ float: left;
+ margin-top: 15px;
+ padding: 20px;
+ padding-right: 0px;
+ margin-right: 25px;
 }
 
 @media screen and (min-width: 1500px) {
 
 
- }
- @media screen and (max-width: 680px){
-
-   ul.tab {
-       list-style-type: none;
-       overflow: hidden;
-       border: 	#182627;
-         background-color: rgba(39, 39, 39, 0.7);  /* ili ova boja? #2A3C41 	*/
-       font-family: 'GillSans';
-       width:100%;
-       position: absolute;
-       bottom: 2%;
-       padding: 0px;
-       margin-top:12px;
-   }
-   .title{
-     font-size: 18px;
-     padding-top: 0px;
-     margin-top: 0;
-   }
-
-   .picture{
-     height: 300px;
-   }
-
-
-   /* stil za elemente liste */
-   ul.tab li div {
-       display: block;
-       color: #4b799b;
-       text-align: center;
-
-       text-decoration: none;
-       transition: 0.3s;
-       font-size: 14px;
-       width: 33%;
-       font-family: 'Roboto',sans-serif;
-       font-style: 500;
-       line-height: 1.3em;
-       letter-spacing: 0.8px;
-   }
-
 }
-@media screen and (max-width: 920px){
-
-
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1366px)
-{
-}
-
-@media only screen and (max-width: 1030px) {
-
-
-}
-
-@media only screen and (max-width: 720px) {
-
-}
-@media only screen and (max-width: 370px){
+@media screen and (max-width: 800px){
 
   ul.tab {
       list-style-type: none;
@@ -348,9 +314,25 @@ div{
   }
 
   .picture{
-    height: 260px;
+    height: 300px;
   }
 
+  .red1{
+    height: 250px;
+    margin: auto;
+    width: 90%;
+    align-content: middle;
+   }
+  .tekst {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+   }
+   .tekst2 {
+     margin-left: 5%;
+     margin-right: 5%;
+     margin-bottom: 0.5%;
+    }
 
   /* stil za elemente liste */
   ul.tab li div {
@@ -367,4 +349,79 @@ div{
       line-height: 1.3em;
       letter-spacing: 0.8px;
   }
+
+}
+@media screen and (max-width: 920px){
+
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px)
+{
+  .red1{
+    height: 300px;
+    margin: auto;
+    width: 60%;
+    align-content: middle;
+   }
+  .tekst {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+   }
+   .tekst2 {
+     margin-left: 10%;
+     margin-right: 10%;
+     margin-bottom: 0.5%;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+
+
+}
+
+@media only screen and (max-width: 720px) {
+
+}
+@media only screen and (max-width: 370px){
+
+ ul.tab {
+     list-style-type: none;
+     overflow: hidden;
+     border: 	#182627;
+       background-color: rgba(39, 39, 39, 0.7);  /* ili ova boja? #2A3C41 	*/
+     font-family: 'GillSans';
+     width:100%;
+     position: absolute;
+     bottom: 2%;
+     padding: 0px;
+     margin-top:12px;
+ }
+ .title{
+   font-size: 18px;
+   padding-top: 0px;
+   margin-top: 0;
+ }
+
+ .picture{
+   height: 260px;
+ }
+
+
+ /* stil za elemente liste */
+ ul.tab li div {
+     display: block;
+     color: #4b799b;
+     text-align: center;
+
+     text-decoration: none;
+     transition: 0.3s;
+     font-size: 14px;
+     width: 33%;
+     font-family: 'Roboto',sans-serif;
+     font-style: 500;
+     line-height: 1.3em;
+     letter-spacing: 0.8px;
+ }
 }
