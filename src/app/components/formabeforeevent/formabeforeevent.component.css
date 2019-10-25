@@ -2,6 +2,10 @@ html {
     height: 100%;
 }
 
+#datum {
+  margin-right: 20px;
+}
+
 body{
 
   position: absolute;
@@ -90,10 +94,9 @@ input[type="text"]{
     font-family: 'Roboto', sans-serif;
   }
 
-  input[type="text1"]
+  input[type="date"]
   {
     float: left;
-    padding: 5px;
     font-size: 14px;
     font-weight: 400;
     background-color: white;
@@ -215,6 +218,10 @@ input[type="text"]{
   .form-content{
     width: 70%;
   }
+
+  .groupBox2{
+    width: 45%;
+  }
   .elektrijada{
     height: auto;
     padding-top: 160px;
@@ -232,6 +239,11 @@ input[type="text"]{
   .groupBox1{
     width: 80%;
   }
+
+  .groupBox2{
+    width: 50%;
+  }
+
   .elektrijada{
     height: auto;
     padding-top: 160px;

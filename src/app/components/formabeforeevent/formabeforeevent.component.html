@@ -5,16 +5,15 @@
   <h2>Najava događaja</h2>
   <fieldset class="groupBox1">
     <input [(ngModel)]="Title" [ngModelOptions]="{standalone: true}" type="text" name="year" placeholder="Naziv događaja"/>
-
-
-
+    
+    
     <fieldset class="groupBox2">
-    <label for="datum">Datum početka događaja: </label>
+      <label for="datum">Početak događaja: </label>
+      <input [(ngModel)]="StartDate" type="date" id="datum" name="StartDate">
+      <label for="datum2">Završetak događaja: </label>
+      <input [(ngModel)]="EndDate" type="date" id="datum2" name="EndDate">
 
-    <angular2-date-picker [(ngModel)]="StartDate" type="text1" id="datum" name="datum" [settings]="settings"></angular2-date-picker>
-    <label for="datum">Datum završetka događaja: </label>
-    <angular2-date-picker [(ngModel)]="EndDate" type="text1" id="datum" name="datum" [settings]="settings"></angular2-date-picker>
-
+    
     </fieldset>
 
 
@@ -33,6 +32,7 @@
   <form>
  <input type="button" value="Dodaj" (click)="upload()"/>
 </form>
+
 </fieldset>
 </form>
 

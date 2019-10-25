@@ -28,6 +28,7 @@ export class FormaBeforeEventComponent implements OnInit, DoCheck {
         timePicker: false,
         format: 'dd-MM-yyyy',
         defaultOpen: false
+  
 }
 EndDate: Date = new Date();
   url:any;
@@ -44,8 +45,8 @@ EndDate: Date = new Date();
   this.Ucesnici="";
   this.Mjesto="";
   this.ShortText="";
-  this.StartDate = new Date();
-  this.EndDate =  new Date();
+  this.StartDate = new Date(Date.now());
+  this.EndDate =  new Date(Date.now());
   this.uploader.onSuccessItem = (item: any, response: string, status: number, headers: any): any => {
       let res: any = JSON.parse(response);
 
