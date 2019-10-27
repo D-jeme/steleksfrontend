@@ -7,6 +7,7 @@ import { Router} from '@angular/router';
 @Injectable()
 export class AlbumService {
   url:string="https://steleks-dev.herokuapp.com";
+
   idGalerije:String;
 
   constructor(private _http:Http){this.idGalerije="";}
@@ -26,12 +27,12 @@ export class AlbumService {
   }
 
   updateAlbum(id:string,imgUrls:Array<string>,title:string){
-    console.log("inace");
+
     var body = JSON.stringify({title,imgUrls});
     var headers = new Headers();
     headers.append('Content-Type', 'application/json');
     //headers.append('authorization', 'Bearer ' + localStorage.getItem("currentUser").token);
-console.log("tijelo",body);
+
 var url1='/api/albums/'+id;
     this._http.put(this.url + url1,
     body,
@@ -41,7 +42,6 @@ var url1='/api/albums/'+id;
       }
     ).map(res=> res.json()).subscribe(
       data => {
-console.log("body",body);
         },
     error =>{
 
