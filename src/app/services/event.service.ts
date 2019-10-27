@@ -9,7 +9,7 @@ import { Router} from '@angular/router';
 
 @Injectable()
 export class EventService {
-  url:string="http://localhost:8080";
+  url:string="https://steleks-dev.herokuapp.com";
 
   constructor(private _http:Http){}
 

@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class RegistracijaService {
-  url:string="http://localhost:8080";
+  url:string="https://steleks-dev.herokuapp.com";
 
   constructor(private _http:Http){}
 

@@ -6,7 +6,7 @@ import { Router} from '@angular/router';
 
 @Injectable()
 export class GalerijaService {
-  url:string="http://localhost:8080";
+  url:string="https://steleks-dev.herokuapp.com";
   idGalerije:String;
 
   constructor(private _http:Http){this.idGalerije="";}
